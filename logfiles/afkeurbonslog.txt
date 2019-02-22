@@ -1,0 +1,62 @@
+artikelnr	aantal	omschrijving	serienr	reden	datum
+PLTT-130179_00KOL	 1	Rolwagen SAR TM rechts (pltw)	 	inserts , blindklinknagel M8 ontbreekt (4x)  -  * 8tal inserts vragen aan leverancier , zodat LET ze kan inbouwen. (4 + 4reserves)  (blinkklinknagel = BELUMA 113530) -  * 	27-10-2017
+DRFR-050293A00KOL	 1	Hefboom pedaal SAR	 	construktiefout : geheel is 295mm ipv 300mm, -  * retour komt terug via magazijnaanvraag : MA : 20172344	8-11-2017
+DRFR-050383A00ACC	 15	Glijblok schroevendraaierplaat	 	construktiefouten  : gat 16mmH8 was niet juist (reeds uitgeboord in LET )  + M6 schroefdraad ontbreekt !    -  * retour komt terug via magazijnaanvraag : MA : 20172351	9-11-2017
+DRFR-160030_01ACC	 1	Steun as inrijgeleiding speciaal staal	 	kwaliteitsprobleem : construktiefout : scheef gelast , houder onbruikbaar -  * retour komt terug via magazijnaanvraag : MA : 20172383	13-11-2017
+DRFR-040238_00KOL	 4	Vaste lagersteun PLM	 	konstruktiefout  : gaten 6.1mm weerom verkeerd gepositioneerd -  * retour komt terug via magazijnaanvraag : MA : 20172433 -  * ((zie ook vorige afkeurbons vh zelfde artikel))	16-11-2017
+PANEL-040110_00OPT	 1	Plaat bedieningspaneel T50	 	venster aan rechterdeel : plooi + onzuiverheden -  * retour komt terug via magazijnaanvraag : MA : 20172520	28-11-2017
+DRFR-050470_00OPT	 23	Sleufstuk - 10x10x210 mm	 	contruktiefout leverancier : M3 (5x) vergeten te tappen -  * retour komt terug via magazijnaanvraag : MA : 20172525	28-11-2017
+AUTOM-TM -1P-03,0A-STUURSTROOM	 1	Automaat Télémecanique 1P 03,0A STUURSTROOM	 	construktiefout in zekering , (hulpcontact blijft toe) -  * retour nog  inschrijven indien dit terug komt van leverancier	30-11-2017
+PANME-A-CCB7-100UA	 1	Paneelmeter analoog CCB7 - 100uA	 	werkt niet -  * retour nog inschrijven indien dit terug komt van leverancier	1-12-2017
+COMP-BOAR-EMB-TAM3517-LET-VERS	 1	Board EMB-TAM3517-LET-VERS	001f7b1834c0	strepen in beeld -  * retour nog inschrijven indien dit terugkomt van leverancier	18-12-2017
+MOTOR-DC-GR53X30+PLG52-126,5:1+E90R+KAP	 1	DC-motor GR53X30 + PLG52 - 126,5:1 + E90R + kap IP54	snr8843901805	rem werkt niet , rem trekt stroom , maar mechanich gebeurd er niks  , verwisselt met 3 andere en 3 andere werkten wel -  * retour nog inschrijven indien dit terugkomt van leverancier	19-12-2017
+DRFR-050067_OPT	 82	Schermblokje LM6	 	M6 gat : schroefdraad is niet soepel , er kan geen M6 schroef door  (18 vd 100 blokjes in LET hertapt met M6) -  * retour komt terug via magazijnaanvraag : MA : 20172766	21-12-2017
+VOED-INB-400    V-024VDC-1000 -SITOP	 1	Sitop voeding 3AC 400-500Vac/24Vdc - 40A	Q6J8B9QKGDB	3v volt op uitgang ipv 24v -  * retour nog inschrjven indien dit artikel terug binnenkomt in LET	21-12-2017
+VOED-NET-230    V-012VDC-60W  STEKKERSET	 1	Netadaptor in : 230V uit : 012 VDC 60W met stekkerset	 	werkt niet , geen indicatieled , ICP65-120-5000 -  * retour nog inschrijven indien terug binnen in LET	9-1-2018
+DIVMA-050454A00OPT	 9	Inkijkvenster voor spiegel	 	krassen/strepen in venster -  * retour nog inschrijven indien terug in let	10-1-2018
+DRFR-170308_01DAS	 40	Glijstuk tegengewicht 10m wand Volvo	 	verkeerde materiaal  : is alu ipv kunsstof -  * artikel nog inschrijven indien dit terugkomt....	26-1-2018
+STICK-150265_02KOL	 2	Sticker meetlat MAN FM (RDF-MPC) 2260mm	 	slechte kwaliteit , mm aanduding is wazig , de 2 helften passen niet presies , verschil in opdruk , ... -  * retour komt terug via magazijnaanvraag : MA : 20180239	30-1-2018
+LCD-TFT-07-TOUCH	 1	LCD-scherm met touch - 7'	fx0700w0dsswagz1 -scf0700c48ggu05	zwarte vlekken -  * retour nog inschrijven als dit terug binnen komt in LET	31-1-2018
+HF-170359_01DAS	 2	Referentiepaneel links met opdruk 10m wand Volvo - GEWIJZIGD !!	 	centers van de folie en van de gaten in de plaat komen niet overeen -  * retour komt terug via magazijnaanvraag : MA : 20180264	31-1-2018
+HF-170332_01DAS	 1	Referentiepaneel rechts met opdruk 10m wand Volvo	 	centers van de folie en van de gaten in de plaat komen niet overeen -  * retour komt terug via magazijnaanvraag : MA : 20180264	31-1-2018
+PANEL-040110_00OPT	 4	Plaat bedieningspaneel T50	 	vijs niet lang genoeg + krassen & onregelmatigheden in venster -  * retour nog inschrijven indien dit terugkomt in LET	2-3-2018
+LCD-GRA-WG160128B-YYH-T	 1	LCD-display 5' WG160128B-YYH-T	ok12/11/17-034028	werkt niet -  * inschrijven indien dit terugbinnenkomt in let	2-3-2018
+DIVMA-050060A00OPT	 16	Plexi bedieningspaneel LM6	 	krassen & onregelmatigheden -  * retour nog inschrijven indien dit terug binnenkomt in LET	2-3-2018
+HF-170332_01DAS	 1	Referentiepaneel rechts met opdruk 10m wand Volvo	 	verfvlekken op folie , herbeplakken met nieuwe folie aub -  * retour nog inschrijven indien onderdeel terug binnenkomt in LET	13-3-2018
+HF-170332_01DAS	 1	Referentiepaneel rechts met opdruk 10m wand Volvo	 	verfvlekken op folie , herbeplakken met nieuwe folie aub -  * retour nog inschrijven indien onderdeel terug binnenkomt in LET	13-3-2018
+ZEHOU-KAS- 5SG7133-SIEMENS	 1	Minized lastscheidingsschakelaar 3P D02, inschuiftechniek, inbouwdiepte 70m	 	kwaliteitsprobleem , beschadigd -  * retour nog inschrijven indien terug in LET	15-3-2018
+DRFR-150481A01LAS	 44	Houder lijnlaser LM35	 	verkeerde versie gemaakt door de leverancier , versie A01besteld maar versie B01 werd gemaakt en geleverd -  * retour komt terug via magazijnaanvraag : MA : 	28-3-2018
+VOED-INB-230    V-024VDC-480W	 1	Powersupply Quint PS-100-240AC/24DC/20	0000537389	toestel heeft nooit gewerkt .dead on arrival -  *  , retour nog inschrijven indien terug in LET  , vervanging voeding via magazijnaanvraag : MA : 20180713  	3-4-2018
+KAST-TM -XAP-M1502	 1	Box empty - 2 posities	 	beschadigd aan vijs , vijs kan er niet uit -  * retour nog inschrijven indien dit terugkomt in LET	14-5-2018
+PLTW-070257_01OPT	 5	Blindpaneel C-DIS LM20 grondlaag zwart	 	niet alle hoeken zijn afgerond , zie tekening -  * retour komt terug via magazijnaanvraag : MA : 20181089..	24-5-2018
+DRFR-060321_00CAL	 5	Basisplaat lasermodule UNICAL	 		19-6-2018
+DRFR-080294A00KOL	 16	Plaat encoder PLM TM	 	construktiefout producent : gaten m4 vergeten boren en tappen in zijkanten -  * retour komt terug via magazijnaanvraag : MA : 20181287..	19-6-2018
+DRFR-060349_00CAL	 5	Schroef micrometer UNICAL	 	spoed vd schroefdraad verkeerd - construktiefout -  * artikel nog inschrijven indien terug in LET	27-6-2018
+COMP-PROC-USOM04W-3C	 2	Processorboard USOM04W-3C	1807/00006 en 1807/00042	werkt niet meer , heeft korte tijd gewerkt + doa -  * retour nog inschrijven indien dit terugkomt binnenkomt in LET	9-7-2018
+DRFR-060356_00CAL	 6	Vaste tafel UNICAL	 	verval zit er niet in , zie techn tek doorsnede AB -  * retour komt terug via magazijnaanvraag : MA : 20181414.	9-7-2018
+KOF-050X042X016CM	 1	Koffer - Binnenafmeting 50x42x16cm	 	krassen in nieuwe koffer -  * retour nog inschrijven indien terug in LET	10-7-2018
+COMP-PROC-USOM04W-3C	 1	Processorboard USOM04W-3C	1807 /00102	GPU werkt soms niet  , hardware deel om scherm aan te sturen faalt soms -  * artikel nog inschrijven indien dit terug binnen komt	11-7-2018
+PLTW-150404A01DAS	 2	Afschermplaat motor links 10m wand	 	konstructiefout leverancier = _ versie ipv A-versie ontvangen , uitsparing verkeerd -  * retour komt terug via magazijnaanvraag : MA : 20181646	20-8-2018
+PLTW-150403A01DAS	 2	Afschermplaat motor rechts 10m wand	 	konstructiefout leverancier = _ versie ipv A-versie ontvangen , uitsparing verkeerd -  * retour komt terug via magazijnaanvraag : MA : 20181646	20-8-2018
+DRFR-150235_01DAS	 1	Steun regelschroeven lasermodule DAS RDF-MPC Manueel	 	construktiefout - trap intern er niet in  -  * retour komt terug via magazijnaanvraag : MA : 20181789	4-9-2018
+DRFR-170302_01DAS	 88	T-moer kort M5 lineaire geleiding 10m wand Volvo	 	consruktiefout  : sleuf verkeerd , moest 1.5mm zijn , en tis verkeerd gemaakt -  * retour komt terug via magazijnaanvraag : MA : 20181886	12-9-2018
+LENS-FRE-505MM-284X200	 19	Fresnellens 505.5mm 284X200	 	krassen -  * retour nog inschrijven indien terug binnen in LET	24-9-2018
+DRFR-060315_00CAL	 1	Steun Hella lamp UNICAL	 	m4 en het moest m3 zijn -  * retour komt terug via magazijnaanvraag :	11-10-2018
+DRFR-050290_00KOL	 30	V-wiel PLA Hella-rails	 	gat te groot , en het rollager zit niet vast in het center -  * retour komt terug via magazijnaanvraag : 	11-10-2018
+PLTW-040268_00KOL	 1	Deksel motorkast PLM	 	afwerking is niet goed , onregelmatigheden in het oppervlakte , kwaliteitsprobleem -  * retour komt terug via magazijnaanvraag : MA : 20182124	16-10-2018
+DRFR-060321_00CAL	 5	Basisplaat lasermodule UNICAL	 	niet vlak genoeg , buiten tolerantie -  * retour komt terug via magazijnaanvraag : MA : 20182125	16-10-2018
+BAT-NIM-07,20V-07,00Ah195X35X60-KORT	 1	Batterijpak NiMh 7,20V 9000mAh  Blok 195x35x60mm - kabel 15cm	 	slechte cel  -  * indien terug in let , artikel nog inschrijven	18-10-2018
+BAT-NIM-09,60V-02,00AhBLOK105X60X15	 1	Batterijpak NiMh AA 9,60V 2000mAh	 	levert niet voldoende stroom , spanning zakt te veel bij belasting op onze testbank -  * artikel nog inschrijven indien dit terug binnen komt in LET	18-10-2018
+DRFR-100036_00KOL	 20	Lichaam draaitafel SAR	 	konstruktiefout :  niet alle gaten zijn geboord zoals gevraagd op plan -  * retour komt terug via magazijnaanvraag : MA : 20182166 -  *  -  * 	22-10-2018
+DRFR-060345_00CAL	 1	Lagerhuis scharnier UNICAL	 	construktiefout producent -  * melding maken bij  leverancier zodat in vervolg daar op gelet wordt.	24-10-2018
+DRFR-050065_00OPT	 102	Schaalknop LM6	 	karteling is niet mooi gelukt + gat M5 verkeerd gepositioneerd + onregelmatigheden(putten van bankschroef/klauwplaten ) op vlak waar de sticker moet komen  -  * retour komt terug via magazijnaanvraag : MA : 20182184	24-10-2018
+DRFR-040238_00KOL	 7	Vaste lagersteun PLM	 	konstruktiefout :( 6e afkeurbon in 24maanden  ) gaten diam6,1 verkeerd gepostitioneerd (zie tekening) -  *  -  * retour komt terug via magazijnaanvraag : MA : 20182360	19-11-2018
+DRFR-050252_00KOL	 3	Wielsteun PLA !!!! WIJZIGT 30/06/2015 !!!!!	 	construktiefout : gaten zijn niet uitgelijnt -  * retour nog inschrijven indien ze terug binnen komen in LET	19-11-2018
+BEDEL-TM -LICHT-XVB-C33	 1	Lichtbaken signaalelement groen Télémecanique XVB-C33	 	transportschade ? -  * retour nog inschrijven indien deze terug binnenkomt in LET	20-11-2018
+DIVMA-080322_00KOL	 2	Spindel + moer PLM TM	 	slechte zone in de lineare beweging , (minder soepel) -  * retour komt terug via magazijnaanvraag : MA 20182383	21-11-2018
+DRFR-070003_00CAL	 2	Lichaam projector UNICAL	 	schroefdraad is niet zuiver/soepel , de ring past er niet goed in ( zie tek)  , ring meegegeven om te passen , > indien mogelijk schroefdraad repareren -  * retour komt terug via magazijnaanvraag : MA : 20182419	26-11-2018
+VOED-NET-230    V-012VDC-60W  STEKKERSET	 1	Netadaptor in : 230V uit : 012 VDC 60W met stekkerset	 	werkt niet , geen indicatieled , ICP65-120-5000 -  * retour nog inschrijven indien terug binnen in LET	4-12-2018
+DRFR-060315_00CAL	 1	Steun Hella lamp UNICAL	 	m4 en het moest m3 zijn  , zie ook afkeurbon van 11-10-2018 -  * 	10-12-2018
+DRFR-060315_00CAL	 10	Steun Hella lamp UNICAL	 	m3 en het moest m4 zijn  , zie ook afkeurbon van 11-10-2018 - ma20182519 * 	10-12-2018
+DRFR-060316_00CAL	 3	Tegenmoer houder nippel UNICAL	 	schroefdraad niet recht getapt -  * retour komt terug via magazijnaanvraag : MA : 20182525	10-12-2018
+HF-150485A01KOL	 38	Spiegel PLA-Lijnlaser LM35 (Praag)	 	11x oxidatie (vlek) op spiegelvlak ; 22x krom ; 5x glas geschonden -  * 	13-2-2019
