@@ -1,0 +1,27 @@
+fileB
+Aantal!Enh!Art.groep!Artikelsymbool!Omschrijving
+2,00!ST!AFBUS!NY-D-10,5X05,0-BD15!Afstandsbus nylon D 10.5 x 5 mm buitendiameter 15
+1,00!ST!BEWKO!050248C00KOL!Kolom PLA 1700mm - 14,2Kg
+1,00!ST!DIVMA!070036_00KOL!Kabel tegengewicht PLA 1700mm L=3100mm
+1,00!ST!DIVMA!130053_00KOL!Tegengewicht PLA 14,2 Kg (Praag)
+1,00!ST!DNBOU!0912-M05X12-RVS!Binnenzeskantbout cylinderkop DIN0912  M 5x12mm A2
+2,00!ST!DNBOU!0912-M08X16-RVS!Binnenzeskantbout cylinderkop DIN0912  M 8x16mm A2
+1,00!ST!DNMOE!0985-M10RVS!Borgmoer DIN0985  M 10mm A2
+1,00!ST!DNRON!0125-05-RVS!Vlakke sluitring DIN0125 5mm A2
+2,00!ST!DNRON!0125-08-RVS!Vlakke sluitring DIN0125 8mm A2
+2,00!ST!DNSCH!0965-M06X16-RVS!Metaalschroef verz.kop kruis DIN0965 M 6x 16mm A2
+1,00!ST!DRFR!050249_00KOL!Teflon rondsel PLA
+2,00!ST!DRFR!050250_00KOL!Buttee PLA kolom
+1,00!ST!ELEM!HAND-ELESA-VB.639/80-B-M10!Handvat ELESA-VB.639/80-B-M10
+1,00!ST!HF!050132_00KOL!Leidwiel excentrisch PLA DR (Praag)
+1,00!ST!HF!050133_00KOL!Steunwiel excentrisch PLA DR (Praag)
+1,00!ST!HF!050134_00KOL!Leidwiel recht PLA DR (Praag)
+1,00!ST!HF!050154A00KOL!Glijwagen PLA DR  Rev A (Praag)
+1,00!ST!HF!050164_00KOL!Katrol PLA (Praag)
+1,00!ST!HF!150485A01KOL!Spiegel PLA-Lijnlaser LM35 (Praag)
+1,00!ST!HF!160240_01KOL!Voet PLA DR zonder wielen (Praag)
+1,00!ST!HF!160241_01KOL!Regelbaar steunstuk PLA (Praag)
+1,00!ST!MARK!STI-VERVALDATUM 2020!Markering sticker VERVALDATUM 2020
+1,00!ST!MARK!STI-VOLGEND NAZICHT-MT!Markering sticker VOLGEND NAZICHT- meertalig
+3,00!ST!MONTB!PLA-AFDICHTSTOP-M6!Montage-toebehoren plastiek - afdichtstop M6
+2,00!ST!ORING!006,0X04,0-NBR70!O-ring 6x 4 mm NBR70
