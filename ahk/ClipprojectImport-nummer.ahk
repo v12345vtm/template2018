@@ -17,7 +17,7 @@ ExitApp
 } 
 
 
- MsgBox, parameters ontvangen  %0%
+ MsgBox, parameters oontvangen  %0%
   MsgBox, 1e parameters is  %1%
   
   ExitApp ; om niet alles te moeten doorlopen in de debugging
