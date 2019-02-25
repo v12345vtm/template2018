@@ -12,20 +12,20 @@
 }
 else
 {
-	MsgBox, u clipproject  zie ik niet	open het eerst zelf
+	MsgBox, excelserienummers ziet clipproject    niet	open het eerst zelf
 ExitApp
 } 
 
 
- MsgBox, parameters oontvangen  %0%
-  MsgBox, 1e parameters is  %1%
+ ;MsgBox, parameters oontvangen  %0%
+ ; MsgBox, 1e parameters is  %1%
   
-  ExitApp ; om niet alles te moeten doorlopen in de debugging
+ ; ExitApp ; om niet alles te moeten doorlopen in de debugging
     
 Sleep 1500,  
   
   
-ToolTip, ClipprojectImport-ahk  `n  sta je in clipproject ?  `n   script die om import duwt ,303,750
+ToolTip, ClipprojectImport-nummerahk  `n  sta je in clipproject ?  `n   excel die om import duwt ,303,750
 Sleep 500,
 
 
@@ -33,12 +33,12 @@ Send {ALT}
 Sleep 200,
 Send t
 Sleep 500,
-Send {DOWN 29} ; klein grijs serienr labels
+Send {DOWN %1%} ; %1% is de parameter die excel ons meegaf in de ahk.exe
 Sleep 500,
 Send {ENTER}
 Sleep 200,
 
-ToolTip, lutze labels ofzo `n   scherm laad voor import ,303,750
+ToolTip, excel to import `n   scherm laad voor import ,303,750
 Sleep 2000,
 Send {TAB 13} ; als we 13keer op tab duwen , is onze knop "import" aktief
 Sleep 500,
@@ -47,7 +47,7 @@ Sleep 500,
 Send {ENTER}
 Sleep 200,
 
- ToolTip, Voila `n   labels geimporteerd  ,303,750
+ ToolTip, Voila `n   excel heeft labels geimporteerd  ,303,750
 Sleep 500,
 
 
