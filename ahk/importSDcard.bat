@@ -10,7 +10,16 @@ set doelmap=%sdkardbatch%
 
 set curr_date=%date:~-4%-%date:~6,2%-%DATE:~3,2%
 mkdir C:\sdkardbatch\%curr_date%
-xcopy /s G:\DCIM\*.* C:\sdkardbatch\%curr_date%
+rem xcopy /s G:\DCIM\*.* C:\sdkardbatch\%curr_date%
+
+
+
+ pushd G:\DCIM
+   for /r %%a in (*.*) do (
+     COPY "%%a" "C:\sdkardbatch\%curr_date%"
+   )
+   popd
+
 
 rd /s G:\DCIM\
 rem copy sd card , folder met fotos to folder en deletes folder op sd
