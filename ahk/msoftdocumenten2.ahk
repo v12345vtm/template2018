@@ -11,7 +11,11 @@
 ;L:\Letdata\data\16\0142_01\D5\160142_01-D5N01_.docx
 
    
-
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
   
 	
 	InputBox, UserInputpvlocatie, msoftdocumenten2.ahk, Please paste pv maplokatie en zorg dat je in verse artikelen staat,,%Clipboard%

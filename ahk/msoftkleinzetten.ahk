@@ -1,4 +1,13 @@
-   SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
+  
+
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
+
+
+  SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
  If WinExist("AUTO - LET Automotive n.v.")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten

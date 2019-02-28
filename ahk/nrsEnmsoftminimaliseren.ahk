@@ -1,6 +1,14 @@
 SetScrollLockState, off
  ToolTip, AUTOHOTKEY start nu NRS en MSOFT,303,750
  
+ 
+ 
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
+ 
 
 	Run, "L:\Letdata\database\versie_H (Jorosoft)\NRS\VTH\LetP.accdb"
 	WinWaitActive, Acces, 

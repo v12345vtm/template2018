@@ -1,5 +1,8 @@
 {
   
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
   
   SetTitleMatchMode 2
  If WinExist("CLIP PROJECT")

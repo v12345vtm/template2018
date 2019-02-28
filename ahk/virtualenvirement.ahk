@@ -1,7 +1,17 @@
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+
+
+
 Run cmd
 
 Sleep 900
 
+
+
+  
+  
 
  SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
  If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")

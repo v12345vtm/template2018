@@ -1,6 +1,8 @@
 ToolTip, ujob.ahk job op gisteren,303,750
 	Run, "C:\Users\vth\Desktop\ujoblet.jar - Snelkoppeling.lnk"
 	
+	BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+	
 	WinWaitActive, UJob, 
 	
 	Send 1302.50

@@ -1,5 +1,13 @@
 {
 
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
+  
+  
+
 ;Artikelen (Aangevraagde artikelen)
 ;win + , (vraagteken)
 ;druk op de 3puntjes en zoek een object om in je magazijnaanvraag bij te steken

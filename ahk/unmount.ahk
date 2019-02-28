@@ -1,6 +1,19 @@
 ;shortest way in windows  = run j , alt+j en alt+j
 
+
+
+
 #SingleInstance force
+
+
+
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
+
+
 
 InputBox, UserInput, unmount,unmount a usb vb drive j typ dan j,
 if ErrorLevel

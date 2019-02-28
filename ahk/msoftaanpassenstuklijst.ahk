@@ -1,8 +1,17 @@
 
 
+
+
 ;comment AANPASSEN  = win+ S = msoft deelfases produktie; shiftF9 , 9keer tab , pijltje rechts
 
 ToolTip, aanpassenstuklijst-ahk = in Msoft artikelen,303,750
+
+
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
 
    SetTitleMatchMode 2
  If WinExist("AUTO - Artikelen")

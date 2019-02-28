@@ -1,6 +1,10 @@
  ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft Bestelaanvragen staan,303,750
  
- 
+     
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
  
  
  Sleep, 1500

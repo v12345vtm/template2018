@@ -1,5 +1,11 @@
 ;win+g
 
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
+  
+
 
 ToolTip, projecten in msoft om info voor serienrs te maken  `n   vraagt de gebruiker om prod.fiche inte geven en de pc opent de juiste excelmacro ,244,101
 Sleep, 1500
