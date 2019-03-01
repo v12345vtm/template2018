@@ -1,4 +1,4 @@
-
+;https://github.com/v12345vtm/template2018
 ;10okt2018 , control+pageup voor te scrollen in tabs en shifttab
 ;nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -5 en de y waarde -25 doen 110,130 word 105,105
 
@@ -66,7 +66,7 @@ Return
 ;vrijgeven nrs van een object door lmk 
 #y::
 {
- ToolTip, windows+Y =NRS -objectdata lijst staan en  vrijgeven rmk en 3xUP,303,750
+ ToolTip, windows+Y =NRS -objectdata lijst staan en  vrijgeven rmk en 3xUP,303,750 4xup in object
 MouseClick, Right
 Sleep 100,
 ;;we klikken 3x up
@@ -98,27 +98,20 @@ Return
 #,::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftmaNextAanvraag.ahk" ;  win+komma op 3puntjes klikken in mag.aanvraag
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
-
-
+#z::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftpartlisttonen.ahk" ; parlist tonen
 Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapped naar windows+d
 Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk 
-
-
 #f1::Run, "C:\Users\vth\Desktop\template2018\macros\procedurewizard.lnk"
 #f2::Run, "C:\FirefoxPortable\FirefoxPortable.exe"
 #f3::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftopstarten.ahk"
 #f4::Run, "C:\Users\vth\Desktop\template2018\ahk\nrsopstarten.ahk"
 #f5::Run, "C:\Users\vth\Desktop\template2018\ahk\tooltipmouspost.ahk"    ; debug tool soort spy voor mousepositie
-
 #f7::Run, "C:\Program Files (x86)\Microsoft Office\Office16\excel.exe"
 #f8::Run C:\Tools\Notepad++\notepad++.exe
 #f9::Run C:\WINDOWS\system32\mspaint.exe
 #f10::Run calc.exe
 #f11::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-gisteren.ahk"
 #f12::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-inputvandaag.ahk"
-
-
-
 ^f5::Run C:\MySandbox ; virtuele omvirement in verkenner  ;control+f5
 ^f6::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirement.ahk"
 ^f7::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementpostscan.ahk"
@@ -126,15 +119,11 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 ^f9::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementMAKE.ahk"
 ^f10::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementFINAL.ahk"
 ^f11::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementUSB.ahk"
-
 #Numpad0::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftdocumenten2.ahk" ; steek een pv in documenten van msoft ,sta in artikelen
-
 #Numpad1::Run, "C:\Users\vth\Desktop\template2018\ahk\nrsobjectdatamaploknrklembord.ahk" ; sta in nrs in objectdate op de lijn van u PV
 #Numpad2::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportHfpriGewoon.ahk" ; hfpri 20x7
 #Numpad3::Run "C:\Users\vth\Desktop\template2018\ahk\unmount.ahk"        ; unmount usbstick
 #Numpad4::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportComplabel.ahk" ; 
-
-
 #j::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwd5.ahk  ;(toetsenbordlabel = nieuwPV) uitleg = nieuw pv  D5 docx-object in  nrs 
 #r::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwlabel.ahk  ; uitleg = nieuw label-object  L1 in  nrs 
 #Numpad5::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportDraadlabel.ahk" ;   label importeren
@@ -150,9 +139,7 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #Numlock::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportGrijsKZBusb.ahk" ;
 #Insert::Run C:\Users\vth\Desktop\template2018\macros\bestekgenerator.xlsm
 #Home::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsm
-
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
-
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
 #End::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
 #Delete::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
@@ -208,38 +195,6 @@ Return
 
 
 
-;comment = msoft deelfases produktie =partlist oproepen ; ; shiftF9 , 9keer tab , 2keer pijltje rechts , 
-#z::
-{Send, +{F9}  ^{PgUp} +{Tab 3}
-Sleep 1000,
-
-If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
-{	WinActivate
-Sleep 200,
-;MouseMove, 640, 210
-Send , {Enter}
-
-;nu hebben we nu zicht op de partlijst tabel van msoft
-;nu willen we de tabel in klermbord
-
-;Detail Materiaalkosten , hier gaan we een 3e window binnen
-	If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
-		{	WinActivate
-			Sleep 200,			
-			MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
-			MouseClick, right ; menuopvragen
-			Send, {Down 6} ;6keer pijltje omlaag
-			Send, {Enter} ; druk op enter
-	;voila stuklijst in klembord!!
-			}
-
-}
-else
-{
-	 MsgBox, geen partlijsttab he!
-	 }
-Return
-}
 
 
 
