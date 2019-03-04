@@ -2,7 +2,8 @@
 ; win + num2
 {
 
-
+   BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 500,
  
 ;nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -5 en de y waarde -25 doen 110,130 word 105,105
 Sleep 300,

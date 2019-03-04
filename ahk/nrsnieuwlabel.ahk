@@ -1,6 +1,10 @@
 
 ;windows r
 {
+
+   BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 500,
+
 MouseClick, Right
 Sleep 100,
 Send {Down 1}

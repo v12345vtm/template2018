@@ -2,7 +2,10 @@
 
 ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES),303,750
 
-
+    
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 1500,
+  
 
 ; cert KB180273PROD – Activiteit : Algemeen.
 ;Klaarzetbonnen worden geboekt op een verzamel-tiknummer, afhankelijk van het soort klant-Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB18 – activiteit = algemeen.
@@ -14,7 +17,7 @@ ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES),3
 
 
 
-InputBox, UserInput, ujob-inputvandaag, Please enter a job number.OPL18 ADM18 ALG18 (herstellingen op RGO = PROTEC en eindcontrole = PROTES)  en  cert KB180273PROD  met Activiteit : Algemeen -- Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB18 :activiteit = algemeen,
+InputBox, UserInput, ujob-inputvandaag, Please enter a job number.OPL19 ADM19 ALG19 (herstellingen op RGO = PROTEC en eindcontrole = PROTES)  en  cert KB180273PROD  met Activiteit : Algemeen -- Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB19 :activiteit = algemeen,
 if ErrorLevel
 {
     MsgBox, CANCEL was pressed.

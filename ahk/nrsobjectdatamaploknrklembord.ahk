@@ -1,26 +1,17 @@
 {
-  
-ToolTip, objectdatamaploknrklembordahk = we wilenn de maplokatie vd file in klembord  `n   sta op het object waarvan je de maplokatie van wil hebben ,303,750
-Sleep 500,
-
-	InputBox, UserInputkb, sta je op de regel van je object data ?, cancel om te annuleren ,,druk op ok om verder te gaan ,letop muispos zal veranderen
-if ErrorLevel
-{
-    MsgBox, CANCEL was pressed.
-    exitapp
-}
-else
-{
-   ; MsgBox, You entered "%UserInputkb%"	 
-  }
-
-
-
-
+ 
+ WinGetTitle, Title, A ; steek de programmanaam is var %Title%
+ If (title = "LET")
+{	
+;WinActivate  ; enkel alwe in LET ( nrs staan) mogen we op knoppen drukken 
+    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  Sleep 100,
+ ToolTip, sta je mooi op je lijntje OBJECT DETAIL =   sta niet in object-data anders ist nieuwe revisie verdomme `n   esc om te anulleren ,303,750
+Sleep 900,
 
 MouseClick, Right
 Sleep 100,
-Send {Down 2}
+Send {Down 2} ; we gaan detail selecteren
 Send {Enter}
 
 ;wacht tot venster open is en ga op de knop selecteer staan
@@ -44,7 +35,14 @@ MouseClick, Left
 Sleep 300,
 
 
+}
 
+else
+	
+	{
+	  MsgBox, geen nrs! maar:%Title%
+		
+	}
 
 
 ;;noodstop
