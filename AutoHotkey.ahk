@@ -53,32 +53,11 @@ Return
 ;}
 
 
-
 ;(toetsenbordlabel = geen) uitleg = extra klembordgeheugen
 #b::
 {Send,  AL{Space}
 Return
 }
-
-
-
-
-;vrijgeven nrs van een object door lmk 
-#y::
-{
- ToolTip, windows+Y =NRS -objectdata lijst staan en  vrijgeven rmk en 3xUP,303,750 4xup in object
-MouseClick, Right
-Sleep 100,
-;;we klikken 3x up
-Send, {Up 3}
-Sleep 400,
-Send, {Enter}
-Sleep 600,
-ToolTip
-Return
-}
-
-
 
 #e::Run C:\
 #f::Run C:\sdkardbatch
@@ -99,6 +78,7 @@ Return
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
 #z::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftpartlisttonen.ahk" ; parlist tonen
+#y::Run, "C:\Users\vth\Desktop\template2018\ahk\nrs-LijnVrijgeven.ahk" ; nrs vrijgeven lijn objectdata
 Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapped naar windows+d
 Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk 
 #f1::Run, "C:\Users\vth\Desktop\template2018\macros\procedurewizard.lnk"
