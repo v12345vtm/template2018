@@ -4,24 +4,16 @@ ToolTip, mail-ahk = mail openen,303,750
  ; Sleep 200,
 
 SetTitleMatchMode, 2
-If WinExist("Outlook")
-		{	
-		WinActivate
-;MsgBox ja
-			}
-			
-			
-			else
-			
-			{
-			;MsgBox nee
-			Run, "C:\Program Files (x86)\Microsoft Office\Office16\outlook.exe"
-Sleep, 500
 
 
-			}
+Loop, 8
+{
+    WinClose, ahk_class CabinetWClass  ;  closes any explorer window
+   ;MsgBox, Iteration number is %A_Index%.  ; A_Index will be 1, 2, then 3
+    Sleep, 100
+}
 
-
+  
 
 	
 

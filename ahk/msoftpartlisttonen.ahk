@@ -2,12 +2,12 @@
  
      
    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 500,
+  Sleep 100,
   
 
 
 Send, +{F9}  ^{PgUp} +{Tab 3}
-Sleep 1000,
+Sleep 1300,
 
 If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
 {	WinActivate
@@ -21,14 +21,14 @@ Send , {Enter}
 ;Detail Materiaalkosten , hier gaan we een 3e window binnen
 	If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
 		{	WinActivate
-			Sleep 200,			
+			Sleep 300,			
 			MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
 			MouseClick, right ; menuopvragen
 			Send, {Down 6} ;6keer pijltje omlaag
 			Send, {Enter} ; druk op enter
 	;voila stuklijst in klembord!!
 	ToolTip, stuklijst zit ook in klembord,303,750  ; 
-	Sleep 600,
+	Sleep 300,
 			}
 
 }

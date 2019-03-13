@@ -30,7 +30,7 @@
 	Send, {Up 10} ; gans  boven gaan staan zeker voldoende up doen ...
 	Send, {Down 7} ; projrct is nu 7x down
 	Send {Enter}
-	Sleep 1500 ; wachten to projecten op u scherm is
+	Sleep 2000 ; wachten to projecten op u scherm is
 	
 	
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

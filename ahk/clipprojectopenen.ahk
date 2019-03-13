@@ -3,7 +3,7 @@
 
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 100, ;1500
   
   
 
@@ -14,7 +14,7 @@
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-	 Sleep 2000,
+	 Sleep 200,  ; 2000
 ; ExitApp ; debug
 	
 }
@@ -25,10 +25,10 @@ else
 	  
 ToolTip, clipproject openen-ahk  `n   starting  : programma CLIP PROJECT  ,303,750
 Sleep 100,
-Run C:\a\verpakking-letline.mtp ; we starten een label op , werkt perfect om zo clip project te starten ;met de pause toets labeling prog starten
+Run C:\Users\vth\Desktop\template2018\bibliotheek\verpakking-letline.mtp ; we starten een label op , werkt perfect om zo clip project te starten ;met de pause toets labeling prog starten
 Sleep 6000,
 ToolTip, clip project gestart,116,230
-Sleep 2000,
+Sleep 100, ; 2000
 
  
 	
@@ -36,7 +36,7 @@ Sleep 2000,
 ExitApp
 } 
     
-Sleep 1500, 
+Sleep 100, 
 
 
 

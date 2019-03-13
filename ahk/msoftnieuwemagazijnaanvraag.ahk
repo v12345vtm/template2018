@@ -1,8 +1,10 @@
  ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,303,750
  
-     
+    MsgBox, Bij kwijt/kapot/slecht	`n     aantal kwijt -2 en zetten : reeds ok zetten  `n  en dan je nieuwe artikels aanvragen op proj of prodfische.
+
+	
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 600,
   
   
  

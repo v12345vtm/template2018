@@ -9,7 +9,7 @@
 
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 300,
   
   
 
@@ -53,7 +53,7 @@ ToolTip, verkleining !!  `n   voila! ,303,750
 		Sleep 700
 	   WinGetPos,,, Width, Height, %WinTitle%	
     WinMove, %WinTitle%,, 1280, 570 ,620,440   ; msoft naar left1280 top570  width620  height440	
-	Sleep 1500, 
+	Sleep 0500, 
 
 }
 
