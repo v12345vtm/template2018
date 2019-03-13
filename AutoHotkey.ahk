@@ -10,20 +10,47 @@ SetScrollLockState, off
 ;MsgBox, (re)booting ahk
 
 SetTitleMatchMode, 2
-If WinExist("AutoCAD LT Alert")
-{
-	MsgBox, AutoCAD LT Alert is open	
-	;WinActivate, Kladblok
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+#Persistent
+SetTimer, SendHotkey, 1000
+return
+
+
+SendHotkey:
+  If WinExist("AutoCAD LT Alert")
+       {
+
+WinActivate
 Send, {Enter}
-Sleep 600,
-	
+;MsgBox, AutoCAD LT Alert is open
+
 }
-else
-{
-	;MsgBox, AutoCAD LT Alert is niet ant laded met read only file 	
- ;ToolTip, AutoCAD LT Alert is niet ant laded met read only file,303,750
-	;Return
-}
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+
 
 
 
@@ -74,7 +101,7 @@ Return
 #t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2019.xlsm ;C:\aa\msoft2serienrs5.xlsm
 ; #l::Run T:\voor vincent  ; werkt niet windows+L = logoff !
 #^::Run, "C:\Users\vth\Desktop\template2018\ahk\msoft1elijntabelcopieren.ahk" ; voor projecten en kzb te maken
-#,::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftmaNextAanvraag.ahk" ;  win+komma op 3puntjes klikken in mag.aanvraag
+#,::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftmaKiesitemuitDB.ahk" ;  msoftmaNextAanvraag  win+komma op 3puntjes klikken in mag.aanvraag
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
 #z::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftpartlisttonen.ahk" ; parlist tonen
