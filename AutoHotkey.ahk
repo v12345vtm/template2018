@@ -6,54 +6,21 @@ SetScrollLockState, off
 #KeyHistory 500  ; Store up to 500 events.
 
 
-
-;MsgBox, (re)booting ahk
-
 SetTitleMatchMode, 2
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
 #Persistent
-SetTimer, SendHotkey, 1000
+SetTimer, SendHotkey, 300
 return
 
 
 SendHotkey:
   If WinExist("AutoCAD LT Alert")
        {
-
 WinActivate
 Send, {Enter}
 ;MsgBox, AutoCAD LT Alert is open
-
 }
 return
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #-::
@@ -68,7 +35,7 @@ Return
  
 
 #q::
-{Send, ongeisoleeerde kabelschoenen in de banaan
+{Send, 0127-04{Enter}
 Return
 }
 
@@ -82,7 +49,7 @@ Return
 
 ;(toetsenbordlabel = geen) uitleg = extra klembordgeheugen
 #b::
-{Send,  AL{Space}
+{Send,  0125-04-r{Enter}
 Return
 }
 
@@ -150,6 +117,7 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
 #End::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
 #Delete::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
+#Space::Run, "C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk"
 
 
 
@@ -200,19 +168,4 @@ ToolTip  ; wissen oude tooltips
 Return
 }
 
-
-
-
-
-
-;knoppen in combinatie met control + alt + n
-;^!n::
-
-
-
-
-
-
-
-;return ;; weet niet of dize belangrijk is
 
