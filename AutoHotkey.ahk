@@ -8,21 +8,15 @@ SetScrollLockState, off
 
 SetTitleMatchMode, 2
 #Persistent
-SetTimer, SendHotkey, 300
+SetTimer, SendHotkey, 70
 return
 
 
 ;;;;FUNCTIES :
 SendHotkey:
 WinGetTitle, Title, A ; steek de programmanaam is var %Title%
-CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-
-
 WinGetClass, class, A
-;MsgBox, The active window's class is "%class%".
- 
-
-
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
  
   If WinExist("AutoCAD LT Alert")
        {
@@ -30,7 +24,26 @@ WinGetClass, class, A
 	Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
 	}
 
+
+  If WinExist("ahk_class #32770") and (title = "Jorosoft 1024")
+       { ; als je nrs wil verlaten vraagt hij of je het zeker weet , ja want ik drukte op het stopbord ! hoeveel zekerder moet ik zijn?
+	WinActivate
+	Send, {Left}{Enter}    ;
+	}
+;;;;;;;;;;;;;;;;;;;;;informatie in de ahk statusbar
  
+
+
+If ( class  = "rctrl_renwnd32")
+	{ ; mail class
+	infovariabele := "mailke?"
+	ToolTip, %infovariabele% , 170, 1000 , 20
+	}
+
+
+else 
+
+
 
 If ( class  = "ProMainWin")
 	{ ; msoft met zijn vele windows	is heeft 1klasse gemeenschappelijk v progress : ahk_class ProMainWin
@@ -47,7 +60,8 @@ else If (title = "LET")
 
 else
 {
-ToolTip, ahk runs, 170, 1000 , 20
+	infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home // "
+	ToolTip, %infovariabele% , 170, 1000 , 20
 }
 
 
