@@ -1,5 +1,8 @@
 SetScrollLockState, off
- ToolTip, AUTOHOTKEY start nu NRS en MSOFT,303,750
+
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+ 
+ ToolTip, AUTOHOTKEY start nu NRS en MSOFT,170 , 950
  
  
  

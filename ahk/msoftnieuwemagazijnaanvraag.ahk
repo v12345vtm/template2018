@@ -1,11 +1,11 @@
- ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,303,750
+ ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 , 950
  
     MsgBox, Bij kwijt/kapot/slecht	`n     aantal kwijt -2 en zetten : reeds ok zetten  `n  en dan je nieuwe artikels aanvragen op proj of prodfische.
 
 	
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 600,
-  
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
  
  
@@ -17,7 +17,7 @@
  If WinExist("AUTO - Magazijnaanvragen")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma AUTO - Magazijnaanvragen is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma AUTO - Magazijnaanvragen is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 	Sleep 500,  
 ;ExitApp ; debug
@@ -36,7 +36,7 @@ Sleep 1500,
 
 ;ga in magazjn aanvraag staan en dan maken we nieuw order via ahk
  
- ToolTip, nieuwe magazijnaanvraag script,303,750
+ ToolTip, nieuwe magazijnaanvraag script,170 , 950
 SetScrollLockState, off
 Send, {Ins} 
 Sleep 600,
@@ -89,7 +89,7 @@ Send, {Tab}
 
 
 
-ToolTip, Voila bestel maar,303,750  ; 
+ToolTip, Voila bestel maar,170 , 950  ; 
 Sleep 4000,
  
 

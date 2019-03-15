@@ -1,4 +1,6 @@
- 
+  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+  
+  
  ToolTip, TESTTEMPLATE,400,800
 
 

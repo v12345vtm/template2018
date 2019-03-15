@@ -1,4 +1,7 @@
-ToolTip, ujob.ahk job op gisteren,303,750
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+
+
+ToolTip, ujob.ahk job op gisteren,170,950
 	Run, "C:\Users\vth\Desktop\ujoblet.jar - Snelkoppeling.lnk"
 	
 	BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
@@ -28,7 +31,7 @@ Sleep, 300
 MouseClick, Left
 Sleep, 300
 
-ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en  eindcontrole = PROTES),303,750
+ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en  eindcontrole = PROTES),170,950
 Sleep, 3000
 
 

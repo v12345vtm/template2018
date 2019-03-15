@@ -10,7 +10,7 @@
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 500,
-  
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
    SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
@@ -53,7 +53,7 @@ ExitApp ; debug
 else
 {
 	;MsgBox, u venster:  AUTO - LET Automotive n.v  zie ik niet !! ahk zal openene en inloggen voor u
-ToolTip, INLOGGEN en OPSTARTEN MSOFT,303,750
+ToolTip, INLOGGEN en OPSTARTEN MSOFT,170 , 950
 Run, "C:\Users\Public\Desktop\M-Soft 11.7 (ERP01).lnk"
 WinWait, Welkom bij L.E.T. NV - MSP, 
 WinWaitActive, Welkom bij L.E.T. NV - MSP, 
@@ -73,7 +73,7 @@ Send, {Down 5}{Tab 1}{Down 2} ; meest gebruikte en dan selecteren
 Sleep 1500, ;2e loading msoft niet inkorten
 If WinExist("AUTO - LET Automotive n.v.")
 {
-ToolTip, verkleining msoft hoofdprog !!  `n   voila! ,303,750
+ToolTip, verkleining msoft hoofdprog !!  `n   voila! ,170 , 950
 
 			WinActivate  ; venster aktief  ;AUTO - LET Automotive n.v; zetten die we net gezocht en gevonden hebben
 		

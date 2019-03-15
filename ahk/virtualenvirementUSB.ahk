@@ -10,8 +10,8 @@
 
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
-  
+  Sleep  500,
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
 
@@ -19,7 +19,7 @@
  If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")
 {
 	;MsgBox, u venster is open	  en ik zal het vooraan zetten
-	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170 , 950
 	WinActivate  ; venster aktief  ; zetten die we net gezocht en gevonden hebben
 	Sleep 500,  
 ;ExitApp ; debug

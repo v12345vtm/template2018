@@ -1,7 +1,8 @@
-ToolTip, mail-ahk = mail openen,303,750
+ToolTip, verkenners sluiten 8stuks ,303,750
 
   ; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
  ; Sleep 200,
+  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
 SetTitleMatchMode, 2
 
@@ -24,7 +25,7 @@ Loop, 8
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-MsgBox emergencystop mail-ahk
+MsgBox emergencystop verkenners sluiten
 ExitApp
 return
 }

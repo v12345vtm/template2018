@@ -1,8 +1,9 @@
- ToolTip, MSOFTpartlistTonen-ahk = in Msoft artikelen staan,303,750
+ ToolTip, MSOFTpartlistTonen-ahk = in Msoft artikelen staan,170 , 950
  
      
    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 100,
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
 
@@ -27,14 +28,14 @@ Send , {Enter}
 			Send, {Down 6} ;6keer pijltje omlaag
 			Send, {Enter} ; druk op enter
 	;voila stuklijst in klembord!!
-	ToolTip, stuklijst zit ook in klembord,303,750  ; 
+	ToolTip, stuklijst zit ook in klembord,170 , 950  ; 
 	Sleep 300,
 			}
 
 }
 else
 {
-	 MsgBox, geen partlijsttab he!
+	 MsgBox, je staat niet in artikelen!
 	 }
 
 

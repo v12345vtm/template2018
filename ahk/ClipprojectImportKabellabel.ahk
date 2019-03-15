@@ -2,13 +2,13 @@
   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 1500,
-  
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
   SetTitleMatchMode 2
  If WinExist("CLIP PROJECT")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ; ExitApp ; debug
 	
@@ -22,7 +22,7 @@ ExitApp
 Sleep 1500, 
 
 
-ToolTip, ClipprojectImport-ahk   `n   script die om import duwt ,303,750
+ToolTip, ClipprojectImport-ahk   `n   script die om import duwt ,170 , 950
 Sleep 500,
 
 
@@ -35,7 +35,7 @@ Sleep 500,
 Send {ENTER}
 Sleep 200,
 
-ToolTip, kabel labels ofzo `n   scherm laad voor import ,303,750
+ToolTip, kabel labels ofzo `n   scherm laad voor import ,170 , 950
 Sleep 2000,
 Send {TAB 13} ; als we 13keer op tab duwen , is onze knop aktief
 Sleep 500,
@@ -44,7 +44,7 @@ Sleep 500,
 Send {ENTER}
 Sleep 200,
 
- ToolTip, Voila `n   labels geimporteerd  ,303,750
+ ToolTip, Voila `n   labels geimporteerd  ,170 , 950
 Sleep 500,
 
 

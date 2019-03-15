@@ -1,6 +1,9 @@
 
 ;windows J
 
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+ 
+ 
 ToolTip, windows plus num3 - D4 CE cert- sta in OBJECT DATA,515,800
 ;Sleep 500,
 {

@@ -3,7 +3,7 @@
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 1500,
-  
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
 
@@ -16,7 +16,7 @@ Sleep, 1500
  If WinExist("AUTO - Projecten")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma AUTO - Projecten is open `n  	 en ik zal het vooraan zetten   `n   voila! MAAR hopelijk heb je een maagdelik nieuwe lijst en stond er niks ingevuld ,303,750
+	ToolTip, u programma AUTO - Projecten is open `n  	 en ik zal het vooraan zetten   `n   voila! MAAR hopelijk heb je een maagdelik nieuwe lijst en stond er niks ingevuld ,170 , 950
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ;ExitApp ; debug
 	

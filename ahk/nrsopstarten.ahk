@@ -1,4 +1,8 @@
-	ToolTip, INLOGGEN OP NRS,303,750
+	
+	
+	 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+	 
+	ToolTip, INLOGGEN OP NRS,170 , 950
 	
 	   BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 500,

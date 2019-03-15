@@ -1,5 +1,5 @@
- 
- ToolTip, AUTOHOTKEY start nu NRS en MSOFT,400,800
+  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+ ToolTip, AUTOHOTKEY start nu NRS en MSOFT,170,950
 
 Sleep 3000
  

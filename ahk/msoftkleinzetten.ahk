@@ -3,7 +3,7 @@
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 1500,
-  
+   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
 
@@ -11,7 +11,7 @@
  If WinExist("AUTO - LET Automotive n.v.")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma Artikelen (AUTO - LET Automotive n.v) is open `n  	 en ik zal het vooraan zetten   `n   en klein in de rechterhoek! ,303,750
+	ToolTip, u programma Artikelen (AUTO - LET Automotive n.v) is open `n  	 en ik zal het vooraan zetten   `n   en klein in de rechterhoek! ,170 , 950
 	WinActivate  ; venster aktief  ;AUTO - LET Automotive n.v; zetten die we net gezocht en gevonden hebben
 	Sleep 700
 	   WinGetPos,,, Width, Height, %WinTitle%	

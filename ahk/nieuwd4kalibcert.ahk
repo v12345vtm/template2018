@@ -1,4 +1,6 @@
 
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+
 ;windows +4
 {
 

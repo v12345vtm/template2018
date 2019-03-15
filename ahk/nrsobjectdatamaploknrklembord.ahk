@@ -1,12 +1,13 @@
 {
- 
+  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+  
  WinGetTitle, Title, A ; steek de programmanaam is var %Title%
  If (title = "LET")
 {	
 ;WinActivate  ; enkel alwe in LET ( nrs staan) mogen we op knoppen drukken 
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 100,
- ToolTip, sta je mooi op je lijntje OBJECT DETAIL =   sta niet in object-data anders ist nieuwe revisie verdomme `n   esc om te anulleren ,303,750
+ ToolTip, sta je mooi op je lijntje OBJECT DETAIL =   sta niet in object-data anders ist nieuwe revisie verdomme `n   esc om te anulleren ,170 , 950
 Sleep 900,
 
 MouseClick, Right

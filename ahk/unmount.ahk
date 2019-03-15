@@ -1,5 +1,5 @@
 ;shortest way in windows  = run j , alt+j en alt+j
-
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
 
 

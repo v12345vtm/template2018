@@ -1,6 +1,7 @@
 {
 
-
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+ 
 InputBox, LETREF, wat is je letref?,
 if ErrorLevel
 {
@@ -47,7 +48,7 @@ else
  If WinExist("Artikelen (Aangevraagde artikelen)")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma Artikelen (Aangevraagde artikelen) is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma Artikelen (Aangevraagde artikelen) is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ;ExitApp ; debug
 	
@@ -63,7 +64,7 @@ Sleep 100,
 
 
   
-ToolTip, maNextAanvraag-ahk `n op de 3puntjes klikken script,303,750
+ToolTip, maNextAanvraag-ahk `n op de 3puntjes klikken script,170 , 950
 MouseMove, 102,102 ; mouspos relatief in actief window
 Sleep 200,
 MouseClick, left

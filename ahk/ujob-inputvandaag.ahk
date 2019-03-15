@@ -1,6 +1,8 @@
 ;rgo170020h nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -0 en de y waarde -25 doen 110,130 word 105,105
-
-ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES),303,750
+ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+ 
+ 
+ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES), 170 ,950
 
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
@@ -84,7 +86,7 @@ Send vith123
  If WinExist("UJob 1.2.0")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma "UJob 1.2.0" is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma "UJob 1.2.0" is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ; ExitApp ; debug
 	
@@ -150,7 +152,7 @@ WinWaitActive, UJob,  ; invulform
  If WinExist("UJob")
 {
 	;MsgBox, u venster invulform is open	, en ik zal het vooraan zetten
-	ToolTip, u programma "UJob" invulform is open `n  	 en ik zal het vooraan zetten   `n   voila! ,303,750
+	ToolTip, u programma "UJob" invulform is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170 , 950
 	; WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ; ExitApp ; debug
 	
@@ -167,14 +169,14 @@ ExitApp
 	;Sleep, 4000
 Send {TAB}
 Sleep, 300
-		ToolTip, 1tab ,303,750
+		ToolTip, 1tab , 170 ,950
 	Sleep, 3000
 Send {TAB}
-	ToolTip, 2tab ,303,750
+	ToolTip, 2tab , 170 ,950
 	Sleep, 300
 	
 	Send {TAB}
-	ToolTip, 3etab = uren-ingeefveld ,303,750
+	ToolTip, 3etab = uren-ingeefveld , 170 ,950
 	Sleep, 300
 
 
