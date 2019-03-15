@@ -12,14 +12,48 @@ SetTimer, SendHotkey, 300
 return
 
 
+;;;;FUNCTIES :
 SendHotkey:
+WinGetTitle, Title, A ; steek de programmanaam is var %Title%
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+
+
+WinGetClass, class, A
+;MsgBox, The active window's class is "%class%".
+ 
+
+
+ 
   If WinExist("AutoCAD LT Alert")
        {
-WinActivate
-Send, {Enter}
-;MsgBox, AutoCAD LT Alert is open
+	WinActivate
+	Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
+	}
+
+ 
+
+If ( class  = "ProMainWin")
+	{ ; msoft met zijn vele windows	is heeft 1klasse gemeenschappelijk v progress : ahk_class ProMainWin
+	infovariabele := "aanpassenstuklijst=s // mag.aanvr=n  // partlisttonen=z  //  stuklijstnieuwItemtoevoegen=spatie"
+	ToolTip, %infovariabele% , 170, 1000 , 20
+	}
+
+
+else If (title = "LET")
+	{	
+	infovariabele := "objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j"
+	ToolTip, %infovariabele% , 170, 1000 , 20
+	}
+
+else
+{
+ToolTip, ahk runs, 170, 1000 , 20
 }
-return
+
+
+
+
+return ; return uit functie SendHotkey die we elke 300ms uitvoeren 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
