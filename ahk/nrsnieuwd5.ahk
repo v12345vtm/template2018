@@ -17,14 +17,22 @@ Sleep 100,
 ;ingeven parameters
 Send d
 Send {Tab}
+Sleep 500,
 
 Send d5
 Send {Tab}
+Sleep 500,
 
 Send n
 Send {Tab}
+Sleep 500,
 
 Send Productie voorschrift
+Sleep 500,
+
+
+
+;vanaf hier moet je nog zelf op knop duwen en bestandstype ingeven
 
 
 

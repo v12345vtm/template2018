@@ -2,7 +2,7 @@
 
   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
   
@@ -13,15 +13,8 @@
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-; ExitApp ; debug
-	
-}
-else
-{
-	MsgBox, u venster  zie ik niet	open het eerst zelf
-ExitApp
-} 
-    
+
+
 Sleep 1500,  
   
   
@@ -66,6 +59,61 @@ Sleep 500,
 
 ToolTip Zit de juiste rol in de printer ?,255,430 ; wissen oude tooltips
 Sleep 2000,
+
+
+
+
+
+
+
+
+
+
+
+
+	
+}
+else
+{
+	MsgBox, u venster  zie ik niet	open het eerst zelf
+ExitApp
+} 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop

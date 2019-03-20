@@ -1,22 +1,11 @@
 ;rgo170020h nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -0 en de y waarde -25 doen 110,130 word 105,105
  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
- 
- 
-ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES), 170 ,950
-
-    
+ ToolTip, UJOB VANDAAG (herstellingen op RGO = PROTEC en eindcontrole = PROTES), 170 ,950
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 500,
   
-
 ; cert KB180273PROD – Activiteit : Algemeen.
 ;Klaarzetbonnen worden geboekt op een verzamel-tiknummer, afhankelijk van het soort klant-Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB18 – activiteit = algemeen.
-
- 
-
-
-
-
 
 
 InputBox, UserInput, ujob-inputvandaag, Please enter a job number.OPL19 ADM19 ALG19 (herstellingen op RGO = PROTEC en eindcontrole = PROTES)  en  cert KB180273PROD  met Activiteit : Algemeen -- Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB19 :activiteit = algemeen,
@@ -49,26 +38,8 @@ else
 
 
 
-
 	Run, "C:\Users\vth\Desktop\ujoblet.jar - Snelkoppeling.lnk"
-	
-	
-	
-	
-
-	
-	
-	
-	
-	WinWaitActive, UJob,  ; het loginvenstertje noemt UJob
-	
-	
-
-	
-	
-	
-	
-	
+		WinWaitActive, UJob,  ; het loginvenstertje noemt UJob	
 	Send 1302.50
 		Sleep, 300
 Send {TAB}
@@ -77,10 +48,7 @@ Send vith123
 	Sleep, 200
 	Send {Enter}
 	
-	
-	
-	WinWaitActive, UJob 1.2.0,
-	
+	WinWaitActive, UJob 1.2.0,	
 	
 		   SetTitleMatchMode 2
  If WinExist("UJob 1.2.0")

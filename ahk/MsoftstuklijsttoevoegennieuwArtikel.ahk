@@ -1,24 +1,24 @@
  ; Deelfasen (Productiegegevens - Prod. schema)
   {
-	  
+	  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+Sleep 100,
+SetTitleMatchMode 2
 	 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:  
 	
-InputBox, uservariabele, goed voor ene keer,in principe zou het beter hardcoded zijn de parameter die we willen toevoegen,
-if ErrorLevel
-{
+;InputBox, uservariabele, goed voor ene keer,in principe zou het beter hardcoded zijn de parameter die we willen toevoegen,
+;if ErrorLevel
+;{
    ; MsgBox, CANCEL was pressed.
-    exitapp
-}
-else
-{
+  ;  exitapp
+;}
+;else
+;{
   ;  MsgBox, You want to unmount USB  "%uservariabele%"	OR press esc to escape (program breaks if path is not found)
 ;MsgBox % "nu een loop van  " . StrLen(uservariabele) 
-}  
+;}  
 	  
 	  
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-Sleep 500,
-SetTitleMatchMode 2
+
  If WinExist("Deelfasen (Productiegegevens - Prod. schema)")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
@@ -49,7 +49,9 @@ MouseClick, left,  88, 50;  en dan opent AUTO - Artikelen  -  LET Automotive n.v
 
 Send {Tab}
 Send {Tab}
-Send %uservariabele%{Enter}
+
+Send  NIPP-P07,0-MS-AFGEROND{Enter}
+;Send %uservariabele%{Enter}
 Sleep 1500 ; wacht tot db het vind
 Send {Enter}
 

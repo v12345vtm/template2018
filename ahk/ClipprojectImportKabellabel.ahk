@@ -1,7 +1,7 @@
 {
   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 200,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
   SetTitleMatchMode 2
@@ -10,20 +10,15 @@
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
+	  Sleep 500,
 ; ExitApp ; debug
-	
-}
-else
-{
-	MsgBox, u venster  zie ik niet	open het eerst zelf
-ExitApp
-} 
-    
-Sleep 1500, 
+
+
+
 
 
 ToolTip, ClipprojectImport-ahk   `n   script die om import duwt ,170 , 950
-Sleep 500,
+Sleep 1800,
 
 
 Send {ALT}
@@ -38,11 +33,15 @@ Sleep 200,
 ToolTip, kabel labels ofzo `n   scherm laad voor import ,170 , 950
 Sleep 2000,
 Send {TAB 13} ; als we 13keer op tab duwen , is onze knop aktief
+;hier wachten we op de main ahk die waakt of ons import scherm er is 
 Sleep 500,
 
 
 Send {ENTER}
 Sleep 200,
+
+
+
 
  ToolTip, Voila `n   labels geimporteerd  ,170 , 950
 Sleep 500,
@@ -63,6 +62,21 @@ Sleep 500,
 
 ToolTip Zit de juiste rol in de printer ?,255,430 ; wissen oude tooltips
 Sleep 2000,
+
+
+
+
+
+
+	
+}
+else
+{
+	MsgBox, u venster  zie ik niet	open het eerst zelf
+ExitApp
+} 
+    
+
 
 
 ;;noodstop

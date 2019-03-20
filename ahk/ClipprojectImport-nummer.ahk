@@ -1,6 +1,6 @@
 {
   BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
    
    SetTitleMatchMode 2
@@ -9,25 +9,9 @@
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-; ExitApp ; debug
-	
-}
-else
-{
-	MsgBox, excelserienummers ziet clipproject    niet	open het eerst zelf
-ExitApp
-} 
-
-
- ;MsgBox, parameters oontvangen  %0%
- ; MsgBox, 1e parameters is  %1%
+ 
   
- ; ExitApp ; om niet alles te moeten doorlopen in de debugging
-    
-Sleep 1500,  
-  
-  
-ToolTip, ClipprojectImport-nummerahk  `n  sta je in clipproject ?  `n   excel die om import duwt ,170 , 950
+ToolTip, ClipprojectImport-nummer-ahk-EXE  `n  sta je in clipproject ?  `n   excel die om import duwt ,170 , 950
 Sleep 500,
 
 
@@ -53,6 +37,11 @@ Sleep 200,
 Sleep 500,
 
 
+
+
+
+
+
 ;om direct te kunnen printen , proberen we een label eens aan te klikken en slepen we de muis ingedrukt weg
 	MouseClick, left,  850,  150
 	Sleep, 100	
@@ -71,11 +60,45 @@ Sleep 2000,
 
 
 
+
+
+
+
+
+	
+}
+else
+{
+	MsgBox, excelserienummers ziet clipproject    niet	open het eerst zelf
+ExitApp
+} 
+
+
+ ;MsgBox, parameters oontvangen  %0%
+ ; MsgBox, 1e parameters is  %1%
+  
+ ; ExitApp ; om niet alles te moeten doorlopen in de debugging
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-MsgBox emergencystop ClipprojectImport-ahk
+MsgBox emergencystop ClipprojectImport-nummer-ahk
 ExitApp
 return
 }

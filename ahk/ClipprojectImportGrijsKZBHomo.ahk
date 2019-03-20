@@ -3,7 +3,7 @@
 
   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
    SetTitleMatchMode 2
@@ -12,15 +12,12 @@
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-; ExitApp ; debug
-	
-}
-else
-{
-	MsgBox, u venster  zie ik niet	open het eerst zelf
-ExitApp
-} 
-    
+	 
+	 
+	 
+	 
+	 
+	    
 Sleep 1500,  
   
   
@@ -49,6 +46,9 @@ Sleep 200,
  ToolTip, Voila `n   labels geimporteerd  en print ze dan straks maar af als de grijze rol inzit ,170 , 950
 Sleep 500,
 
+;om direct te kunnen printen , proberen we een label eens aan te klikken en slepen we de muis ingedrukt weg
+	MouseClick, left,  900,  150
+
 
 ;VROEGTIJDIG AHK VERLATEN , we printen de labels wel manueel voor de grootzilver kzb
 
@@ -64,6 +64,21 @@ ExitApp ;
 
 
 
+	 
+	 
+	 
+	 
+	 
+	 
+; ExitApp ; debug
+	
+}
+else
+{
+	MsgBox, u venster  zie ik niet	open het eerst zelf
+ExitApp
+} 
+ 
 
 
 
@@ -90,6 +105,29 @@ Sleep 500,
 
 ToolTip Zit de juiste rol in de printer ?,255,430 ; wissen oude tooltips
 Sleep 2000,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop

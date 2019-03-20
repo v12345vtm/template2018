@@ -123,7 +123,7 @@ else
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-MsgBox emergencystop projectenmsoft
+MsgBox emergencystop projecten openen v msoft
 ExitApp
 return
 }

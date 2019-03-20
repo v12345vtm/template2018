@@ -7,6 +7,8 @@
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
      SetTitleMatchMode 2
+	 
+	 
  If WinExist("CLIP PROJECT")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
@@ -53,7 +55,10 @@ Sleep 500,
 
 ;VROEGTIJDIG AHK VERLATEN , we printen de labels wel manueel voor de grootzilver kzb
 
-Sleep 1500,
+Sleep 300,
+
+;om direct te kunnen printen , proberen we een label eens aan te klikken en slepen we de muis ingedrukt weg
+	MouseClick, left,  900,  150
 ExitApp ; 
 ;VOLGENDE STAPPEN DOEN WE NIET MEER
 

@@ -71,6 +71,31 @@ Sleep 2000,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:

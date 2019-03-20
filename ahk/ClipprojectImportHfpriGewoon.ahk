@@ -67,6 +67,37 @@ Sleep 500,
 ToolTip Zit de juiste rol in de printer ?,255,430 ; wissen oude tooltips
 Sleep 4000,
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
