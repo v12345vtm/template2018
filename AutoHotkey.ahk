@@ -4,40 +4,76 @@
 
 SetScrollLockState, off
 #KeyHistory 500  ; Store up to 500 events.
-
+ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openstaat , terwijl we het enkel direkt willen opmerken direct als het opkomt, 
+ xpositie := 1050 ; xpos vd tooltip linksrechtspos
+ ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
 SetTitleMatchMode, 2
 #Persistent
 SetTimer, SendHotkey, 70
+SetTimer, Autoresetvt, 60000 ;parameter ContinueSearch is hier gebruikt als bool en op true gezet
 return
 
 
 ;;;;FUNCTIES :
+Autoresetvt:
+ContinueSearch := true
+Return
+
+
+
 SendHotkey:
 WinGetTitle, Title, A ; steek de programmanaam is var %Title%
 WinGetClass, class, A
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+
+
+
+
+
+  If WinExist("ahk_class WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1") and (title = "CPM-gegevensoverdracht") and ContinueSearch 
+       { ; als je window van clipproject de knop import heeeft staan , zet de muis er al maar op
+	WinActivate
+	ContinueSearch := false		
+	;Send, {Tab 13}    ;
+	}
+
+
  
-  If WinExist("AutoCAD LT Alert")
+  If WinExist("AutoCAD LT Alert") and ContinueSearch 
        {
 	WinActivate
 	Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
 	}
 
 
-  If WinExist("ahk_class #32770") and (title = "Jorosoft 1024")
+  If WinExist("ahk_class #32770") and (title = "Jorosoft 1024") and ContinueSearch 
        { ; als je nrs wil verlaten vraagt hij of je het zeker weet , ja want ik drukte op het stopbord ! hoeveel zekerder moet ik zijn?
-	WinActivate
+	WinActivate	
 	Send, {Left}{Enter}    ;
 	}
+
+
+
+  If WinExist("ahk_class #32770") and (title = "Save Modified Documents") and ContinueSearch 
+       { ; OPLETTEN IN SOLIDWORKS WE MOGEN NIET OPSLAAN NOOIT 
+	WinActivate
+	Send, {Right}   ;
+	ContinueSearch := false	
+	infovariabele := " NOOIT SAVEN !!  bool =" . ContinueSearch
+	ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
+	}
+	
+
+
 ;;;;;;;;;;;;;;;;;;;;;informatie in de ahk statusbar
- 
+
 
 
 If ( class  = "rctrl_renwnd32")
 	{ ; mail class
 	infovariabele := "mailke?"
-	ToolTip, %infovariabele% , 170, 1000 , 20
+	ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}
 
 
@@ -48,20 +84,20 @@ else
 If ( class  = "ProMainWin")
 	{ ; msoft met zijn vele windows	is heeft 1klasse gemeenschappelijk v progress : ahk_class ProMainWin
 	infovariabele := "aanpassenstuklijst=s // mag.aanvr=n  // partlisttonen=z  //  stuklijstnieuwItemtoevoegen=spatie"
-	ToolTip, %infovariabele% , 170, 1000 , 20
+	ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}
 
 
 else If (title = "LET")
 	{	
 	infovariabele := "objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j"
-	ToolTip, %infovariabele% , 170, 1000 , 20
+	ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}
 
 else
 {
-	infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home // "
-	ToolTip, %infovariabele% , 170, 1000 , 20
+	infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home //  bool =" . ContinueSearch
+	ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 }
 
 
@@ -101,6 +137,10 @@ Return
 Return
 }
 
+
+ 
+ 
+
 #e::Run C:\
 #f::Run C:\sdkardbatch
 #p::Run L:\Letdata\Projects
@@ -129,7 +169,7 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #f4::Run, "C:\Users\vth\Desktop\template2018\ahk\nrsopstarten.ahk"
 #f5::Run, "C:\Users\vth\Desktop\template2018\ahk\tooltipmouspost.ahk"    ; debug tool soort spy voor mousepositie
 #f7::Run, "C:\Program Files (x86)\Microsoft Office\Office16\excel.exe"
-#f8::Run C:\Tools\Notepad++\notepad++.exe
+#f8::Run C:\Tools\Notepad++\notepad++.exe ;C:\Users\vth\Desktop\template2018\portableApps\Notepad++Portable\Notepad++Portable.exe ;
 #f9::Run C:\WINDOWS\system32\mspaint.exe
 #f10::Run calc.exe
 #f11::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-gisteren.ahk"
@@ -164,8 +204,8 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
 #End::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
-#Delete::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
-#Space::Run, "C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk"
+#Delete::Run C:\Users\vth\Desktop\template2018\ahk\verkennersSLuiten.ahk ; 8verkernners dooddoen
+#Space::Run, C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk ; in vervangen ve partlijst, aanpassen
 
 
 
