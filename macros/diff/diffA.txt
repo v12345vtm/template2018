@@ -1,27 +1,99 @@
 fileA
 Aantal!Enh!Art.groep!Artikelsymbool!Omschrijving
-2,00!ST!AFBUS!NY-D-10,5X05,0-BD15!Afstandsbus nylon D 10.5 x 5 mm buitendiameter 15
-1,00!ST!BEWKO!050248C00KOL!Kolom PLA 1700mm - 14,2Kg
-1,00!ST!DIVMA!070036_00KOL!Kabel tegengewicht PLA 1700mm L=3100mm
-1,00!ST!DIVMA!130053_00KOL!Tegengewicht PLA 14,2 Kg (Praag)
-1,00!ST!DNBOU!0912-M05X12-RVS!Binnenzeskantbout cylinderkop DIN0912  M 5x12mm A2
-2,00!ST!DNBOU!0912-M08X16-RVS!Binnenzeskantbout cylinderkop DIN0912  M 8x16mm A2
-1,00!ST!DNMOE!0985-M10RVS!Borgmoer DIN0985  M 10mm A2
-1,00!ST!DNRON!0125-05-RVS!Vlakke sluitring DIN0125 5mm A2
-2,00!ST!DNRON!0125-08-RVS!Vlakke sluitring DIN0125 8mm A2
-2,00!ST!DNSCH!0965-M06X16-RVS!Metaalschroef verz.kop kruis DIN0965 M 6x 16mm A2
-1,00!ST!DRFR!050249_00KOL!Teflon rondsel PLA
-2,00!ST!DRFR!050250_00KOL!Buttee PLA kolom
-1,00!ST!ELEM!HAND-ELESA-VB.639/80-B-M10!Handvat ELESA-VB.639/80-B-M10
-1,00!ST!HF!050132_00KOL!Leidwiel excentrisch PLA DR (Praag)
-1,00!ST!HF!050133_00KOL!Steunwiel excentrisch PLA DR (Praag)
-1,00!ST!HF!050134_00KOL!Leidwiel recht PLA DR (Praag)
-1,00!ST!HF!050154A00KOL!Glijwagen PLA DR  Rev A (Praag)
-1,00!ST!HF!050164_00KOL!Katrol PLA (Praag)
-1,00!ST!HF!150485A01KOL!Spiegel PLA-Lijnlaser LM35 (Praag)
-1,00!ST!HF!160240_01KOL!Voet PLA DR zonder wielen (Praag)
-1,00!ST!HF!160241_01KOL!Regelbaar steunstuk PLA (Praag)
+1,00!ST!BEWKO!030242A00KOL!Kolom IPC MAN FM bewerkt (pltw)
+2,00!ST!BEWKO!030245A00KOL!Houder proximity MAN FM (pltw)
+1,00!ST!BEWKO!030247_00KOL!Glijrail proximity
+1,00!ST!BEWKO!060297A00KOL!Vert. behuizing IPC MAN FM bewerkt
+1,00!ST!BEWKO!140206_00KOL!Schuif IPC MAN FM
+1,00!ST!BEWKO!140208_00KOL!Steun kabelafvoer IPC MAN FM
+0,08!M!DICHT!DPR-SR-NEOPRENE!Sponsrubberprofiel Neoprene
+1,00!ST!DIVMA!070146A00KOL!Rubber onderaan tegengewicht SAR
+2,00!ST!DIVMA!110102A00KOL!Kabel tegengewicht SAR (pltw) L=1330mm
+4,00!ST!DNBOU!0912-M03X08-RVS!Binnenzeskantbout cylinderkop DIN0912  M 3x08mm A2
+8,00!ST!DNBOU!0912-M04X06-RVS!Binnenzeskantbout cylinderkop DIN0912  M 4x06mm A2
+4,00!ST!DNBOU!0912-M04X10-RVS!Binnenzeskantbout cylinderkop DIN0912  M 4x10mm A2
+6,00!ST!DNBOU!0912-M04X12-RVS!Binnenzeskantbout cylinderkop DIN0912  M 4x12mm A2
+4,00!ST!DNBOU!0912-M04X20-RVS!Binnenzeskantbout cylinderkop DIN0912  M 4x20mm A2
+4,00!ST!DNBOU!0912-M05X10-RVS!Binnenzeskantbout cylinderkop DIN0912  M 5x10mm A2
+2,00!ST!DNBOU!0912-M05X16-RVS!Binnenzeskantbout cylinderkop DIN0912  M 5x16mm A2
+21,00!ST!DNBOU!0912-M05X25-RVS!Binnenzeskantbout cylinderkop DIN0912  M 5x25mm A2
+2,00!ST!DNBOU!0912-M06X16-RVS!Binnenzeskantbout cylinderkop DIN0912  M 6x16mm A2
+9,00!ST!DNBOU!0912-M06X20-RVS!Binnenzeskantbout cylinderkop DIN0912  M 6x20mm A2
+16,00!ST!DNBOU!0912-M06X25-RVS!Binnenzeskantbout cylinderkop DIN0912  M 6x25mm A2
+6,00!ST!DNBOU!0912-M06X35-RVS!Binnenzeskantbout cylinderkop DIN0912  M 6x35mm A2
+4,00!ST!DNBOU!0912-M08X30-RVS!Binnenzeskantbout cylinderkop DIN0912  M 8x30mm A2
+2,00!ST!DNMOE!0934-M06RVS!Zeskantmoer DIN0934  M 6mm A2
+1,00!ST!DNMOE!0934-M08RVS!Zeskantmoer DIN0934  M 8mm A2
+4,00!ST!DNMOE!0985-M03RVS!Borgmoer DIN0985  M 3mm A2
+13,00!ST!DNMOE!0985-M04RVS!Borgmoer DIN0985  M 4mm A2
+10,00!ST!DNMOE!0985-M05RVS!Borgmoer DIN0985  M 5mm A2
+2,00!ST!DNMOE!0985-M06RVS!Borgmoer DIN0985  M 6mm A2
+4,00!ST!DNRON!0125-04-RVS!Vlakke sluitring DIN0125 4mm A2
+2,00!ST!DNRON!0125-05-RVS!Vlakke sluitring DIN0125 5mm A2
+4,00!ST!DNRON!0125-06-RVS!Vlakke sluitring DIN0125 6mm A2
+1,00!ST!DNRON!0125-08-RVS!Vlakke sluitring DIN0125 8mm A2
+18,00!ST!DNRON!0127-05-RVS!Veerring DIN0127 5mm A2
+4,00!ST!DNRON!0127-06-RVS!Veerring DIN0127 6mm A2
+9,00!ST!DNRON!9021-04-RVS!Sluitring met grote diameter DIN9021 4mm A2
+4,00!ST!DNRON!9021-06-RVS!Sluitring met grote diameter DIN9021 6mm A2
+2,00!ST!DNSCH!0916-M06X20-RVS!Stelschroef binnenzesk.kraterp DIN0916 M 6x 20mm A2
+4,00!ST!DNSCH!0965-M05X10-RVS!Metaalschroef verz.kop kruis DIN0965 M 5x 10mm A2
+18,00!ST!DNSCH!0965-M06X12-RVS!Metaalschroef verz.kop kruis DIN0965 M 6x 12mm A2
+1,00!ST!DNVAR!OOGS-M8X50X10MM!Oogschroef M8X50X10mm Zn
+1,00!ST!DRFR!020144_00KOL!Hoeksteun sleepketting APS-FMB
+1,00!ST!DRFR!020145_00KOL!Kolomdeksel APS-FMB
+1,00!ST!DRFR!020146_00KOL!Driehoeksteun sleepketting
+1,00!ST!DRFR!020154A00KOL!Kabelklem APS-FMB
+1,00!ST!DRFR!020158_00KOL!Steunarm hor. schroevendraaier-kabels APS-FMB
+1,00!ST!DRFR!040200_00KOL!Steunarm vertikale schroevendraaier-kabels
+1,00!ST!DRFR!040285_00KOL!V-blok PPC Phoenix
+1,00!ST!DRFR!040316_00KOL!Kabelklem kabeltoevoer FM
+2,00!ST!DRFR!050076_00KOL!Glijas kolom
+1,00!ST!DRFR!050359_00KOL!Verstevigingsblok SAR
+1,00!ST!DRFR!050378_00DIS!Kabelhouder 1 - klein
+1,00!ST!DRFR!050379_00DIS!Kabelhouder 2 - groot
+1,00!ST!DRFR!050380_00KOL!Verbindingsstuk glijwagen sleepketting
+1,00!ST!DRFR!050381_00KOL!Plaat kabelklem sleepketting
+1,00!ST!DRFR!050382_00KOL!Kabelklem sleepketting
+1,00!ST!DRFR!060139_00KOL!Voetstuk kabelklem MAN FM PPC
+2,00!ST!DRFR!080409_00KOL!Tussenplaat kliksysteem
+2,00!ST!DRFR!120269_00KOL!Haak slot vertikale behuizing
+2,00!ST!ELEM!SCHA-40X20-ALU!Scharnier EH-5A-4G4-50
+2,00!ST!ELEM!SLOT-KNEVEL-DUBBELBAARD!Knevelslot met dubbelbaard
+2,00!ST!ELEM!SLOT-SPRINGSLOT-KUNSTSTOF!Sluiting C3-805
+1,00!ST!EP!030548C00DIS/!CANDIS kastje torque controle
+1,00!ST!HF!020274_00KOL!V-blok assy
+1,00!ST!HF!020301A00ACC!Vertikale butee set SAR
+1,00!ST!HF!020312_00KOL!Katrol TM assy
+1,00!ST!HF!020338A00KOL!Glijwagen SAR (pltw)
+1,00!ST!HF!030224A00KOL!I/O box MAN FM PPC
+1,00!ST!HF!030233_00KOL!I/O control unit
+1,00!ST!HF!030271_00KOL!Detectielattenset SAR FM
+1,00!ST!HF!060300A00KOL!Rolwagen BA MAN FM (pltw)
+1,00!ST!HF!060304A00KOL!Control/signal module MAN FM (Siemens)
+1,00!ST!HF!080005_00KOL!Tegengewicht SAR
+1,00!ST!HF!100356C00KOL!IPC Phoenix VL PPC 3000
+1,00!ST!HF!140204_00KOL!Sleepketting LVCC IPC MAN FM
+1,00!ST!HF!190018_01KOL!Dubbel handvat mechanisch (tussenplaat 28mm)
+1,00!ST!HFKAB!020037_00KOL!Kabel power + I/O
+1,00!ST!HFKAB!030053A00KOL!CAN termination HAN 120E
+1,00!ST!HFKAB!030248A00KOL!Kabel extender prox IPC MAN FM
+2,00!ST!HFKAB!030250_00KOL!Kabel prox pos U/D MAN PPC
+3,00!ST!HFKAB!030298_00KOL!Kabel prox L/R MAN FM PPC
+1,00!ST!HFKAB!040170A00KOL!Kabel CAN APS unit/CANDIS APS
+1,00!ST!HFKAB!040172_00KOL!Kabel voeding CANDIS APS FMB
+1,00!ST!HFKAB!040310A00KOL!Kabel CAN LVS PPC CANDIS
+1,00!ST!HFKAB!110216_00KOL!Kabel COM1 IPC Phoenix
+2,00!ST!HFKAB!110217_00KOL!Kabel ethernet IPC Phoenix
+1,00!ST!HFKAB!170261_01KOL!Kabel voeding PPC Phoenix VL PPC 3000
+2,00!ST!KABTO!NIPPELRUBBER9!Nippel rubber diam. 9
+0,40!ST!KAKAN!080X040MM-O!Kabelkanaal 80h x 40b mm open
+0,70!M!KAST!RIT-2590000-SZ!Kabelslang diameter =48mm
+4,00!ST!KLEM!DIVERS-        - QPRO-M6!Q-profiel glijmoer M6
 1,00!ST!MARK!STI-VERVALDATUM 2020!Markering sticker VERVALDATUM 2020
 1,00!ST!MARK!STI-VOLGEND NAZICHT-MT!Markering sticker VOLGEND NAZICHT- meertalig
-3,00!ST!MONTB!PLA-AFDICHTSTOP-M6!Montage-toebehoren plastiek - afdichtstop M6
-2,00!ST!ORING!006,0X04,0-NBR70!O-ring 6x 4 mm NBR70
+1,00!ST!NIP!MOER-P48,0-NY!Moer PG 48 nylon
+1,00!ST!NIP!NIPP-P48,0-NY!Nippel PG 48 nylon
+1,00!ST!PLTW!020107_00KOL!Kast deur APS-FMB
+1,00!ST!PLTW!020108_00KOL!Bovenstuk APS-FMB
+1,00!ST!PLTW!020117_00KOL!Afdekplaat sleepketting
