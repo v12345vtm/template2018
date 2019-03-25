@@ -1,7 +1,7 @@
 
     
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep 1500,
+  Sleep 300,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
@@ -9,18 +9,10 @@
  If WinExist("AUTO - Projecten")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma AUTO - Projecten is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
+	ToolTip, u programma AUTO - Projecten is open `n tja staat  `n   voila! ,170 , 950
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-;ExitApp ; debug
 	
-}
-else
-{
-	MsgBox, u venster  AUTO - Projecten  zie ik niet !! open het eerst zelf
-ExitApp
-} 
-    
-Sleep 1500,  
+	Sleep 600,  
 
 
 
@@ -42,6 +34,38 @@ Send {UP 2}
 Sleep, 50
 Sleep, 2
 Send {ENTER}
+
+
+; als serieverpak2019 open is , activeer het en klik erin
+
+
+   SetTitleMatchMode 2
+ If WinExist("serieverpak2019.xlsm - Excel")
+{
+WinActivate  ; venster aktief zetten
+Sleep, 500
+MouseClick, Left , 100 , 400 ; aktief zetten labeltool
+Sleep, 200
+MouseClick, Left , 100 , 400  ; klik op plak
+
+}
+else
+{
+MsgBox, labeltool is er niet ,
+}
+
+
+
+;ExitApp ; debug
+	
+}
+else
+{
+	MsgBox, u venster  AUTO - Projecten  zie ik niet !! open het eerst zelf
+ExitApp
+} 
+    
+
 
 
 

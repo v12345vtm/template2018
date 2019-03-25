@@ -19,19 +19,7 @@ Sleep 900
 	;MsgBox, u venster is open	  en ik zal het vooraan zetten
 	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170,950
 	WinActivate  ; venster aktief  ; zetten die we net gezocht en gevonden hebben
-	Sleep 500,  
-;ExitApp ; debug
-	
-}
-else
-{
-MsgBox, u venster cmd is niet open	 
-ExitApp ; debug
-
-}
-
-
-
+	Sleep 200,  
 
 
 
@@ -66,6 +54,35 @@ Send {ENTER}
 Sleep 600
 Send C{ASC 58}{ASC 92}Users{ASC 92}vth{ASC 92}Documents{ASC 92}docauto{ASC 92}docauto{ASC 92}Scripts{ASC 92}activate
 Send {ENTER}
+
+
+;open  C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
+
+If WinExist("octopiinstaller.xlsm - Excel")
+{
+WinActivate  ; venster aktief zetten
+
+}
+else
+{
+Run C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
+
+}
+
+
+
+	
+}
+else
+{
+MsgBox, u venster cmd is niet open	 
+ExitApp ; debug
+
+}
+
+
+
+
 
 
 

@@ -1,7 +1,19 @@
  ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 , 950
  
-    MsgBox, Bij kwijt/kapot/slecht	`n     aantal kwijt -2 en zetten : reeds ok zetten  `n  en dan je nieuwe artikels aanvragen op proj of prodfische.
+ 
+tabel:= "KWIJT   	    `n     bijbestellen op PROJ  `n  op groen blad noteren dat je een kwijt was    `n"
+tabel .= " `n GEVONDEN 	`n     terugsturen op PROJ   `n  op groen blad schrappen dat je een kwijt was         `n"
+tabel .= " `n AFKEUR 	`n     totaal aantal bestellen op AFKEUR en reeds ok zetten  `n     totaal negatief aantal bestellen op AFKEUR   `n  op groen blad tekorten noteren        `n"
+tabel .= " `n WISSEL 	`n     nodige artikel  bestellen op PROJ  `n     overbodige artikel terugsturen op PROJ  en opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
+tabel .= " `n TEVEEL 	`n     overbodige artikel terugsturen op PROJ  en opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
+tabel .= " `n HERANODISEREn enz... 	`n     hier moet nu niet zijn , gewoon in BESTELaanvraag order zetten op PROJ      `n"
 
+
+s := "Hello, "
+s .= "world."
+MsgBox % tabel
+
+ 
 	
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 600,
