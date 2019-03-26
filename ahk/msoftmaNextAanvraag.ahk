@@ -5,8 +5,7 @@
   Sleep 1500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
-  
-  
+    
 
 ;Artikelen (Aangevraagde artikelen)
 ;win + , (vraagteken)

@@ -4,6 +4,7 @@
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 500,
   
+  
 ; cert KB180273PROD – Activiteit : Algemeen.
 ;Klaarzetbonnen worden geboekt op een verzamel-tiknummer, afhankelijk van het soort klant-Certificaten maken voor kzb20180750 bijvoorbeeld: STA_DB18 – activiteit = algemeen.
 

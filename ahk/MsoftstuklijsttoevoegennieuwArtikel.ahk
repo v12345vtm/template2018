@@ -16,7 +16,7 @@ SetTitleMatchMode 2
   ;  MsgBox, You want to unmount USB  "%uservariabele%"	OR press esc to escape (program breaks if path is not found)
 ;MsgBox % "nu een loop van  " . StrLen(uservariabele) 
 ;}  
-	  
+	
 	  
 
  If WinExist("Deelfasen (Productiegegevens - Prod. schema)")

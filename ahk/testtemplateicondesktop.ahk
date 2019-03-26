@@ -10,8 +10,6 @@
 
 
 
-
-
 getDeskIconsPos() {
     Critical
     static MEM_COMMIT := 0x1000, PAGE_READWRITE := 0x04, MEM_RELEASE := 0x8000

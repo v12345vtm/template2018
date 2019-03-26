@@ -2,8 +2,7 @@
  SetTitleMatchMode, 1 ; match start of the title
  ;vrijgeven object-data is 3x up
  ;vrijgeven object is 4x up
- 
-     
+      
   ; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:

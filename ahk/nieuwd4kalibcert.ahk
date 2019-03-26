@@ -17,8 +17,7 @@ else
  
   }
 
-  
-  
+    
   	InputBox, UserInputtaal, calib.cert, Welke-certifikaatTAAL?,,e
 if ErrorLevel
 {

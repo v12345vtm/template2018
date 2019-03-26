@@ -1,6 +1,5 @@
  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
- 
- 
+  
 SetTitleMatchMode, 2
 WinActivate, CLIP PROJECT
 WinWaitActive, CLIP PROJECT

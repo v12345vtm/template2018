@@ -11,7 +11,6 @@ ToolTip, projecten in msoft om info voor serienrs te maken  `n   vraagt de gebru
 Sleep, 1500
 
 
-
    SetTitleMatchMode 2
  If WinExist("AUTO - Projecten")
 {

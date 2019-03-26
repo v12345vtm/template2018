@@ -7,7 +7,6 @@ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 Sleep, 200
 
 
-
 tabel:= "KWIJT   	    `n     bijbestellen op PROJ  `n  op groen blad noteren dat je een kwijt was    `n"
 tabel .= " `n GEVONDEN 	`n     terugsturen op PROJ   `n  op groen blad schrappen dat je een kwijt was         `n"
 tabel .= " `n AFKEUR 	`n     totaal aantal bestellen op AFKEUR en reeds ok zetten  `n     totaal negatief aantal bestellen op AFKEUR   `n  op groen blad tekorten noteren        `n"

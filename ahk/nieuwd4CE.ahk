@@ -8,7 +8,6 @@ ToolTip, windows plus num3 - D4 CE cert- sta in OBJECT DATA,515,800
 ;Sleep 500,
 {
 
-
 	InputBox, UserInputkb, CE-cert, KBnummer,,%Clipboard%
 if ErrorLevel
 {

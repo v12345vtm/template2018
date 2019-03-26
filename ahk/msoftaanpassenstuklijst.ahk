@@ -35,8 +35,7 @@ If WinExist("AUTO - Artikelen")
       ;MouseClick, left
       
       Send,  {Enter}  ; we klikken op enter om PROD te openen
-      Sleep 500,
-      
+      Sleep 500,      
       ;we klikken op rij produktie vbd tabel
       ;Send, {Tab 5}{Right}{Tab 4}{Right}{Tab 6}{Right}{Tab}
       Sleep 300,

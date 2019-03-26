@@ -12,7 +12,6 @@ SetTitleMatchMode 2 ; parameter die nodig is voor winexist
 MouseMove,   125,  538  ; dat is al in de toekomst kijken waar ons projectprogramma zijn invulkotje staat
 
 
-
 If WinExist("AUTO - LET Automotive n.v.")
 {
 	;MsgBox, u venster is nog open	, en ik zal het vooraan zetten + verkleinen !!!

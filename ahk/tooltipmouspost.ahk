@@ -13,14 +13,6 @@ return
 
 
 
-
-
-
-
-
-
-
-
 WatchCursor:
 MouseGetPos, xpos, ypos  ; default lezen we de mousepos op active window
 WinGetTitle, Title, A

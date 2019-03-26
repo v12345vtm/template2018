@@ -7,6 +7,7 @@ CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
 
 
+
 ; MsgBox, parameters ontvangen  %0%
   ;MsgBox, 1e parameters is  %1%  als er parameter werd meegeveven in , dan zetten we die n de e inputbox
   

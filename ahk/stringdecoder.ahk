@@ -3,7 +3,6 @@
 ;en de output is de letref met 6cijfers
 
 
-
 klipbord := "L:\Letdnata\data\04\0164_00\D5\040164aa_00-D5N01A.docx"
  msgbox, %klipbord%
 

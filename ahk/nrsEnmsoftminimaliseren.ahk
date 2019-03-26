@@ -10,8 +10,7 @@ SetScrollLockState, off
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 1500,
   
-  
- 
+   
 
 	Run, "L:\Letdata\database\versie_H (Jorosoft)\NRS\VTH\LetP.accdb"
 	WinWaitActive, Acces, 

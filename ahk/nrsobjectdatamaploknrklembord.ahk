@@ -1,6 +1,6 @@
 {
   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-  
+ 
  WinGetTitle, Title, A ; steek de programmanaam is var %Title%
  If (title = "LET")
 {	

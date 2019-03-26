@@ -38,7 +38,6 @@ else
 ;en de output is de letref met 6cijfers
 
 
-
  
 
 ; eerst op / splitten

@@ -7,6 +7,7 @@ ToolTip, verkenners sluiten 8stuks ,303,750
 SetTitleMatchMode, 2
 
 
+
 Loop, 8
 {
     WinClose, ahk_class CabinetWClass  ;  closes any explorer window

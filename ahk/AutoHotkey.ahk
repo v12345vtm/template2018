@@ -11,7 +11,6 @@ ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openst
 xpositie := 1050 ; xpos vd tooltip linksrechtspos
 ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
-
 FileCopy, \\file01\users\VTH\MyDocs\AutoHotkey.ahk , C:\Users\vth\Desktop\template2018\ahk\  ; Make a copy but keep the orig. file name.
 
 

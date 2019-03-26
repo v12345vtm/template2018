@@ -6,7 +6,6 @@
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
 
-
 Send, +{F9}  ^{PgUp} +{Tab 3}
 Sleep 1300,
 
