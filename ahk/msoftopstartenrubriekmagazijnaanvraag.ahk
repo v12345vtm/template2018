@@ -6,7 +6,7 @@
 ;
 
 
-    
+    SetKeyDelay, 200 ; hoe rap stuur je typcommandos
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 500,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:

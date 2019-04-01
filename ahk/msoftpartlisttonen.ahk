@@ -1,6 +1,6 @@
  ToolTip, MSOFTpartlistTonen-ahk = in Msoft artikelen staan,170 , 950
  
-     
+   ;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos
    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 100,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:

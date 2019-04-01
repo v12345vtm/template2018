@@ -1,5 +1,6 @@
 ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 , 950
 
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos
 SetScrollLockState, off
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 Sleep 300,
@@ -35,17 +36,30 @@ If WinExist("AUTO - Magazijnaanvragen")
    ToolTip, nieuwe magazijnaanvraag en verplaatsen naar linkerkant,170 , 950
    
    Send, {Ins}  ; 
-   Sleep 1500,  
+   Sleep 1500,   
    
-   If WinExist("ahk_class ProMainWin") and (title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)")  
+     WinGetTitle, Title, A
+ ToolTip, %Title% ,170 , 850 ; we krijgen de title niet binnen
+ 
+ 
+
+
+
+   If WinExist  (title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)")  
    {
+   ; WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
       ;lijstje mag aanvraag
-      Sleep 600
-      WinGetPos,,, Width, Height, %WinTitle%	
-      WinMove, %WinTitle%,, 50 , 150 ,1400,660   ; msoft naar left300 top400 width1400  height660	
-      MsgBox magaanvrlijtje
-   } 
+     ; Sleep 600
+      ;WinGetTitle, Title, A
+     ; WinMove, "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)",, 50 , 150 ,1400,660   ; msoft naar left300 top400 width1400  height660	
+     ; MsgBox magaanvrlijtje
+	  
+	 ; Sleep 8000,
+	  
+	 ; exitapp
+   }  
    
+    
    
    Send,  {Tab}
    Sleep 300,
@@ -65,11 +79,15 @@ If WinExist("AUTO - Magazijnaanvragen")
    Sleep 300,
    Send,  {Tab}
    Sleep 300,
-   Send, {Enter}
+ 
+   
+   
+   
+   
+   
+   
+     Send, {Enter}
    Sleep 300,
-   
-   
-   
    
    
    

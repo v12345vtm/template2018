@@ -1,5 +1,6 @@
 {
 
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos
  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
  
 InputBox, LETREF, wat is je letref?,

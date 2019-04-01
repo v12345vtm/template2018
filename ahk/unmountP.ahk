@@ -1,25 +1,14 @@
 ;shortest way in windows  = run j , alt+j en alt+j
-
 ;   http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 #SingleInstance force
 
-
-
-
-; MsgBox, parameters ontvangen  %0%
-  ;MsgBox, 1e parameters is  %1%  als er parameter werd meegeveven in , dan zetten we die n de e inputbox
-  
-   
+ ;MsgBox, parameters ontvangen  %0%
+; MsgBox, 1e parameters is  %1%  
  
-driveletter := "j"
-
- 
-
-
-
-InputBox, UserInput, unmount,unmount a usb vb drive j typ dan j,,%driveletter%
+ InputBox UserInput,unmount,unmountEXEparam,,350,140,,,,,%1%  ; in EXE-veriant klopt deze inputbox wel
+;InputBox, UserInput, unmount,unmount a usb vb drive j typ dan j,"ere"
 if ErrorLevel
 {
    ; MsgBox, CANCEL was pressed.
@@ -29,8 +18,7 @@ if ErrorLevel
    ;MsgBox % "nu een loop van  " . StrLen(UserInput) 
     
    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-   Sleep 500,
-      
+   Sleep 500,     
 	  
 	  
 	try  ; Attempts to execute code.
@@ -50,8 +38,7 @@ catch e  ; Handles the first error/exception raised by the block above.
 	  
    ;Run, "c:\"
  
-   Sleep, 1600
-      
+   Sleep, 1600      
    ;alt+j
    Send !j
    Sleep, 600
@@ -78,7 +65,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, Off
-   MsgBox emergencystop unmount
+   MsgBox emergencystop unmountp
    ExitApp
    return
 }
