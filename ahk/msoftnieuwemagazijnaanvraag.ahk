@@ -1,3 +1,7 @@
+;;;;   http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
+
+;;;;;    https://github.com/v12345vtm/template2018
+
 ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 , 950
 
 SetKeyDelay, 200 ; hoe rap stuur je typcommandos

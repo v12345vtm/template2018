@@ -1,5 +1,5 @@
 @echo off
-title Fotos van SD kaartje verplaatsen naar de harddisk van Vincent!
+title Fotos van G-DCIM SD kaartje verplaatsen naar de harddisk van Vincent!
 
 
 echo on
@@ -15,7 +15,7 @@ rem xcopy /s G:\DCIM\*.* C:\sdkardbatch\%curr_date%
 
 
  pushd G:\DCIM
-   for /r %%a in (*.*) do (
+   for /r %%a in (*.JPG) do (
      COPY "%%a" "C:\sdkardbatch\%curr_date%"
    )
    popd
