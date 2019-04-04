@@ -6,25 +6,26 @@ ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 
 
 SetKeyDelay, 200 ; hoe rap stuur je typcommandos
 SetScrollLockState, off
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
 Sleep 300,
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 Sleep, 200
 
-
-tabel:= "KWIJT   	    `n     bijbestellen op PROJ  `n  op groen blad noteren dat je een kwijt was    `n"
+tabel:= ".............................................................................................................................."
+tabel.= " `n KWIJT      `n     bijbestellen op PROJ  `n  op groen blad noteren dat je een kwijt was    `n"
 tabel .= " `n GEVONDEN 	`n     terugsturen op PROJ   `n  op groen blad schrappen dat je een kwijt was         `n"
 tabel .= " `n AFKEUR 	`n     totaal aantal bestellen op AFKEUR en reeds ok zetten  `n     totaal negatief aantal bestellen op AFKEUR   `n  op groen blad tekorten noteren        `n"
-tabel .= " `n WISSEL 	`n     nodige artikel  bestellen op PROJ  `n     overbodige artikel terugsturen op PROJ  en opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
-tabel .= " `n TEVEEL 	`n     overbodige artikel terugsturen op PROJ  en opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
-tabel .= " `n HERANODISEREn enz... 	`n     hier moet nu niet zijn , gewoon in BESTELaanvraag order zetten op PROJ      `n"
+tabel .= " `n WISSEL 	`n     nodige artikel  bestellen op PROJ geen opmerking  `n     overbodige artikel terugsturen op PROJ  en  wel opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
+tabel .= " `n TEVEEL 	`n     overbodige artikel terugsturen op PROJ  en daarin opmerking doen  VOORCALCULATIE aanpassen  `n  op groen blad Aanpassen opzetten       `n"
+tabel .= " `n HERANODISEREn enz... 	`n     hier moet je  nu niet zijn , gewoon in BESTELaanvraag order zetten op PROJ      `n  en op groene fische noteren dat ze onderweg zijn naar lev."
 
 s := "Hello, "
 s .= "world."
 MsgBox % tabel
 
+ 
 
-
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 
 SetTitleMatchMode 2

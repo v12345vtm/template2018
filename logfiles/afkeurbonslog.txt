@@ -60,3 +60,16 @@ DRFR-060315_00CAL	 1	Steun Hella lamp UNICAL	 	m4 en het moest m3 zijn  , zie oo
 DRFR-060315_00CAL	 10	Steun Hella lamp UNICAL	 	m3 en het moest m4 zijn  , zie ook afkeurbon van 11-10-2018 - ma20182519 * 	10-12-2018
 DRFR-060316_00CAL	 3	Tegenmoer houder nippel UNICAL	 	schroefdraad niet recht getapt -  * retour komt terug via magazijnaanvraag : MA : 20182525	10-12-2018
 HF-150485A01KOL	 38	Spiegel PLA-Lijnlaser LM35 (Praag)	 	11x oxidatie (vlek) op spiegelvlak ; 22x krom ; 5x glas geschonden -  * 	13-2-2019
+STICK-160579_01CAL	 10	Sticker unical LED controller	 	achtergrond moet zwart zijn met witte text/lijnen  ipv witte achtergrond -  * retour komt terug via magazijnaanvraag : MA : 20190512	5-3-2019
+PANEL-950025_00CAM	 1	Bedieningspaneel candelameter	 	label is ondersteboven gekleefd -  * retour nog inschrijven indien terug in let  -  *  magazijnaanvraag : MA : 20190516	5-3-2019
+MOTOR-DC-GR80X80+PLG75+RE30-07:1	 1	DC-motor GR80X80 24VDC + PLG75 i+7:1 + E90R + RE30-2-1024TI 5V + IP54 cov	snr 8844803559	geen koppel , vervangen met andere motor en dan werkte het wel in de fas -  * retour komt terug via magazijnaanvraag : MA : 20190526	6-3-2019
+DRFR-180236_01DIS	 1	Riemklem SLC1500-Tool 320TR blank	 	gat verkeerd geboord  -  * retour komt terug via magazijnaanvraag : MA : 20190559	11-3-2019
+DIVKO-WIELKLEM-KOCH-DAS	 1	Wielklem met laserkop zonder inclinometer (Koch)	 	transportschade -  * retour komt terug via magazijnaanvraag : MA : 20190564	12-3-2019
+KABAS-USB-01,0-MM-AB-HAAKS	 10	USB-kabel 01,0m M/M -A male, B male haaks	 	de haakse connector zit aan de verkeerde type usbfische -  * retour komt terug via magazijnaanvraag : MA : 20190575	12-3-2019
+DRFR-040258_00KOL	 5	Geleiding lint PLM	gaten zitten niet in lijn voor de asjes van de rolletjes	Ma 20190709	hf190393 =1 en hf190387 =2	25-3-2019
+HF-170332_01DAS	 1	Referentiepaneel rechts met opdruk 10m wand Volvo	vuil	Ma 20190747	1x	27-3-2019
+HF-170359_01DAS	 1	Referentiepaneel links met opdruk 10m wand Volvo - GEWIJZIGD !!	vuil	Ma 20190747	1x hf181073	27-3-2019
+DRFR-180079_01ACC	 3	Overgangsring PG16 buitendraad naar M16x1.5 binnendraad	mismaakt , buiteschroefdraad  
+geen spoed er staat al een backorder open ….	Ma 20190757	1x HF190304   en 2x HF190231	27-3-2019
+COMP-BOAR-PCI-CAN S	 1	Board PCI-CAN S	werkt niet     ,(aan thomas bezorgen want hij heeft elders zo een kaart genomen)	Ma 20190800	1x ifa180017 	4/02/2019
+		
