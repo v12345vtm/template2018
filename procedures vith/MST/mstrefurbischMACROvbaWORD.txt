@@ -1,0 +1,49 @@
+Sub mstrefurbisch()
+'
+' macro  mst engeland
+'
+'
+sPrompt = "Please serienr , vb : EP180060.001"
+sTitle = "Name Entry"
+sDefault = "EP"
+sUserName = InputBox(sPrompt, sTitle, sDefault)
+
+sVerschil = InputBox("verschil in mm", "geen mm typen enkel getal")
+
+sFilenaamzonderextentie = Left(ActiveDocument.Name, Len(ActiveDocument.Name) - 4)
+
+ ActiveDocument.Variables("verschil").Value = sVerschil
+
+
+ ActiveDocument.Variables("letref").Value = sUserName
+ ActiveDocument.Variables("fileNoext").Value = sFilenaamzonderextentie
+  ActiveDocument.Variables("calibdatum").Value = Date
+    ActiveDocument.Variables("geldigtot").Value = DateAdd("yyyy", 1, Date)
+ 
+ActiveDocument.Fields.Update
+
+
+
+''update alle velden ook in koptext en voettext
+Dim oStory As Range
+
+For Each oStory In ActiveDocument.StoryRanges
+oStory.Fields.Update
+If oStory.StoryType <> wdMainTextStory Then
+While Not (oStory.NextStoryRange Is Nothing)
+Set oStory = oStory.NextStoryRange
+oStory.Fields.Update
+Wend
+End If
+Next oStory
+
+Set oStory = Nothing
+
+  Dim toc As TableOfContents
+    For Each toc In ActiveDocument.TablesOfContents
+        toc.Update
+    Next toc
+
+Set TableOfContents = Nothing
+
+End Sub
