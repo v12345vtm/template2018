@@ -71,5 +71,11 @@ HF-170332_01DAS	 1	Referentiepaneel rechts met opdruk 10m wand Volvo	vuil	Ma 201
 HF-170359_01DAS	 1	Referentiepaneel links met opdruk 10m wand Volvo - GEWIJZIGD !!	vuil	Ma 20190747	1x hf181073	27-3-2019
 DRFR-180079_01ACC	 3	Overgangsring PG16 buitendraad naar M16x1.5 binnendraad	mismaakt , buiteschroefdraad  
 geen spoed er staat al een backorder open ….	Ma 20190757	1x HF190304   en 2x HF190231	27-3-2019
-COMP-BOAR-PCI-CAN S	 1	Board PCI-CAN S	werkt niet     ,(aan thomas bezorgen want hij heeft elders zo een kaart genomen)	Ma 20190800	1x ifa180017 	4/02/2019
-		
+COMP-BOAR-PCI-CAN S	 1	Board PCI-CAN S	werkt niet     ,(aan thomas bezorgen want hij heeft elders zo een kaart genomen)	Ma 20190800	1x ifa180017 	4/02/2019		
+SIR - LICHT-BUZZER	 2	Akoestisch element zwart IP 54 12-48 VAC/DC	werkt niet , verwisseld met andere , goed aangespannen op de voet , niks helpt , werkt niet ;     geen op stock, maar overmorgen komen er 20 aan ...	Ma 20190898	2spoed IDE180011	16-4-2019
+DRFR-040238_00KOL	 1	Vaste lagersteun PLM	9e keer weerom gaten verkeerd gepositioneerd er was 1 goede nog op stock en we hebben dienen nu in prod gedaan , nu 0 op stock	Ma 20190944	geen	23-4-2019
+DRFR-040254_00KOL	 1	Houder lagerbus PLM	M5(2x) schroefdraad  zit verkeerd gepostioneerd ( ze zitten op de positie van de 5.2gaten)  geen slechte gezien op stock , 1 goede van stock gehaald om prod verder te kunnen draaien	Ma 20190956	geen	24-4-2019
+PLTW-050066B00OPT	 3	Scherm LM6	kras +verfbobbel    69op stock , geen stockcontrole omdat ze allemaal individeel verpakt zijn ( PSP)	Ma 20190981	geen (ep190053)	29-4-2019
+DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
+DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
+DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
