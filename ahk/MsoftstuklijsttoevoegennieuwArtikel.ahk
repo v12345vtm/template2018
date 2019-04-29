@@ -50,7 +50,7 @@ MouseClick, left,  88, 50;  en dan opent AUTO - Artikelen  -  LET Automotive n.v
 Send {Tab}
 Send {Tab}
 
-Send  NIPP-P07,0-MS-AFGEROND{Enter}
+Send  HEC-         -   -V  -AWG22-28{Enter}
 ;Send %uservariabele%{Enter}
 Sleep 1500 ; wacht tot db het vind
 Send {Enter}
