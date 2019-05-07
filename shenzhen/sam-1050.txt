@@ -1,0 +1,15 @@
+ SAM-1050:					
+sam-1050:					
++	1,00	ST	EP	030213H00OPT/	LM 1060 (ACS200-12Cel)
++	1,00	ST	EP	040187B00 KOL/	PLM - SAM 1050 versneld
++	1,00	ST	HF	190162_01ACC	Voedingskast SAM1050 10A
++	1,00	ST	HFKAB	050209A00 KOL	Spiraalkabel SAM1050
+030213h:					
++	1,00	ST	HF	030599C00OPT	Connectorplaatmodule LM1050 Rev. C
+	1,00	ST	HF	090010A00OPT	Waterpasmodule Praag
++	1,00	ST	HF	150029A01OPT	Cameramodule ACS200 F8-objectief
++	1,00	ST	HF	150494_01OPT	Lensfront LM35
++	1,00	ST	HFKAB	040135A00OPT	Kabel camera/bdp LM50 Rev. A
++	1,00	ST	HFKAB	050212_00 KOL	Voedingskabel LM1050 bdp/pow.bl.
++	1,00	ST	HFPRI	040358_00OPT/	LM1050 Voedingsprint power supply
++	1,00	ST	HFPRI	080163_01OPT/	Bedieningspaneel LM1050 T60 - 12 cellen

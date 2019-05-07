@@ -1,0 +1,33 @@
+SAM-LVC 1050 SHENZHEN:					
+epvk sam lvc1050 chenzhen (links):					
++	1,00	ST	EP	051018E00OPT/	LVC1060 (ACS200)
++	1,00	ST	EP	060027A00 KOL/	PLM Shenzhen versneld
++	1,00	ST	HF	060037A00ACC	Aansluitkabelset LVC1050 Shenzhen
++	1,00	ST	HF	190163_01ACC	Voedingskast LVC1050 Shenzhen 10A
+051018e:					
++	1,00	ST	HF	030598_00OPT	Lensfront LM50
++	1,00	ST	HF	050976A00OPT	Connectorplaatmodule LVC1050 Rev. A
+	1,00	ST	HF	090010A00OPT	Waterpasmodule Praag
++	1,00	ST	HF	150029A01OPT	Cameramodule ACS200 F8-objectief
++	1,00	ST	HFKAB	040135A00OPT	Kabel camera/bdp LM50 Rev. A
++	1,00	ST	HFKAB	050212_00 KOL	Voedingskabel LM1050 bdp/pow.bl.
++	1,00	ST	HFKAB	051015_00OPT	VGA Flatcable LVC1050
++	1,00	ST	HFPRI	040358_00OPT/	LM1050 Voedingsprint power supply
++	1,00	ST	HFPRI	080163_00OPT/	Bedieningspaneel LM1050 T60
+060027a00:					
++	1,00	ST	HF	050203_00ACC	Detectielattenset SAM1050
++	1,00	ST	HF	060025A00 KOL	Rolwagen PLM Shenzhen versneld
++	1,00	ST	HF	060028A00 KOL	 KOLom PLM versneld versie Shenzhen
++	1,00	ST	HF	060031_00 KOL	Control/signal module LVC1050 Shenzhen
++	1,00	ST	HFKAB	040213_00 KOL	Kabel CAN LM1050-APS PLM
++	1,00	ST	HFKAB	060033_00 KOL	Kabel power LVC1050 - APS/PLM
+060028a:					
++	1,00	ST	HF	040220_00 KOL	Glijwagenmodule PLM
++	1,00	ST	HF	090125_00 KOL	Z-motormodule PLM TM versneld
++	1,00	ST	HFKAB	040209_00 KOL	Kabel Z-encoder PLM
++	1,00	ST	HFKAB	040210_00 KOL	Kabel Z-motor PLM
++	1,00	ST	HFKAB	060030_00 KOL	Kabel Z-beweging PLM Shenzhen
+060031:					
+060037a:					
++	1,00	ST	HFKAB	060038A00ACC	Kabel power voeding LVC1050 Shenzhen
+190163:					

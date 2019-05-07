@@ -1,0 +1,61 @@
+SAM-1050 SHENZHEN INSP:					
++	1,00	ST	EP	030213H00OPT/	LM 1060 (ACS200-12Cel)
++	1,00	ST	EP	040187B00 KOL/	PLM - SAM 1050 versneld
++	1,00	ST	HF	060037A00ACC	Aansluitkabelset LVC1050 Shenzhen
++	1,00	ST	HF	190163_01ACC	Voedingskast LVC1050 Shenzhen 10A
++	-1,00	ST	HFKAB	040215A00 KOL	Kabel power PLM versneld
++	-1,00	ST	HFKAB	040391_00 KOL	Kabel hold PLM
++	1,00	ST	HFKAB	060026_00 KOL	Overbrugging HOLD PLM Shenzhen
++	-1,00	ST	HFKAB	100215_00 KOL	Kabel RS232 PLM-LM1050
+030213h:					
++	1,00	ST	HF	030599C00OPT	Connectorplaatmodule LM1050 Rev. C
+	1,00	ST	HF	090010A00OPT	Waterpasmodule Praag
++	1,00	ST	HF	150029A01OPT	Cameramodule ACS200 F8-objectief
++	1,00	ST	HF	150494_01OPT	Lensfront LM35
++	1,00	ST	HFKAB	040135A00OPT	Kabel camera/bdp LM50 Rev. A
++	1,00	ST	HFKAB	050212_00 KOL	Voedingskabel LM1050 bdp/pow.bl.
++	1,00	ST	HFPRI	040358_00OPT/	LM1050 Voedingsprint power supply
++	1,00	ST	HFPRI	080163_01OPT/	Bedieningspaneel LM1050 T60 - 12 cellen
+040187b:					
++	1,00	ST	HF	040162B00 KOL	Rolwagen PLM versneld
++	1,00	ST	HF	040262A00 KOL	 KOLom PLM versneld
++	1,00	ST	HF	040273A00 KOL	Hoogtedetectielat PLM - Rev. A
++	1,00	ST	HF	050203_00 ACC	Detectielattenset SAM1050
++	1,00	ST	HFKAB	040213_00 KOL	Kabel CAN LM1050-APS PLM
++	1,00	ST	HFKAB	040214_00 KOL	Kabel power LM1050-APS PLM
++	1,00	ST	HFKAB	100215_00 KOL	Kabel RS232 PLM-LM1050
+stofhoes:					
+060037a:					
++	1,00	ST	HFKAB	060038A00ACC	Kabel power voeding LVC1050 Shenzhen
+190163:					
+040215a:					
+040391:					
+060026:					
+100215:					
+030213:					
++	1,00	ST	HF	030599C00OPT	Connectorplaatmodule LM1050 Rev. C
+	1,00	ST	HF	090010A00OPT	Waterpasmodule Praag
++	1,00	ST	HF	150029A01OPT	Cameramodule ACS200 F8-objectief
++	1,00	ST	HF	150494_01OPT	Lensfront LM35
++	1,00	ST	HFKAB	040135A00OPT	Kabel camera/bdp LM50 Rev. A
++	1,00	ST	HFKAB	050212_00 KOL	Voedingskabel LM1050 bdp/pow.bl.
++	1,00	ST	HFPRI	040358_00OPT/	LM1050 Voedingsprint power supply
++	1,00	ST	HFPRI	080163_01OPT/	Bedieningspaneel LM1050 T60 - 12 cellen
+030599:					
+150029:					
++	1,00	ST	HF	150495_01OPT	Objectiefmodule LM35
++	1,00	ST	HFKAB	150032_01OPT	FC sensor-mainboard ACS200
+	1,00	ST	HFPRI	140340A00OPT/	Main board ACS200 (ets12P06E)
+150495:					
+	1,00	ST	HFPRI	140339_00OPT/	Sensor board true snap (ets12P10)
+150032:					
+150029a01:					
++	1,00	ST	HF	150495_01OPT	Objectiefmodule LM35
++	1,00	ST	HFKAB	150032_01OPT	FC sensor-mainboard ACS200
+	1,00	ST	HFPRI	140340A00OPT/	Main board ACS200 (ets12P06E)
+150495:					
+	1,00	ST	HFPRI	140339_00OPT/	Sensor board true snap (ets12P10)
+150032:					
+150494:					
++	1,00	ST	HF	140073_00OPT	Verpakking lensfront
+	2,00	ST	HFPRI	150290_01OPT/	Fotocelprint Positioncheck LM35
