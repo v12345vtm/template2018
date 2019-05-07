@@ -79,3 +79,4 @@ PLTW-050066B00OPT	 3	Scherm LM6	kras +verfbobbel    69op stock , geen stockcontr
 DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
 DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
 DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
+DRFR-040258_00KOL	 1	Geleiding lint PLM	niet vlak  (0.05)     gemerkt bij inputcontrole	Ma 2019xxxx	geen	5/06/2019
