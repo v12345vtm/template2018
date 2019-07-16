@@ -80,3 +80,9 @@ DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stoc
 DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
 DIVMA-050055A00OPT	 1	Behuizing HIPS - LM6	geen inserts aanwezig     105 op stock nog , andere gevraagd van stock en de slecht op de verzameldoos waar we de slecht opsparen.	Ma 20190986	0 ( ep190053)	29-4-2019
 DRFR-040258_00KOL	 1	Geleiding lint PLM	niet vlak  (0.05)     gemerkt bij inputcontrole	Ma 2019xxxx	geen	5/06/2019
+HFPRI-150441C01CAL	 5	Led sturing Unical - C-revisie	verkeerde weerstandswaarde     eerst deze 5 corrigeren en exact deze 5 willen we ook terug inbouwen	ma20191089	5x	14-5-2019
+DRFR-160575_01CAL	 1	Steun nippel unical ECE LED	gat te groot , nippel konden we niet vast draaien     stockcontrole was ok	Ma 20191099	geen	15-5-2019
+DRFR-110030_00CAL	 2	Steunprofiel kalibratiespiegel RDF	schroefdraad is vergeten (zie tek)     er was 1 op stock en was ook slecht	Ma 20191197	1xEP190057	6/03/2019
+DIVMA-190706_01FAS	 4	Diffuser plexi bodem LED lamp 1008	te smal en/of chafrijn niet goed     	Ma 20191215	0x	6/04/2019
+DRFR-040256_00KOL	 12	Versteviging PLM	gat vergeten indoen van M6     thierry deed stockcontrole 	Ma 20191228	geen	6/04/2019
+DRFR-040257_00KOL	 5	Houder spindelmoer PLM	afgekeurd in ingangscontrole van 30stuks     	 	geen	7/03/2019
