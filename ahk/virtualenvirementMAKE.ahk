@@ -38,6 +38,9 @@ ExitApp ; debug
 
 
 ;python mk_project.py kb
+
+Send mededeling voor VTH : kies een optie voor -t , en meestal is de taal default --l E{Enter}
+
 Send python mk_project{NumpadDot}py kb
 
 

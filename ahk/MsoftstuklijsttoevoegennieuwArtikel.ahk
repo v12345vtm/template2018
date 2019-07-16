@@ -50,7 +50,7 @@ MouseClick, left,  88, 50;  en dan opent AUTO - Artikelen  -  LET Automotive n.v
 Send {Tab}
 Send {Tab}
 
-Send  HEC-         -   -V  -AWG22-28{Enter}
+Send  0345-38x50 -050-nc{Enter}
 ;Send %uservariabele%{Enter}
 Sleep 1500 ; wacht tot db het vind
 Send {Enter}

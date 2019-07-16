@@ -14,6 +14,13 @@ else
   
 FileAppend, `n%UserInput%*`n, c:/aa/klembord1.txt ;save naar txt file
 
+;if Detail Materiaalkosten 2x up
+
+
+
+
+
+
 
 MouseClick, Right
 Sleep 100,
@@ -34,6 +41,8 @@ Sleep 1400,
 OnClipboardChange:
 FileAppend, `n%clipboard%`n, c:/aa/klembord1.txt ;save naar txt file
 
+Sleep 100,
+Run c:/aa/klembord1.txt  
 
 ;Send, {ESC}
 ;Sleep 10,
