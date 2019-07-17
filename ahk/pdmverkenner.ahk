@@ -15,39 +15,26 @@
 	
 	SetTitleMatchMode 2
 Run C:\LET_VAULT\AUTOMOTIVE\ ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
-	 	Sleep 1000,
+	 	Sleep 500,
+		WinMaximize, A
+		 
+ 
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-	 
-	 
-ToolTip, pdm via verkenner opgestart (pdmverkenner.ahk)  ,170 , 950
-	Sleep 1000,
-
-Sleep 500,
+	 Sleep 700,
+		MouseClick, left,  1845,  75  ; klik op zoekfunctie
+	Sleep, 500	 
+	
+	
+		MouseClick, left,  830,  175 ; klik n je zoekveld
+	Sleep, 100	
+ 
 ;	Send !{UP} ; dir omhoog  =  c:letvault
- 
- 
- 
- ToolTip, pdm via verkenner 1up   ,170 , 950
-	Sleep 1000,
-	
-	
- ;Run C:\aa ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
-	
-	Sleep 500,
-;	Send !{UP} ; dir omhoog in windowsexplorer  =  c:/ maar letvault is geseecteerd
-	
-	
-	 ToolTip, pdm via vaultselected in verkennder   ,170 , 950
-	Sleep 1000,
-	
-	;hier onder kan er wss login stappen komen
-	; log in ?
-	
-	
-	Sleep 500,
-;	Send {ENTER}
-	 ToolTip, groen mappen normaal gezien in pdm  ,170 , 950
-	Sleep 1000,
+
+
+
+ExitApp
+
+
 }
 catch e  ; Handles the first error/exception raised by the block above.
 {
