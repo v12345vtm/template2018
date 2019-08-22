@@ -57,17 +57,21 @@ Send C{ASC 58}{ASC 92}Users{ASC 92}vth{ASC 92}Documents{ASC 92}docauto{ASC 92}do
 Send {ENTER}
 
 
-;open  C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
+;Run  C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
 
 If WinExist("octopiinstaller.xlsm - Excel")
 {
 WinActivate  ; venster aktief zetten
-
+Sleep 100
 }
 else
 {
-Run C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
 
+Run "C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm"
+     ;C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xls
+Sleep 500
+Run "C:\Users\vth\Desktop\template2018\macros\diff.xlsm"	 
+	 
 }
 
 
