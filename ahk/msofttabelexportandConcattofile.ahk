@@ -5,9 +5,11 @@
 
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
- InputBox, UserInput, setnaam, Please enter a art number., , 640, 480
+ InputBox, UserInput, msoftTabelExportAndConcatFile, Please enter a omschrijvng van je exportlijst., , 640, 480
 if ErrorLevel
-    MsgBox, CANCEL was pressed.
+   ; MsgBox, CANCEL was pressed.
+	ExitApp 
+	
 else
    ; MsgBox, You entered "%UserInput%" 
   
