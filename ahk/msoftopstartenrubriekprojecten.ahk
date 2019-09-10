@@ -120,6 +120,7 @@ If WinExist("AUTO - LET Automotive n.v.")
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 	MsgBox emergencystop rubriekprojecten-ahk
 	ExitApp
 	return

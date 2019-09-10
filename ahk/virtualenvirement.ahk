@@ -96,6 +96,7 @@ ExitApp ; debug
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop virt envirement
 ExitApp
 return

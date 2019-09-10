@@ -101,6 +101,7 @@ Sleep 4000,
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop ClipprojectImport-ahk
 ExitApp
 return

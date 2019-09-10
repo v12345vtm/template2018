@@ -50,6 +50,7 @@ Sleep, 3000
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop
 ExitApp
 return

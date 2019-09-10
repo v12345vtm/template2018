@@ -68,6 +68,7 @@ Run c:/aa/klembord1.txt
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox exiting port alle tabellen wat je ziet
 ExitApp
 return

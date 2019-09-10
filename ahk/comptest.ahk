@@ -13,6 +13,7 @@ ExitApp
 
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop-tooltipmouspos-ahk
 ExitApp
 return

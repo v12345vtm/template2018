@@ -102,6 +102,7 @@ ExitApp
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop ClipprojectImport-nummer-ahk
 ExitApp
 return

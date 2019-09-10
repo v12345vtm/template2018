@@ -117,6 +117,7 @@ ExitApp
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox Deelfasen (Productiegegevens - Prod. schema) 
 ExitApp
 return

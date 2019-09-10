@@ -20,6 +20,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop fotoscrolling
 ExitApp
 return

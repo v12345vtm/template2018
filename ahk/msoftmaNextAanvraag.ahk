@@ -48,6 +48,7 @@ Sleep 2200,
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop maNextAanvraag-ahk
 ExitApp
 return

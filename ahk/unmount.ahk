@@ -77,7 +77,7 @@ catch e  ; Handles the first error/exception raised by the block above.
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, Off
+BlockInput, MouseMoveOff
    MsgBox emergencystop unmount
    ExitApp
    return

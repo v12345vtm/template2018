@@ -143,6 +143,7 @@ MsgBox, geen Artikelen (Aangevraagde artikelen) gezien!
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop KiesItemuitDB-ahk
 ExitApp
 return

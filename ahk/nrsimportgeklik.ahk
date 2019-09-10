@@ -38,6 +38,7 @@ Return
 
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop
 ExitApp
 return

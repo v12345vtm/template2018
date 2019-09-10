@@ -48,6 +48,7 @@ MouseMove, % xtemp, % ytemp , 0
 
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop-tooltipmouspos-ahk
 ExitApp
 return

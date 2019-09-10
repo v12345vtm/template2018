@@ -53,6 +53,7 @@ Send python mk_project{NumpadDot}py kb
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox emergencystop virt envirement
 ExitApp
 return

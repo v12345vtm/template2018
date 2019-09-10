@@ -40,6 +40,7 @@ Sleep 500,
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox noodstop
 ExitApp
 return
