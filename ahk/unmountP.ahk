@@ -28,7 +28,7 @@ if ErrorLevel
 }
 catch e  ; Handles the first error/exception raised by the block above.
 {
-    BlockInput, Off
+BlockInput, MouseMoveOff
 	Sleep, 100
 	MsgBox, An exception was thrown!`n Specifically: %e% 'n press SPatie
     ;Exit
@@ -64,7 +64,7 @@ catch e  ; Handles the first error/exception raised by the block above.
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, Off
+BlockInput, MouseMoveOff
    MsgBox emergencystop unmountp
    ExitApp
    return
