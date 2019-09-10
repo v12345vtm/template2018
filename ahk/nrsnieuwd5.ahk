@@ -33,17 +33,37 @@ Sleep 500,
 
 ;vanaf hier moet je nog zelf op knop duwen en bestandstype ingeven
 
+MouseMove, 592,562
+MouseClick, Left
+Sleep 5000,
+Send, docx
+Sleep 1500
+Send {Enter}
+Sleep 1500 ; betje wachten de popupbox moet zijn data wegschrijven
 
 
+;ga op de knop selecteer staan en druk erop , om de url-link te kopieren nr klembord  vb 
+
+MouseMove, 760,590
+Sleep 100,
+MouseClick, Left
+Sleep 500,
+
+
+;L:\Letdata\data\19\0593_01\D5\190593_01-D5N04_.docx zit in je klembord youpie yess!
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
+BlockInput, MouseMoveOff
 MsgBox noodstop
 ExitApp
 return
 }
+
+
+
 ESC::Goto ExitSub
 
 

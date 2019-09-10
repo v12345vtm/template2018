@@ -3,7 +3,9 @@
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 100, ;1500
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-  
+   
+   
+
 
 
    SetTitleMatchMode 2
@@ -19,7 +21,8 @@
 else
 {
 	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u
-	
+  ToolTip, wacht 2seconden aub  ,900 , 500
+Sleep 2000,	
 	  
 ToolTip, clipproject openen-ahk  `n   starting  : programma CLIP PROJECT  ,900 , 500
 Sleep 100,
