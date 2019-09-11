@@ -10,8 +10,15 @@ else
  
 If WinExist("Detail Materiaalkosten")
 {
-   MsgBox ja in msoft-stuklijst bezig
-   InputBox, UserInput, msoftSTUKLIJSTTabel2bestand2, Please enter a omschrijvng van je exportlijst., , 640, 480
+  ; MsgBox ja in msoft-stuklijst bezig
+    InputBox, UserInput, msoftSTUKLIJSTTabel2bestand2, ik zie dat je in stuklijsten staat  en je wil dus de stuklijst exporteren naar exportlijst., , 640, 480
+  
+	if ErrorLevel
+{
+    MsgBox, CANCEL was pressed.
+   exitapp
+}else  {
+   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 	ToolTip, MsoftCompare export een tabel of stuklijst naar bestand2TXT file,170 , 950
       
@@ -45,7 +52,11 @@ If WinExist("Detail Materiaalkosten")
    Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt
    
    
-}else  {
+}
+}
+
+
+else  {
    MsgBox oei NIET in msoftstuklijst bezig Ge moet stuklijst hebben
 }   
  
