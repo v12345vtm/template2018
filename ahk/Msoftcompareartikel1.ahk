@@ -16,6 +16,20 @@
 }else
   
  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+ ;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
+ 
+ Send, !{ENTER} 
+ Sleep 1300,
+ 
+  Send, ^{c}  ; control c ,kopier de omschrijving in klembord
+ Sleep 1300,
+ 
+ Msoftomschijving := clipboard
+ Sleep 900,
+ 
+    Send !{f4} ; Simulates the keypress alt+f4 sluit window 
+ 
+ ;;;;;;;;;;;;;
 Send, +{F9}  ^{PgUp} +{Tab 3}
 Sleep 1300,
 
@@ -64,6 +78,8 @@ Send , {Enter}
    file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/compare1.txt", "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
+     file.Write(TestString)
+      file.Write(Msoftomschijving)
    file.Write(TestString)
    file.Write()
    OnClipboardChange:

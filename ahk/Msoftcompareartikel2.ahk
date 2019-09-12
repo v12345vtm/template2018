@@ -16,6 +16,23 @@
 }else
   
  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+ ;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
+ 
+ Send, !{ENTER} 
+ Sleep 1300,
+ 
+  Send, ^{c}  ; control c ,kopier de omschrijving in klembord
+ Sleep 1300,
+ 
+ Msoftomschijving := clipboard
+ Sleep 900,
+ 
+    Send !{f4} ; Simulates the keypress alt+f4 sluit window 
+ 
+ ;;;;;;;;;;;;;
+
+
 Send, +{F9}  ^{PgUp} +{Tab 3}
 Sleep 1300,
 
@@ -64,6 +81,8 @@ Send , {Enter}
    file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/compare2.txt", "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
+     file.Write(TestString)
+      file.Write(Msoftomschijving)
    file.Write(TestString)
    file.Write()
    OnClipboardChange:
@@ -87,14 +106,14 @@ Send !{f4} ; Simulates the keypress alt+f4
 	
 	   Sleep 500,
    Run C:/Users/vth/Desktop/template2018/logfiles/msoft.txt
-     Sleep 500,
+     Sleep 1500,
 	 
 	 	If WinExist("ahk_class Notepad++")
 		{WinActivate
 		  Sleep 500,
 		; MsgBox, je staat  notepad++  !
 		  Send ^+{w} ; Simulates the keypress control shift w = close alle tabs
-		    Sleep 500,
+		    Sleep 2500,
 			
 			
 	Send !{f4} ; Simulates the keypress alt+f4 , sluit notepad omdat soms je compare1.txt al kan ingeladen staan met oude info
@@ -161,7 +180,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop nieuwemagazijnaanvraag-ahk
+MsgBox emergencystop MsoftcompareArtikel2-ahk
 ExitApp
 return
 }
