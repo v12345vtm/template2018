@@ -31,10 +31,18 @@
     Send !{f4} ; Simulates the keypress alt+f4 sluit window 
  
  ;;;;;;;;;;;;;
+Send, +{F9}  ;shift f9
+Sleep 400
 
 
-Send, +{F9}  ^{PgUp} +{Tab 3}
-Sleep 1300,
+Send,   ^{PgUp}  ; control pageUP
+Sleep 400,
+
+
+
+
+
+
 
 
 
@@ -45,9 +53,20 @@ Sleep 1300,
 If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
 {	WinActivate
 Sleep 200,
-;MouseMove, 640, 210
+
+
+Send,  +{Tab 3} ; shift + TAB
+Sleep 400,
+
+
 Send , {Enter}
 
+Sleep 900,
+
+;MouseMove, 640, 210
+;Send , {Enter}
+
+Sleep 900,
 ;nu hebben we nu zicht op de partlijst tabel van msoft
 ;nu willen we de tabel in klermbord
 
@@ -57,7 +76,7 @@ Send , {Enter}
 
 
 ;Detail Materiaalkosten , hier gaan we een 3e window binnen
-	If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
+	If WinExist("Detail Materiaalkosten")
 		{	WinActivate
 			Sleep 300,			
 			MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
@@ -67,7 +86,7 @@ Send , {Enter}
 			Send, {Down 6} ;6keer pijltje omlaag
 				Sleep 300,
 			Send, {Enter} ; druk op enter
-				Sleep 600,
+				Sleep 900,
 	;voila stuklijst in klembord!!
 	ToolTip, stuklijst zit ook in klembord,170 , 950  ; 
 	Sleep 300,
@@ -105,26 +124,26 @@ Send !{f4} ; Simulates the keypress alt+f4
 	;we gaan notepadd++ openen , maar we gaan ale tabblaten sluiten  ahk_class Notepad++
 	
 	   Sleep 500,
-   Run C:/Users/vth/Desktop/template2018/logfiles/msoft.txt
-     Sleep 1500,
+Run C:/Tools/Notepad++/notepad++.exe
+     Sleep 2500,
 	 
 	 	If WinExist("ahk_class Notepad++")
 		{WinActivate
 		  Sleep 500,
 		; MsgBox, je staat  notepad++  !
 		  Send ^+{w} ; Simulates the keypress control shift w = close alle tabs
-		    Sleep 2500,
+		    Sleep 1500,
 			
 			
 	Send !{f4} ; Simulates the keypress alt+f4 , sluit notepad omdat soms je compare1.txt al kan ingeladen staan met oude info
 			
 			
-			   Sleep 500,
+			   Sleep 300,
   Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt
-    Sleep 500,
+    Sleep 400,
    Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt
    
-   Sleep 1500,
+   Sleep 1000,
    Send ^!{c} ; Simulates the keypress control alt c = plugin compare
 		    Sleep 500,
 			

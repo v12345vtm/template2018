@@ -16,6 +16,14 @@
 }else
   
  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+ 
+ ;we gaan lotartiken wegdoen en geblokeerde artikelen tonen
+ 
+ ;ALT+G is bug in msoft
+ 
+ 
+ 
+ 
  ;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
  
  Send, !{ENTER} 
@@ -30,9 +38,12 @@
     Send !{f4} ; Simulates the keypress alt+f4 sluit window 
  
  ;;;;;;;;;;;;;
-Send, +{F9}  ^{PgUp} +{Tab 3}
-Sleep 1300,
+Send, +{F9}  ;shift f9
+Sleep 400
 
+
+Send,   ^{PgUp}  ; control pageUP
+Sleep 400,
 
 
 
@@ -42,9 +53,20 @@ Sleep 1300,
 If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
 {	WinActivate
 Sleep 200,
-;MouseMove, 640, 210
+
+
+Send,  +{Tab 3} ; shift + TAB
+Sleep 400,
+
+
 Send , {Enter}
 
+Sleep 900,
+
+;MouseMove, 640, 210
+;Send , {Enter}
+
+Sleep 900,
 ;nu hebben we nu zicht op de partlijst tabel van msoft
 ;nu willen we de tabel in klermbord
 
@@ -54,7 +76,7 @@ Send , {Enter}
 
 
 ;Detail Materiaalkosten , hier gaan we een 3e window binnen
-	If WinExist("AUTO - Artikelen  -  LET Automotive n.v. (AUTO - Artikelen  -  LET Automotive n.v.)")
+	If WinExist("Detail Materiaalkosten")
 		{	WinActivate
 			Sleep 300,			
 			MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
@@ -64,7 +86,7 @@ Send , {Enter}
 			Send, {Down 6} ;6keer pijltje omlaag
 				Sleep 300,
 			Send, {Enter} ; druk op enter
-				Sleep 600,
+				Sleep 900,
 	;voila stuklijst in klembord!!
 	ToolTip, stuklijst zit ook in klembord,170 , 950  ; 
 	Sleep 300,
