@@ -3,10 +3,7 @@ kzb20160998  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  : SHENZHENPROMISE  : KB160256
 kzb20160996  :  EP-VK-PLA 35 DR GELAGERD  :  2  : .  : KB160257
 kzb20160988  :  EP-VK-PLA 35 NR BE  :  1  : .  : KB160255
 kzb20160977  :  EP-VK-PLA 35 DR BE  :  1  : .  : KB160250
-kzb20160977  :  EP-VK-PLA 35 DR BE  :  1  : .  : KB160250
 kzb20160978  :  EP-VK-PLA 35 NR BE  :  1  : .  : KB160252
-kzb20160927  :  EP-VK-PLA 35 NR BE  :  1  : .  : KB160241
-kzb20160927  :  EP-VK-PLA 35 NR BE  :  0  : .  : 
 kzb20160927  :  EP-VK-PLA 35 NR BE  :  1  : .  : KB160241
 kzb20160927  :  EP-VK-PLA 35 NR BE  :  0  : .  : 
 kzb20160927  :  EP-VK-PLA 35 NR BE  :  1  : 2  : KB160241
@@ -39,7 +36,6 @@ kzb20160929  :  EP-VK-PLA 35 DR BE  :  1  :   : KB160242
 kzb20160234  :  EP-VK-PLA 25 DR BE BATT  :  1  :   : KB160068
 kzb20120406  :  EP-VK-PLA 25 DR BE BATT  :  1  :   : KB120118
 kzb20140910  :  EP-VK-PLA 25 DR BE BATT  :  1  :   : KB140361
-kzb20120406  :  EP-VK-PLA 25 DR BE BATT  :  1  :   : KB120118
 kzb20160934  :  EP-VK-PLA 35 NR BE  :  1  :   : KB160246
 kzb20161026  :  EP-VK-PLA 35 NR BE  :  1  : Houbracken A bvba  : KB170002
 kzb20161028  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUV Nord Mobil.  : KB170004
@@ -50,7 +46,6 @@ kzb20170006  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170007
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : Karosse BV  : KB170008
 kzb20170015  :  EP-VK-PLA 35 NR BE  :  1  : De lijn  : KB170009
 kzb0  :  HFPRI-080020_00OPT  :  30  :   : OA160072
-kzb20160988  :  EP-VK-PLA 35 NR BE  :  1  :   : KB160255
 kzb20170024  :  EP-VK-PLA 35 DR BE  :  1  : Aerts Bvba  : KB170011
 kzb20170024  :  EP-VK-PLA 35 DR BE  :  1  : Aerts bvba  : KB170012
 kzb20170024  :  EP-VK-PLA 35 DR BE  :  1  : Aerts Bvba  : KB170013
@@ -62,7 +57,6 @@ kzb20160996  :  EP-VK-PLA 35 DR GELAGERD  :  0  :   :
 kzb0  :  LUMINOSCOPE® PLA 35 NR  :  1  :    : DDE170001
 kzb20170015  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170009
 kzb0  :  Demo-toestel SAM1050  :  1  :   : DDE050002
-kzb0  :  LUMINOSCOPE® PLA 35 NR  :  1  :   : DDE170001
 kzb0  :  LUMINOSCOPE® PLA 35 NR  :  1  :   : DDE170001
 kzb20170036  :  EP-VK-PLA 35 DR BE  :  1  : Devisch Eernegem bvba  : KB170023
 kzb20170045  :  EP-VK-PLA 35 DR BE  :  1  :    : KB170028
@@ -88,30 +82,20 @@ kzb20170140  :  EP-VK-PLA 35 NR BE  :  1  : 0  : KB170070
 kzb20170140  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170070 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170125  :  EP-VK-PLA 35 DR BE  :  1  : Forrez NV  : KB170058
 kzb20170125  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170058 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170125  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170058 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170139  :  EP-VK-PLA 35 DR BE  :  1  : DISCAR SA BMW  : KB170067
-kzb20170139  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170067 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170139  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170067 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170127  :  EP-VK-PLA 35 DR BE  :  1  : Autobus Kruger bvba  : KB170061
 kzb20170127  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170061 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170122  :  EP-VK-PLA 35 DR BE  :  0  :   :  usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170127  :  EP-VK-PLA 35 DR BE  :  1  : 3  : KB170061
-kzb20170127  :  EP-VK-PLA 35 DR BE  :  1  : 3  : KB170061
 kzb20170139  :  EP-VK-PLA 35 DR BE  :  1  : 696  : KB170067  usb: ja
 kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 3  : KB170040  usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 3  : KB170040  usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 6  : KB170040  usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 6  : KB170040  usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 6  : KB170040  usbnodig?: nee
 kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 6  : KB170040  usbnodig?: nee
 kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 66  : KB170040  usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 6  : KB170040  usbnodig?: nee
 kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  : 6  :   usbnodig?: nee
-kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 3  : KB170040  usbnodig?: nee
 kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  : 22  : KB170073  usbnodig?: ja
 kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170073  usbnodig?: ja
 kzb20170153  :  EP-VK-PLA 35 NR BE  :  0  : 2  :   usbnodig?: ja
-kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  : 3  : KB170073  usbnodig?: ja
 kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  : 3  : KB170073  usbnodig?: ja
 kzb20170071  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : 0  : KB170040  usbnodig?: nee
 kzb20170152  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUV nord Mobilitat  : KB170071  usbnodig?: nee
@@ -119,34 +103,19 @@ kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  : Gar. Paesmans NV  : KB170073  usbnod
 kzb20170153  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170073 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170180  :  EP-VK-PLA 35 DR BE  :  1  : p  : KB170076  usbnodig?: ja
 kzb20170180  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170076 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170180  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170076 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170180  :  EP-VK-PLA 35 DR BE  :  0  : Gilcon bvba  :   usbnodig?: ja
 kzb20170180  :  EP-VK-PLA 35 DR BE  :  1  : Gilcon bvba  : KB170076  usbnodig?: ja
-kzb20170180  :  EP-VK-PLA 35 DR BE  :  1  : p  : KB170076  usbnodig?: ja
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  : Transport Nagels  : KB170080  usbnodig?: ja
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  :   : Private oVars As Variables  usbnodig?: ja
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: ja
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  : m  :   usbnodig?: ja
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: ja
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: ja
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: ja
 kzb20170239  :  EP-VK-PLA 35 DR BE  :  1  : Gar. Demeyere NV  : KB170082  usbnodig?: ja
 kzb20170239  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170082 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170215  :  EP-VK-PLA 35 DR BE  :  0  : Car Square Garage  :   usbnodig?: ja
 kzb20170244  :  EP-VK-PLA 35 DR BE  :  1  : PSA Citroen  : KB170084  usbnodig?: ja
-kzb20170244  :  EP-VK-PLA 35 DR BE  :  1  : PSA Citroen  : KB170084  usbnodig?: ja
 kzb20170244  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170084 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170215  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170270  :  EP-VK-SAR 35 GOCA  :  1  :    : KB170091  usbnodig?: nee
-kzb20170272  :  EP-VK-PLA 35 DR BE  :  1  : Rietje NV  : KB170094  usbnodig?: ja
 kzb20170272  :  EP-VK-PLA 35 DR BE  :  1  : Rietje NV  : KB170094  usbnodig?: ja
 kzb20170272  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170094 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170273  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :   : KB170095  usbnodig?: nee
@@ -158,39 +127,20 @@ kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  : Paesmans  : KB170101  usbnodig?: ja
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170101 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170101  usbnodig?: ja
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  : 4  : KB170101  usbnodig?: ja
-kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170101  usbnodig?: ja
-kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170101 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  0  : o  :   usbnodig?: ja
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  : p  : KB170101  usbnodig?: ja
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170101 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170307  :  EP-VK-PLA 35 NR BE  :  0  :   :   usbnodig?: ja
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  : TUVNORDHANNOVERF4  : KB170102  usbnodig?: ja
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102  usbnodig?: ja
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  : TUVNORDHANNOVERF4  : KB170102  usbnodig?: ja
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  : p  : KB170102  usbnodig?: ja
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170321  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :   : KB170104  usbnodig?: nee
 kzb20170321  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :    : KB170104  usbnodig?: nee
 kzb20170346  :  EP-VK-PLA 5 NR - A  :  1  :    : KB170112  usbnodig?: nee
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  : Empsen - Verbiest Garage  : KB170106  usbnodig?: ja
-kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170343  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170106 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170345  :  EP-VK-PLA 5 DR  BI - A  :  1  : Pierre Joel Motors  : KB170109  usbnodig?: nee
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  : Garage Mortier  : KB170107  usbnodig?: ja
@@ -199,12 +149,9 @@ kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  : p  : KB170107  usbnodig?: ja
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170107 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LETLET
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  0  : o  :   usbnodig?: ja
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  : o  : KB170107  usbnodig?: ja
-kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170107 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LETLET
-kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  0  : p  :   usbnodig?: ja
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  : i  : KB170107  usbnodig?: ja
-kzb20170344  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170352  :  EP-VK-PLA 5 NR  TUV  :  1  : TUVNORDHANNOVERF4  : KB170113  usbnodig?: nee
 kzb20170377  :  EP-VK-PLA 35 DR BE  :  1  : Provenciale Technische School  : KB170116  usbnodig?: ja
 kzb20170377  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170116 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -212,27 +159,17 @@ kzb20170377  :  EP-VK-PLA 35 DR BE  :  1  : 6  : KB170116  usbnodig?: ja
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  0  :    : Wordt vernummerd   usbnodig?: ja
 kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :    : KB170121  usbnodig?: ja
 kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB170121 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170118  usbnodig?: ja
 kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170118 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170118 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170118 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170118 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  : p  : KB170118  usbnodig?: ja
-kzb20170386  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170118 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170387  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  2  :    : KB170119  usbnodig?: nee
 kzb20170408  :  EP-VK-SAR 35 GOCA  :  1  : Scania Belgie  : KB170135  usbnodig?: nee
 kzb20170408  :  EP-VK-SAR 35 GOCA  :  1  :   : KB170135  usbnodig?: nee
 kzb20170408  :  EP-VK-SAR 35 GOCA  :  1  : 3  : KB170135  usbnodig?: nee
 kzb20170408  :  EP-VK-SAR 35 GOCA  :  1  : Scania Belgium nv  : KB170135  usbnodig?: nee
-kzb20170408  :  EP-VK-SAR 35 GOCA  :  1  :   : KB170135  usbnodig?: nee
 kzb20170405  :  EP-VK-PLA 35 DR BE  :  1  : Pieters Auto's  : KB170126  usbnodig?: ja
-kzb20170405  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170126 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170405  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170126 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170405  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170126 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170399  :  EP-VK-PLA 35 DR BE  :  1  : Mannes Mobility Bruss SA  : KB170122  usbnodig?: ja
 kzb20170399  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170122 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -242,86 +179,37 @@ kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  : Vansteelant  : KB170124  usbnodig?: 
 kzb20170406  :  EP-VK-PLA 35 DR BE  :  1  : Jan De Nul NV  : KB170128  usbnodig?: ja
 kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :    : KB170139  usbnodig?: ja
 kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170388  :  EP-VK-PLA 35 DR HELLA  :  3  :   : KB170139 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170437  :  EP-VK-SAR 35 GOCA  :  1  : SBATSTDENIJSWESTRFA  : KB170137  usbnodig?: nee
 kzb20170437  :  EP-VK-SAR 35 GOCA  :  1  :   : KB170137  usbnodig?: nee
 kzb20170444  :  EP-VK-PLA 35 NR BE  :  1  : Dekeyser L Garage  : KB170138  usbnodig?: ja
 kzb20170444  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170138 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170444  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170138 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170444  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170138 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170444  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170138 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20120406  :  EP-VK-PLA 35 DR BE  :  1  : Vuylsteke Sprl  : KB170143  usbnodig?: ja
 kzb20120406  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170143 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170456  :  EP-VK-PLA 35 DR BE  :  1  : DVR  : KB170140  usbnodig?: ja
 kzb20170456  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170140 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170456  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170140 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170458  :  EP-VK-PLA 5 SR  :  1  :    : KB170145  usbnodig?: nee
 kzb20170458  :  EP-VK-PLA 5 SR  :  1  :    : KB170145  usbnodig?: nee
 kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  : PTI ninove  : KB170146  usbnodig?: ja
 kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146  usbnodig?: ja
-kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20170463  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170146 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb0  :  EP-130110_00KOL  :  1  :   : EP170061  usbnodig?: nee
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  :   : KB170102  usbnodig?: ja
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  2  : m  : KB170102  usbnodig?: ja
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  0  :   :   usbnodig?: nee
-kzb20170318  :  EP-VK-PLA 35 SR BE  :  0  :   :   usbnodig?: nee
 kzb20170318  :  EP-VK-PLA 35 SR BE  :  0  :   :   usbnodig?: nee
 kzb20170399  :  EP-VK-RAIL-SET-3M  :  1  :   : KB170123  usbnodig?: nee
 kzb20170399  :  EP-VK-RAIL-SET-3M  :  0  :   :   usbnodig?: nee
-kzb20170399  :  EP-VK-RAIL-SET-3M  :  1  :   : KB170123  usbnodig?: nee
 kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124  usbnodig?: nee
 kzb20170458  :  EP-VK-PLA 5 SR  :  1  :   : KB170145  usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   : Private Sub CommandButton1_Click()  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   : 'soms is msoft niet goed ingevuld en vind ik mijn data niet weer  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :     ActiveSheet.Range("d" & 1).Value = kzbnummer  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170008  usbnodig?: nee
-kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124  usbnodig?: nee
 kzb20170403  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: nee
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124  usbnodig?: nee
 kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: nee
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: nee
 kzb20170403  :  EP-VK-PLA 35 DR BE  :  0  :   :  usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124  usbnodig?: nee
 kzb20170403  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170124 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  :   : KB170147  usbnodig?: nee
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  :   : KB170147  usbnodig?: nee
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  :   : KB170147  usbnodig?: nee
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  :   : KB170147  usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  :   : KB170147  usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  0  : 1  :           usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  : p  : KB170147  usbnodig?: nee
@@ -330,13 +218,8 @@ kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  : 2  : KB170147  usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  : ITAL MOTORS SA  : KB170147  usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  0  : ty  :   usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  : rtrt  : KB170147  usbnodig?: nee
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  1  : ITAL MOTORS SA  : KB170147  usbnodig?: nee
-kzb20170468  :  EP-VK-PLA 5 NR - A  :  0  :   :   usbnodig?: nee
 kzb20170468  :  EP-VK-PLA 5 NR - A  :  0  :   :   usbnodig?: nee
 kzb0  :  Noodherstelling VW Emden  :  1  : p  : HFA170009  usbnodig?: nee
-kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  : p  : KB170140  usbnodig?: nee
-kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  : p  : KB170140  usbnodig?: nee
-kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  : p  : KB170140  usbnodig?: nee
 kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  : p  : KB170140  usbnodig?: nee
 kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  : m  : KB170140  usbnodig?: nee
 kzb20170456  :  EP-VK-PLA 35 SR DVSA  :  1  :   : KB170140 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
@@ -346,8 +229,6 @@ kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : t  : KB170153  usbnodig?
 kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : o  : KB170153  usbnodig?: nee
 kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  : m  :   usbnodig?: nee
 kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : m  : KB170153  usbnodig?: nee
-kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUVNORDHANNOVERF4  : KB170153  usbnodig?: nee
-kzb20170499  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUVNORDHANNOVERF4  : KB170153  usbnodig?: nee
 kzb20170498  :  EP-VK-PLA 35 DR BE  :  1  : Lambrecht Nr1 in banden  : KB170151  usbnodig?: nee
 kzb20170516  :  EP-VK-PLA 35 DR BE  :  1  : New Toyota Ciity zaventem  : KB170160  usbnodig?: nee
 kzb20170526  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUV NORD Mobil. Gmbh  : KB170164  usbnodig?: nee
@@ -356,103 +237,53 @@ kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werk
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  : p  : KB170155  usbnodig?: nee
 kzb20170009  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : p  : KB170155  usbnodig?: nee
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  0  : p  :   usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  : p  : KB170155  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  : pp  : KB170155  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  : y  : KB170155  usbnodig?: nee
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155  usbnodig?: nee
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  0  :   :     If binnenofbuitenland = "DEALBI" Or binnenofbuitenland = "GOCA" Or binnenofbuitenland = "GAR" Then  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  0  :   :     If binnenofbuitenland = "DEALBI" Or binnenofbuitenland = "GOCA" Or binnenofbuitenland = "GAR" Then  usbnodig?: nee
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  0  :   : ' buitenland ? test met K170145  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155  usbnodig?: nee
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155  usbnodig?: nee
-kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170504  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170155 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170516  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170160  usbnodig?: nee
 kzb20170516  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170160 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170516  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170160 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170516  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170160 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb0  :  PLA 35 SR Headlamptester Luminoscope  :  1  : m  : DDE170002  usbnodig?: nee
 kzb0  :  PLA 35 SR Headlamptester Luminoscope  :  1  : o  : DDE170002  usbnodig?: nee
-kzb20170532  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :    : KB170169  usbnodig?: nee
-kzb20170532  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :   : KB170169  usbnodig?: nee
 kzb20170532  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :    : KB170169  usbnodig?: nee
 kzb20170532  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :   : KB170169  usbnodig?: nee
 kzb20170528  :  EP-VK-PLA 25 DR UK BATT  :  2  : Gemco warehouse & Distibution  : KB170165  usbnodig?: nee
 kzb20170528  :  EP-VK-PLA 25 DR UK BATT  :  2  : mm  : KB170165  usbnodig?: nee
 kzb20170528  :  EP-VK-PLA 25 DR UK BATT  :  2  : m  : KB170165  usbnodig?: nee
 kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : SNAPONITALYFA  : KB170167  usbnodig?: nee
-kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : SNAPONITALYFA  : KB170167  usbnodig?: nee
 kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170167  usbnodig?: nee
 kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  : Gemco warehouse & distribution  : KB170166  usbnodig?: nee
 kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166  usbnodig?: nee
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166  usbnodig?: nee
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166  usbnodig?: nee
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170544  :  EP-VK-PLA 35 NR BE  :  1  : Quipor  : KB170171  usbnodig?: nee
 kzb20170544  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170171 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : l  : KB170167  usbnodig?: nee
 kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170167 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170531  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170167 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170549  :  EP-VK-PLA 35 SR FR  :  2  :    : KB170181  usbnodig?: nee
-kzb20170549  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170181 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170549  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170181 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170549  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170181 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170561  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  2  : TUV Nord Mobil. gmbh & co kg  : KB170190  usbnodig?: nee
 kzb20170552  :  EP-VK-PLA 35 DR GELAGERD  :  2  :    : KB170177  usbnodig?: nee
 kzb20170552  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170177 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170552  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170177 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170552  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170177 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170558  :  EP-VK-PLA 35 DR BE  :  1  : Paesen Trucks Zolder NV  : KB170184  usbnodig?: nee
 kzb20170558  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170184 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170558  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170184 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170560  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : Snap on Equipment  : KB170187  usbnodig?: nee
-kzb20170560  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170187 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170560  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170187 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170590  :  EP-VK-PLA 35 NR BE  :  1  : Schoutteet Ronny Bvba  : KB170201  usbnodig?: nee
 kzb20170590  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170201 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170590  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170201  usbnodig?: nee
-kzb20170590  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170201 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170589  :  EP-VK-PLA 35 DR BE  :  1  : Dejonckheere NV  : KB170198  usbnodig?: nee
 kzb20170589  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170198 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170552  :  EP-VK-SAM-1050  :  3  :    : KB170180  usbnodig?: nee
-kzb20170530  :  EP-VK-PLA 35 DR UK DVSA  :  4  :   : KB170166 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb0  :  HFPRI-080163_00OPT  :  30  :   : HF170856  usbnodig?: nee
 kzb0  :  HFPRI-080163_00OPT  :  30  :   : HF170856  usbnodig?: nee
 kzb20170602  :  EP-VK-PLA 35 NR BE  :  1  : Satracom SA  : KB170204  usbnodig?: nee
 kzb20170602  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170204 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170602  :  EP-VK-PLA 35 NR BE  :  1  : Satracom SA  : KB170204  usbnodig?: nee
 kzb20170601  :  EP-VK-PLA 35 NR BE  :  1  : Satracom SA  : KB170203  usbnodig?: nee
-kzb20170601  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170203 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170601  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170203 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170637  :  EP-VK-PLA 35 DR BE  :  1  : Auto 5  : KB170211  usbnodig?: nee
 kzb20170637  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170211 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170637  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170211 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170637  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170211 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170637  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170211 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170636  :  EP-VK-PLA 35 DR BE  :  1  : Auto 5   : KB170210  usbnodig?: nee
 kzb20170636  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170210 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -469,14 +300,11 @@ kzb20170656  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170215 usbstick : usb log werk
 kzb20170634  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: nee
 kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  : Gemco Warehouse & Distr.  : KB170225  usbnodig?: nee
 kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  :   : KB170225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  :   : KB170225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  :   : KB170225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170672  :  EP-VK-PLA 20 DR  BI - A  :  1  :    : KB170222  usbnodig?: nee
 kzb20170684  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  2  : TUVNORDHANNOVERF4  : KB170228  usbnodig?: nee
 kzb20170673  :  EP-VK-RAIL-SET-1.5M  :  1  :   : KB170223  usbnodig?: nee
 kzb20170673  :  EP-VK-RAIL-SET-1.5M  :  1  : Gemco warehouse & distri.  : KB170223  usbnodig?: nee
 kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  :   : KB170225  usbnodig?: nee
-kzb20170683  :  EP-VK-PLA 35 DR GELAGERD  :  1  :   : KB170225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170692  :  EP-VK-PLA 35 DR BE  :  1  : Kortrijk Motors  : KB170230  usbnodig?: nee
 kzb20170692  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170230 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170694  :  EP-VK-PLA 35 NR BE  :  1  : TCM CARS  : KB170233  usbnodig?: nee
@@ -486,15 +314,12 @@ kzb20170716  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170240 usbstick : usb log werk
 kzb20170715  :  EP-VK-SAR 35 GOCA  :  1  : KM NV  : KB170239  usbnodig?: nee
 kzb20170712  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170237  usbnodig?: nee
 kzb20170712  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170237 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170712  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170237 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170713  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170238  usbnodig?: nee
-kzb20170713  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170238 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170713  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170238 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170711  :  EP-VK-PLA 5 NR - A  :  1  :    : KB170236  usbnodig?: nee
 kzb20170723  :  EP-VK-PLA 35 DR BE  :  1  : citroen brugge  : KB170242  usbnodig?: nee
 kzb20170723  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170242 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170722  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170241  usbnodig?: nee
-kzb20170722  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170241 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170722  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170241 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170727  :  EP-VK-PLA 35 DR BE  :  1  : Quoilin Garage Marche  : KB170244  usbnodig?: nee
 kzb20170727  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170244 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -510,26 +335,15 @@ kzb20170745  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170254 usbstick : usb log werk
 kzb20170775  :  EP-VK-PLA 25 DR BE CONTLCD GELAGERD  :  2  :    : KB170260  usbnodig?: nee
 kzb20170774  :  EP-VK-PLA 35 DR UK DVSA  :  2  : Gemco warehouse & Distri.  : KB170258  usbnodig?: nee
 kzb20170774  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB170258 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170774  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB170258 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170774  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB170258 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170776  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : TUV Nord Mobil. Gmbh & Co kg  : KB170262  usbnodig?: nee
 kzb20170793  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170267  usbnodig?: nee
 kzb20170793  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170267 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170793  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170267 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170777  :  EP-VK-PLA 35 SR FR  :  2  :    : KB170263  usbnodig?: nee
-kzb20170777  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170263 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170777  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170263 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170777  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170263 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :    : KB170271  usbnodig?: nee
 kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170799  :  EP-VK-PLA 35 SR FR  :  2  :   : KB170271 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170799  :  EP-VK-PLA 35 SR FR  :  0  :   : LET USER!KB170271.002  usbnodig?: nee
 kzb20170797  :  EP-VK-PLA 35 NR BE  :  1  :    : KB170270  usbnodig?: nee
-kzb20170797  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170270 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170797  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170270 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170794  :  EP-VK-PLA 5 NR  TUV  :  1  : Ing.Buro Urban,Ehrhardt GbR  : KB170268  usbnodig?: nee
 kzb20170796  :  EP-VK-PLA 35 DR BE  :  1  : Van De Ven -De Kort NV  : KB170269  usbnodig?: nee
@@ -547,14 +361,11 @@ kzb20170871  :  EP-VK-PLA 35 NR BE  :  1  : Herion Guy SA  : KB170288  usbnodig?
 kzb20170871  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170288 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170870  :  EP-VK-PLA 35 DR BE  :  1  : Di Netto Autogroep  : KB170283  usbnodig?: nee
 kzb20170870  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170283 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170870  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170283 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170885  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : Tuv nord mobil. Gmbh  : KB170295  usbnodig?: nee
 kzb20170875  :  EP-VK-PLA 35 DR BE  :  1  : Bruyninx schadebedrijf  : KB170290  usbnodig?: nee
 kzb20170875  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170290 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170877  :  EP-VK-PLA 35 NR BE  :  1  : Depanage De Cokere  : KB170294  usbnodig?: nee
 kzb20170877  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170294 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170802  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170273 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20170802  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170273 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170898  :  EP-VK-PLA 35 NR BE  :  1  : Bruno Hendrickx Carroserie bvba  : KB170296  usbnodig?: nee
 kzb20170898  :  EP-VK-PLA 35 NR BE  :  1  :   : KB170296 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170891  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Idem  : KB170298  usbnodig?: nee
@@ -576,9 +387,6 @@ kzb20170934  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170310
 kzb20170937  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : Snap-On Equipmenr  : KB170312  usbnodig?: nee
 kzb20170940  :  EP-VK-PLA 35 DR GELAGERD  :  2  :    : KB170315  usbnodig?: nee
 kzb20170940  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170315 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170940  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170315 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170940  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170315 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20170940  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB170315 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20170950  :  EP-VK-PLA 35 DR BE  :  1  : Sawa Skoda  : KB170323  usbnodig?: nee
 kzb20170950  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170323 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170949  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170322  usbnodig?: nee
@@ -586,7 +394,6 @@ kzb20170942  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  
 kzb20170943  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170317  usbnodig?: nee
 kzb20170944  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170318  usbnodig?: nee
 kzb20170945  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170319  usbnodig?: nee
-kzb20170946  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB170320  usbnodig?: nee
 kzb20170946  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB170320  usbnodig?: nee
 kzb20170947  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170321  usbnodig?: nee
 kzb20170644  :  EP-VK-PLA 35 DR BE  :  1  :   : KB170212  usbnodig?: nee
@@ -605,14 +412,10 @@ kzb20170896  :  EP-VK-PLA 5 NR  TUV  :  1  :   : KB170303  usbnodig?: nee
 kzb20171004  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  :    : KB180001  usbnodig?: nee
 kzb20180016  :  EP-VK-PLA 35 DR UK DVSA  :  2  : Gemco Warehous & Distribution  : KB180008  usbnodig?: nee
 kzb20180016  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180008 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180016  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180008 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180016  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180008 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180015  :  EP-VK-PLA 35 DR BE  :  1  : Peeters Oiw Antwerpen  : KB180006  usbnodig?: nee
 kzb20180015  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180006 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180016  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180008  usbnodig?: nee
 kzb20180013  :  EP-VK-PLA 35 SR FR  :  2  :    : KB180005  usbnodig?: nee
-kzb20180013  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180005 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180013  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180005 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180013  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180005 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180029  :  EP-VK-PLA 35 DR BE  :  1  : Chris Christien  : KB180012  usbnodig?: nee
 kzb20180029  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180012 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -628,21 +431,11 @@ kzb20180042  :  EP-VK-PLA 35 DR BE  :  1  : Frederix Truck Center Nv  : KB180024
 kzb20180042  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180024 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  : Vietnet Inc  : KB180021  usbnodig?: nee
 kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180035  :  EP-VK-PLA 35 DR GELAGERD  :  4  :   : KB180021 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180056  :  EP-VK-PLA 35 SR FR  :  2  :    : KB180032  usbnodig?: nee
-kzb20180056  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180032 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180056  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180032 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180056  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180032 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180041  :  EP-VK-PLA 35 NR BE  :  1  : Bernard Sa  : KB180023  usbnodig?: nee
 kzb20180041  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180023 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180034  :  EP-VK-SAM-LVC 1050 SHENZHEN  :  1  :    : KB180019  usbnodig?: nee
-kzb20170934  :  EP-VK-PLA 5 NR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB170310  usbnodig?: nee
 kzb20180058  :  EP-VK-PLA 5 NR - A  :  1  : Carglass Carroserie  : KB180034  usbnodig?: nee
 kzb20180057  :  EP-VK-PLA 35 DR BE  :  1  : Van Den Broeck Garage  : KB180033  usbnodig?: nee
 kzb20180057  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180033 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -652,55 +445,31 @@ kzb20180063  :  EP-VK-PLA 35 DR BE  :  1  : Peeters Garage  : KB180037  usbnodig
 kzb20180063  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180037 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20170942  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  :    : KB170316  usbnodig?: nee
 kzb20180057  :  EP-VK-PLA 35 DR BE  :  1  :    : KB180033  usbnodig?: nee
-kzb20180057  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180033 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180074  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180041  usbnodig?: nee
 kzb20180076  :  EP-VK-PLA 5 DR  BI - A  :  1  : Novoto  : KB180042  usbnodig?: nee
 kzb20180077  :  EP-VK-PLA 35 NR BE  :  1  : Mat Cars  : KB180045  usbnodig?: nee
 kzb20180077  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180045 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :    : KB180039  usbnodig?: nee
 kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  10  :   : KB180039 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180073  :  EP-VK-PLA 35 SR FR  :  0  :   : LET USER!KB180039.001  usbnodig?: nee
 kzb20180073  :  EP-VK-PLA 35 SR FR  :  0  :   : LET USER!KB180039.001 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180073  :  EP-VK-PLA 35 SR FR  :  0  :   : LET USER!KB180039.001  usbnodig?: nee
 kzb20180073  :  EP-VK-RAIL-SINGLE-2.5M  :  12  :    : KB180040  usbnodig?: nee
 kzb20180063  :  EP-VK-PLA 35 DR BE  :  1  : Ertgert  : KB180037  usbnodig?: nee
 kzb20170937  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : M  : KB170312  usbnodig?: nee
 kzb20170937  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB170312 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180094  :  EP-VK-PLA 35 DR UK DVSA  :  2  : Gemco Warehouse & Distribution  : KB180056  usbnodig?: nee
 kzb20180094  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180056 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180094  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180056 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180094  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180056 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180092  :  EP-VK-PLA 35 DR BE  :  1  : Garage Pieters Marc  : KB180053  usbnodig?: nee
-kzb20180092  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180053 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180092  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180053 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180092  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180053 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180094  :  EP-VK-PLA 35 DR UK DVSA  :  2  : L  : KB180056  usbnodig?: nee
 kzb20180099  :  EP-VK-PLA 35 NR BE  :  1  : Idem  : KB180058  usbnodig?: nee
 kzb20180099  :  EP-VK-PLA 35 NR BE  :  1  : VDABEELEINGELMUNSTER  : KB180058  usbnodig?: nee
 kzb20180099  :  EP-VK-PLA 35 NR BE  :  1  :    : KB180058  usbnodig?: nee
 kzb20180099  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180058 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180099  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180058 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180102  :  EP-VK-PLA 5 NR - A  :  1  :    : KB180061  usbnodig?: nee
 kzb  :    :  0  :   :   usbnodig?: nee
 kzb20180109  :  EP-VK-PLA 35 DR BE  :  1  :    : KB180062  usbnodig?: nee
 kzb20180109  :  EP-VK-PLA 35 DR BE  :  1  : Bellens  : KB180062  usbnodig?: nee
-kzb20180109  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180062 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180109  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180062 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180112  :  EP-VK-PLA 5 DR  BI - A  :  1  : Ital Garage Toyota  : KB180068  usbnodig?: nee
 kzb20180111  :  EP-VK-SAR 35 GOCA  :  1  : Celis Cars Nv  : KB180067  usbnodig?: nee
@@ -719,7 +488,6 @@ kzb20180122  :  EP-VK-PLA 35 DR BE  :  1  :    : KB180074  usbnodig?: nee
 kzb20180122  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180074 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180122  :  EP-VK-PLA 35 DR BE  :  1  :    : KB180075  usbnodig?: nee
 kzb20180122  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180075 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb  :    :  0  :   :   usbnodig?: nee
 kzb20170344  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: ja
 kzb  :    :  0  : Y  :   usbnodig?: nee
 kzb20161027  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  :   : KB170003  usbnodig?: nee
@@ -727,20 +495,15 @@ kzb20161027  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  0  :   :   usbnodig?: nee
 kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Defense  : KB180079  usbnodig?: nee
 kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180079 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Ttt  : KB180079  usbnodig?: nee
-kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Defense  : KB180079  usbnodig?: nee
-kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Defense  : KB180079  usbnodig?: nee
 kzb20180217  :  EP-VK-PLA 5 NR - A  :  1  :   : KB180086  usbnodig?: nee
 kzb20180217  :  EP-VK-PLA 5 NR - A  :  1  : Jennse Machelen  : KB180086  usbnodig?: nee
 kzb20180215  :  EP-VK-PLA 5 NR - A  :  1  : Emv  : KB180085  usbnodig?: nee
 kzb20180210  :  EP-VK-SAR 35 GOCA  :  1  : Th Turbos Belgium  : KB180083  usbnodig?: nee
-kzb20180217  :  EP-VK-PLA 5 NR - A  :  1  :   : KB180086  usbnodig?: nee
 kzb20180094  :  EP-VK-RAIL-SET-3M  :  2  : Tuv Nord Mobilitat Gmbh  : KB180057  usbnodig?: nee
 kzb20180229  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180087  usbnodig?: nee
 kzb20180230  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  : Tuv Nord Mobilitat Gmbh  : KB180088  usbnodig?: nee
 kzb20180231  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180089  usbnodig?: nee
 kzb0  :  Luminoscope® PLA 35 SR  :  1  : Vw Ag  : IFA180009  usbnodig?: nee
-kzb0  :  Luminoscope® PLA 35 SR  :  1  :   : IFA180009 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb0  :  Luminoscope® PLA 35 SR  :  1  :   : IFA180009 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb0  :  Luminoscope® PLA 35 SR  :  1  :   : IFA180009 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20180242  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180090  usbnodig?: nee
 kzb20180246  :  EP-VK-PLA 35 DR BE  :  1  :    : KB180092  usbnodig?: nee
@@ -758,18 +521,9 @@ kzb20180266  :  EP-VK-PLA 35 DR BE  :  1  : Garage Casier Velle Bvba  : KB180098
 kzb20180266  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180098 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180294  :  EP-VK-PLA 35 NR BE  :  1  : Verleyen Garage  : KB180107  usbnodig?: nee
 kzb20180294  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180294  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180294  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180107 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  : Garage Denduyver Motors  : KB180106  usbnodig?: nee
 kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  : Popo  : KB180106  usbnodig?: nee
-kzb20180285  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180106 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180298  :  EP-VK-PLA 5 NR - A  :  1  : M  : KB180108  usbnodig?: nee
 kzb20180299  :  EP-VK-PLA 5 NR - A  :  1  : Pashuysen Nv  : KB180109  usbnodig?: nee
 kzb20180307  :  EP-VK-PLA 35 DR BE  :  1  : Quevrain Mecanique  : KB180115  usbnodig?: nee
@@ -787,8 +541,6 @@ kzb20180304  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180111 usbstick : usb log werk
 kzb20180305  :  EP-VK-PLA 5 NR - A  :  1  : Staca  : KB180113  usbnodig?: nee
 kzb20180314  :  EP-VK-PLA 35 DR BE  :  2  :      : KB180124  usbnodig?: nee
 kzb20180314  :  EP-VK-PLA 35 DR BE  :  2  :   : KB180124 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180314  :  EP-VK-PLA 35 DR BE  :  2  :   : KB180124 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180314  :  EP-VK-PLA 35 DR BE  :  2  :   : KB180124 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180312  :  EP-VK-PLA 35 DR BE  :  1  : Ghesquiere Geert  : KB180122  usbnodig?: nee
 kzb20180312  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180122 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180315  :  EP-VK-PLA 35 SR FR  :  6  :    : KB180125  usbnodig?: nee
@@ -801,14 +553,12 @@ kzb20180322  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180128 usbstick : usb log werk
 kzb20180317  :  EP-VK-PLA 5 NR - A  :  1  : Garage Minnekens  : KB180126  usbnodig?: nee
 kzb20180314  :  EP-VK-PLA 35 DR BE  :  2  : 3  : KB180124  usbnodig?: nee
 kzb0  :  Luminoscope® PLA 35 SR  :  1  : Pp  : IFA180009  usbnodig?: nee
-kzb0  :  Luminoscope® PLA 35 SR  :  1  :   : IFA180009 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20180341  :  EP-VK-PLA 5 SR  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB180134  usbnodig?: nee
 kzb20180346  :  EP-VK-PLA 35 NR BE  :  1  : Automobiel Center Puurs  : KB180137  usbnodig?: nee
 kzb20180346  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180137 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180338  :  EP-VK-PLA 35 NR BE  :  1  : Rudi Garage  : KB180132  usbnodig?: nee
 kzb20180338  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180132 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180339  :  EP-VK-PLA 35 NR BE  :  1  : Werkplaats Merksem  : KB180133  usbnodig?: nee
-kzb20180339  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180133 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180339  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180133 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180347  :  EP-VK-PLA 35 DR BE  :  1  : Bossuyt W Nv  : KB180135  usbnodig?: nee
 kzb20180347  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180135 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -822,16 +572,6 @@ kzb20180371  :  EP-VK-PLA 5 NR AL  TUV  :  1  : Tuv Nord Mobilitat Gmbh  : KB180
 kzb20180368  :  EP-VK-PLA 35 DR BE  :  1  : Garage Tison Sa  : KB180144  usbnodig?: nee
 kzb20180368  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180144 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : Snap-On Equipment  : KB180148  usbnodig?: nee
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180148 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180377  :  EP-VK-PLA 25.1 DR SNAPON  :  0  :   :   usbnodig?: nee
 kzb20180380  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180151  usbnodig?: nee
@@ -862,16 +602,7 @@ kzb20180347  :  EP-VK-PLA 35 NR BE  :  1  : Bossuyt Nv  : KB180177  usbnodig?: n
 kzb20180347  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180177 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  : Garage Timmerman  : KB180176  usbnodig?: nee
 kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  : 0  : KB180176  usbnodig?: nee
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  : 0  : KB180176  usbnodig?: nee
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
-kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017
 kzb20180432  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180176 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180268  :  EP-VK-PLA 5 NR  TUV  :  1  :   : KB180100  usbnodig?: nee
 kzb20180268  :  EP-VK-PLA 5 NR  TUV  :  1  :  D  : KB180100  usbnodig?: nee
@@ -880,37 +611,25 @@ kzb20180450  :  EP-VK-PLA 35 DR BE  :  1  : Move Autobedrijf  : KB180180  usbnod
 kzb20180450  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180180 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180268  :  EP-VK-PLA 5 NR  TUV  :  0  :   :   usbnodig?: nee
 kzb20180268  :  EP-VK-PLA 5 NR  TUV  :  0  : Uk  :   usbnodig?: nee
-kzb20180268  :  EP-VK-PLA 5 NR  TUV  :  0  :   :   usbnodig?: nee
 kzb20180450  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180180  usbnodig?: nee
-kzb20180450  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180180 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180444  :  COMP-PRI -SERIAL-40  :  1  : Jambes Motors Sa  : KB180178  usbnodig?: nee
 kzb20180444  :  EP-VK-PLA 35 DR BE  :  1  : Jambes Motors Sa  : KB180179  usbnodig?: nee
-kzb20180444  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180179 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180444  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180179 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180457  :  EP-VK-PLA 35 DR BE  :  1  : Tts Cbs Technics  : KB180185  usbnodig?: nee
 kzb20180457  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180185 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180464  :  EP-VK-PLA 35 DR FR  :  1  :    : KB180187  usbnodig?: nee
 kzb20180464  :  EP-VK-PLA 35 DR FR  :  1  :   : KB180187 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180464  :  EP-VK-PLA 35 DR FR  :  1  :   : KB180187 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180464  :  EP-VK-PLA 35 DR FR  :  1  : Mm  : KB180187  usbnodig?: nee
 kzb20180466  :  EP-VK-PLA 5 NR AL  TUV  :  2  : Tuv Nord Mobilitat Gmbh  : KB180189  usbnodig?: nee
 kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  : Passauto  : KB180080  usbnodig?: nee
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :  Passauto  : KB180080  usbnodig?: nee
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180385  :  EP-VK-PLA 5 SR AL  TUV  :  1  : Erfer  : KB180157  usbnodig?: nee
-kzb20180132  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180080 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180385  :  EP-VK-PLA 5 SR AL  TUV  :  1  : Zerze  : KB180157  usbnodig?: nee
 kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Ertet  : KB180079  usbnodig?: nee
 kzb20180133  :  EP-VK-PLA 35 NR BE  :  1  : Erg  : KB180079  usbnodig?: nee
 kzb20180471  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  : Tuv Nord Mobilitat Gmbh  : KB180191  usbnodig?: nee
-kzb20180471  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  : Tuv Nord Mobilitat Gmbh  : KB180191  usbnodig?: nee
 kzb20180472  :  EP-VK-PLA 35 DR BE  :  1  : Flex Auto Bvba  : KB180192  usbnodig?: nee
 kzb20180472  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180192 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180471  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  :   : KB180191  usbnodig?: nee
 kzb20180471  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  :   : KB180191  usbnodig?: nee
 kzb20180472  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180192  usbnodig?: nee
 kzb20180472  :  EP-VK-PLA 35 DR BE  :  0  :   :   usbnodig?: nee
@@ -920,8 +639,6 @@ kzb20180471  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  2  :    : KB180191  usbnodig?:
 kzb20180482  :  EP-VK-RAIL-SET-3M  :  2  : Tuv Nord Mobilitat Gmbh  : KB180197  usbnodig?: nee
 kzb20180482  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  1  : Tuv Nord Mobilitat Gmbh  : KB180196  usbnodig?: nee
 kzb20180474  :  EP-VK-PLA 35 SR FR  :  1  :    : KB180195  usbnodig?: nee
-kzb20180474  :  EP-VK-PLA 35 SR FR  :  1  :    : KB180195  usbnodig?: nee
-kzb20180474  :  EP-VK-PLA 35 SR FR  :  1  :   : KB180195 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180474  :  EP-VK-PLA 35 SR FR  :  1  :   : KB180195 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180484  :  EP-VK-PLA 35 DR BE  :  1  : Tony Automotive  : KB180198  usbnodig?: nee
 kzb20180484  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180198 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -932,8 +649,6 @@ kzb20180504  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180207 usbstick : usb log werk
 kzb20180490  :  EP-VK-PLA 35 SR FR  :  6  :    : KB180202  usbnodig?: nee
 kzb20180490  :  EP-VK-PLA 35 SR FR  :  6  :   : KB180202 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180490  :  EP-VK-PLA 35 SR FR  :  6  : 20180490  : KB180202  usbnodig?: nee
-kzb20180490  :  EP-VK-PLA 35 SR FR  :  6  :   : KB180202 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180490  :  EP-VK-PLA 35 SR FR  :  6  :   : KB180202 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180502  :  EP-VK-PLA 35 DR BE  :  1  : Monnier Garage  : KB180205  usbnodig?: nee
 kzb20180502  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180205 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180513  :  EP-VK-PLA 35 DR BE  :  1  : Lambert Banden  : KB180208  usbnodig?: nee
@@ -946,17 +661,14 @@ kzb20180531  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180215 usbstick : usb log werk
 kzb20180533  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : Snap-On  : KB180217  usbnodig?: nee
 kzb20180533  :  EP-VK-PLA 25.1 DR SNAPON  :  1  : 20180533  : KB180217  usbnodig?: nee
 kzb20180533  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180217 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180533  :  EP-VK-PLA 25.1 DR SNAPON  :  1  :   : KB180217 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180534  :  EP-VK-PLA 35 NR BE  :  1  : Audi Center Zaventem  : KB180220  usbnodig?: nee
 kzb20180534  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180220 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180570  :  EP-VK-PLA 35 DR BE  :  1  : Ets Willems Sa  : KB180221  usbnodig?: nee
-kzb20180570  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180221 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180570  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180221 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180575  :  EP-VK-PLA 35 NR BE  :  1  : Luyckx  : KB180224  usbnodig?: nee
 kzb20180575  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180224 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180574  :  EP-VK-PLA 5 DR  TUV  560MM - A  :  1  : Tuv Nord Mobilitat Gmbh  : KB180223  usbnodig?: nee
 kzb20180629  :  EP-VK-PLA 35 DR UK DVSA  :  2  : Gemco Warehouse & Distri.  : KB180225  usbnodig?: nee
-kzb20180629  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180629  :  EP-VK-PLA 35 DR UK DVSA  :  2  :   : KB180225 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180659  :  EP-VK-PLA 35 NR BE  :  1  : School Pts Boom  : KB180228  usbnodig?: nee
 kzb20180659  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180228 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -968,8 +680,6 @@ kzb20180666  :  EP-VK-PLA 35 NR BE  :  1  : Groep Verellen  : KB180231  usbnodig
 kzb20180666  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180231 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180676  :  EP-VK-PLA 35 SR FR  :  2  :    : KB180236  usbnodig?: nee
 kzb20180676  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180236 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180676  :  EP-VK-PLA 35 SR FR  :  2  :   : KB180236 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
-kzb20180680  :  EP-VK-PLA 35 NR BE  :  1  : Mobil Service - Midas  : KB180239  usbnodig?: nee
 kzb20180680  :  EP-VK-PLA 35 NR BE  :  1  : Mobil Service - Midas  : KB180239  usbnodig?: nee
 kzb20180680  :  EP-VK-PLA 35 NR BE  :  1  :   : KB180239 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180679  :  EP-VK-PLA 35 NR BE  :  1  : De Smet Brussels South  : KB180238  usbnodig?: nee
@@ -986,7 +696,6 @@ kzb20180714  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180244 usbstick : usb log werk
 kzb20180731  :  EP-VK-PLA 5 NR AL - A  :  1  : Nice Cars Sa  : KB180253  usbnodig?: nee
 kzb20180728  :  EP-VK-SAR 35 GOCA  :  2  : Aibv Sa  : KB180252  usbnodig?: nee
 kzb20180732  :  EP-VK-PLA 35 DR GELAGERD  :  2  :    : KB180256  usbnodig?: nee
-kzb20180732  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB180256 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180732  :  EP-VK-PLA 35 DR GELAGERD  :  2  :   : KB180256 usbstick : usb log werkt nog niet - to debug :1maart2017integrator+user+LET
 kzb20180730  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  4  : Tuv Nord Mobilitat Gmbh  : KB180254  usbnodig?: nee
 kzb20180765  :  EP-VK-PLA 35 NR BE  :  1  : Adventure Cars Hanssens Bvba  : KB180265  usbnodig?: nee
@@ -1014,7 +723,6 @@ kzb20180872  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  3  :   : KB180293  usbnodig?: 
 kzb20180873  :  EP-VK-PLA 5 DR AL  TUV  560MM  :  3  :    : KB180295  usbnodig?: nee
 kzb20180871  :  EP-VK-PLA 35 DR BE  :  1  : Ldm Moving & Handling  : KB180291  usbnodig?: nee
 kzb20180871  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180291 usbstick : usb log werkt nog niet - to debug :1maart2017LET
-kzb20180771  :  EP-VK-PLA 35 DR GELAGERD  :  3  :   : KB180273 usbstick : usb log werkt nog niet - to debug :1maart2017LET
 kzb20180933  :  EP-VK-PLA 5 NR AL - A  :  1  : Time To Market Bvba  : KB180300  usbnodig?: nee
 kzb20180887  :  EP-VK-PLA 35 DR BE  :  1  : Nivelles Automobiles Sa  : KB180297  usbnodig?: nee
 kzb20180887  :  EP-VK-PLA 35 DR BE  :  1  :   : KB180297 usbstick : usb log werkt nog niet - to debug :1maart2017LET
@@ -1066,7 +774,6 @@ KZB20181085 8-10-2018 KB180334 PW EQUIPMENT  EP-VK-PLA 35 DR BE  PLA 35 DR Matoj
 KZB20181084 8-10-2018 KB180333 TAE EP-VK-PLA 35 NR BE  PLA 35 NR Coach Partners Oost-Vl. Lede usb:ja  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-2okt18-13:16
 KZB20181090 9-10-2018 KB180341 VHOVETCA EP-VK-SAR 35 GOCA +lijnlaser+rails+hendel SAR 35 Off 20180228   usb:no  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-2okt18-13:16
 KZB20181090 9-10-2018   EP-VK-SAR 35 GOCA +lijnlaser+rails+hendel SAR 35     usb:no  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-2okt18-13:16
-KZB20181090 9-10-2018   EP-VK-SAR 35 GOCA +lijnlaser+rails+hendel SAR 35     usb:no  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-2okt18-13:16
 KZB20181090 9-10-2018 KB180341 VHOVETCA EP-VK-SAR 35 GOCA +lijnlaser+rails+hendel+voedingskabel SAR 35     usb:no  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-2okt18-13:16
 KZB20181090 9-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA +lijnlaser+rails+hendel+voedingskabel SAR 35     usb:no  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-9okt18-17:10
 KZB20181091 9-10-2018 KB180338 AUTO5 ANDERLECHTFA EP-VK-PLA 35 DR BE  PLA 35 DR Auto 5  Boncelles usb:ja  usblabel-user:ja usblabel-integrator:no PDFopUSB?:ja KZB-versie23-9okt18-17:10
@@ -1077,7 +784,6 @@ KZB20181174 18-10-2018 KB180347 METALCED EP-VK-PLA 35 NR BE ,opties: labeltext:P
 KZB20181174 18-10-2018 KB180347 METALCED EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Tuv Nord Mobilitat Gmbh Testadres ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:versie-kzb26-logfile
 KZB20180962 25-10-2018 KB180304 DIAGNOSTIC SOLUTIONS EP-VK-PLA 35 DR GELAGERD ,opties: labeltext:PLA 35 DR   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:versie-kzb26-logfile
 KZB20181202 25-10-2018 KB180353 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR    ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:versie-kzb26-logfile
-KZB20181202 25-10-2018 KB180353 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Acb Volvo Nv Zaventem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:versie-kzb26-logfile
 KZB20181202 25-10-2018 KB180353 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Acb Volvo Nv Zaventem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:versie-kzb26-logfile
 KZB20181203 25-10-2018 KB180354 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Rs Motors Ingelmunster ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:versie-kzb26-logfile
 KZB20181204 25-10-2018 KB180357 ACCAUTO EP-VK-PLA 35 SR BE ,opties: labeltext:PLA 35 SR    ,usb:ja, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:versie-kzb26-logfile
@@ -1092,31 +798,17 @@ KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,
 KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR Rr Tt ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181192 25-10-2018 KB180350 DEN HARTOGH EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27homotextgeelblad
 KZB20181192 25-10-2018 KB180350 DEN HARTOGH EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27homotextgeelblad
-KZB20181192 25-10-2018 KB180350 DEN HARTOGH EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27homotextgeelblad
 KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR Tuv Nord Mobilitat Gmbh T ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR     ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
-KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
-KZB20181190 25-10-2018 KB180348 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR     ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181090 25-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35    ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27homotextgeelblad
 KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018 KB180341 VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk
-KZB20181090 26-10-2018  VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk-clipprojectREQured
-KZB20181090 26-10-2018  VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk-clipprojectREQured
 KZB20181090 26-10-2018  VAN HOVE TCA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:27ahk-clipprojectREQured
 KZB20181205 26-10-2018 KB180358 APEAQUIEVRAIN EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Abmons Cuesmes (Mons) ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27ahk-clipprojectREQured
 KZB20181205 26-10-2018 KB180358 APEA Sprl EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Abmons  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27ahk-clipprojectREQured
-KZB20181205 26-10-2018 KB180358 APEA Sprl EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Abmons  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27ahk-clipprojectREQured
 KZB20181205 26-10-2018 KB180358 APEA Sprl EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Ab Mons Sa Cuesmes (Mons) ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:27ahk-clipprojectREQured
-KZB20181205 5-11-2018 KB180358 APEA Sprl EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Abmons  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb28
 KZB20181205 5-11-2018 KB180358 APEA Sprl EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Abmons  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb28
 KZB20181213 5-11-2018 KB180359 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR Tuv Nord Mobilitat Gmbh Lippstadt Deutschland ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb28
 KZB20181213 5-11-2018 KB180359 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR    ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb28
@@ -1127,7 +819,6 @@ KZB20181220 6-11-2018 KB180361 VANDENABEELE EP-VK-PLA 35 DR BE ,opties: labeltex
 KZB20181251 12-11-2018 KB180363 AUTO5 ANDERLECHTFA EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Auto5 Schoten Schoten ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb28
 KZB20181271 13-11-2018 KB180369 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Desmet En Zoon Waregem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb28
 KZB20181271 13-11-2018 KB180369 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb28
-KZB20181263 13-11-2018 KB180372 RENAULTDOUAIFA6 EP-VK-PLA 35 SR BE ,opties: labeltext:PLA 35 SR Renaultdouail1  ,usb:ja, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb29
 KZB20181263 13-11-2018 KB180372 RENAULTDOUAIFA6 EP-VK-PLA 35 SR BE ,opties: labeltext:PLA 35 SR Renaultdouail1  ,usb:ja, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb29
 KZB 13-11-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb29facon
 KZB20181263 13-11-2018 KB180372 RENAULTDOUAIFA6 EP-VK-PLA 35 SR BE ,opties: labeltext:PLA 35 SR Renaultdouail1  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb29facon
@@ -1140,18 +831,15 @@ KZB20181311 21-11-2018 KB180383 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35
 KZB20181311 21-11-2018 KB180383 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb30facon
 KZB20181311 21-11-2018 KB180383 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Xwift  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb30facon
 KZB20181306 22-11-2018 KB180384 AVGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35    ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb31-naam
-KZB20181306 22-11-2018 KB180384 AVGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35    ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb31-naam
 KZB20181306 22-11-2018 KB180384 AVGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35 Off 20180283  ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181306 22-11-2018 KB180385 AVGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB 22-11-2018    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-b24
-KZB20181306 22-11-2018 KB180385 AVGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181306 22-11-2018 KB180385 AV GEEL EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181307 22-11-2018 KB180386 BTCGEELFA EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35 Off 20180283  ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181307 22-11-2018 KB180386 BTC GEEL EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181307 22-11-2018 KB180387 BTC GEEL EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181312 22-11-2018 KB180388 VANDENABEELE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Callens Bart Waregem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb32-b24
 KZB20181313 22-11-2018 KB180389 VANDENABEELE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Bultynck Joris Wevelgem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb32-b24
-KZB20181313 22-11-2018 KB180389 VANDENABEELE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20181313 - Bultynck  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb32-b24
 KZB20181313 22-11-2018 KB180389 VANDENABEELE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20181313 - Bultynck  ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb32-b24
 KZB20181307 22-11-2018 KB180386 BTC GEEL EP-VK-SAR 35 GOCA ,opties: labeltext:SAR 35 Off 20180283  ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb32-b24
 KZB20181320 26-11-2018 KB180391 PW EQUIPMENT  EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Van Weyenbergh  Asse ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb32-b24
@@ -1162,15 +850,10 @@ KZB20181321 29-11-2018 KB180392 VANDENABEELE EP-VK-PLA 35 DR BE ,opties: labelte
 KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-b24
 KZB20170797 3-12-2018 KB170270 RMITEC EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR    ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-b24
 KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
-KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
-KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
 KZB20170797 3-12-2018 KB170270 RMITEC EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR    ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB 3-12-2018 ma20182408 RMITEC EP-VK-PLA 35 DR  D ,opties: labeltext:PLA 35 DR D    ,usb:, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB 3-12-2018 ma20182408 RMITEC EP-VK-PLA 35 DR  D ,opties: labeltext:PLA 35 DR D   ,usb:, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB 3-12-2018 kb20182408 RMITEC EP-VK-PLA 35 DR  D ,opties: labeltext:PLA 35 DR D   ,usb:, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
-KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
-KZB 3-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
-KZB20170797 3-12-2018 KB170270 RMITEC EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR    ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB20170797 3-12-2018 IDE180013 RMITEC EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR    ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB20181359 5-12-2018 KB180394 EXPERBUY EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Renault Truck Powertrain Engineer Saint Priest Cedex (F) ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb32-dr duitsland
 KZB 5-12-2018    ,opties: labeltext:PLA 1050 NR   ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb32-dr duitsland
@@ -1242,19 +925,12 @@ KZB20190509 20-3-2019 KB190067 DEZUTTER EP-VK-PLA 35 NR BE ,opties: labeltext:PL
 KZB20190484 20-3-2019 KB190064 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Renault Lodelinsart Lodelinsart / Charler ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB 21-3-2019 ActiveSheet.Range("j" & 33).Value = datum   ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
 KZB 21-3-2019    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
-KZB 21-3-2019    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
-KZB 21-3-2019    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
 KZB20190535 25-3-2019 KB190072 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Touring Nv Garage Vorst ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB20190535 25-3-2019 KB190072 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Etabl. Georges Lienard Et Cie Sprl Bourles Chimay ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB20190536 25-3-2019 KB190073 LKQNAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Etabl. Georges Lienard Et Cie Sprl Bourles Chimay ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB 25-3-2019    ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
 KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
-KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB 25-3-2019    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb34-msoftknop-proj
-KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
-KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
-KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
-KZB20190536 25-3-2019 KB190073 LKQ NAMUR EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR 20190536 - Groupe Keolis   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB20190550 26-3-2019 KB190074 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Autopolis Zaventem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb34-msoftknop-proj
 KZB20190558 1-4-2019 KB190077 VTEQ EP-VK-PLA 35 DR GELAGERD ,opties: labeltext:PLA 35 DR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb34-msoftknop-proj
 KZB20190561 2-4-2019 KB190080 GEMCO EQUIPMENT  EP-VK-PLA 35 DR UK DVSA ,opties: labeltext:PLA 35 DR DVSA Gemco Kirkby In Ashfield ,usb:ja, homotext EIN : EINHB14563A0617014 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb34-msoftknop-proj
@@ -1268,13 +944,10 @@ KZB20190603 9-4-2019 KB190089 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 N
 KZB20190601 11-4-2019 KB190091 TAE EP-VK-PLA 5 NR AL - A ,opties: labeltext:PLA 5 NR 20190601 - Don Bosco Aalst   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb35-msoft-09-04-2019
 KZB20190625 11-4-2019 KB190092 GEMCO EQUIPMENT  EP-VK-PLA 35 DR UK DVSA ,opties: labeltext:PLA 35 DR DVSA Idem Kirkby In Ashfield ,usb:ja, homotext EIN : EINHB14563A0617014 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb35-msoft-09-04-2019
 KZB 11-4-2019    ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb35-msoft-09-04-2019
-KZB20190601 11-4-2019 KB190091 TAE EP-VK-PLA 5 NR AL - A ,opties: labeltext:PLA 5 NR 20190601 - Don Bosco Aalst   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb35-msoft-09-04-2019
 KZB20190625 11-4-2019 KB190092 GEMCO EQUIPMENT  EP-VK-PLA 35 DR UK DVSA ,opties: labeltext:PLA 35 DR DVSA Gemco Equipment    ,usb:ja, homotext EIN : EINHB14563A0617014 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb35-msoft-09-04-2019
 KZB20190626 11-4-2019 KB190094 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Vts Bso/Tso Campus St Niklaas Sint Niklaas ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb35-msoft-09-04-2019
 KZB20190626 11-4-2019 KB190094 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb35-msoft-09-04-2019
 KZB 11-4-2019    ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb35-msoft-09-04-2019
-KZB 11-4-2019    ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb35-msoft-09-04-2019
-KZB20190626 11-4-2019 KB190094 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb35-msoft-09-04-2019
 KZB20190631 11-4-2019 KB190096 AUTOPARTSDRUANT EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR  Leie Center Deerlijk ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb35-msoft-09-04-2019
 KZB20190629 11-4-2019 KB190095 PW EQUIPMENT  EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Adelin Gheysels Garage Zingem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb35-msoft-09-04-2019
 KZB 16-4-2019    ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb35-msoft-09-04-2019
@@ -1349,3 +1022,28 @@ KZB20191228 20-8-2019 KB190229 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 DR AL  TUV  5
 KZB 20-8-2019    ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb35-msoft-09-04-2019
 KZB20191227 20-8-2019 KB190231 RMITEC EP-VK-PLA 35 NR  D ,opties: labeltext:PLA 35 NR D     ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb35-msoft-09-04-2019
 KZB20191227 20-8-2019 KB190230 RMITEC EP-VK-PLA 35 NR  D ,opties: labeltext:PLA 35 NR D     ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb35-msoft-09-04-2019
+KZB20191244 22-8-2019 KB190239 VIETNET EP-VK-PLA 35 DR GELAGERD ,opties: labeltext:PLA 35 DR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb35-msoft-09-04-2019
+KZB20191246 22-8-2019 KB190240 METALCED EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Demunster Harelbeke ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191234 22-8-2019 KB190238 RMITEC EP-VK-PLA 5 NR  D AL ,opties: labeltext:PLA 5 NR D     ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191232 22-8-2019 KB190233 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 DR AL  TUV  585MM ,opties: labeltext:PLA 5 DR Tuv Nord Mobilitat Gmbh   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191232 22-8-2019 KB190234 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 DR AL  TUV  585MM ,opties: labeltext:PLA 5 DR Tuv Nord Mobilitat Gmbh   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191232 22-8-2019 KB190235 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 DR AL  TUV  585MM ,opties: labeltext:PLA 5 DR Tuv Nord Mobilitat Gmbh   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191232 22-8-2019 KB190236 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR Tuv Nord Mobilitat Gmbh   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191232 22-8-2019 KB190237 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 SR AL  TUV ,opties: labeltext:PLA 5 SR Tuv Nord Mobilitat Gmbh   ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191268 26-8-2019 KB190244 SERVO EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Dm Automotive Grobbendonk ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191327 28-8-2019 KB190245 LKQVILVOORDE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Lasseel Gavere ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191188 28-8-2019 KB190218 VANDENABEELE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191221 29-8-2019 KB190225 PW EQUIPMENT  EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191383 9-9-2019 KB190251 DEZUTTER EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Bdc American Cars Wevelgem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191382 9-9-2019 KB190249 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Carglass Carrosserie Oostmalle Malle ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191395 9-9-2019 KB190256 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 NR AL  TUV ,opties: labeltext:PLA 5 NR     ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191395 9-9-2019 KB190256 TUV NORD MOBILITAT GMBH EP-VK-PLA 5 NR AL  TUV ,opties: labeltext:PLA 5 NR Tuv Nord Mobilitat Gmbh Hannover ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb36-msoft-09-04-2019
+KZB20191394 9-9-2019 KB190253 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Deco Cars Poperinge ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191215 9-9-2019 KB190220 GEMCO EQUIPMENT  EP-VK-PLA 35 DR UK DVSA ,opties: labeltext:PLA 35 DR DVSA     ,usb:ja, homotext EIN : EINHB14563A0617014 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb36-msoft-09-04-2019
+KZB20191410 11-9-2019 KB190258 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Carglass Carr. Wauthier   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191411 11-9-2019 KB190259 TAE EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Carglass Carr Genk Genk ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191412 11-9-2019 KB190261 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR Carglass Carr.Heverlee Heverlee ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191412 11-9-2019 KB190261 TAE EP-VK-PLA 35 NR BE ,opties: labeltext:PLA 35 NR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb36-msoft-09-04-2019
+KZB20191227 18-9-2019 KB190231 RMITEC 5stuks EP-VK-PLA 35 NR  D ,opties: labeltext:PLA 35 NR D Rmitec Hannover ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb38
+KZB20191227 18-9-2019 KB190230 RMITEC 5stuks EP-VK-PLA 35 NR  D ,opties: labeltext:PLA 35 NR D Tuv Nord Mobilitat Gmbh Kirkby In Ashfield ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb38
+KZB20191234 18-9-2019 KB190238 RMITEC 1stuks EP-VK-PLA 5 NR  D AL ,opties: labeltext:PLA 5 NR D Rmitec Hannover ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb38

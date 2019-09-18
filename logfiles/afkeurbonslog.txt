@@ -86,3 +86,7 @@ DRFR-110030_00CAL	 2	Steunprofiel kalibratiespiegel RDF	schroefdraad is vergeten
 DIVMA-190706_01FAS	 4	Diffuser plexi bodem LED lamp 1008	te smal en/of chafrijn niet goed     	Ma 20191215	0x	6/04/2019
 DRFR-040256_00KOL	 12	Versteviging PLM	gat vergeten indoen van M6     thierry deed stockcontrole 	Ma 20191228	geen	6/04/2019
 DRFR-040257_00KOL	 5	Houder spindelmoer PLM	afgekeurd in ingangscontrole van 30stuks     	 	geen	7/03/2019
+DRFR-190032_01DAS	 3	Steun spiegel spiegelmodule wielklem Wörth	ze hebben een andere letartikel gemaakt      3verkeerde op stock	Ma 20191666	3	28-8-2019
+DRFR-040240_00KOL	 1	Sluitstuk kolom PLM	construktiefout ; gat uit center     stock was okee	Ma 20191728	0	9/09/2019
+PANEL-040110_00OPT	 3	Plaat bedieningspaneel T50	krassen in venster      	Ma 20191768	0	9/12/2019
+DRFR-110265_00KOL	 8	Glijtafel SAR (pltw)	constructiefout : gat verkeerd , zie techn.tek.     alle goede uit stock verwerkt in prod  	Ma 20191782	0	16-9-2019

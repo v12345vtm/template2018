@@ -1,0 +1,9 @@
+100239_.
+Kabel encoder rotatie (RDF).
++	Aantal	Enh	Art.groep	Artikelsymbool	Omschrijving	Alternatief Nummer	Code hoofdsoort	Code soort	Totaal variabelekosten	Totaal vastekosten		
+	1,00	ST	CONSD	CON-09P-R-M-K	Sub-D connector 09P recht Mnl. kabelversie	0CON510201009	CON	KABEL	0,22	0,00	0,22	
+	1,00	ST	HEAD	2.00-V-2-10P-R-JST-RH	Header 2mm 2r 10p vrl - JST-PHDR10VS	0CON615002010	CON	PAB	0,13	0,00	0,13	
+	0,73	M	KABFX	10P-0,14-J06.1	Soepele kabel 10P sectie : 0,14 afgeschermd 6,1 mm	0CAB400014010	ELCOM	KABEL	0,62	0,00	0,62	
+	10,00	ST	KASCH	JST-0.13-0.33-   -V	Kabelschoen JST sectie : 0.13-0.33 -  vrl.	0CON615000005	ELCOM	KABEL	0,15	0,00	0,15	
+	1,00	ST	MARK	KAB-PLA-LH-KMK2	Plastiek kabellabelhouder KMK2 29x8	0CAB950167509	ELCOM	MONT	0,47	0,00	0,47	
+	1,00	ST	SPANB	SPA-WIT-100	Spanband wit 100 mm	0FAS100025098	ELCOM	MONT	0,01	0,00	0,01	
