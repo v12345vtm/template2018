@@ -1,9 +1,23 @@
 ﻿;https://github.com/v12345vtm/template2018
 
+
+;deze file staat in \\file01\users\vth\MyDocs\AutoHotkey.ahk en werkt op de poratbelapp versie 1.1.30.03
+
 ; tidy = http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
-;18sept2019 , control+pageup voor te scrollen in tabs en shifttab
+;1356okt2018 , control+pageup voor te scrollen in tabs en shifttab
 ;nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -5 en de y waarde -25 doen 110,130 word 105,105
+
+
+
+;Hoe mouspos bepalen ?
+;in de spy best positie nemen van : ACTIVE SCREEN
+;in ahk script zal dit werken
+;echter als je er een EXE van maakt , dan verander je de coordinaten naar ONSCREEN...
+
+
+
+
 
 SetScrollLockState, off
 #KeyHistory 500  ; Store up to 500 events.
@@ -11,14 +25,15 @@ ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openst
 xpositie := 1050 ; xpos vd tooltip linksrechtspos
 ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
-FileCopy, \\file01\users\VTH\MyDocs\AutoHotkey.ahk , C:\Users\vth\Desktop\template2018\ahk\  ; Make a copy but keep the orig. file name.
+
+FileCopy, \\file01\users\VTH\MyDocs\AutoHotkey.ahk , C:\Users\vth\Desktop\template2018\ahk\ ,1 ; Make a copy but keep the orig. file name.
 
 
 
 SetTitleMatchMode, 2
 #Persistent
 SetTimer, SendHotkey, 70
-SetTimer, Autoresetvt, 60000 ;parameter ContinueSearch is hier gebruikt als bool en op true gezet
+SetTimer, Autoresetvt, 45000 ;parameter ContinueSearch is hier gebruikt als bool en op true gezet
 return
 
 
@@ -33,19 +48,19 @@ SendHotkey:
 	WinGetTitle, Title, A ; steek de programmanaam is var %Title%
 	WinGetClass, class, A
 	CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+
 	
-	
-	
-	
-	
-	If WinExist("ahk_class WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1") and (title = "CPM-gegevensoverdracht") and ContinueSearch 
+
+;ahk_class ApplicationFrameWindow  office popup als ik print
+	 
+	If WinExist("ahk_class ApplicationFrameWindow") and ContinueSearch 
 	{
-		; als je window van clipproject de knop import heeeft staan , zet de muis er al maar op
-		WinActivate
-		ContinueSearch := false		
-		;Send, {Tab 13}    ;
-	}
-	
+		;WinActivate
+		;infovariabele := " brol office popup" 
+		 ;MsgBox, popupOfficePrint is open en we drukken ok om alleenlezen melding vanzelf weg te doen en omdat IT dit niet weet op te lossen
+
+		;WinClose, Office,,1
+	}	
 	
 	
 	If WinExist("AutoCAD LT Alert") and ContinueSearch 
@@ -77,8 +92,23 @@ SendHotkey:
 	
 	
 	;;;;;;;;;;;;;;;;;;;;;informatie in de ahk statusbar
-	
-	
+	 
+	;infovariabele := "  tietel=" . title 
+;ToolTip, %infovariabele% , 800 , 800, 19
+
+	;infovariabele := "  claass=" . class, 
+;ToolTip, %infovariabele% , 800 , 750, 18
+
+
+
+	If ( class  = "WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1")
+	{
+		; clip project
+		infovariabele := "AHK macro met wintoets=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
+		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
+	}else  
+
+
 	
 	If ( class  = "rctrl_renwnd32")
 	{
@@ -92,33 +122,27 @@ SendHotkey:
 		If ( class  = "ProMainWin")
 	 {
 		; msoft met zijn vele windows	is heeft 1klasse gemeenschappelijk v progress : ahk_class ProMainWin
-		infovariabele := "aanpassenstuklijst=s // mag.aanvr=n  // partlisttonen=z  //  stuklijstnieuwItemtoevoegen=spatie"
+		infovariabele := "aanpassenstuklijst=s // mag.aanvr=n  // partlisttonen=z  //  stuklijstnieuwItemtoevoegen=spatie  //  documentkoppelen=0 // artikelVERGELIJKEN=& en é"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  If (title = "LET")
 	 {
-		infovariabele := "objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j"
+		infovariabele := "objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  {
-		infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home //  bool =" . ContinueSearch
-		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
+		;infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home //  bool =" . ContinueSearch
+		infovariabele := ""
+ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}
 return ; return uit functie SendHotkey die we elke 300ms uitvoeren 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-#-::
-	{
-		code:= vithvitH15
-		clipboard:= code
-		ClipWait
-		Send %clipboard%
-		Return
-	}
+
 	
 	
 	
 	#q::
-	{Send, 0127-04{Enter}
+	{Send, CE Candelameter EP190015.00{Enter}
 Return
 }
 
@@ -140,11 +164,15 @@ Return
 
 
 
+
+
+
+;C:\LET_VAULT\AUTOMOTIVE
 #e::Run C:\
 #f::Run C:\sdkardbatch
 #p::Run L:\Letdata\Projects
 #k::Run C:\Users\vth\Desktop\template2018\macros\kzb.xlsm  
-#a::Run C:\Users\vth\Desktop\template2018\macros\afkeurbonwizard2.xlsm ;C:\aa\afkeurbonwizard2.xlsm
+#a::Run C:\Users\vth\Desktop\template2018\macros\afkeurbonwizard4.xlsm ; 
 #s::Run C:\Users\vth\Desktop\template2018\ahk\msoftaanpassenstuklijst.ahk
 #v::Run C:\Users\VTH\Desktop\VT.xlsx
 #m::Run, "C:\Users\vth\Desktop\template2018\ahk\mail.ahk" ; mail   "C:\Program Files (x86)\Microsoft Office\Office16\outlook.exe"
@@ -152,7 +180,7 @@ Return
 #n::Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
 #c::Run \\file01.letdeinze.lan\company\Letdata\data\02\0667\G\G03\G03020667N01_\algemeen.xlsx
 #o::Run T:\voor vincent
-#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2019.xlsm ;C:\aa\msoft2serienrs5.xlsm
+#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2019.xlsm ; 
 ; #l::Run T:\voor vincent  ; werkt niet windows+L = logoff !
 #^::Run, "C:\Users\vth\Desktop\template2018\ahk\msoft1elijntabelcopieren.ahk" ; voor projecten en kzb te maken
 #,::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftmaKiesitemuitDB.ahk" ;  msoftmaNextAanvraag  win+komma op 3puntjes klikken in mag.aanvraag
@@ -202,17 +230,21 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #Home::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsm
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
-#End::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsmvrij
+End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ; 
 #Delete::Run C:\Users\vth\Desktop\template2018\ahk\verkennersSLuiten.ahk ; 8verkernners dooddoen
 #Space::Run, C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk ; in vervangen ve partlijst, aanpassen
-
+#LControl::Run, C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk ;  ; Run C:\LET_VAULT\AUTOMOTIVE ;pdm
+#"::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcomparebestand1.ahk ; compare stuklijst in bestand1 toets3 op klavier
+#'::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcomparebestand2.ahk ; compare stuklijst in bestand2 toets4 op klavier
+#&::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel1.ahk ; compare artikel in bestand1 toets1 op klavier
+#é::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel2.ahk ; compare artikel in bestand2 toets2 op klavier
 
 
 #u::
 {
 	SetScrollLockState, off
 	;open pdf uurkaarten wacht 500ms en control+p drukken
-	Run C:\aa\uurkaarten.pdf
+	Run C:\Users\vth\Desktop\template2018\bibliotheek\uurkaarten.pdf
 	Sleep 1500,
 	Send, ^p
 	ToolTip  ; wissen oude tooltips
