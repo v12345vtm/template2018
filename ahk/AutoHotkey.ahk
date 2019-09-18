@@ -2,7 +2,7 @@
 
 ; tidy = http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
-;10okt2018 , control+pageup voor te scrollen in tabs en shifttab
+;18sept2019 , control+pageup voor te scrollen in tabs en shifttab
 ;nieuw artikel toevoegen mousemove moet je loggen in windowSpy ,x -5 en de y waarde -25 doen 110,130 word 105,105
 
 SetScrollLockState, off
