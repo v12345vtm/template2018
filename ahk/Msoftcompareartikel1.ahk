@@ -88,8 +88,8 @@ Sleep 900,
 			Send, {Enter} ; druk op enter
 				Sleep 900,
 	;voila stuklijst in klembord!!
-	ToolTip, stuklijst zit ook in klembord,170 , 950  ; 
-	Sleep 300,
+	ToolTip, stuklijst zit ook in klembord ; 
+	Sleep 600,
 	
 	
 	
@@ -123,8 +123,8 @@ Send !{f4} ; Simulates the keypress alt+f4
    Sleep 500,
    ;Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt
    
-	
-	
+Run	wisKolommenVanCompare1.bat ; verwijder de rechtse kolommen uit de csv file
+Sleep 3500,	
 	
 	
 			}

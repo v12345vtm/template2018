@@ -88,8 +88,8 @@ Sleep 900,
 			Send, {Enter} ; druk op enter
 				Sleep 900,
 	;voila stuklijst in klembord!!
-	ToolTip, stuklijst zit ook in klembord,170 , 950  ; 
-	Sleep 300,
+	ToolTip, stuklijst zit ook in klembord  ; 
+	Sleep 900,
 	
 	
 	
@@ -119,7 +119,8 @@ Send !{f4} ; Simulates the keypress alt+f4
    
    Send !{f4} ; Simulates the keypress alt+f4
    
-    
+ Run	wisKolommenVanCompare2.bat ; verwijder de rechtse kolommen uit de csv file
+Sleep 3500,	   
 	
 	;we gaan notepadd++ openen , maar we gaan ale tabblaten sluiten  ahk_class Notepad++
 	
@@ -139,9 +140,9 @@ Run C:/Tools/Notepad++/notepad++.exe
 			
 			
 			   Sleep 300,
-  Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt
+  Run C:/Users/vth/Desktop/template2018/logfiles/compare1-split.txt
     Sleep 400,
-   Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt
+   Run C:/Users/vth/Desktop/template2018/logfiles/compare2-split.txt
    
    Sleep 1000,
    Send ^!{c} ; Simulates the keypress control alt c = plugin compare
