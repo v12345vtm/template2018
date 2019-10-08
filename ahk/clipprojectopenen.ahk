@@ -21,8 +21,8 @@
 else
 {
 	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u
-  ToolTip, wacht 4seconden aub  ,900 , 500
-Sleep 4000,	
+  ToolTip, wacht 10seconden aub  ,900 , 500
+Sleep 10000,	
 	  
 ToolTip, clipproject openen-ahk  `n   starting  : programma CLIP PROJECT  ,900 , 500
 Sleep 100,
