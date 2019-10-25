@@ -230,15 +230,20 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #Home::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsm
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
-End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ; 
+#End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ; 
 #Delete::Run C:\Users\vth\Desktop\template2018\ahk\verkennersSLuiten.ahk ; 8verkernners dooddoen
 #Space::Run, C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk ; in vervangen ve partlijst, aanpassen
 #LControl::Run, C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk ;  ; Run C:\LET_VAULT\AUTOMOTIVE ;pdm
-;#"::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcomparebestand1.ahk ; compare stuklijst in bestand1 toets3 op klavier
-;#'::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcomparebestand2.ahk ; compare stuklijst in bestand2 toets4 op klavier
+
 #&::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel1.ahk ; compare artikel in bestand1 toets1 op klavier
 #é::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel2.ahk ; compare artikel in bestand2 toets2 op klavier
 #"::Run, C:\Users\vth\Desktop\template2018\ahk\ClipElecWaPasPrintenEnLogRename.ahk ; elec waterpas printen en log resetten toets3 op klavier
+
+
+#'::Run, C:\Users\vth\Desktop\template2018\macros\aanpassenToolmetAcceswijzigenEnMsoft.xlsm ; script die de gui van psp acces invult: toets4 op klavier  : 
+#(::Run, C:\Users\vth\Desktop\template2018\ahk\msoftpartlistsExporteren.ahk ; script partlist in een filezet: toets5 op klavier  : ;msoftpartlistsExporteren
+
+
 
 
 #u::

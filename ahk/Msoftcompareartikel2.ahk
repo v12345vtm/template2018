@@ -137,7 +137,8 @@ Run C:/Tools/Notepad++/notepad++.exe
 			
 			
 	Send !{f4} ; Simulates the keypress alt+f4 , sluit notepad omdat soms je compare1.txt al kan ingeladen staan met oude info
-			
+	
+	
 			
 			   Sleep 300,
   Run C:/Users/vth/Desktop/template2018/logfiles/compare1-split.txt
@@ -147,6 +148,10 @@ Run C:/Tools/Notepad++/notepad++.exe
    Sleep 1000,
    Send ^!{c} ; Simulates the keypress control alt c = plugin compare
 		    Sleep 500,
+			
+			
+			
+Run C:\Users\vth\Desktop\template2018\ahk\pythonUniques.bat			
 			
 			
 			
