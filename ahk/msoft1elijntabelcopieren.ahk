@@ -33,12 +33,55 @@ Send {UP 2}
 Sleep, 50
 Sleep, 2
 Send {ENTER}
-
+Sleep, 500
 
 ; als serieverpak2019 open is , activeer het en klik erin
 
 
-   SetTitleMatchMode 2
+;aan de hand van wat nu in ons clipboard zit ( namelijk de tabel die we uit msoft kopieren ) 
+;daarin zien we of het kb-nummer is of een groene prod fiche vr serienrs
+
+Needle := RegExMatch(Clipboard, "KB\d{6}" , SubPat)  ; Shows getal, which is the position where the match was found.
+;Msgbox %Needle% ; getal met waar de KB-nummer staat  in de clipbord
+; debug die niet werkt nog Msgbox % SubPat.Count()
+
+if Needle > 1 
+{
+;BlockInput, MouseMoveOff
+ToolTip tis kb KZB
+Sleep, 500
+;BlockInput, MouseMove
+
+ SetTitleMatchMode 2
+ If WinExist("kzb.xlsm - Excel")
+{
+WinActivate  ; venster aktief zetten
+Sleep, 500
+MouseClick, Left , 624 , 437 ; aktief zetten labeltool
+Sleep, 200
+MouseClick, Left , 624 , 437  ; klik op : analuseer en genreer
+
+}
+else
+{
+;BlockInput, MouseMoveOff
+ToolTip kzbtool is er niet 
+Sleep, 2000
+}
+
+
+
+
+}
+else
+{
+;BlockInput, MouseMoveOff
+ToolTip tis serieprintnr
+Sleep, 500
+;BlockInput, MouseMove
+
+
+  SetTitleMatchMode 2
  If WinExist("serieverpak2019.xlsm - Excel")
 {
 WinActivate  ; venster aktief zetten
@@ -50,9 +93,20 @@ MouseClick, Left , 100 , 400  ; klik op plak
 }
 else
 {
-MsgBox, labeltool is er niet ,
+;BlockInput, MouseMoveOff
+ToolTip labeltool is er niet 
+Sleep, 2000
 }
 
+
+
+}
+
+
+
+
+
+ 
 
 
 ;ExitApp ; debug
@@ -60,6 +114,7 @@ MsgBox, labeltool is er niet ,
 }
 else
 {
+BlockInput, MouseMoveOff
 	MsgBox, u venster  AUTO - Projecten  zie ik niet !! open het eerst zelf
 ExitApp
 } 

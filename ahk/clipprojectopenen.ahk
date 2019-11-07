@@ -21,8 +21,11 @@
 else
 {
 	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u
+	BlockInput, MouseMoveOff
   ToolTip, wacht 10seconden aub  ,900 , 500
 Sleep 10000,	
+
+ BlockInput, MouseMove 
 	  
 ToolTip, clipproject openen-ahk  `n   starting  : programma CLIP PROJECT  ,900 , 500
 Sleep 100,
