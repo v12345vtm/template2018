@@ -1,11 +1,11 @@
- ToolTip, export zoveel tabellen als je wil naar 1 file,170 , 950
+ ToolTip, export de huidige  tabel als je wil naar 1 file,170 , 950
  
     SetKeyDelay, 200 ; hoe rap stuur je typcommandos 
   ;  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
   
- InputBox, UserInput, msoftTabelExportAndConcatFile, Please enter a omschrijvng van je exportlijst., , 640, 480
+ InputBox, UserInput, msoftTabelExportAndConcatFile, de huidige tabel wat je nu ziet komt in bestand., , 640, 480
 if ErrorLevel
    ; MsgBox, CANCEL was pressed.
 	ExitApp 
@@ -69,7 +69,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox exiting port alle tabellen wat je ziet
+MsgBox exiting export alle tabellen wat je ziet - msofttabelexportandConcattofile.ahk 
 ExitApp
 return
 }
