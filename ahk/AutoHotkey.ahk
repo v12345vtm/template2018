@@ -101,9 +101,9 @@ SendHotkey:
 
 
 
-	If ( class  = "WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1")
+	If ( class  = "WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1")
 	{
-		; clip project
+		; clip project  ahk_class  = WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1
 		infovariabele := "AHK macro met wintoets=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  
