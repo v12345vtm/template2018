@@ -1,3 +1,14 @@
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="niewd4kalibcert"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
+
+
+
 
  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
@@ -124,7 +135,7 @@ Return
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

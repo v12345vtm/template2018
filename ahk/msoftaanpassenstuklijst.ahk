@@ -1,3 +1,15 @@
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="msoftaanpassenstuklijst"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
+
+
+
+
 ;comment AANPASSEN  = win+ S = msoft deelfases produktie; shiftF9 , 9keer tab , pijltje rechts
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 ToolTip, aanpassenstuklijst-ahk = in Msoft artikelen,170 , 950
@@ -92,7 +104,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-   MsgBox emergencystop aanpassenstuklijst-ahk
+MsgBox "EXIT-"%scriptnaam%
    ExitApp
    return
 }

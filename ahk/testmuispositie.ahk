@@ -67,7 +67,7 @@ ExitApp
 	ExitApp ; dit is onze laatste stap na de herhaalloop
 	ExitSub:
 	{
-		MsgBox emergencystop ClipprojectImport-ahk
+	MsgBox "EXIT-"%scriptnaam%
 		ExitApp
 		return
 	}

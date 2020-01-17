@@ -1,3 +1,11 @@
+  ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="virtualenvirementGUI"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
 ;^f5::Run C:\MySandbox ; virtuele omvirement in verkenner  ;control+f5
 ;^f6::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirement.ahk"
 ;^f7::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementpostscan.ahk"
@@ -17,7 +25,8 @@
 
 
  SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
- If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")
+ ;If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")
+  If WinExist("Opdrachtprompt")
 {
 	;MsgBox, u venster is open	  en ik zal het vooraan zetten
 	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170 ,950
@@ -52,7 +61,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop virt envirement
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

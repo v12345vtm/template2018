@@ -1,4 +1,13 @@
-    
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="msoft1elijntabelcopieren"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
+
+	   
     BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep 300,
    CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
@@ -82,7 +91,7 @@ Sleep, 500
 
 
   SetTitleMatchMode 2
- If WinExist("serieverpak2019.xlsm - Excel")
+ If WinExist("serieverpak2020.xlsm - Excel")
 {
 WinActivate  ; venster aktief zetten
 Sleep, 500
@@ -128,7 +137,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

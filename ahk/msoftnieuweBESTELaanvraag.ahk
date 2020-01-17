@@ -1,3 +1,22 @@
+
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="msoftnieuweBESTELaanvraag"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
+
+
+
+
+
+
+
+
+
+
  ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft Bestelaanvragen staan,170 , 950
  
     SetKeyDelay, 200 ; hoe rap stuur je typcommandos 
@@ -107,7 +126,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop nieuwemagazijnaanvraag-ahk
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

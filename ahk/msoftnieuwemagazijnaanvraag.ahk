@@ -1,3 +1,15 @@
+
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="msoftnieuwemagazijnaanvraag"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+	   
+	   
+
+
+
 ;;;;   http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
 ;;;;;    https://github.com/v12345vtm/template2018
@@ -134,8 +146,8 @@ If WinExist("AUTO - Magazijnaanvragen")
 
 
 
-
-
+Sleep 300,
+ Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
 
 
 
@@ -144,7 +156,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-   MsgBox emergencystop nieuwemagazijnaanvraag-ahk
+MsgBox "EXIT-"%scriptnaam%
    ExitApp
    return
 }

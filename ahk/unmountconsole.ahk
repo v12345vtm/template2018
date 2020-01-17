@@ -1,4 +1,13 @@
-;shortest way in windows  = run j , alt+j en alt+j
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="unmountconsole"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+	   
+	   
+	   
+	   ;shortest way in windows  = run j , alt+j en alt+j
 
 {
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
@@ -47,7 +56,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-   MsgBox emergencystop unmountp
+ MsgBox "EXIT-"%scriptnaam%
    ExitApp
    return
 }

@@ -1,4 +1,11 @@
-ToolTip, verkenners sluiten 8stuks ,303,750
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="verkennerSLuiten"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+	   
+	   ToolTip, verkenners sluiten 8stuks ,303,750
 
   ; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
  ; Sleep 200,
@@ -8,7 +15,7 @@ SetTitleMatchMode, 2
 
 
 
-Loop, 8
+Loop, 9
 {
     WinClose, ahk_class CabinetWClass  ;  closes any explorer window
    ;MsgBox, Iteration number is %A_Index%.  ; A_Index will be 1, 2, then 3
@@ -27,7 +34,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop verkenners sluiten
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

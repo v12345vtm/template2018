@@ -126,7 +126,7 @@ SendHotkey:
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  If (title = "LET")
 	 {
-		infovariabele := "objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
+		infovariabele := "ronny-C6146L laurents-misterplc13 //objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  {
 		;infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home //  bool =" . ContinueSearch
@@ -174,15 +174,15 @@ Return
 #k::Run C:\Users\vth\Desktop\template2018\macros\kzb.xlsm  
 #a::Run C:\Users\vth\Desktop\template2018\macros\afkeurbonwizard4.xlsm ; 
 #s::Run C:\Users\vth\Desktop\template2018\ahk\msoftaanpassenstuklijst.ahk
-#v::Run C:\Users\VTH\Desktop\VT.xlsx
+#v::Run, "C:\Users\vth\Desktop\template2018\ahk\werkurenVTexcel.ahk"
 #m::Run, "C:\Users\vth\Desktop\template2018\ahk\mail.ahk" ; mail   "C:\Program Files (x86)\Microsoft Office\Office16\outlook.exe"
 #i::Run C:\Users\vth\Desktop\template2018\ahk\importSDcard.bat ; fotos van Sd kaart verplaatsen
 #n::Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
-#c::Run \\file01.letdeinze.lan\company\Letdata\data\02\0667\G\G03\G03020667N01_\algemeen.xlsx
+#c::Run, "C:\Users\vth\Desktop\template2018\ahk\checklijstopenenexcel.ahk"
 #o::Run T:\voor vincent
-#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2019.xlsm ; 
+#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2020.xlsm ; 
 ; #l::Run T:\voor vincent  ; werkt niet windows+L = logoff !
-#^::Run, "C:\Users\vth\Desktop\template2018\ahk\msoft1elijntabelcopieren.ahk" ; voor projecten en kzb te maken
+#^::Run, "C:\Users\vth\Desktop\template2018\ahk\msoft1elijntabelcopieren.ahk" ; voor projecten en kzb te maken , kopiert een kb regel uit msoft naar serieverpak of naar kzb.xls
 #,::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftmaKiesitemuitDB.ahk" ;  msoftmaNextAanvraag  win+komma op 3puntjes klikken in mag.aanvraag
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
@@ -230,7 +230,8 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #Home::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsm
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm
-#End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ; 
+#End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ;
+^End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofileMsoft.ahk ; msofttabelexportandConcattofile Msoft.txt
 #Delete::Run C:\Users\vth\Desktop\template2018\ahk\verkennersSLuiten.ahk ; 8verkernners dooddoen
 #Space::Run, C:\Users\vth\Desktop\template2018\ahk\MsoftstuklijsttoevoegennieuwArtikel.ahk ; in vervangen ve partlijst, aanpassen
 #LControl::Run, C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk ;  ; Run C:\LET_VAULT\AUTOMOTIVE ;pdm
@@ -276,9 +277,9 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 ;text typen met 1 toetsncombinatie
 #w::
 {
-	ToolTip, ALG19 typen ,303,750
+	ToolTip, ALG20 typen ,303,750
 	SetScrollLockState, off
-	Send, ALG19
+	Send, ALG20
 	ToolTip  ; wissen oude tooltips
 	
 	Return

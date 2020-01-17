@@ -1,21 +1,48 @@
-    
-    BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+  ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="virtualenvirement"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+
+
+
+
+
+
+  
+  ;  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
   Sleep  500,
  CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
 
-Run cmd
+ToolTip, certtool main folder openen , 170,950
+Run T:\_DOC
+Sleep 500
 
+
+
+	ToolTip, cmd starten , 170,950
+;Run C:\WINDOWS\SYSTEM32\cmd.exe ;soms duurt dat lang
+Send {RWin} 
+Sleep 70
+Send  cmd 
+Sleep 70
+Send  {ENTER}
+Sleep 70
+
+
+
+	ToolTip, cmd starten normaal , 170,950
 Sleep 900
-
-
 
 
   
   
 
  SetTitleMatchMode 2 ; parameter die nodig is voor winexist 
- If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")
+ ;If WinExist("C:\WINDOWS\SYSTEM32\cmd.exe")
+  If WinExist("Opdrachtprompt")
 {
 	;MsgBox, u venster is open	  en ik zal het vooraan zetten
 	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170,950
@@ -97,7 +124,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox emergencystop virt envirement
+MsgBox "EXIT-"%scriptnaam%
 ExitApp
 return
 }

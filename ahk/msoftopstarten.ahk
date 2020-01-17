@@ -1,4 +1,15 @@
-;msoft opstarten
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+   scriptnaam :="msoftopstarten"   
+   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
+	   
+	   
+	   
+	   
+	   
+	   ;msoft opstarten
 ;indien msoft niet draait , starten we het en loggen we in
 ;direkt erna kijken we of het effectief draait en verkleinen en herpositioneren we
 ;indien msoft reeds draaide op de pc , gaan we het vooraan zetten en verkleinen en herpositioneren
@@ -63,7 +74,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-   MsgBox emergencystop
+ MsgBox "EXIT-"%scriptnaam%
    ExitApp
    return
 }
