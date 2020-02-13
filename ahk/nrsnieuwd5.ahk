@@ -2,7 +2,7 @@
 FormatTime, CurrentDateTime,, yyMMddHHmmss
    Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
    scriptnaam :="nrsnieuwd5"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+  ; FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
        Sleep 300,
 
 
@@ -45,13 +45,14 @@ Sleep 500,
 
 
 ;vanaf hier moet je nog zelf op knop duwen en bestandstype ingeven
-
+ToolTip, AUTOHOTKEY zal nu vanzelf docx typen voor jouw
 MouseMove, 592,562
 MouseClick, Left
 Sleep 5000,
 Send, docx
 Sleep 1500
 Send {Enter}
+ToolTip, nu mooi wachten..
 Sleep 1500 ; betje wachten de popupbox moet zijn data wegschrijven
 
 
@@ -64,6 +65,10 @@ Sleep 500,
 
 
 ;L:\Letdata\data\19\0593_01\D5\190593_01-D5N04_.docx zit in je klembord youpie yess!
+
+
+   FileAppend, %Timestamp% - %scriptnaam% - %Clipboard%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+       Sleep 300,
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop

@@ -1,14 +1,9 @@
-
 ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
 FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="msoftnieuwemagazijnaanvraag"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
-	   
-	   
-
-
+Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
+scriptnaam :="msoftnieuwemagazijnaanvraag"   
+FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
 
 ;;;;   http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
@@ -35,10 +30,7 @@ s := "Hello, "
 s .= "world."
 MsgBox % tabel
 
- 
-
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-
 
 SetTitleMatchMode 2
 If WinExist("AUTO - Magazijnaanvragen")
@@ -55,28 +47,23 @@ If WinExist("AUTO - Magazijnaanvragen")
    Send, {Ins}  ; 
    Sleep 1500,   
    
-     WinGetTitle, Title, A
- ToolTip, %Title% ,170 , 850 ; we krijgen de title niet binnen
- 
- 
-
-
-
+   WinGetTitle, Title, A
+   ToolTip, %Title% ,170 , 850 ; we krijgen de title niet binnen
+   
+      
+   
    If WinExist  (title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)")  
    {
-   ; WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
+      ; WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
       ;lijstje mag aanvraag
-     ; Sleep 600
+      ; Sleep 600
       ;WinGetTitle, Title, A
-     ; WinMove, "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)",, 50 , 150 ,1400,660   ; msoft naar left300 top400 width1400  height660	
-     ; MsgBox magaanvrlijtje
-	  
-	 ; Sleep 8000,
-	  
-	 ; exitapp
+      ; WinMove, "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)",, 50 , 150 ,1400,660   ; msoft naar left300 top400 width1400  height660	
+      ; MsgBox magaanvrlijtje      
+      ; Sleep 8000,      
+      ; exitapp
    }  
-   
-    
+      
    
    Send,  {Tab}
    Sleep 300,
@@ -96,14 +83,8 @@ If WinExist("AUTO - Magazijnaanvragen")
    Sleep 300,
    Send,  {Tab}
    Sleep 300,
- 
-   
-   
-   
-   
-   
-   
-     Send, {Enter}
+         
+   Send, {Enter}
    Sleep 300,
    
    
@@ -147,7 +128,7 @@ If WinExist("AUTO - Magazijnaanvragen")
 
 
 Sleep 300,
- Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
+;Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
 
 
 
@@ -155,8 +136,8 @@ Sleep 300,
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
+   BlockInput, MouseMoveOff
+   MsgBox "EXIT-"%scriptnaam%
    ExitApp
    return
 }

@@ -103,7 +103,7 @@ Sleep 900,
 	
 	
 	
-  
+     	ToolTip, writefile comparedottxt ;
 
 
    file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/compare1.txt", "w")
@@ -119,6 +119,7 @@ Sleep 900,
    
     Sleep 1500,
 	
+	   	ToolTip, altf4 altf4 aan het doen ;
    ;send alt+ f4 om u vensters teveel in msoft weg te doen , normaal zou je op escape drukken , maar in ahk is escpae gebruikt voor onze noodstop
 Send !{f4} ; Simulates the keypress alt+f4
    
@@ -131,7 +132,7 @@ Send !{f4} ; Simulates the keypress alt+f4
     
    Sleep 500,
    ;Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt
-   
+   	ToolTip, wiskolommen.bat aan het doen ;
 Run	wisKolommenVanCompare1.bat ; verwijder de rechtse kolommen uit de csv file
 Sleep 3500,	
 	

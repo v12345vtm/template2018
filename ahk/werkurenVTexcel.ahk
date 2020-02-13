@@ -11,12 +11,51 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
 
 ToolTip, "starting-"%scriptnaam%,170 , 950
 Run C:\Users\VTH\Desktop\VT.xlsx
-Sleep 300
+Sleep 100
 Run https://utime.cosmotime.be/login.php?action=session
+
+ToolTip, "wacht 7sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 6sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 5sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 4sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 3sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 2sec om alles in te laden",170 , 950
+Sleep 1000
+ToolTip, "wacht 1sec om alles in te laden",170 , 950
+Sleep 1000
+
+If WinExist("U-Time Login - Mozilla Firefox")
+	{
+		ToolTip, verkleining U-Time Login - Mozilla Firefox!!  `n   voila! ,170 , 950
+		
+		WinActivate  ; venster aktief  mozilla
+		
+		Sleep 500
+		WinGetPos,,, Width, Height, %WinTitle%	
+		WinMove, %WinTitle%,, 0, 0 ,1000,1024   ; msoft naar left1280 top570  width620  height440	
+		Sleep 100, 
+		
+		}
  
+ ; VT.xlsx - Excel
  
- 
- 
+ If WinExist("VT.xlsx")
+	{
+		ToolTip, verkleining VT.excel!!  `n   voila! ,170 , 950
+		
+		WinActivate  ; venster aktief VT.xlsx - Excel
+		
+		Sleep 500
+		WinGetPos,,, Width, Height, %WinTitle%	
+		WinMove, %WinTitle%,, 1000,  0 ,900,1024  ; msoft naar left1280 top 0  width620  height440	
+		Sleep 1000, 
+		
+		}
  
  
  

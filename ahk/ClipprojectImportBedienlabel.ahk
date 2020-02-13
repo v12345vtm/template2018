@@ -5,13 +5,6 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
    FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
        Sleep 300,
 
-
-
-
-
-
-
-
 {
 	BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 	Sleep 1500,
@@ -30,12 +23,10 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
 		ExitApp
 	} 
 	
-	Sleep 1500, 
-	
+	Sleep 1500, 	
 	
 	ToolTip, ClipprojectImport-ahk  `n  sta je in clipproject ?  `n   script die om import duwt ,170 , 950
 	Sleep 500,
-	
 	
 	Send {ALT}
 	Sleep 200,
@@ -74,9 +65,6 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
 	
 	ToolTip Zit de juiste rol in de printer ?, 170 , 950 ; wissen oude tooltips
 	Sleep 2000,
-	
-	
-	
 	
 	;;noodstop
 	ExitApp ; dit is onze laatste stap na de herhaalloop

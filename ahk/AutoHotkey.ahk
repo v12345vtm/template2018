@@ -48,17 +48,17 @@ SendHotkey:
 	WinGetTitle, Title, A ; steek de programmanaam is var %Title%
 	WinGetClass, class, A
 	CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-
 	
-
-;ahk_class ApplicationFrameWindow  office popup als ik print
-	 
+	
+	
+	;ahk_class ApplicationFrameWindow  office popup als ik print
+	
 	If WinExist("ahk_class ApplicationFrameWindow") and ContinueSearch 
 	{
 		;WinActivate
 		;infovariabele := " brol office popup" 
-		 ;MsgBox, popupOfficePrint is open en we drukken ok om alleenlezen melding vanzelf weg te doen en omdat IT dit niet weet op te lossen
-
+		;MsgBox, popupOfficePrint is open en we drukken ok om alleenlezen melding vanzelf weg te doen en omdat IT dit niet weet op te lossen
+		
 		;WinClose, Office,,1
 	}	
 	
@@ -92,30 +92,40 @@ SendHotkey:
 	
 	
 	;;;;;;;;;;;;;;;;;;;;;informatie in de ahk statusbar
-	 
+	
 	;infovariabele := "  tietel=" . title 
-;ToolTip, %infovariabele% , 800 , 800, 19
-
+	;ToolTip, %infovariabele% , 800 , 800, 19
+	
 	;infovariabele := "  claass=" . class, 
-;ToolTip, %infovariabele% , 800 , 750, 18
+	;ToolTip, %infovariabele% , 800 , 750, 18
+	
+	
+	 If ( class  = "ConsoleWindowClass") 
+	{
+		; cmd venster of virt env python
+		infovariabele := "AHK macro met CONTROLtoets=  f5:sandbox   f6:virtENV     f7:postscan     f8:GUI    f9:makePJ    f10:finalise    f11:makeUSB"
+		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
+	}else 
 
 
 
+
+	
 	If ( class  = "WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1")
 	{
 		; clip project  ahk_class  = WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1
 		infovariabele := "AHK macro met wintoets=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
-	}else  
-
-
+	}else   
 	
-	If ( class  = "rctrl_renwnd32")
-	{
+	
+	
+		If ( class  = "rctrl_renwnd32")
+	 {
 		; mail class
 		infovariabele := "mailke?"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
-	}else  
+	}else   
 	
 	
 	
@@ -124,24 +134,24 @@ SendHotkey:
 		; msoft met zijn vele windows	is heeft 1klasse gemeenschappelijk v progress : ahk_class ProMainWin
 		infovariabele := "aanpassenstuklijst=s // mag.aanvr=n  // partlisttonen=z  //  stuklijstnieuwItemtoevoegen=spatie  //  documentkoppelen=0 // artikelVERGELIJKEN=& en é"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
-	}else  If (title = "LET")
+	}else   If (title = "LET")
 	 {
 		infovariabele := "ronny-C6146L laurents-misterplc13 //objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else  {
 		;infovariabele := " ahk runs : desktop=scrollock // clipproject=pauze // bestek=insert // optblokDb=Home //  bool =" . ContinueSearch
 		infovariabele := ""
-ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
+		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}
 return ; return uit functie SendHotkey die we elke 300ms uitvoeren 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 
-	
-	
-	
-	#q::
+
+
+
+#q::
 	{Send, CE Candelameter EP190015.00{Enter}
 Return
 }
