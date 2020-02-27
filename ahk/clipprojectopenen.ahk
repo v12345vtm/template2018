@@ -33,8 +33,12 @@ else
 {
 	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u
 	BlockInput, MouseMoveOff
-  ToolTip, wacht 10seconden aub  ,900 , 500
-Sleep 10000,	
+	
+	Loop, 10
+	{
+		ToolTip, wacht   om alles in te laden    %A_Index%  /10 seconden ,170 , 950  ; A_Index will be 1, 2, then 3
+		Sleep, 1000
+	}
 
  BlockInput, MouseMove 
 	  

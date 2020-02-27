@@ -14,20 +14,16 @@ Run C:\Users\VTH\Desktop\VT.xlsx
 Sleep 100
 Run https://utime.cosmotime.be/login.php?action=session
 
-ToolTip, "wacht 7sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 6sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 5sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 4sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 3sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 2sec om alles in te laden",170 , 950
-Sleep 1000
-ToolTip, "wacht 1sec om alles in te laden",170 , 950
-Sleep 1000
+
+
+
+	Loop, 7
+	{
+		ToolTip, wacht   om alles in te laden    %A_Index%  /7 seconden ,170 , 950  ; A_Index will be 1, 2, then 3
+		Sleep, 1000
+	}
+
+
 
 If WinExist("U-Time Login - Mozilla Firefox")
 	{

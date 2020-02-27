@@ -77,6 +77,13 @@ SendHotkey:
 		Send, {Left}{Enter}    ;
 	}
 	
+
+If WinExist("ahk_class #32770") and (title = "Reload") and ContinueSearch 
+	{
+		; als je een script hebt in notepad++ hebt staan , en de inhoud is in de achttergrond verandert , mag je de inhoud herinlezen , dit is gekomen voor compare ahk 
+		WinActivate	
+		Send,  {Enter}    ;
+	}
 	
 	
 	If WinExist("ahk_class #32770") and (title = "Save Modified Documents") and ContinueSearch 
@@ -236,7 +243,7 @@ Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk
 #NumpadAdd::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportGrijsKlein.ahk" ;  grijs klein serienr label importeren 
 #NumpadSub::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportVerpaklabel.ahk" ;
 #Numlock::Run "C:\Users\vth\Desktop\template2018\ahk\ClipprojectImportGrijsKZBusb.ahk" ;
-#Insert::Run C:\Users\vth\Desktop\template2018\macros\bestekgenerator.xlsm
+#Insert::Run C:\Users\vth\Desktop\template2018\macros\mst-dvsa\MstChecklistGenerator.xlsm
 #Home::Run C:\Users\vth\Desktop\template2018\optischeblok-kolomen-lensfronten.xlsm
 #PgUp::Run C:\Users\vth\Desktop\template2018 ; map met templates openen
 #PgDn::Run C:\Users\vth\Desktop\template2018\projectlabelaar.xlsm

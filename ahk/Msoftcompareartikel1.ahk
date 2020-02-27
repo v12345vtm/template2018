@@ -17,7 +17,7 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
   
   
   	   ;eerst je lijn met je commentaar wegschrijven   
-       InputBox, UserInput, msoftSTUKLIJSTTabel2bestand2, ik verwacht dat je in artikel  staat  en je wil dus de stuklijst exporteren naar exportlijst., , 640, 480
+       InputBox, UserInput, msoftSTUKLIJSTartikel1, ik verwacht dat je in artikel  staat  en je wil dus de stuklijst vergelijken -typ een opmerking hier, , 640, 480
 	   	if ErrorLevel
 {
     MsgBox, CANCEL was pressed.

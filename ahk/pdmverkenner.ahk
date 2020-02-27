@@ -1,5 +1,6 @@
 ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
 FormatTime, CurrentDateTime,, yyMMddHHmmss
+ Sleep 300,
    Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
    scriptnaam :="pdmverkenner"   
    FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
@@ -113,7 +114,8 @@ catch e  ; Handles the first error/exception raised by the block above.
 	ExitApp ; dit is onze laatste stap na de herhaalloop
 	ExitSub:
 	{
-MsgBox "EXIT-"%scriptnaam%
+		BlockInput, MouseMoveOff
+		MsgBox "EXIT-"%scriptnaam%
 		ExitApp
 		return
 	}
