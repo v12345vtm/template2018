@@ -1,19 +1,33 @@
- ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="mail.."   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
- 
- 
- 
- 
- 
- CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-  ToolTip, mail-ahk = mail openen,170 , 950
+;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="mail"  
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-  ; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
- ; Sleep 200,
+;; export to log
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
+
+
+;;pre-start en variabelen
+;artikelomschrijving
+
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+Loop, 1
+{
+	ToolTip,     %scriptnaam%  opstarten  ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+
+;;;START
+
+
+
+
+
+
 
 SetTitleMatchMode, 2
 If WinExist("Outlook")

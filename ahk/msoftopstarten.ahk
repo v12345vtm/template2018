@@ -41,9 +41,10 @@ If WinExist("AUTO - LET Automotive n.v.")
    Send, {TAB}
    Sleep, 100
    Send, vith123
-   MouseClick, left,  136,  157
-   Sleep, 100
-   Send, {Down 5}{Tab 1}{Down 2}
+   MouseClick, left,  160,  185 ; in active window
+    ; MouseClick, left,  942,  316 ; screen window
+   Sleep, 1000 ; inladen msoft , niet verkorten
+   Send, {Down 5}{Tab 1}{Down 2} ; ga in linker boord naar meest gebruikte 
    Sleep 1500,  
    
    
@@ -57,6 +58,13 @@ If WinExist("AUTO - LET Automotive n.v.")
       WinGetPos,,, Width, Height, %WinTitle%	
       WinMove, %WinTitle%,, 1280, 570 ,620,440   ; msoft naar left1280 top570  width620  height440	
       Sleep 0500,
+   }
+   else
+   {
+      ToolTip, winexist niet gezien !!  `n   voila! ,170 , 950
+   
+   
+   
    }
    
    

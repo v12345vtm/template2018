@@ -1,3 +1,10 @@
+echo Hello van  buroblad en runt absolute pathen lokaal
+
+echo van =   C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
+echo via  = C:\Users\vth\Desktop\template2018\logfiles\compare1replace.txt
+echo naar = C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
+pause
+
 @Echo off
 
 rem type "../logfiles/compare1.txt" | repl "(\t| )" "," x > "../logfiles/compare1-conv.txt"
@@ -7,7 +14,11 @@ SET "sourcedir=C:\Users\vth\Desktop\template2018\logfiles"
 SET "destdir=C:\Users\vth\Desktop\template2018\logfiles"
 SET "filename1=%sourcedir%\compare1.txt"
 SET "outfile=%destdir%\compare1replace.txt"
+rem C:\Users\vth\Desktop\template2018\logfiles\compare1replace.txt
+rem C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
  
+rem nog files die we gebruiken vroeger met relatieve path : ../logfiles/compare1replace.txt
+rem  														../logfiles/compare1-split.txt
 
 (
 FOR /f "usebackqdelims=" %%a IN ("%filename1%") DO (
@@ -42,7 +53,7 @@ FOR /f "usebackqdelims=" %%a IN ("%filename1%") DO (
 rem vanaf hier gaan we de tabellen die overtollig zijn wegdoen
 
 
-(for /f "delims=" %%A in (../logfiles/compare1replace.txt) do Call :Split %%A) > ../logfiles/compare1-split.txt
+(for /f "delims=" %%A in (C:\Users\vth\Desktop\template2018\logfiles\compare1replace.txt) do Call :Split %%A) > C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
 
 goto :Eof
 :Split

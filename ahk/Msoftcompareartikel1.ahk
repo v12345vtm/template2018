@@ -1,4 +1,4 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+;	elke export zetten we in ons exportbestand , dat is een vaste output filename.
 FormatTime, CurrentDateTime,, yyMMddHHmmss
    Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
    scriptnaam :="Msoftcompareartikel1"   

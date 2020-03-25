@@ -1,9 +1,29 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+ scriptnaam :="msoftopstartenrubriekprojecten"  
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+;; export to log
 FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="msoftopstartenrubriekprojecten"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
+
+
+;;pre-start en variabelen
+;artikelomschrijving
+
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+Loop, 1
+{
+	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+
+;;;START
+
+
 
 
 ;msoft opstarten
@@ -38,6 +58,22 @@ If WinExist("AUTO - LET Automotive n.v.")
 	Send {Enter}
 	Sleep 2000 ; wachten to projecten op u scherm is
 	
+	;toon afgesloten zaken
+	ToolTip, toon afgesloten zaken  !!  `n    ! ,1303,100
+	Send, {Alt} ;
+	Sleep 90
+	Send, {Right 3} ;
+	Sleep 90
+		Send {Enter}
+		Sleep 90
+	Send, {Up 2} ;
+	Sleep 90
+		Send {Enter}
+			Sleep 250
+		
+	
+	
+
 	
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -84,7 +120,8 @@ If WinExist("AUTO - LET Automotive n.v.")
 	Send, {TAB}
 	Sleep, 100
 	Send, vith123
-	MouseClick, left,  136,  157
+	;MouseClick, left,  136,  157
+	MouseClick, left,  136,  182 ;nieieuw winacount
 	Sleep, 100
 	Send, {Down 5}{Tab 1}{Down 2} ; meest gebruikte en dan selecteren
 	Sleep 1500,   ; loaden msoft , niet inkorten
@@ -112,6 +149,22 @@ If WinExist("AUTO - LET Automotive n.v.")
 		Send, {Down 7} ; projrct is nu 7x down
 		Send {Enter} ; programma projecten in msoft is nu vooraan in je beeldscherm
 		; we hebben nu een verse msoft en verse projecten mogelijks op projecten int beeeldvullend , maar run deze ahk maar nog ne keer
+		
+		
+		
+		
+			;toon afgesloten zaken
+	ToolTip, toon afgesloten zaken  !!  `n    ! ,1303,100
+	Send, {Alt} ;
+	Sleep 90
+	Send, {Right 3} ;
+	Sleep 90
+		Send {Enter}
+		Sleep 90
+	Send, {Up 2} ;
+	Sleep 90
+		Send {Enter}
+			Sleep 250
 	}
 	
 	

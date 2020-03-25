@@ -1,11 +1,27 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="Clipprojectopenen"  
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+;; export to log
 FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="Clipprojectopenen"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
 
 
+;;pre-start en variabelen
+;artikelomschrijving
+
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+Loop, 1
+{
+	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+
+;;;START
 
 
 

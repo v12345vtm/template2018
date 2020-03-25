@@ -1,19 +1,30 @@
-  ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+ ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="virtualenvirement"  
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+;; export to log
 FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="virtualenvirement"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
+
+
+;;pre-start en variabelen
+
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
+SetKeyDelay, 50 ; hoe rap stuur je typcommandos  
+ 
+Loop, 1
+{
+	ToolTip,     %scriptnaam%    ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+
+;;;START
 
 
 
-
-
-
-  
-  ;  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-  Sleep  500,
- CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 
 
 ToolTip, certtool main folder openen , 170,950
@@ -97,7 +108,7 @@ else
 Run "C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm"
      ;C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xls
 Sleep 500
-Run "C:\Users\vth\Desktop\template2018\macros\diff.xlsm"	 
+;Run "C:\Users\vth\Desktop\template2018\macros\diff.xlsm"	 
 	 
 }
 
@@ -124,7 +135,8 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
+;MsgBox "EXIT-"%scriptnaam%
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 ExitApp
 return
 }

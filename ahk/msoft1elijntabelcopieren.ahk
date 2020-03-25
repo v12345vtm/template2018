@@ -1,16 +1,30 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-scriptnaam :="msoft1elijntabelcopieren"   
-;FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-;Sleep 300,
-
-
-
-
+  ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="msoft1elijntabelcopieren -kzbvooraanzetten lukt niet"  
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+;; export to log
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
 Sleep 300,
+
+
+;;pre-start en variabelen
+;artikelomschrijving
+
+
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
+;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+Loop, 1
+{
+	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+
+;;;START
+
+
+
 
 
 SetTitleMatchMode 2
@@ -32,17 +46,18 @@ If WinExist("AUTO - Projecten")
 	
 	Sleep, 200
 	
-	MouseMove, 110,100 ; op 1e regel gaan staan en dan tabel kopieren
-	
-	
-	Sleep, 50
+	MouseMove, 110,150 ; in active window mode staan we op 1e regel gaan staan en dan tabel kopieren
+		Sleep, 100
 	MouseClick, Right
-	Sleep, 50
+	Sleep, 100
 	Send {UP 2}
-	Sleep, 50
-	Sleep, 2
+	Sleep, 100	
 	Send {ENTER}
 	Sleep, 500
+	
+	
+
+	
 	
 	; als serieverpak2019 open is , activeer het en klik erin
 	
@@ -85,7 +100,11 @@ Needle := RegExMatch(ordernummer, "KB" , SubPat)  ; Shows getal, which is the po
 		If WinExist("kzb.xlsm - Excel")
 		{
 			WinActivate  ; venster aktief zetten
-			Sleep, 500
+			Loop, 2
+{
+	ToolTip,     kzb.xlsm bestaat   ; ahk variabele oproepen moet met %% 
+	Sleep, 100
+}
 			MouseClick, Left , 624 , 437 ; aktief zetten labeltool
 			Sleep, 200
 			MouseClick, Left , 624 , 437  ; klik op : analuseer en genreer
@@ -116,9 +135,9 @@ Needle := RegExMatch(ordernummer, "KB" , SubPat)  ; Shows getal, which is the po
 		{
 			WinActivate  ; venster aktief zetten
 			Sleep, 500
-			MouseClick, Left , 100 , 400 ; aktief zetten labeltool
+			MouseClick, Left , 100 , 350 ; aktief zetten labeltool
 			Sleep, 200
-			MouseClick, Left , 100 , 400  ; klik op plak
+			MouseClick, Left , 100 , 350  ; klik op plak
 			;Msgbox serieverpakExist
 			
 		}else  {

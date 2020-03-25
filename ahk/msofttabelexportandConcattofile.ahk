@@ -1,36 +1,55 @@
 
 ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="msofttabelexportandConcattofile"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
 
 
 
-
-
-
-
-
-
- ToolTip, export de huidige  tabel als je wil naar 1 file,170 , 950
  
-    SetKeyDelay, 200 ; hoe rap stuur je typcommandos 
-  ;  BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="msofttabelexportandConcattofile win+END"  
+;BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-   CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-  
- InputBox, UserInput, msoftTabelExportAndConcatFile, de huidige tabel wat je nu ziet komt in bestand., , 640, 480
-if ErrorLevel
-   ; MsgBox, CANCEL was pressed.
-	ExitApp 
+;; export to log
+FormatTime, CurrentDateTime,, yyMMddHHmmss
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
+
+ 
+
+;;pre-start en variabelen
+ 
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
+SetKeyDelay, 500 ; hoe rap stuur je typcommandos  
+ 
+Loop, 3
+{
+	ToolTip,     %scriptnaam%  enkel in/op msoft tabel doen  (vb partlist)  %A_Index%    ; ahk variabele oproepen moet met %% 
 	
-else
-   ; MsgBox, You entered "%UserInput%" 
-  
-  
-FileAppend, `n%UserInput%*`n, c:/aa/klembord1.txt ;save naar txt file
+	 Sleep, 100
+}
+
+
+
+;;;START
+
+ 
+ 
+ ;msoft is ahk_class ProMainWin
+ 
+ 
+ If WinExist("ahk_class ProMainWin")
+{
+	;WinActivate
+	;Sleep 200,
+	
+	Loop, 6
+{
+	ToolTip,     %scriptnaam% we staan in msoft  %A_Index%    ; ahk variabele oproepen moet met %% 
+	 Sleep, 50
+}
+
+
 
 ;if Detail Materiaalkosten 2x up
 
@@ -54,30 +73,36 @@ Send, {Enter}
 Sleep 1400,
 
 
-;FileAppend,hallo`n,c:/aa/klembord1.txt ;save naar txt file
-
-OnClipboardChange:
-FileAppend, `n%clipboard%`n, c:/aa/klembord1.txt ;save naar txt file
+	Loop, 6
+{
+	ToolTip,     %scriptnaam% saving tabel in klembord...  %A_Index%  /3sec  ; ahk variabele oproepen moet met %% 
+	 Sleep, 500
+}
+	
+	;OnClipboardChange:
+FileAppend, `n%clipboard%`n,  C:/Users/vth/Desktop/template2018/logfiles/klembord1.txt ;save naar txt file
 
 Sleep 100,
-Run c:/aa/klembord1.txt  
-
-;Send, {ESC}
-;Sleep 10,
-
-
-
-
+Run  C:/Users/vth/Desktop/template2018/logfiles/klembord1.txt 
+	
+	
+	}
+	
+	else
+	
+	{
+	
+	
+	Loop, 6
+	{
+	ToolTip,     %scriptnaam% geen msoft gezien %A_Index%    ; ahk variabele oproepen moet met %% 
+	 Sleep, 500
+}
+	}
  
 
 
-
-
-
-
-
-
-
+ 
 
 
 ;;noodstop

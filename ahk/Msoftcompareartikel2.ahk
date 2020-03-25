@@ -156,12 +156,12 @@ Run C:/Tools/Notepad++/notepad++.exe
    Run C:/Users/vth/Desktop/template2018/logfiles/compare2-split.txt
    
    Sleep 1000,
-   Send ^!{c} ; Simulates the keypress control alt c = plugin compare
+   Send ^!{c} ; Simulates the keypress control alt c = plugin compare in notpad++
 		    Sleep 500,
 			
 			
 			
-Run C:\Users\vth\Desktop\template2018\ahk\pythonUniques.bat			
+; Run C:\Users\vth\Desktop\template2018\ahk\pythonUniques.bat	 ; maakt file uniek.txt kan intresant zijn		
 			
 			
 			

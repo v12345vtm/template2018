@@ -1,123 +1,105 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
+;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
+scriptnaam :="pdmverkenner"  
+; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+;; export to log
 FormatTime, CurrentDateTime,, yyMMddHHmmss
- Sleep 300,
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="pdmverkenner"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
+FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Sleep 300,
 
 
+;;pre-start en variabelen
 
+zoekknopx := 1290 ; 311
+zoekknopy := 108 ; 190
+
+zoekveldx := 1064 ; 815
+zoekveldy:= 190 ; 250
+
+ 
+
+
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
+
+SetKeyDelay, 20 ; hoe rap stuur je typcommandos  
+ 
+Loop, 1
 {
-	BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-	Sleep 100,
-	ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-	CoordMode, Relative
+	ToolTip,     %scriptnaam%     ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
 
-	ToolTip, pdm via verkenner openen  `n  hopelijk is het met autologin die werkt  `n    ,170 , 950
-	Sleep 100,	
-	
-	
-	
-	
-	try  ; Attempts to execute code.
+;;;START
+
+;wachtenOPprogram := "ahk_class SunAwtFrame" ; 
+wachtenOPprogram := "LET_VAULT" ; 
+
+ ToolTip, var wachten tot %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
+  Sleep, 1000
+
+ Run C:\LET_VAULT ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
+ WinWait, %wachtenOPprogram%, , 3
+if ErrorLevel
 {
-	
-	SetTitleMatchMode 2
-Run C:\LET_VAULT\AUTOMOTIVE\ ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
-	Sleep 3500,
-	WinWait, C:\LET_VAULT\AUTOMOTIVE 
-	
-	
-	ToolTip, pdm via verkenner openent  `n  hopelijk is het met autologin die werkt  `n    ,170 , 950
-	 	
-		
-		 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
+   ToolTip, timed out %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
+  Sleep, 1000
+    return
+}
+else
+{
+      ToolTip,ok  %wachtenOPprogram%  is er  %A_Index% ,170,950
+	  
+  	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 		 	ToolTip, pdm via verkenner aktiefzetten   
 		 	Sleep 1500,
 		 
 		;WinMaximize, A 
 		WinMaximize
 		ToolTip, pdm via verkenner maximaliseren 
-	 Sleep 1700,
-	 
-
-	
-		;MouseClick, left,  1845,  75  ; klik op zoekfunctie run als ahk
-		MouseClick, left,  1853,  110  ; klik op zoekfunctie run als exe
-		
-		
-			ToolTip, klik op zoekfunctie   ,170 , 950
-			
-	Sleep, 1100
-	
-	
-	
-	
-	
-		 ;MouseClick, left,  830,  175 ; klik n je zoekveld run als ahk
-			MouseClick, left,  836,  197	; klik n je zoekveld run als exe
-		
-			ToolTip, klik op zoekveld   ,170 , 950
-	Sleep, 1100	
-	
-	
-MouseGetPos, xpos, ypos  ; default lezen we de mousepos op active window
-WinGetTitle, Title, A
-
-
-
-MouseGetPos, xtemp, ytemp 
-ToolTip, The cursor ifv aktieve window :is at X%xpos% Y%ypos% `n aktiefVenster=  %Title%   `n    scherm positie= op X%xtemp% Y%ytemp% 
-Sleep, 500	
-	
-	
+  
+  
  
-;	Send !{UP} ; dir omhoog  =  c:letvault
 
 
-
-ExitApp
-
+Loop, 1
+{
+	MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
+	Sleep, 100
+		MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
+	Sleep, 100
 
 }
-catch e  ; Handles the first error/exception raised by the block above.
-{
-    BlockInput, Off
+  
+MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
+    MouseClick, left
+		Sleep, 100
+		
+			MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
+			 MouseClick, left
 	Sleep, 100
-	MsgBox, An exception was thrown!`n Specifically: %e% 'n press SPatie
-    ;Exit
-	ExitApp
-}  
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+  ;  return
+}
 
-	
-	
-	;;noodstop
-	ExitApp ; dit is onze laatste stap na de herhaalloop
-	ExitSub:
-	{
-		BlockInput, MouseMoveOff
-		MsgBox "EXIT-"%scriptnaam%
-		ExitApp
-		return
-	}
-	ESC::Goto ExitSub
-}                        
+Exitapp
+
+
+
+;;noodstop
+ExitApp ; dit is onze laatste stap na de herhaalloop
+ExitSub:
+{
+BlockInput, MouseMoveOff
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+ExitApp
+return
+}
+ESC::Goto ExitSub
+
+
+
+
+
+
