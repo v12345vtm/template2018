@@ -1,0 +1,279 @@
+ 
+Sub ProduktievoorschriftWizard()
+
+'MsgBox ("debug")
+'("C:\Users\vth\Desktop\msoft.xlsx")
+   'https://social.msdn.microsoft.com/Forums/en-US/62fceda5-b21a-40b6-857c-ad28f12c1b23/use-excel-vba-to-open-a-text-file-and-search-it-for-a-specific-string?forum=isvvba
+   Dim strPath As String
+strPath = Left(ActiveDocument.Name, 9)
+'MsgBox (strPath)
+     Const strFileName = "C:\Users\VTH\Desktop\template2018\logfiles\msoftdb.txt" ' = via msoft naar  excel en dan opslaan als txt
+     '  strSearch = "strPath"
+    Dim strLine As String
+    Dim f As Integer
+    Dim lngLine As Long
+    Dim blnFound As Boolean
+    f = FreeFile
+    Open strFileName For Input As #f
+    Do While Not EOF(f)
+        lngLine = lngLine + 1
+        Line Input #f, strLine
+        If InStr(1, strLine, strPath, vbTextCompare) > 0 Then
+          '  MsgBox "Search string found in line " & lngLine, vbInformation
+                       ' MsgBox (strLine)
+            
+            'we moeten split doen op tab
+            Dim WrdArray() As String
+'splitsen op tab
+WrdArray() = Split(strLine, vbTab)
+            
+           '  Me.TextBox1.Value =WrdArray(0)
+           '  Me.TextBox2.Value = WrdArray(1)
+          '   Me.TextBox3.Value = WrdArray(2)
+            
+            'Define the variable oVars
+Set oVars = ActiveDocument.Variables
+'Hide the userform
+'Me.Hide
+oVars("filenaamzonderextentie").Value = strLine
+oVars("artikelnaam").Value = WrdArray(0)
+oVars("letref").Value = WrdArray(1) + "-" + WrdArray(2)
+'oVars("filenaamzonderextentie").Value = strPath
+ActiveDocument.Fields.Update
+                      
+            blnFound = True
+            Exit Do
+        End If
+    Loop
+    Close #f
+    If Not blnFound Then
+        MsgBox "ep , hf en hfpri uit msoft halen  ,via excel en in msoftdb.txt zetten", vbInformation
+       WrdArray(0) = "letomschr. niet gevonden"
+       Else
+       
+         MsgBox "alles in msoftdb.txt gevonden + nummers.txt verplabel klaar", vbInformation
+    End If
+    
+    
+    
+    'verpakkingslabel genereren in nummers.txt
+    
+    'printen naar file ?C:\Users\VTH\Desktop\nummers.txt
+            
+            map = "C:\Users\VTH\Desktop\"
+            bestand = "nummers.txt"
+           
+            Dim strFile_Path As String
+            strFile_Path = map & bestand
+            Open strFile_Path For Output As #1
+'Print #1, "proj" & ActiveSheet.Range("a1").Value
+            
+                
+                 
+                    Print #1, WrdArray(1) + "-" + WrdArray(2) & "!kip!" & WrdArray(0)
+                
+ 
+             
+'file sluiten en vrijgeven
+            Close #1
+            
+            'einde     'verpakkingslabel genereren in nummers.txt
+    
+    
+    
+  'Unload the form
+
+
+
+End Sub
+
+
+
+Sub UpdateAllFields()
+Dim oStory As Range
+
+For Each oStory In ActiveDocument.StoryRanges
+oStory.Fields.Update
+If oStory.StoryType <> wdMainTextStory Then
+While Not (oStory.NextStoryRange Is Nothing)
+Set oStory = oStory.NextStoryRange
+oStory.Fields.Update
+Wend
+End If
+Next oStory
+
+Set oStory = Nothing
+
+  Dim toc As TableOfContents
+    For Each toc In ActiveDocument.TablesOfContents
+        toc.Update
+    Next toc
+
+Set TableOfContents = Nothing
+
+End Sub
+
+
+Public Sub nummer_ingeven()
+
+
+Dim str As String
+Dim map As String
+
+str = InputBox("Geef het nummer in !")
+
+If Len(str) = 0 Or Len(str) < 13 Then Exit Sub
+
+If Len(str) = 13 Then
+
+ map = "L:\letdata\data\" & Mid(str, 4, 2) & "\" & Mid(str, 6, 4) & "\" & Left(str, 1) & "\" & Left(str, 3) & "\"
+ If Dir(map & str & "\", vbDirectory) <> "" Then map = map & str & "\"
+ 
+ElseIf Left(str, 2) = "20" And Len(str) = 15 Then
+ 
+ map = "L:\letdata\Customerorders\" & Mid(str, 3, 2) & "\" & Mid(str, 1, 8) & "\" & Mid(str, Len(str) - 5, 2) & "\"
+ If Dir(map & str & "\", vbDirectory) <> "" Then map = map & str & "\"
+ 
+ 
+ElseIf Left(str, 1) = "0" Or Left(str, 1) = "1" Or Left(str, 1) = "2" Or Left(str, 1) = "3" Then
+
+ map = "L:\letdata\data\" & Mid(str, 1, 2) & "\" & Mid(str, 3, 7) & "\" & Mid(str, Len(str) - 5, 2) & "\"
+ If Dir(map & str & "\", vbDirectory) <> "" Then map = map & str & "\"
+
+Else
+
+ For i = 1 To Len(str)
+ 
+  Select Case Mid(str, i, 1)
+  Case "1", "2", "3", "4", "5", "6", "7", "8", "9"
+  
+   map = "L:\letdata\Projects\" & Mid(str, i, 2) & "\" & Mid(str, 1, Len(str) - 7) & "\" & Mid(str, Len(str) - 5, 2) & "\"
+   If Dir(map & str & "\", vbDirectory) <> "" Then map = map & str & "\"
+   Exit For
+  Case Else
+  End Select
+ 
+ Next i
+
+
+End If
+ 
+ 
+
+If Dir(map, vbDirectory) = "" Then Exit Sub
+
+Options.DefaultFilePath(Path:=wdPicturesPath) = map
+Options.DefaultFilePath(Path:=wdDocumentsPath) = map
+
+End Sub
+
+
+
+
+
+
+Sub mstrefurbisch()
+'
+' macro  mst engeland
+'
+'
+sPrompt = "Please serienr , vb : EP180060.001"
+sTitle = "Name Entry"
+sDefault = "EP"
+sUserName = InputBox(sPrompt, sTitle, sDefault)
+
+sVerschil = InputBox("verschil in mm", "geen mm typen enkel getal")
+
+sFilenaamzonderextentie = Left(ActiveDocument.Name, Len(ActiveDocument.Name) - 5)
+
+ ActiveDocument.Variables("verschil").Value = sVerschil
+
+
+ ActiveDocument.Variables("letref").Value = sUserName
+ ActiveDocument.Variables("fileNoext").Value = sFilenaamzonderextentie
+  ActiveDocument.Variables("calibdatum").Value = Date
+    ActiveDocument.Variables("geldigtot").Value = DateAdd("yyyy", 1, Date)
+ 
+ActiveDocument.Fields.Update
+
+
+
+''update alle velden ook in koptext en voettext
+Dim oStory As Range
+
+For Each oStory In ActiveDocument.StoryRanges
+oStory.Fields.Update
+If oStory.StoryType <> wdMainTextStory Then
+While Not (oStory.NextStoryRange Is Nothing)
+Set oStory = oStory.NextStoryRange
+oStory.Fields.Update
+Wend
+End If
+Next oStory
+
+Set oStory = Nothing
+
+  Dim toc As TableOfContents
+    For Each toc In ActiveDocument.TablesOfContents
+        toc.Update
+    Next toc
+
+Set TableOfContents = Nothing
+
+
+
+
+
+'opslaan als RDE150006-D4E02_-EP123456
+
+
+folder = ActiveDocument.Path
+ 
+ 
+ bestandsnaam = folder & "\RDE150006-D4E02_-" & sUserName & ".docx"
+
+
+ActiveDocument.SaveAs FileName:=bestandsnaam
+
+
+
+
+End Sub
+
+
+
+
+
+
+Sub prentjesresizen()
+'zet alle prentjes op 2inch van de boord
+'prentjes moeten wel property hebben ' achter text'
+'want anders is het een inlineshape ipv een shape
+
+Dim i As Long
+With ActiveDocument
+    For i = 1 To .Shapes.Count
+      
+        
+        
+        
+        
+        With ActiveDocument.Shapes(i)
+.RelativeHorizontalPosition = wdRelativeHorizontalPositionPage
+.Left = InchesToPoints(1)
+End With
+        
+        
+        
+    Next i
+End With
+
+
+
+
+
+
+
+End Sub
+
+
