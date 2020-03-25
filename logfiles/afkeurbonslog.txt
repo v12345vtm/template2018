@@ -90,3 +90,34 @@ DRFR-190032_01DAS	 3	Steun spiegel spiegelmodule wielklem Wörth	ze hebben een an
 DRFR-040240_00KOL	 1	Sluitstuk kolom PLM	construktiefout ; gat uit center     stock was okee	Ma 20191728	0	9/09/2019
 PANEL-040110_00OPT	 3	Plaat bedieningspaneel T50	krassen in venster      	Ma 20191768	0	9/12/2019
 DRFR-110265_00KOL	 8	Glijtafel SAR (pltw)	constructiefout : gat verkeerd , zie techn.tek.     alle goede uit stock verwerkt in prod  	Ma 20191782	0	16-9-2019
+HF-150485A01KOL	 57	Spiegel PLA-Lijnlaser LM35 (Praag)	 	56x krom ; 1x slechte lijn -  * 	20-09-2019
+BEWKO-040245_00KOL	 1	HTD-riemschijf encoder bewerkt PLM	gat verkeert ( 6 ipv8mm)     1slechte op stock	Ma 20191879	0	27-9-2019
+DRFR-040256_00KOL	 7	Versteviging PLM	gat zit niet correct volgens tekening (construktiefout)     7slechte , 30goede	Ma 20191992	0	10/11/2019
+DRFR-160604_01CAL	 1	Inclinatietafel unical L/R	kwaliteitsprobleem : afwerking vd afronding is wss met de hand gedaan ??       1slechte op stock	Ma 20192030	0	17-10-2019
+DIVMA-170330_01DAS	 5	Diffuser plexi mirror cam target	verkeerde schaal      5slechte op stock en 3met krassen als 2e keuze , we willen 4 nieuwe in prod	Ma 20192085	2+2 (ep190103 & ep190104)	28-10-2019
+DRFR-060360_00CAL	 3	Gespleten bus UNICAL	3 met elk een eigen konstruktiefout      3slechte in prod , geen op stock	Ma 20192103	3 voor EP190110	29-10-2019
+MONPR-PRO-F-80X120-LENGTE 1340MM	 1	Rose+Krieger profiel F-80X120; Lengte 1340mm	niet haaks      	Ma 20192144	1	11/05/2019
+MONPR-PRO-F-80X120-LENGTE 560MM	 3	Rose+Krieger profiel F-80X120; Lengte 560mm	niet haaks      	Ma 20192144	3 voor hf19144	11/05/2019
+DRFR-050031_00KOL	 4	U-profiel hoogtedetectie PLM Rev. A	alle geleverde artikels zonder chafrijn ,maar sommige ook verkeerd gezaagd , gedeukt , 2stuks slecht spuitwerk   
+  shafrijn van deze op stock in LET gecorrigeert	Ma 20192147	 	11/06/2019
+MONPR-PRO-F-80X120-LENGTE 560MM	 1	Rose+Krieger profiel F-80X120; Lengte 560mm	niet haaks      	Ma 20192193	1 voor hf19144	14/11/2019
+DRFR-170132_01DIS	 1	Blindstop schakelaar SDR 320TR	construktiefout : buiten tolerantie + afgeschuurde basisplaat     	Ma 20192209	0	18-11-2019
+DRFR-090027A00OPT	 17	Steun objectiefhouder LM25	excentrisch , als men een lens insteekt , zit men naast het focus punt      	Ma 20192244	 	21-11-2019
+DRFR-090028_00OPT	 1	Houder objectief LM25	schroefdraad te klein      	Ma 20192245	 	21-11-2019
+DRFR-020482_00ACC	 1	Geleidingsrol inrijgeleiding	kwaliteitsprobleem , rol is niet cilindrisch     	Ma 20192277	0	26-11-2019
+DRFR-070004_00CAL	 14	Houder coupure dia UNICAL	kwaliteitsprobleeem ; haakjes zijn teveel , er moe meer matriaal afgenomen worden      	Ma 20192279	0	26-11-2019
+DRFR-040235A00KOL	 6	Draaitafel PLM Rev A	konstruktiefout : gat te ruim     alles ok op stock	Ma 20192347	0	12/04/2019
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	krasje in sensor     0	Ma 20192387	1 voor psp	12/11/2019
+CAMER-OBJ-F08.0MM	 100	Objectief F 8mm - Micro video lens	optisch niet juist      	Ma 20192388	0	12/11/2019
+DRFR-050637_00ACC	 53	Hendelsteun laserhandvat	pg7 ontbreekt     alles slecht op stock	Ma 20192414	3 spoedig van de 30	16-12-2019
+DRFR-070021A00CAL	 13	Basisplaat lamp UNICAL	vlakheid buiten tolerantie ,      alles stok is slecht	Ma 20192437	6 voor ep190140	19-12-2019
+DRFR-060329_00CAL	 4	Uitlijnprofiel rechts UNICAL	vlekken en onregelmatigheden op  oppervlak = hersatineren      	Ma 20192442	via mathieu	19-12-2019
+DRFR-060344_00CAL	 3	Inclinatietafel UNICAL	hersatineren     	Ma 20200002	0	1/02/2020
+DRFR-050256_00KOL	 1	Wielexcenter PLA	verkeerde schroefdraad     0 slechte op stock	Ma 20200027	0	8/01/2020
+DRFR-040258_00KOL	 3	Geleiding lint PLM	vlakheid niet binnen tollerantie     stock is goed	Ma 20200141	0	29-1-2020
+DRFR-040239_00KOL	 1	Regelbare lagersteun PLM	kwaliteitsprobleem : zaagsnede is slordig , bramen en niet haaks     alle stock was goed	Ma 20200228	0	17-2-2020
+DRFR-120338_00OPT	 2	Kader ijkplaat-connectorplaat (rechts)	construktiefout : schuinheid loopt verkeerd op      6gereserveert aanpassen naar 8gereserveerd	Ma 20200258	2	21-2-2020
+HF-180547A01OPT	 24	Connectorplaatmodule LVC2035	kwaliteitsprobleem  : extra werk nodig om in orde te krijgen : print afdoen , silicone afdoen , I/O vijsjes vastzetten ,     	Ma 20200328		3/05/2020
+-	 1		gesmolten       	Ma 20200360	 	9/03/2020
+KABAS-VGA-01,8-MV	 1	VGA-kabel 1,8 m M/V	gesmolten      	Ma 20200360	 	3/09/2020
+DRFR-100072_00KOL	 1	Glijas Alu Drylin kolom	boor afgebroken en gat tekort en shafrijnen zaten er niet op      	Ma 20200374	0	17-3-2020

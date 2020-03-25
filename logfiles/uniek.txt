@@ -1,0 +1,6 @@
+>>> UNIQUE lines found in file 'compare1-split.txt'
+  * Kolom_PLM_versneld_versie_Shenzhen_STOCK 0_BLOKKEREN. .
+  * 4.00 ST AFBUS NY-D-03.1X15.0-BD08 Afstandsbus_nylon_D_3.1_x_15_mm_-_buitendiameter_8.
+>>> UNIQUE lines found in file 'compare2-split.txt'
+  * 4.00 ST BEWKO 201165_01KOL Rolletje_geleiding_lint_PLM.
+  * Kolom_PLM_versneld_versie_Shenzhen. .
