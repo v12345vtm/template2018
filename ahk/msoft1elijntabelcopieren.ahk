@@ -1,5 +1,5 @@
   ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="msoft1elijntabelcopieren -kzbvooraanzetten lukt niet"  
+scriptnaam :="msoft1elijntabelcopieren"  
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 ;; export to log
@@ -14,10 +14,10 @@ Sleep 300,
 
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+  SetKeyDelay, 50 ; hoe rap stuur je typcommandos   
 Loop, 1
 {
-	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
+	ToolTip,     %scriptnaam%  = in Msoft projecten staan   ; ahk variabele oproepen moet met %% 
 	Sleep, 1000
 }
 
@@ -31,7 +31,7 @@ SetTitleMatchMode 2
 If WinExist("AUTO - Projecten")
 {
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
-	ToolTip, u programma AUTO - Projecten is open `n tja staat  `n   voila! ,170 , 950
+	ToolTip, u programma AUTO - Projecten is open `n tja staat  `n   voila! 
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 	
 	Sleep 600,  
@@ -42,7 +42,7 @@ If WinExist("AUTO - Projecten")
 	
 	;WinWaitActive, AUTO - Projecten  -  LET Automotive n.v.
 	
-	ToolTip, msoft de tabel de 1e regel in klembord zetten en de juiste excel initialieseren,170 , 950
+	ToolTip, msoft de tabel de 1e regel in klembord zetten en de juiste excel initialieseren
 	
 	Sleep, 200
 	
@@ -65,27 +65,27 @@ If WinExist("AUTO - Projecten")
 	;aan de hand van wat nu in ons clipboard zit ( namelijk de tabel die we uit msoft kopieren ) 
 	;daarin zien we of het kb-nummer is of een groene prod fiche vr serienrs
 	
-	;Needle := RegExMatch(Clipboard, "KB\d{6}" , SubPat)  ; Shows getal, which is the position where the match was found.
-	;Msgbox %Needle% ; getal met waar de KB-nummer staat  in de clipbord
-	; debug die niet werkt nog Msgbox % SubPat.Count()
 	
-	
-	;teststring := "Project	Klant	Leveradres	Alternatiefnummer project	Besteldatum	Leverdatum	Startdatum	Einddatum	Onzereferentie	Referentieklant	OrderSrt	Afdeling	Transport	Krachtterm	Vertegenwoordiger	Status	Klassementsnr.	Aantalkrachtterm	Enhkrachtterm	Prijskrachtterm	PrsEnhkrachtterm	Aantal geproduceerdKrachtterm	Valuta	Projectverantw.	Projectgroep	UniekVolgnummer	Soortklant	Klantbestelling	Totale waardein bedrijfsmunt	Levernota	Extra infokrachtterm	Afgesloten	Vrijgegevenvoor productie	Herberekeningnodig?	Link documentcenter	IN	Part	Off	Ram	VS	AantalRestpallet	Weeknummer	Contactpersoon	Afsluitdatum	Besteld aantal	Allergeen	Werkelijkeleverdatum	Alternatiefartikelnummer	`nOA190078	AUTOMOTIVE			29/11/2019	29/12/2019	29/11/2019	29/12/2019	B.W.Z.		OA	P	ONB	Lensfront LM35 GOCA Rev. A	DELFORCHEPIETER	In productie		150,00	ST	259,5000	ST	0,00	EUR	SPIESSENSPETER		0000036530	NVT	00000000	38925,00	00000000	HF-170038A01OPT	0	1	0	0	0	0	0	0	0	0	52		31/12/9999	0,00	0		=0000000449236	"
+	;teststring := "Project	hardcoded	Leveradres	Alternatiefnummer project	Besteldatum	Leverdatum	Startdatum	Einddatum	Onzereferentie	Referentieklant	OrderSrt	Afdeling	Transport	Krachtterm	Vertegenwoordiger	Status	Klassementsnr.	Aantalkrachtterm	Enhkrachtterm	Prijskrachtterm	PrsEnhkrachtterm	Aantal geproduceerdKrachtterm	Valuta	Projectverantw.	Projectgroep	UniekVolgnummer	Soortklant	Klantbestelling	Totale waardein bedrijfsmunt	Levernota	Extra infokrachtterm	Afgesloten	Vrijgegevenvoor productie	Herberekeningnodig?	Link documentcenter	IN	Part	Off	Ram	VS	AantalRestpallet	Weeknummer	Contactpersoon	Afsluitdatum	Besteld aantal	Allergeen	Werkelijkeleverdatum	Alternatiefartikelnummer	`nOA190078	AUTOMOTIVE			29/11/2019	29/12/2019	29/11/2019	29/12/2019	B.W.Z.		OA	P	ONB	Lensfront LM35 GOCA Rev. A	DELFORCHEPIETER	In productie		150,00	ST	259,5000	ST	0,00	EUR	SPIESSENSPETER		0000036530	NVT	00000000	38925,00	00000000	HF-170038A01OPT	0	1	0	0	0	0	0	0	0	0	52		31/12/9999	0,00	0		=0000000449236	"
 teststring := Clipboard
+;Msgbox %teststring%  
 	
-	
-	regexfilter := RegExMatch(teststring, "\D{2}\d{6}", SubPatje)  ; Shows 1 and stores "ordernummer" in SubPat1.
-;Msgbox %SubPatje.Value()% ; 0e element in ons object/tabel
+regexfilter := RegExMatch(Clipboard, "\D{2}\d{6}", SubPatje)  ; Shows 1 and stores "ordernummer" in SubPat1.
 
-ordernummer := Trim(SubPatje.Value())
-;Msgbox %ordernummer% ordernrtrimmed; 0e element in ons object/tabel	
-Needle := RegExMatch(ordernummer, "KB" , SubPat)  ; Shows getal, which is the position where the match was found.
+;Msgbox %SubPatje%
+
+ordernummer := Trim(SubPatje)
+;Msgbox ***
+Msgbox %ordernummer%
+
+
+Needle := RegExMatch(ordernummer, "KB" , SubPatje)  ; Shows getal, which is the position where the match was found.
 	
 	
-;Msgbox %Needle% needle op KB; 0e element in ons object/tabel
+Msgbox %Needle% 
 	
-	
-	
+	  ;exitapp
+
 	
 	if Needle > 0 
 	{
@@ -100,14 +100,17 @@ Needle := RegExMatch(ordernummer, "KB" , SubPat)  ; Shows getal, which is the po
 		If WinExist("kzb.xlsm - Excel")
 		{
 			WinActivate  ; venster aktief zetten
+			Sleep, 200
+			WinMaximize ; "kzb.xlsm - Excel" ; use the window found above
+			
 			Loop, 2
 {
 	ToolTip,     kzb.xlsm bestaat   ; ahk variabele oproepen moet met %% 
 	Sleep, 100
 }
-			MouseClick, Left , 624 , 437 ; aktief zetten labeltool
+			MouseClick, Left , 600 , 387 ; aktief zetten labeltool
 			Sleep, 200
-			MouseClick, Left , 624 , 437  ; klik op : analuseer en genreer
+			MouseClick, Left , 600 , 387  ; klik op : analuseer en genreer
 		;	Msgbox kzbexist
 			;ExitApp
 		}else  {

@@ -53,7 +53,7 @@ else
 	Loop, 10
 	{
 		ToolTip, wacht   om alles in te laden    %A_Index%  /10 seconden ,170 , 950  ; A_Index will be 1, 2, then 3
-		Sleep, 1000
+		;Sleep, 1000
 	}
 
  BlockInput, MouseMove 

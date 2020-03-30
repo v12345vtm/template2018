@@ -1,5 +1,5 @@
 ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="klembordWritetofile-ahk"  
+scriptnaam :="klembordWritetofile-ahk de geselecteerde text"  
 ;BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 ;; export to log
@@ -28,9 +28,12 @@ Loop, 3
  
   
  
- 
- 
- 
+oCB := ClipboardAll  ; save clipboard contents
+Send, ^c
+ClipWait,4
+
+;< do whatever you originally wanted with selected text in "clipboard" variable >
+
  
  
  
@@ -40,7 +43,7 @@ Loop, 3
 	
 	Loop, 2
 {
-	ToolTip,     %OutputVar%  oudklembordterm   %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
+	ToolTip,     %OutputVar%  oudklembordterm  + nieuw %ClipBoard% +  %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
 	Sleep, 100
 }
 
@@ -54,7 +57,7 @@ Loop, 3
 	Sleep, 50
 } 
 ;InputBox, OutputVar , Title,                      Prompt,        HIDE,  Width, Height, X, Y, Locale, Timeout, Default
-InputBox, UserInput, program klembordWritetofile, Please enter a  number voor virt klembord., , 300, 170 ,70,500,,, %OutputVar% ; breed300 hoogte170 posx70 posy500
+InputBox, UserInput, program klembordWritetofile, Please enter a  number voor virt klembord., , 300, 170 ,70,500,,, %ClipBoard% ; breed300 hoogte170 posx70 posy500
 if ErrorLevel
   {  
   	MsgBox, 48, you pressed cancel- , you pressed cancel- `n`n This message will self-destruct in 1 seconds., 1
@@ -86,6 +89,13 @@ else
 	ToolTip,     einde prog bereikt   %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
 	Sleep, 100
 }
+
+
+
+
+ClipBoard := oCB         ; return original Clipboard contents 
+ 
+ 
 ExitApp
 
 

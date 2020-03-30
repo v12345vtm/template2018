@@ -189,6 +189,66 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 
 
 
+ ToolTip, 
+
+
+;;;;;;;;;;;;;;;;hier moeten we excel macro GREP.xlsm kunnen runnen
+
+
+Run C:\Users\VTH\Desktop\template2018\macros\grep.xlsm
+
+		Loop, 3
+		{
+			ToolTip, grep.xlsm inladen   %A_Index%    ; A_Index will be 1, 2, then 3
+			Sleep, 400
+		}
+
+;WinWait,"grep.xlsm - Excel"
+;WinMaximize ; use the window found above
+
+
+ 
+
+If WinExist("grep.xlsm - Excel")
+	{
+	
+	;MsgBox, 48, grep ja- , grep is er - `n`n This message will self-destruct in 3 seconds., 3
+	  MouseMove,790 , 411 ; klik op de vba macro knop op te grep uit te voeren
+  MouseClick, left
+	Sleep 2300 ; vba is bezig
+	
+	
+;;grep uitgevoerd we hebben nu 2 bestanden waar de dubbele items elk uit verdwenenn zijn
+
+;excel sluiten
+
+	Send !{f4} ; Simulates the keypress alt+f4 sluit window  waar ons text artikelnaam stond
+		Sleep, 500
+		
+		;excel vraagt opslaan ?
+			Send {Right} ; we gaan naar 'niet opslaan'
+		Sleep, 500
+				Send {Enter} ; we klikken naar 'niet opslaan'
+		Sleep, 500
+		
+	
+	
+	
+	
+	}
+	
+	else
+	{
+	MsgBox, 48, grepnee- , geen grep.xlsm gezien `n`n This message will self-destruct in 3 seconds., 3
+	Exitapp
+	}
+
+
+
+ 
+
+
+
 	
 ;;;;;;;;;;;;;;;;;;;;;;;;;	;we gaan notepadd++ openen , maar we gaan ale tabblaten sluiten  ahk_class Notepad++
 	
@@ -213,7 +273,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	
 			
 			   Sleep 300,
-  Run C:/Users/vth/Desktop/template2018/logfiles/compare1-split.txt ;
+  Run C:/Users/vth/Desktop/template2018/logfiles/compare1-split-grep.txt ;
    ;  Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt ; winaccount crach
 
 	Loop, 4
@@ -223,7 +283,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	}
 
 
-  Run C:/Users/vth/Desktop/template2018/logfiles/compare2-split.txt ; 
+  Run C:/Users/vth/Desktop/template2018/logfiles/compare2-split-grep.txt ; 
    ;   Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt ; 
 
 	Loop, 4
@@ -271,7 +331,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	
 	
 ;;;;;;;;;;;;;;;extra log
-FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving% -eind `n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
 
 
 
@@ -289,7 +349,7 @@ FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving%`n, C:/Users/vt
 			Sleep, 500
 			ToolTip, stuklijst van %artikelomschrijving% in   compare1-txt   ; A_Index will be 1, 2, then 3
 			Sleep, 500
-			BlockInput, MouseMoveOff
+			;BlockInput, MouseMoveOff
 		}
   
   

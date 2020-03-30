@@ -5,7 +5,8 @@
 
  
 ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="msofttabelexportandConcattofile win+END"  
+
+scriptnaam :="msofttabelexportandConcattofile win+END klembord1"  
 ;BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 ;; export to log

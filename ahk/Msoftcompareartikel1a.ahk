@@ -225,7 +225,7 @@ FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving%`n, C:/Users/vt
 			Sleep, 500
 			ToolTip, stuklijst van %artikelomschrijving% in   compare1-txt   ; A_Index will be 1, 2, then 3
 			Sleep, 500
-			BlockInput, MouseMoveOff
+			;BlockInput, MouseMoveOff
 		}
   
   

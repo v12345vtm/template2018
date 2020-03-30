@@ -3,7 +3,7 @@ echo Hello van  buroblad en runt absolute pathen lokaal
 echo van =   C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
 echo via  = C:\Users\vth\Desktop\template2018\logfiles\compare1replace.txt
 echo naar = C:\Users\vth\Desktop\template2018\logfiles\compare1-split.txt
-pause
+rem pause
 
 @Echo off
 
