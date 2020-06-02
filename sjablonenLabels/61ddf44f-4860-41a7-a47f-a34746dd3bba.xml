@@ -1,0 +1,918 @@
+﻿<ImportSettings Version="3">
+  <Settings Id="General" Version="pmt.api.import.settings.general.version.2">
+    <VersionId>pmt.api.import.settings.general.version.2</VersionId>
+    <Version>pmt.api.import.settings.general.version.2</Version>
+    <SettingsID>General</SettingsID>
+    <DefaultImportMode>CreateNewDocument</DefaultImportMode>
+    <ImportType>Classic</ImportType>
+  </Settings>
+  <Settings Id="Gui" Version="pmt.api.import.settings.gui.version.1">
+    <VersionId>pmt.api.import.settings.gui.version.1</VersionId>
+    <AppearsInMenu>True</AppearsInMenu>
+    <FileSelectMode>Silent</FileSelectMode>
+    <LastModified>03/12/2020 11:12:17</LastModified>
+    <ShowAssistantOnError>True</ShowAssistantOnError>
+    <IconId>0</IconId>
+    <Name>
+      <!--33_lot tussensl afschaffen liefst-->MzNfbG90IHR1c3NlbnNsIGFmc2NoYWZmZW4gbGllZnN0</Name>
+    <Path />
+    <SettingsID>Gui</SettingsID>
+    <Version>pmt.api.import.settings.gui.version.1</Version>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.1">
+    <VersionId>pmt.api.import.settings.assignment.version.1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldName>typenr</FieldName>
+      <Text>-</Text>
+      <Items>0F1,2F2</Items>
+      <FieldName>omschrijving</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>een</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>twee</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldName>Tekstveld</FieldName>
+      <Text>L/N:</Text>
+      <Items>4F4</Items>
+      <FieldName>typnr</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>serienr</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+    </AssignmentTexts>
+    <LeadFieldName>typenr</LeadFieldName>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2">
+    <VersionId>pmt.api.import.settings.assignment.version.2</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldName>typenr</FieldName>
+      <Text>-</Text>
+      <Items>0F1,2F2</Items>
+      <FieldName>omschrijving</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>een</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>twee</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldName>Tekstveld</FieldName>
+      <Text>L/N:</Text>
+      <Items>4F4</Items>
+      <FieldName>typnr</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>serienr</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+      <LeadFieldName>typenr</LeadFieldName>
+      <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+      <LeadFieldName>een</LeadFieldName>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <LeadFieldName>serienr</LeadFieldName>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.assignment.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2009q3_psb</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldType>Label</FieldType>
+      <FieldName>typenr</FieldName>
+      <Text>-</Text>
+      <Items>0F1,2F2</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>omschrijving</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>een</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>twee</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>Tekstveld</FieldName>
+      <Text>L/N:</Text>
+      <Items>4F4</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>typnr</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>serienr</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldType>Textfield</FieldType>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+      <LeadFieldName>typenr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+      <LeadFieldName>een</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <LeadFieldName>serienr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2012q2">
+    <VersionId>pmt.api.import.settings.assignment.version.2012q2</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2012q2</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <FieldName>typenr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--- -->LQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--2F2-->MkYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>omschrijving</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>een</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>twee</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>Tekstveld</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--L-->TA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--/-->Lw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--N-->Tg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--:-->Og==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--4F4-->NEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>typnr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>serienr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+      <LeadFieldName>typenr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+      <LeadFieldName>een</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <LeadFieldName>serienr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.assignment.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2009q3_psb</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldType>Label</FieldType>
+      <FieldName>typenr</FieldName>
+      <Text>-</Text>
+      <Items>0F1,2F2</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>omschrijving</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>een</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>twee</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>Tekstveld</FieldName>
+      <Text>L/N:</Text>
+      <Items>4F4</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>typnr</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>serienr</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldType>Textfield</FieldType>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+      <LeadFieldName>typenr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+      <LeadFieldName>een</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <LeadFieldName>serienr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2013q1">
+    <VersionId>pmt.api.import.settings.assignment.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2013q1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>typenr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--- -->LQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--2F2-->MkYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>omschrijving</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>een</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>twee</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>Tekstveld</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--L-->TA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--/-->Lw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--N-->Tg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--:-->Og==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--4F4-->NEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>typnr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>serienr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+      <LeadFieldName>typenr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+      <LeadFieldName>een</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <LeadFieldName>serienr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2014q1">
+    <VersionId>pmt.api.import.settings.assignment.version.2014q1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2014q1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>typenr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--- -->LQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--2F2-->MkYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>omschrijving</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>een</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>twee</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>Tekstveld</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters>
+        <Name>
+          <!--L-->TA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--/-->Lw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--N-->Tg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+        <Name>
+          <!--:-->Og==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Characters>
+      <Placeholders>
+        <Name>
+          <!--4F4-->NEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>typnr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>serienr</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+    </AssignmentTexts>
+    <LeadFields>
+      <LeadFieldName>typenr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialDescriptor>
+        <MaterialName>TR_EML(51X25)R$$Verpakkingslabel EML (51x25)</MaterialName>
+        <ArticleWithColor>0817028:WH</ArticleWithColor>
+      </MaterialDescriptor>
+      <LeadFieldName>een</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialDescriptor>
+        <MaterialName>TR_EML(51X25)R$$VerpakkingslabelV2</MaterialName>
+        <ArticleWithColor>0817028:WH</ArticleWithColor>
+      </MaterialDescriptor>
+      <LeadFieldName>serienr</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialDescriptor>
+        <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+        <ArticleWithColor>0830570:WH</ArticleWithColor>
+      </MaterialDescriptor>
+    </LeadFields>
+    <NumberOfCopies>3</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Condition" Version="pmt.api.import.settings.conditionfield.version.1">
+    <VersionId>pmt.api.import.settings.conditionfield.version.1</VersionId>
+    <Version>pmt.api.import.settings.conditionfield.version.1</Version>
+    <SettingsID>Condition</SettingsID>
+    <ConditionColumns />
+    <ConditionValues />
+    <ConditionEnabled>False</ConditionEnabled>
+    <ConditionValueOnOutput>False</ConditionValueOnOutput>
+  </Settings>
+  <Settings Id="Condition" Version="pmt.api.import.settings.conditionfield.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.conditionfield.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.conditionfield.version.2009q3_psb</Version>
+    <SettingsID>Condition</SettingsID>
+    <ConditionColumns />
+    <ConditionValues />
+    <ConditionEnabled>False</ConditionEnabled>
+    <ConditionValueOnOutput>False</ConditionValueOnOutput>
+    <DefaultConditionAction>None</DefaultConditionAction>
+    <DefaultConditionActivate>True</DefaultConditionActivate>
+  </Settings>
+  <Settings Id="Delimiters" Version="pmt.api.import.settings.delimiters.version.1">
+    <VersionId>pmt.api.import.settings.delimiters.version.1</VersionId>
+    <Version>pmt.api.import.settings.delimiters.version.1</Version>
+    <SettingsID>Delimiters</SettingsID>
+    <TabulatorSeparator>False</TabulatorSeparator>
+    <SemicolonSeparator>False</SemicolonSeparator>
+    <CommaSeparator>False</CommaSeparator>
+    <SpaceSeparator>False</SpaceSeparator>
+    <OtherSeparator>True</OtherSeparator>
+    <Separator>!</Separator>
+    <TextQualifier></TextQualifier>
+    <FixedFieldMarkers />
+  </Settings>
+  <Settings Id="Filters" Version="pmt.api.import.settings.filters.version.1">
+    <VersionId>pmt.api.import.settings.filters.version.1</VersionId>
+    <Version>pmt.api.import.settings.filters.version.1</Version>
+    <SettingsID>Filters</SettingsID>
+    <Filters>
+      <Field>0</Field>
+      <Active>True</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>True</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>1</Field>
+      <Active>True</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>True</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>2</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>3</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+    </Filters>
+    <Sorts />
+  </Settings>
+  <Settings Id="LogicTree" Version="pmt.api.import.settings.logictree.version.1">
+    <VersionId>pmt.api.import.settings.logictree.version.1</VersionId>
+    <Version>pmt.api.import.settings.logictree.version.1</Version>
+    <SettingsID>LogicTree</SettingsID>
+    <LogicTreeEnabled>False</LogicTreeEnabled>
+    <LogicTreeImportAssignments>
+      <Level>1</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>2</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>3</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>4</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>5</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>6</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>7</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>8</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>9</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>10</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+    </LogicTreeImportAssignments>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.1">
+    <VersionId>pmt.api.import.settings.mapping.version.1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <DefaultMaterial>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</DefaultMaterial>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2013q1">
+    <VersionId>pmt.api.import.settings.mapping.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2013q1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterial>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</DefaultMaterial>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2014q1">
+    <VersionId>pmt.api.import.settings.mapping.version.2014q1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2014q1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterialDescriptor>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <ArticleWithColor>0830570:WH</ArticleWithColor>
+    </DefaultMaterialDescriptor>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2014q2">
+    <VersionId>pmt.api.import.settings.mapping.version.2014q2</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2014q2</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterialDescriptor>
+      <MaterialName>TR_EML-ESD(25,4X12,7)R$$33_lotnr tussenslag ESD</MaterialName>
+      <ArticleWithColor>0830570:WH</ArticleWithColor>
+    </DefaultMaterialDescriptor>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.1">
+    <VersionId>pmt.api.import.settings.source.version.1</VersionId>
+    <Version>pmt.api.import.settings.source.version.1</Version>
+    <SettingsID>Source</SettingsID>
+    <InputFile>C:\Users\VTH\Desktop\nummers.txt</InputFile>
+    <SeparatedFile>True</SeparatedFile>
+    <FixedWidthFile>False</FixedWidthFile>
+    <ExcelFile>False</ExcelFile>
+    <ExcelSheet>0</ExcelSheet>
+    <CodePage>65001</CodePage>
+    <RowsToSkip>0</RowsToSkip>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.2012q2">
+    <VersionId>pmt.api.import.settings.source.version.2012q2</VersionId>
+    <Version>pmt.api.import.settings.source.version.2012q2</Version>
+    <SettingsID>Source</SettingsID>
+    <InputFile>C:\Users\VTH\Desktop\nummers.txt</InputFile>
+    <SeparatedFile>True</SeparatedFile>
+    <FixedWidthFile>False</FixedWidthFile>
+    <ExcelFile>False</ExcelFile>
+    <CompactEmptyLines>False</CompactEmptyLines>
+    <ExcelSheet>0</ExcelSheet>
+    <CodePage>65001</CodePage>
+    <RowsToSkip>0</RowsToSkip>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.2013q1">
+    <VersionId>pmt.api.import.settings.source.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.source.version.2013q1</Version>
+    <SettingsID>Source</SettingsID>
+    <DatabaseSource>
+      <OdbcDataSourceName></OdbcDataSourceName>
+      <TableName></TableName>
+      <ImportRowsCount>0</ImportRowsCount>
+    </DatabaseSource>
+    <FileSource>
+      <InputFile>C:\Users\VTH\Desktop\nummers.txt</InputFile>
+      <SeparatedFile>True</SeparatedFile>
+      <FixedWidthFile>False</FixedWidthFile>
+      <ExcelFile>False</ExcelFile>
+      <CompactEmptyLines>False</CompactEmptyLines>
+      <ExcelSheet>0</ExcelSheet>
+      <CodePage>65001</CodePage>
+      <RowsToSkip>0</RowsToSkip>
+      <LineBreakSeparator></LineBreakSeparator>
+    </FileSource>
+    <SourceType>None</SourceType>
+  </Settings>
+  <Settings Id="ClipProject" Version="pmt.api.import.settings.clipproject.version.1">
+    <VersionId>pmt.api.import.settings.clipproject.version.1</VersionId>
+    <Version>pmt.api.import.settings.clipproject.version.1</Version>
+    <SettingsID>ClipProject</SettingsID>
+    <FontColumnIndex>0</FontColumnIndex>
+    <FontSizeColumnIndex>0</FontSizeColumnIndex>
+    <RotationColumnIndex>0</RotationColumnIndex>
+  </Settings>
+  <Settings Id="Matrix" Version="pmt.api.import.settings.matrix.version.3">
+    <VersionId>pmt.api.import.settings.matrix.version.3</VersionId>
+    <Version>pmt.api.import.settings.matrix.version.3</Version>
+    <SettingsID>Matrix</SettingsID>
+    <Lines />
+    <StepWidthParameter>
+      <ValueType>None</ValueType>
+      <Value>0</Value>
+    </StepWidthParameter>
+    <MergeGroupsStrategy>AllSucceedingWithSameName</MergeGroupsStrategy>
+    <MergeGroupsIfPossible>False</MergeGroupsIfPossible>
+    <GenerateFrames>True</GenerateFrames>
+    <RespectEpmtyValueInGroupAnalyze>False</RespectEpmtyValueInGroupAnalyze>
+  </Settings>
+</ImportSettings>

@@ -1,0 +1,2155 @@
+﻿<ImportSettings Version="3">
+  <Settings Id="General" Version="pmt.api.import.settings.general.version.2">
+    <VersionId>pmt.api.import.settings.general.version.2</VersionId>
+    <Version>pmt.api.import.settings.general.version.2</Version>
+    <SettingsID>General</SettingsID>
+    <DefaultImportMode>CreateNewDocument</DefaultImportMode>
+    <ImportType>Classic</ImportType>
+  </Settings>
+  <Settings Id="Gui" Version="pmt.api.import.settings.gui.version.1">
+    <VersionId>pmt.api.import.settings.gui.version.1</VersionId>
+    <AppearsInMenu>True</AppearsInMenu>
+    <FileSelectMode>Silent</FileSelectMode>
+    <LastModified>05/20/2020 16:26:54</LastModified>
+    <ShowAssistantOnError>True</ShowAssistantOnError>
+    <IconId>0</IconId>
+    <Name>
+      <!--31_stroom-candela-hbm-->MzFfc3Ryb29tLWNhbmRlbGEtaGJt</Name>
+    <Path />
+    <SettingsID>Gui</SettingsID>
+    <Version>pmt.api.import.settings.gui.version.1</Version>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.1">
+    <VersionId>pmt.api.import.settings.assignment.version.1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldName>e1</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldName>e05</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>e2</FieldName>
+      <Text></Text>
+      <Items>0F2</Items>
+      <FieldName>e5</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldName>e10</FieldName>
+      <Text></Text>
+      <Items>0F4</Items>
+      <FieldName>e15</FieldName>
+      <Text></Text>
+      <Items>0F5</Items>
+      <FieldName>e20</FieldName>
+      <Text></Text>
+      <Items>0F6</Items>
+      <FieldName>e25</FieldName>
+      <Text></Text>
+      <Items>0F7</Items>
+      <FieldName>e30</FieldName>
+      <Text></Text>
+      <Items>0F8</Items>
+      <FieldName>e35</FieldName>
+      <Text></Text>
+      <Items>0F9</Items>
+      <FieldName>e40</FieldName>
+      <Text></Text>
+      <Items>0F10</Items>
+      <FieldName>e45</FieldName>
+      <Text></Text>
+      <Items>0F11</Items>
+      <FieldName>e50</FieldName>
+      <Text></Text>
+      <Items>0F12</Items>
+      <FieldName>e55</FieldName>
+      <Text></Text>
+      <Items>0F13</Items>
+      <FieldName>e60</FieldName>
+      <Text></Text>
+      <Items>0F14</Items>
+      <FieldName>e65</FieldName>
+      <Text></Text>
+      <Items>0F15</Items>
+      <FieldName>e70</FieldName>
+      <Text></Text>
+      <Items>0F16</Items>
+      <FieldName>e75</FieldName>
+      <Text></Text>
+      <Items>0F17</Items>
+      <FieldName>e80</FieldName>
+      <Text></Text>
+      <Items>0F18</Items>
+      <FieldName>e85</FieldName>
+      <Text></Text>
+      <Items>0F19</Items>
+      <FieldName>e90</FieldName>
+      <Text></Text>
+      <Items>0F20</Items>
+      <FieldName>e95</FieldName>
+      <Text></Text>
+      <Items>0F21</Items>
+      <FieldName>e100</FieldName>
+      <Text></Text>
+      <Items>0F22</Items>
+      <FieldName>e105</FieldName>
+      <Text></Text>
+      <Items>0F23</Items>
+      <FieldName>e110</FieldName>
+      <Text></Text>
+      <Items>0F24</Items>
+      <FieldName>e115</FieldName>
+      <Text></Text>
+      <Items>0F25</Items>
+      <FieldName>e120</FieldName>
+      <Text></Text>
+      <Items>0F26</Items>
+      <FieldName>e125</FieldName>
+      <Text></Text>
+      <Items>0F27</Items>
+      <FieldName>Tekstveldsn</FieldName>
+      <Text></Text>
+      <Items>0F28</Items>
+    </AssignmentTexts>
+    <LeadFieldName>e2</LeadFieldName>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2">
+    <VersionId>pmt.api.import.settings.assignment.version.2</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldName>e1</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldName>e05</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldName>e2</FieldName>
+      <Text></Text>
+      <Items>0F2</Items>
+      <FieldName>e5</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldName>e10</FieldName>
+      <Text></Text>
+      <Items>0F4</Items>
+      <FieldName>e15</FieldName>
+      <Text></Text>
+      <Items>0F5</Items>
+      <FieldName>e20</FieldName>
+      <Text></Text>
+      <Items>0F6</Items>
+      <FieldName>e25</FieldName>
+      <Text></Text>
+      <Items>0F7</Items>
+      <FieldName>e30</FieldName>
+      <Text></Text>
+      <Items>0F8</Items>
+      <FieldName>e35</FieldName>
+      <Text></Text>
+      <Items>0F9</Items>
+      <FieldName>e40</FieldName>
+      <Text></Text>
+      <Items>0F10</Items>
+      <FieldName>e45</FieldName>
+      <Text></Text>
+      <Items>0F11</Items>
+      <FieldName>e50</FieldName>
+      <Text></Text>
+      <Items>0F12</Items>
+      <FieldName>e55</FieldName>
+      <Text></Text>
+      <Items>0F13</Items>
+      <FieldName>e60</FieldName>
+      <Text></Text>
+      <Items>0F14</Items>
+      <FieldName>e65</FieldName>
+      <Text></Text>
+      <Items>0F15</Items>
+      <FieldName>e70</FieldName>
+      <Text></Text>
+      <Items>0F16</Items>
+      <FieldName>e75</FieldName>
+      <Text></Text>
+      <Items>0F17</Items>
+      <FieldName>e80</FieldName>
+      <Text></Text>
+      <Items>0F18</Items>
+      <FieldName>e85</FieldName>
+      <Text></Text>
+      <Items>0F19</Items>
+      <FieldName>e90</FieldName>
+      <Text></Text>
+      <Items>0F20</Items>
+      <FieldName>e95</FieldName>
+      <Text></Text>
+      <Items>0F21</Items>
+      <FieldName>e100</FieldName>
+      <Text></Text>
+      <Items>0F22</Items>
+      <FieldName>e105</FieldName>
+      <Text></Text>
+      <Items>0F23</Items>
+      <FieldName>e110</FieldName>
+      <Text></Text>
+      <Items>0F24</Items>
+      <FieldName>e115</FieldName>
+      <Text></Text>
+      <Items>0F25</Items>
+      <FieldName>e120</FieldName>
+      <Text></Text>
+      <Items>0F26</Items>
+      <FieldName>e125</FieldName>
+      <Text></Text>
+      <Items>0F27</Items>
+      <FieldName>Tekstveldsn</FieldName>
+      <Text></Text>
+      <Items>0F28</Items>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <LeadFieldName>e2</LeadFieldName>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.assignment.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2009q3_psb</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldType>Label</FieldType>
+      <FieldName>e1</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e05</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e2</FieldName>
+      <Text></Text>
+      <Items>0F2</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e5</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e10</FieldName>
+      <Text></Text>
+      <Items>0F4</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e15</FieldName>
+      <Text></Text>
+      <Items>0F5</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e20</FieldName>
+      <Text></Text>
+      <Items>0F6</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e25</FieldName>
+      <Text></Text>
+      <Items>0F7</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e30</FieldName>
+      <Text></Text>
+      <Items>0F8</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e35</FieldName>
+      <Text></Text>
+      <Items>0F9</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e40</FieldName>
+      <Text></Text>
+      <Items>0F10</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e45</FieldName>
+      <Text></Text>
+      <Items>0F11</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e50</FieldName>
+      <Text></Text>
+      <Items>0F12</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e55</FieldName>
+      <Text></Text>
+      <Items>0F13</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e60</FieldName>
+      <Text></Text>
+      <Items>0F14</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e65</FieldName>
+      <Text></Text>
+      <Items>0F15</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e70</FieldName>
+      <Text></Text>
+      <Items>0F16</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e75</FieldName>
+      <Text></Text>
+      <Items>0F17</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e80</FieldName>
+      <Text></Text>
+      <Items>0F18</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e85</FieldName>
+      <Text></Text>
+      <Items>0F19</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e90</FieldName>
+      <Text></Text>
+      <Items>0F20</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e95</FieldName>
+      <Text></Text>
+      <Items>0F21</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e100</FieldName>
+      <Text></Text>
+      <Items>0F22</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e105</FieldName>
+      <Text></Text>
+      <Items>0F23</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e110</FieldName>
+      <Text></Text>
+      <Items>0F24</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e115</FieldName>
+      <Text></Text>
+      <Items>0F25</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e120</FieldName>
+      <Text></Text>
+      <Items>0F26</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e125</FieldName>
+      <Text></Text>
+      <Items>0F27</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>Tekstveldsn</FieldName>
+      <Text></Text>
+      <Items>0F28</Items>
+      <FieldType>Textfield</FieldType>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <LeadFieldName>e2</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2012q2">
+    <VersionId>pmt.api.import.settings.assignment.version.2012q2</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2012q2</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <FieldName>e1</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e05</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e2</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F2-->MEYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e5</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e10</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F4-->MEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e15</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F5-->MEY1</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e20</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F6-->MEY2</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e25</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F7-->MEY3</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e30</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F8-->MEY4</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e35</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F9-->MEY5</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e40</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F10-->MEYxMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e45</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F11-->MEYxMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e50</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F12-->MEYxMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e55</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F13-->MEYxMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e60</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F14-->MEYxNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e65</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F15-->MEYxNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e70</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F16-->MEYxNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e75</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F17-->MEYxNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e80</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F18-->MEYxOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e85</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F19-->MEYxOQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e90</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F20-->MEYyMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e95</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F21-->MEYyMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e100</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F22-->MEYyMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e105</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F23-->MEYyMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e110</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F24-->MEYyNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e115</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F25-->MEYyNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e120</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F26-->MEYyNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>e125</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F27-->MEYyNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <FieldName>Tekstveldsn</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F28-->MEYyOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <LeadFieldName>e2</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.assignment.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2009q3_psb</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <Text></Text>
+      <Items></Items>
+      <FieldType>Label</FieldType>
+      <FieldName>e1</FieldName>
+      <Text></Text>
+      <Items>0F1</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e05</FieldName>
+      <Text></Text>
+      <Items>0F0</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e2</FieldName>
+      <Text></Text>
+      <Items>0F2</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e5</FieldName>
+      <Text></Text>
+      <Items>0F3</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e10</FieldName>
+      <Text></Text>
+      <Items>0F4</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e15</FieldName>
+      <Text></Text>
+      <Items>0F5</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e20</FieldName>
+      <Text></Text>
+      <Items>0F6</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e25</FieldName>
+      <Text></Text>
+      <Items>0F7</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e30</FieldName>
+      <Text></Text>
+      <Items>0F8</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e35</FieldName>
+      <Text></Text>
+      <Items>0F9</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e40</FieldName>
+      <Text></Text>
+      <Items>0F10</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e45</FieldName>
+      <Text></Text>
+      <Items>0F11</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e50</FieldName>
+      <Text></Text>
+      <Items>0F12</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e55</FieldName>
+      <Text></Text>
+      <Items>0F13</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e60</FieldName>
+      <Text></Text>
+      <Items>0F14</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e65</FieldName>
+      <Text></Text>
+      <Items>0F15</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e70</FieldName>
+      <Text></Text>
+      <Items>0F16</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e75</FieldName>
+      <Text></Text>
+      <Items>0F17</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e80</FieldName>
+      <Text></Text>
+      <Items>0F18</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e85</FieldName>
+      <Text></Text>
+      <Items>0F19</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e90</FieldName>
+      <Text></Text>
+      <Items>0F20</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e95</FieldName>
+      <Text></Text>
+      <Items>0F21</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e100</FieldName>
+      <Text></Text>
+      <Items>0F22</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e105</FieldName>
+      <Text></Text>
+      <Items>0F23</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e110</FieldName>
+      <Text></Text>
+      <Items>0F24</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e115</FieldName>
+      <Text></Text>
+      <Items>0F25</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e120</FieldName>
+      <Text></Text>
+      <Items>0F26</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>e125</FieldName>
+      <Text></Text>
+      <Items>0F27</Items>
+      <FieldType>Textfield</FieldType>
+      <FieldName>Tekstveldsn</FieldName>
+      <Text></Text>
+      <Items>0F28</Items>
+      <FieldType>Textfield</FieldType>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <LeadFieldName>e2</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2013q1">
+    <VersionId>pmt.api.import.settings.assignment.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2013q1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e1</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e05</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e2</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F2-->MEYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e5</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e10</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F4-->MEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e15</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F5-->MEY1</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e20</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F6-->MEY2</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e25</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F7-->MEY3</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e30</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F8-->MEY4</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e35</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F9-->MEY5</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e40</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F10-->MEYxMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e45</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F11-->MEYxMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e50</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F12-->MEYxMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e55</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F13-->MEYxMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e60</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F14-->MEYxNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e65</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F15-->MEYxNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e70</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F16-->MEYxNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e75</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F17-->MEYxNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e80</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F18-->MEYxOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e85</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F19-->MEYxOQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e90</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F20-->MEYyMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e95</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F21-->MEYyMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e100</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F22-->MEYyMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e105</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F23-->MEYyMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e110</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F24-->MEYyNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e115</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F25-->MEYyNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e120</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F26-->MEYyNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e125</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F27-->MEYyNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>Tekstveldsn</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F28-->MEYyOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+    </AssignmentTexts>
+    <LeadFields>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <LeadFieldName>e2</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Assignment" Version="pmt.api.import.settings.assignment.version.2014q1">
+    <VersionId>pmt.api.import.settings.assignment.version.2014q1</VersionId>
+    <Version>pmt.api.import.settings.assignment.version.2014q1</Version>
+    <SettingsID>Assignment</SettingsID>
+    <AssignmentTexts>
+      <FieldName>1</FieldName>
+      <FieldType>Label</FieldType>
+      <Characters />
+      <Placeholders />
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e1</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F1-->MEYx</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e05</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F0-->MEYw</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e2</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F2-->MEYy</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e5</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F3-->MEYz</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e10</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F4-->MEY0</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e15</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F5-->MEY1</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e20</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F6-->MEY2</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e25</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F7-->MEY3</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e30</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F8-->MEY4</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e35</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F9-->MEY5</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e40</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F10-->MEYxMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e45</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F11-->MEYxMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e50</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F12-->MEYxMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e55</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F13-->MEYxMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e60</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F14-->MEYxNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e65</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F15-->MEYxNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e70</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F16-->MEYxNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e75</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F17-->MEYxNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e80</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F18-->MEYxOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e85</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F19-->MEYxOQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e90</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F20-->MEYyMA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e95</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F21-->MEYyMQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e100</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F22-->MEYyMg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e105</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F23-->MEYyMw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e110</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F24-->MEYyNA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e115</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F25-->MEYyNQ==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e120</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F26-->MEYyNg==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>e125</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F27-->MEYyNw==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+      <FieldName>Tekstveldsn</FieldName>
+      <FieldType>Textfield</FieldType>
+      <Characters />
+      <Placeholders>
+        <Name>
+          <!--0F28-->MEYyOA==</Name>
+        <FontName>#DEFAULT#FONT#</FontName>
+        <FontSize>#DEFAULT#FONT#SIZE</FontSize>
+        <FontStyle>#DEFAULT#FONT#STYLE</FontStyle>
+        <FontColor>#DEFAULT#FONT#COLOR</FontColor>
+      </Placeholders>
+      <LinesWithEnabledWidthFactor />
+      <MinimumWidthFactor>10</MinimumWidthFactor>
+      <MaximumWidthFactor>10</MaximumWidthFactor>
+    </AssignmentTexts>
+    <LeadFields>
+      <LeadFieldName>e2</LeadFieldName>
+      <FieldType>Textfield</FieldType>
+      <MaterialDescriptor>
+        <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+        <ArticleWithColor>0817060:WH</ArticleWithColor>
+      </MaterialDescriptor>
+    </LeadFields>
+    <NumberOfCopies>1</NumberOfCopies>
+    <RowsRepetitionCount>1</RowsRepetitionCount>
+    <RepetitionRowByFieldValueColumnIndex>1</RepetitionRowByFieldValueColumnIndex>
+    <RepetitionRowByFieldValue>False</RepetitionRowByFieldValue>
+  </Settings>
+  <Settings Id="Condition" Version="pmt.api.import.settings.conditionfield.version.1">
+    <VersionId>pmt.api.import.settings.conditionfield.version.1</VersionId>
+    <Version>pmt.api.import.settings.conditionfield.version.1</Version>
+    <SettingsID>Condition</SettingsID>
+    <ConditionColumns />
+    <ConditionValues />
+    <ConditionEnabled>False</ConditionEnabled>
+    <ConditionValueOnOutput>False</ConditionValueOnOutput>
+  </Settings>
+  <Settings Id="Condition" Version="pmt.api.import.settings.conditionfield.version.2009q3_psb">
+    <VersionId>pmt.api.import.settings.conditionfield.version.2009q3_psb</VersionId>
+    <Version>pmt.api.import.settings.conditionfield.version.2009q3_psb</Version>
+    <SettingsID>Condition</SettingsID>
+    <ConditionColumns />
+    <ConditionValues />
+    <ConditionEnabled>False</ConditionEnabled>
+    <ConditionValueOnOutput>False</ConditionValueOnOutput>
+    <DefaultConditionAction>None</DefaultConditionAction>
+    <DefaultConditionActivate>True</DefaultConditionActivate>
+  </Settings>
+  <Settings Id="Delimiters" Version="pmt.api.import.settings.delimiters.version.1">
+    <VersionId>pmt.api.import.settings.delimiters.version.1</VersionId>
+    <Version>pmt.api.import.settings.delimiters.version.1</Version>
+    <SettingsID>Delimiters</SettingsID>
+    <TabulatorSeparator>True</TabulatorSeparator>
+    <SemicolonSeparator>False</SemicolonSeparator>
+    <CommaSeparator>False</CommaSeparator>
+    <SpaceSeparator>False</SpaceSeparator>
+    <OtherSeparator>False</OtherSeparator>
+    <Separator></Separator>
+    <TextQualifier></TextQualifier>
+    <FixedFieldMarkers />
+  </Settings>
+  <Settings Id="Filters" Version="pmt.api.import.settings.filters.version.1">
+    <VersionId>pmt.api.import.settings.filters.version.1</VersionId>
+    <Version>pmt.api.import.settings.filters.version.1</Version>
+    <SettingsID>Filters</SettingsID>
+    <Filters>
+      <Field>0</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>1</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>2</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>3</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>4</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>5</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>6</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>7</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>8</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>9</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>10</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>11</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>12</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>13</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>14</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>15</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>16</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>17</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>18</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>19</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>20</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>21</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>22</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>23</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>24</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>25</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>26</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>27</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+      <Field>28</Field>
+      <Active>False</Active>
+      <Junct>And</Junct>
+      <Condition1>_FilterOff</Condition1>
+      <Condition2>_FilterOff</Condition2>
+      <Values1 />
+      <Values2 />
+      <FilterOutEmpty>False</FilterOutEmpty>
+      <FilterOutMultiple>False</FilterOutMultiple>
+    </Filters>
+    <Sorts />
+  </Settings>
+  <Settings Id="LogicTree" Version="pmt.api.import.settings.logictree.version.1">
+    <VersionId>pmt.api.import.settings.logictree.version.1</VersionId>
+    <Version>pmt.api.import.settings.logictree.version.1</Version>
+    <SettingsID>LogicTree</SettingsID>
+    <LogicTreeEnabled>False</LogicTreeEnabled>
+    <LogicTreeImportAssignments>
+      <Level>1</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>2</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>3</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>4</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>5</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>6</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>7</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>8</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>9</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+      <Level>10</Level>
+      <InputDataFileColumnIndex>-1</InputDataFileColumnIndex>
+    </LogicTreeImportAssignments>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.1">
+    <VersionId>pmt.api.import.settings.mapping.version.1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <DefaultMaterial>TR_EML(70X32)R$$stroom-candela</DefaultMaterial>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2013q1">
+    <VersionId>pmt.api.import.settings.mapping.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2013q1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterial>TR_EML(70X32)R$$stroom-candela</DefaultMaterial>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2014q1">
+    <VersionId>pmt.api.import.settings.mapping.version.2014q1</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2014q1</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterialDescriptor>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <ArticleWithColor>0817060:WH</ArticleWithColor>
+    </DefaultMaterialDescriptor>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Mapping" Version="pmt.api.import.settings.mapping.version.2014q2">
+    <VersionId>pmt.api.import.settings.mapping.version.2014q2</VersionId>
+    <Version>pmt.api.import.settings.mapping.version.2014q2</Version>
+    <SettingsID>Mapping</SettingsID>
+    <MaterialMappings />
+    <StartRow>0</StartRow>
+    <MappingColumnIndex>0</MappingColumnIndex>
+    <MaterialLengthColumnIndex>0</MaterialLengthColumnIndex>
+    <MaterialLengthMappingEnabled>False</MaterialLengthMappingEnabled>
+    <MaterialLengthDecimalSeparator>,</MaterialLengthDecimalSeparator>
+    <DefaultMaterialDescriptor>
+      <MaterialName>TR_EML(70X32)R$$stroom-candela</MaterialName>
+      <ArticleWithColor>0817060:WH</ArticleWithColor>
+    </DefaultMaterialDescriptor>
+    <DefaultMaterialForced>True</DefaultMaterialForced>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.1">
+    <VersionId>pmt.api.import.settings.source.version.1</VersionId>
+    <Version>pmt.api.import.settings.source.version.1</Version>
+    <SettingsID>Source</SettingsID>
+    <InputFile>C:\Users\vth\Desktop\template2018\macros\hbm2labels\stroomcalib.txt</InputFile>
+    <SeparatedFile>True</SeparatedFile>
+    <FixedWidthFile>False</FixedWidthFile>
+    <ExcelFile>False</ExcelFile>
+    <ExcelSheet>1</ExcelSheet>
+    <CodePage>65001</CodePage>
+    <RowsToSkip>0</RowsToSkip>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.2012q2">
+    <VersionId>pmt.api.import.settings.source.version.2012q2</VersionId>
+    <Version>pmt.api.import.settings.source.version.2012q2</Version>
+    <SettingsID>Source</SettingsID>
+    <InputFile>C:\Users\vth\Desktop\template2018\macros\hbm2labels\stroomcalib.txt</InputFile>
+    <SeparatedFile>True</SeparatedFile>
+    <FixedWidthFile>False</FixedWidthFile>
+    <ExcelFile>False</ExcelFile>
+    <CompactEmptyLines>False</CompactEmptyLines>
+    <ExcelSheet>1</ExcelSheet>
+    <CodePage>65001</CodePage>
+    <RowsToSkip>0</RowsToSkip>
+  </Settings>
+  <Settings Id="Source" Version="pmt.api.import.settings.source.version.2013q1">
+    <VersionId>pmt.api.import.settings.source.version.2013q1</VersionId>
+    <Version>pmt.api.import.settings.source.version.2013q1</Version>
+    <SettingsID>Source</SettingsID>
+    <DatabaseSource>
+      <OdbcDataSourceName></OdbcDataSourceName>
+      <TableName></TableName>
+      <ImportRowsCount>0</ImportRowsCount>
+    </DatabaseSource>
+    <FileSource>
+      <InputFile>C:\Users\vth\Desktop\template2018\macros\hbm2labels\stroomcalib.txt</InputFile>
+      <SeparatedFile>True</SeparatedFile>
+      <FixedWidthFile>False</FixedWidthFile>
+      <ExcelFile>False</ExcelFile>
+      <CompactEmptyLines>False</CompactEmptyLines>
+      <ExcelSheet>1</ExcelSheet>
+      <CodePage>65001</CodePage>
+      <RowsToSkip>0</RowsToSkip>
+      <LineBreakSeparator></LineBreakSeparator>
+    </FileSource>
+    <SourceType>None</SourceType>
+  </Settings>
+  <Settings Id="ClipProject" Version="pmt.api.import.settings.clipproject.version.1">
+    <VersionId>pmt.api.import.settings.clipproject.version.1</VersionId>
+    <Version>pmt.api.import.settings.clipproject.version.1</Version>
+    <SettingsID>ClipProject</SettingsID>
+    <FontColumnIndex>0</FontColumnIndex>
+    <FontSizeColumnIndex>0</FontSizeColumnIndex>
+    <RotationColumnIndex>0</RotationColumnIndex>
+  </Settings>
+  <Settings Id="Matrix" Version="pmt.api.import.settings.matrix.version.3">
+    <VersionId>pmt.api.import.settings.matrix.version.3</VersionId>
+    <Version>pmt.api.import.settings.matrix.version.3</Version>
+    <SettingsID>Matrix</SettingsID>
+    <Lines />
+    <StepWidthParameter>
+      <ValueType>None</ValueType>
+      <Value>0</Value>
+    </StepWidthParameter>
+    <MergeGroupsStrategy>AllSucceedingWithSameName</MergeGroupsStrategy>
+    <MergeGroupsIfPossible>False</MergeGroupsIfPossible>
+    <GenerateFrames>True</GenerateFrames>
+    <RespectEpmtyValueInGroupAnalyze>False</RespectEpmtyValueInGroupAnalyze>
+  </Settings>
+</ImportSettings>
