@@ -11,10 +11,10 @@ Sleep 300,
 
 ;;pre-start en variabelen
 
-zoekknopx := 1290 ; 311
-zoekknopy := 108 ; 190
+zoekknopx := 1300 ; 311
+zoekknopy := 110 ; 190
 
-zoekveldx := 1064 ; 815
+zoekveldx := 482 ; 815
 zoekveldy:= 190 ; 250
 
  
@@ -32,23 +32,28 @@ Loop, 1
 
 ;;;START
 
-;wachtenOPprogram := "ahk_class SunAwtFrame" ; 
-wachtenOPprogram := "LET_VAULT" ; 
+run C:\Users\VTH\Desktop\pdmfilescopy
 
- ToolTip, var wachten tot %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
+;wachtenOPprogram := "ahk_class SunAwtFrame" ; 
+wachtenOPprogram := "LET_VAULT" ; typ hier welk programma je wil openen en monitoren wat er mee gebeurd
+
+ ToolTip, var wachten tot %wachtenOPprogram%-inlog er is  %A_Index% 
   Sleep, 1000
 
  Run C:\LET_VAULT ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
- WinWait, %wachtenOPprogram%, , 3
+ WinWait, %wachtenOPprogram%, , 6
 if ErrorLevel
 {
-   ToolTip, timed out %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
-  Sleep, 1000
-    return
+   ToolTip, timed out %wachtenOPprogram%-inlog er is  %A_Index% 
+  Sleep, 2000
+ ; return
+    Exitapp
+	
+	
 }
 else
 {
-      ToolTip,ok  %wachtenOPprogram%  is er  %A_Index% ,170,950
+      ToolTip,ok  %wachtenOPprogram%  is er  %A_Index% 
 	  
   	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 		 	ToolTip, pdm via verkenner aktiefzetten   
@@ -64,20 +69,24 @@ else
 
 Loop, 1
 {
-	MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
-	Sleep, 100
-		MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
-	Sleep, 100
+	;MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
+	;Sleep, 100
+	;	MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
+	
+;	Sleep, 1500
+		MsgBox, 48, rtr , rt- `n`n This message will self-destruct in 2 seconds., 2
 
 }
   
 MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
+ToolTip, klik op zoekvergrootglas
     MouseClick, left
-		Sleep, 100
+		Sleep, 1500
 		
 			MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
+			ToolTip, klik op zoekveld
 			 MouseClick, left
-	Sleep, 100
+	Sleep, 500
 	
 	
   ;  return

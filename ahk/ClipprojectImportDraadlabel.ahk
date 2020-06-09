@@ -4,7 +4,7 @@ Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel
 scriptnaam :="ClipprojectImportDraadlabel"   
 FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
 Sleep 300,
-
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
 
 
 {
@@ -47,7 +47,7 @@ Sleep 300,
 		;;;selecteer alle labels en sortzze rze van a-zal
 		MouseClick, left,  900,  150 ; kik op een label
 		sleep 100
-		Send, ^a ; control+p
+		Send, ^a ; control+a
 		Sleep 100,
 		
 		Send, {Alt} ; 
@@ -59,7 +59,7 @@ Sleep 300,
 		Send, {Enter} ; 
 		Sleep 100,
 		
-		Send, {Down 11} ; 
+		Send, {Down 11} ; oplopend sorteren via 
 		Sleep 100,
 		
 		Send, {Enter} ; sorteren
@@ -77,21 +77,21 @@ Sleep 300,
 		Send, {Enter} ;  menu bewerken is nu open
 		Sleep 100,
 		
-		Send, {Down 7} ; 
+		Send, {Down 7} ; Lege schildjes verwijderen
 		Sleep 100,
 		
-		Send, {Enter} ; sorteren
+		Send, {Enter} ; 
 		Sleep 100,    
 		
 		;MsgBox, u venster is open      
 		;ExitApp ; als we hierachter verdergaan zal er geprint worden vd labels      
 		;om direct te kunnen printen , proberen we een label eens aan te klikken en slepen we de muis ingedrukt weg
-		MouseClick, left,  900,  150
-		Sleep, 100	
-		Click down
-		Sleep 1000
-		MouseMove,   1370,  200
-		Click up
+	;	MouseClick, left,  900,  150
+	;	Sleep, 500	
+	;	Click down
+	;	Sleep 1000
+	;	MouseMove,   1370,  200
+	;	Click up
 		
 		;	
 		ToolTip we gaan de printer klaarzetten ook :   control+p  ; wissen oude tooltips
@@ -111,7 +111,7 @@ Sleep 300,
 	ExitSub:
 	{
 		BlockInput, MouseMoveOff
-		MsgBox "EXIT-"%scriptnaam%
+			MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 		ExitApp
 		return
 	}

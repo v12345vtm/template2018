@@ -1,12 +1,16 @@
-﻿;https://github.com/v12345vtm/template2018...test0server
+﻿#SingleInstance  Force
+;https://github.com/v12345vtm/template2018...test0server
 
+; regex zoek 6opeenvolgende getallen zoals hf185612_01kol  -->   (?<!\d)\d{6}(?!\d)
+;vervang dit in notpad++  naar hf185612demo_01kol   --> $&demo
 
+ 
 
 ;deze file staat in \\file01\users\vth\MyDocs\AutoHotkey.ahk en werkt op de poratbelapp versie 1.1.30.03
 ;vroeger VOOR de corona crisis , werkt mijn defautl ahk script vanuit de lokale 'mijn dokumenten'
 ;sinds de Crash net voor de Corona lockdown is ahk gelinkt aan de fileserver file01 
 ;de it gelooft niet dat dit vroeger werkte , maar dat heeft niet , we hebben een walkaround gevonden via windows netwerkfolder n:\mydocs
-; deze windows netwerkkoppeling is gelinkt naar 
+; deze windows netwerkkoppeling is gelinkt naar .
 
 ; tidy = http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
@@ -25,19 +29,62 @@
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates.
 
 SetScrollLockState, off
+SetScrollLockState, AlwaysOff
+
 #KeyHistory 500  ; Store up to 500 events.
 
-ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openstaat , terwijl we het enkel direkt willen opmerken direct als het opkomt, 
-;xpositie := 1050 ; xpos vd tooltip linksrechtspos
-;ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
-xpositie := 500 ; corona laptop xpos vd tooltip linksrechtspos
+
+
+  
+ 
+;resolutie:= "ze"
+resolutie:=  A_ScreenWidth "x"  A_ScreenHeight  ; dell 24inch is 1920x1080
+ ;MsgBox, %resolutie%
+
+ if (resolutie = "1920x1080")
+{
+   ; MsgBox groot scherm Dell24inch
+	xpositie := 1050 ; xpos vd tooltip linksrechtspos
+ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
+
+
+xpositieTT19 := 1450 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
+yposTT19 := 1016 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
+
+     
+}
+else
+{
+    MsgBox,, starting vith ahk(selfdestructing msgbox) ,we zitten met ANDER scherm dan normaal -normaal hebben we 1920x1080, 2
+;MsgBox, 48, starting vith ahk (selfdestructing msgbox) , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+    xpositie := 500 ; corona laptop xpos vd tooltip linksrechtspos
 ypos := 700 ; corona lapto ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
 
+xpositieTT19 := 950 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
+yposTT19 := 16 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
 
-xpositieTT19 := 800 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
-yposTT19 := 1019 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
+
+
+}
+
+
+
+
+
+
+
+
+
+ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openstaat , terwijl we het enkel direkt willen opmerken direct als het opkomt, 
+
+
+
+
+
+
+
 
 
 FileCopy, \\file01\users\VTH\MyDocs\AutoHotkey.ahk , C:\Users\vth\Desktop\template2018\ahk\ ,1 ; Make a copy but keep the orig. file name.
@@ -65,7 +112,7 @@ Return
 Autoreadvirtklembordfile: 
 	  FileRead, OutputVar,  C:/Users/vth/Desktop/template2018/logfiles/virtklembord.txt 
 
-   ToolTip, 3x drukken p=Tpdm n=hide v=vitH w=vih123  q=%OutputVar% (control)winX=Klembord , %xpositieTT19% , %yposTT19%, 19  ;toon de data in ons virt klembord bestand in tooltip met id19
+   ToolTip, ppp=Tpdm n=hide vvv=vitH www=vih123  q=%OutputVar%  win+< store , %xpositieTT19% , %yposTT19%, 19  ;toon de data in ons virt klembord bestand in tooltip met id19
 Return
 
 
@@ -76,7 +123,25 @@ SendHotkey:
 	CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 	
 	
-	
+
+
+
+;;;;;;;pdm let vault blauw login scherm 
+
+	If WinExist("SOLIDWORKS PDM Login - LET_VAULT") and ContinueSearch 
+	{
+		WinActivate
+		infovariabele := " SOLIDWORKS PDM Login" 
+		Sleep 1500;
+		;MsgBox, letvaultlogin is open en we drukken ons paswoord in
+		Send, vithvitH15    ;
+		Sleep 500;
+		Send,  {Enter}    ;
+		
+	}
+
+
+;;;;;;	
 	;ahk_class ApplicationFrameWindow  office popup als ik print
 	
 	If WinExist("ahk_class ApplicationFrameWindow") and ContinueSearch 
@@ -155,7 +220,7 @@ If WinExist("ahk_class #32770") and (title = "Reload") and ContinueSearch
 	 If ( class  = "ConsoleWindowClass") 
 	{
 		; cmd venster of virt env python
-		infovariabele := "AHK macro met CONTROLtoets=  f5:sandbox   f6:virtENV     f7:postscan     f8:GUI    f9:makePJ    f10:finalise    f11:makeUSB"
+		infovariabele := "AHK macro met CONTROLtoets=  f5:sandbox   f6:virtENV     f7:postscan     f8:GUI    f10:finalise    f11:makeUSB"
 		ToolTip, %infovariabele% , %xpositie %  , %ypos%, 20
 	}else 
 
@@ -225,7 +290,7 @@ Return
 
 
 
-
+#<::Run, "C:\Users\vth\Desktop\template2018\ahk\klembordWritetofile.ahk"   ; win+ < drukken is save selction to klembord
 
 #&::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel1a.ahk ; compare artikel in bestand1 toets1 op klavier
 #é::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel2a.ahk ; compare artikel in bestand2 toets2 op klavier
@@ -237,7 +302,8 @@ Return
 #,::Run, C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk ;  ; win+komma 
 
 Pause::Run C:\Users\vth\Desktop\template2018\ahk\clipprojectopenen.ahk 
-Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapped naar windows+d
+
+Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;desktop nog rapper tonen met de srollock toets scrollock remapped naar windows+d
 
 #Delete::Run C:\Users\vth\Desktop\template2018\ahk\verkennersSLuiten.ahk ; 8verkernners dooddoen
 #End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofile.ahk ;
@@ -270,7 +336,7 @@ Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapp
 #a::Run C:\Users\vth\Desktop\template2018\macros\afkeurbonwizard4.xlsm ; 
 #c::Run, "C:\Users\vth\Desktop\template2018\ahk\checklijstopenenexcel.ahk"
 #e::Run C:\
-#f::Run C:\sdkardbatch
+#f::Run T:\voor vincent\sdcardbatshFileserver
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
 #i::Run C:\Users\vth\Desktop\template2018\ahk\importSDcard.bat ; fotos van Sd kaart verplaatsen
@@ -278,17 +344,21 @@ Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapp
 #k::Run C:\Users\vth\Desktop\template2018\macros\kzb.xlsm  
 ; #l::Run T:\voor vincent  ; werkt niet windows+L = logoff !
 #m::Run, "C:\Users\vth\Desktop\template2018\ahk\mail.ahk" ; mail   "C:\Program Files (x86)\Microsoft Office\Office16\outlook.exe"
-#n::Run C:\Users\vth\Desktop\template2018\ahk\msoftopstartenrubriekmagazijnaanvraag.ahk ; vroeger msoftnieuwemagazijnaanvraag.ahk
+#n::Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk ; terug msoftnieuwemagazijnaanvraag.ahk
 #o::Run T:\voor vincent
-#p::Run L:\Letdata\Projects
+#p::Run C:\Users\VTH\Desktop\template2018\ahk\datafolder.ahk   ; L:\Letdata\Projects
 
 #r::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwlabel.ahk  ; uitleg = nieuw label-object  L1 in  nrs 
 #s::Run C:\Users\vth\Desktop\template2018\ahk\msoftaanpassenstuklijst.ahk
 #t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2020.xlsm ; 
+#u::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwlabel.ahk  ;
 #v::Run, "C:\Users\vth\Desktop\template2018\ahk\werkurenVTexcel.ahk"
+#w::Run C:\Users\vth\Desktop\template2018\ahk\alg20.ahk  ;
 #x::Run, "C:\Users\vth\Desktop\template2018\ahk\klembordReadfromfile.ahk" ; Win+ X = plak uit virt klembord
 #y::Run, "C:\Users\vth\Desktop\template2018\ahk\nrs-LijnVrijgeven.ahk" ; nrs vrijgeven lijn objectdata
 #z::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftpartlisttonen.ahk" ; parlist tonen
+
+
 
 
 
@@ -303,58 +373,21 @@ Scrolllock::#d  ;desktop nog rapper tonen met de srollock toets scrollock remapp
 ^f6::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirement.ahk"
 ^f7::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementpostscan.ahk"
 ^f8::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementGUI.ahk"
-^f9::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementMAKE.ahk"
+^f9::Run, "C:\Users\VTH\Desktop\template2018\_dita-ot\connectorpaneel\test.bat"
 
-#f10::Run calc.exe
-#f11::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-gisteren.ahk"
-#f12::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-inputvandaag.ahk"
+
 #f1::Run, "C:\Users\vth\Desktop\template2018\macros\procedurewizard.lnk"
 #f2::Run, "C:\Users\VTH\Desktop\template2018\portableApps\FirefoxPortable\FirefoxPortable.exe"
 #f3::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftopstarten.ahk"
 #f4::Run, "C:\Users\vth\Desktop\template2018\ahk\nrsopstarten.ahk" ; werkt niet op vmn win+f4 is dan terug afsluiten
 #f5::Run, "C:\Users\vth\Desktop\template2018\ahk\tooltipmouspost.ahk"    ; debug tool soort spy voor mousepositie
-#f7::Run, "C:\Program Files (x86)\Microsoft Office\Office16\excel.exe"
+#f6::Run C:\Users\vth\Desktop\template2018\ahk\wijzigen.ahk  ;
+#f7::Run, "C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk"
 #f8::Run C:\Tools\Notepad++\notepad++.exe ;C:\Users\vth\Desktop\template2018\portableApps\Notepad++Portable\Notepad++Portable.exe ;
 #f9::Run C:\WINDOWS\system32\mspaint.exe
-
-
-#u::
-{
-	SetScrollLockState, off
-	;open pdf uurkaarten wacht 500ms en control+p drukken
-	Run C:\Users\vth\Desktop\template2018\bibliotheek\uurkaarten.pdf
-	Sleep 1500,
-	Send, ^p
-	ToolTip  ; wissen oude tooltips
-	Return
-}
-
-
-
-#f6::
-{
-	ToolTip, wijzigen stuklijsten acces tool opstarten,303,750
-	Run L:\planning\produktie\wijzigen stuklijsten\wijzigen.accdb
-	Sleep 1400,
-	Send, {Tab 3}
-	Sleep 800,
-	Send, {Enter}
-	ToolTip  ; wissen oude tooltips
-	Return
-}
-
-
-
-;text typen met 1 toetsncombinatie
-#w::
-{
-	ToolTip, ALG20 typen ,303,750
-	SetScrollLockState, off
-	Send, ALG20
-	ToolTip  ; wissen oude tooltips
-	
-	Return
-}
+#f10::Run calc.exe
+#f11::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-gisteren.ahk"
+#f12::Run, "C:\Users\vth\Desktop\template2018\ahk\ujob-inputvandaag.ahk"
 
  
 
@@ -486,10 +519,10 @@ return
 }
 
 
-#<::
+:R*?:<<<::
 {
-	SetScrollLockState, off
-	Send, kabdr{ENTER}
-	ToolTip  ; wissen oude tooltips
-	Return
+		Tooltip  virt kembord plakken met < < <
+Run, "C:\Users\vth\Desktop\template2018\ahk\klembordReadfromfile.ahk" ;  
+
+Tooltip  
 }              

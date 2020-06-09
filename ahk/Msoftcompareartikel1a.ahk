@@ -139,7 +139,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		    	ToolTip, writefile comparedottxt ;
 
 
-   file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/compare1.txt", "w")
+   file := FileOpen("C:/Users/vth/Desktop/template2018/temp/compare1.txt", "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
      file.Write(TestString)

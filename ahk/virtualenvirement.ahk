@@ -28,8 +28,12 @@ Loop, 1
 
 
 ToolTip, certtool main folder openen , 170,950
-Run T:\_DOC
-Sleep 500
+ Run T:\_DOC
+Loop, 3
+{
+	ToolTip,    ff wachten op verkenner   ; ahk variabele oproepen moet met %% 
+	Sleep, 700
+}
 
 
 
@@ -45,7 +49,7 @@ Sleep 70
 
 
 	ToolTip, cmd starten normaal , 170,950
-Sleep 900
+Sleep 1800
 
 
   
@@ -88,13 +92,18 @@ Sleep 70
 Send c{ASC 58}
 Send {ENTER}
 Sleep 600
-Send cd Mysandbox{ASC 92}docauto
+Send cd tools{ASC 92}docauto{ASC 92}docauto
 Send {ENTER}
 Sleep 600
-Send C{ASC 58}{ASC 92}Users{ASC 92}vth{ASC 92}Documents{ASC 92}docauto{ASC 92}docauto{ASC 92}Scripts{ASC 92}activate
+
+;; send command in cmd box  : ; C:\Tools\docauto\docauto-3.7-vth\Scripts\activate.bat
+Send C{ASC 58}{ASC 92}Tools{ASC 92}docauto{ASC 92}docauto-vth{ASC 92}Scripts{ASC 92}activate
+
+
 Send {ENTER}
 
 
+; C:\Tools\docauto\docauto-3.7-vth\Scripts\activate.bat
 ;Run  C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm
 
 If WinExist("octopiinstaller.xlsm - Excel")
@@ -105,10 +114,10 @@ Sleep 100
 else
 {
 
-Run "C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm"
-     ;C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xls
+ Run "C:\Users\vth\Desktop\template2018\macros\octopiinstaller.xlsm"
+    
 Sleep 500
-;Run "C:\Users\vth\Desktop\template2018\macros\diff.xlsm"	 
+  
 	 
 }
 

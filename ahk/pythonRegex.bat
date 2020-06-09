@@ -1,2 +1,2 @@
 cd \Users\vth\Desktop\template2018\logfiles\
-python xcodes.py  regexIN.txt > regexkabelabels.txt
+py xcodes.py  regexIN.txt > regexOUT.txt

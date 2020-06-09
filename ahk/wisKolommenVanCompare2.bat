@@ -1,8 +1,8 @@
 echo Hello van  buroblad en runt absolute pathen lokaal
 
-echo van =   C:\Users\vth\Desktop\template2018\logfiles\compare2-split.txt
-echo via  = C:\Users\vth\Desktop\template2018\logfiles\compare2replace.txt
-echo naar = C:\Users\vth\Desktop\template2018\logfiles\compare2-split.txt
+echo van =   C:\Users\vth\Desktop\template2018\temp\compare2-split.txt
+echo via  = C:\Users\vth\Desktop\template2018\temp\compare2replace.txt
+echo naar = C:\Users\vth\Desktop\template2018\temp\compare2-split.txt
 rem pause
 
 @Echo off
@@ -10,8 +10,8 @@ rem pause
 rem type "../logfiles/compare1.txt" | repl "(\t| )" "," x > "../logfiles/compare1-conv.txt"
 
 SETLOCAL ENABLEDELAYEDEXPANSION 
-SET "sourcedir=C:\Users\vth\Desktop\template2018\logfiles"
-SET "destdir=C:\Users\vth\Desktop\template2018\logfiles"
+SET "sourcedir=C:\Users\vth\Desktop\template2018\temp"
+SET "destdir=C:\Users\vth\Desktop\template2018\temp"
 SET "filename1=%sourcedir%\compare2.txt"
 SET "outfile=%destdir%\compare2replace.txt"
 rem C:\Users\vth\Desktop\template2018\logfiles\compare1replace.txt
@@ -53,7 +53,7 @@ FOR /f "usebackqdelims=" %%a IN ("%filename1%") DO (
 rem vanaf hier gaan we de tabellen die overtollig zijn wegdoen
 
 
-(for /f "delims=" %%A in (C:\Users\vth\Desktop\template2018\logfiles\compare2replace.txt) do Call :Split %%A) > C:\Users\vth\Desktop\template2018\logfiles\compare2-split.txt
+(for /f "delims=" %%A in (C:\Users\vth\Desktop\template2018\temp\compare2replace.txt) do Call :Split %%A) > C:\Users\vth\Desktop\template2018\temp\compare2-split.txt
 
 goto :Eof
 :Split

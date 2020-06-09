@@ -62,7 +62,7 @@ Send , {Enter}  ; hierdoor komt er window = "Detail Materiaalkosten"
 	Loop, 3
 	{
 		ToolTip, wachten tot Detail Materiaalkosten    %A_Index%  /.3.. seconden   ; A_Index will be 1, 2, then 3
-		Sleep, 1000
+		Sleep, 400 ; 1000
 	}
 
 
@@ -153,8 +153,8 @@ else{
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
+	BlockInput, MouseMoveOff
+MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 ExitApp
 return
 }

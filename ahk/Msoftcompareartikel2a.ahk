@@ -133,7 +133,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		    	ToolTip, writefile comparedottxt ;
 
 
-   file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/compare2.txt", "w")
+   file := FileOpen("C:/Users/vth/Desktop/template2018/temp/compare2.txt", "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
      file.Write(TestString)
@@ -273,7 +273,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	
 			
 			   Sleep 300,
-  Run C:/Users/vth/Desktop/template2018/logfiles/compare1-split-grep.txt ;
+  Run C:/Users/vth/Desktop/template2018/temp/compare1-split-grep.txt ;
    ;  Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt ; winaccount crach
 
 	Loop, 4
@@ -283,7 +283,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	}
 
 
-  Run C:/Users/vth/Desktop/template2018/logfiles/compare2-split-grep.txt ; 
+  Run C:/Users/vth/Desktop/template2018/temp/compare2-split-grep.txt ; 
    ;   Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt ; 
 
 	Loop, 4
