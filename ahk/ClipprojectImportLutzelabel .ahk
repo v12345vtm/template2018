@@ -1,11 +1,14 @@
+ 
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="ClipprojectImportLutzelabel"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="ClipprojectImportLutzelabel incl  "   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+Sleep 300,
 
+
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
 
 
 
@@ -18,7 +21,7 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
    SetTitleMatchMode 2
  If WinExist("CLIP PROJECT")
 {
-	;MsgBox, u venster is open	, en ik zal het vooraan zetten
+	 MsgBox, %label_ID_lutze% 
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,170 , 950
 	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
 ; ExitApp ; debug
@@ -34,7 +37,7 @@ Send {ALT}
 Sleep 200,
 Send t
 Sleep 500,
-Send {DOWN 18} ; lutze labels
+Send {DOWN %label_ID_lutze%} ; lutze labels
 Sleep 500,
 Send {ENTER}
 Sleep 200,

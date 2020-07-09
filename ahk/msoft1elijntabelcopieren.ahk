@@ -1,31 +1,26 @@
-  ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="msoft1elijntabelcopieren"  
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="msoft1elijntabelcopieren incl"  
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
+CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
+SetKeyDelay, 50 ; hoe rap stuur je typcommandos  
 
-;;pre-start en variabelen
-;artikelomschrijving
-
-
-CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-  SetKeyDelay, 50 ; hoe rap stuur je typcommandos   
+Loop, 1
+{
+	ToolTip,     %scriptnaam%    ; ahk variabele oproepen moet met %% 
+	Sleep, 1000
+}
+ 
 Loop, 1
 {
 	ToolTip,     %scriptnaam%  = in Msoft projecten staan   ; ahk variabele oproepen moet met %% 
 	Sleep, 1000
 }
-
-;;;START
-
-
-
-
 
 SetTitleMatchMode 2
 If WinExist("AUTO - Projecten")
@@ -33,35 +28,21 @@ If WinExist("AUTO - Projecten")
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma AUTO - Projecten is open `n tja staat  `n   voila! 
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-	
 	Sleep 600,  
-	
-	
-	
 	;Send {ENTER} ;wegens msoft strontprogramma mag je niet consequent zijn
-	
 	;WinWaitActive, AUTO - Projecten  -  LET Automotive n.v.
-	
 	ToolTip, msoft de tabel de 1e regel in klembord zetten en de juiste excel initialieseren
-	
 	Sleep, 200
-	
 	MouseMove, 110,150 ; in active window mode staan we op 1e regel gaan staan en dan tabel kopieren
-		Sleep, 100
+	Sleep, 100
 	MouseClick, Right
 	Sleep, 100
 	Send {UP 2}
 	Sleep, 100	
 	Send {ENTER}
 	Sleep, 500
-	
-	
-
-	
-	
 	; als serieverpak2019 open is , activeer het en klik erin
-	
-	
+		
 	;aan de hand van wat nu in ons clipboard zit ( namelijk de tabel die we uit msoft kopieren ) 
 	;daarin zien we of het kb-nummer is of een groene prod fiche vr serienrs
 	
@@ -76,13 +57,15 @@ regexfilter := RegExMatch(Clipboard, "\D{2}\d{6}", SubPatje)  ; Shows 1 and stor
 
 ordernummer := Trim(SubPatje)
 ;Msgbox ***
-Msgbox %ordernummer%
+;Msgbox %ordernummer%
+	MsgBox, 48, ordernummer= ,%ordernummer% `n`n This message will self-destruct in 1 seconds., 1	
 
 
 Needle := RegExMatch(ordernummer, "KB" , SubPatje)  ; Shows getal, which is the position where the match was found.
 	
 	
-Msgbox %Needle% 
+	MsgBox, 48, needle= ,%Needle% `n`n This message will self-destruct in 1 seconds., 1	
+;Msgbox %Needle% 
 	
 	  ;exitapp
 
@@ -97,7 +80,7 @@ Msgbox %Needle%
 		;BlockInput, MouseMove
 		
 		SetTitleMatchMode 2
-		If WinExist("kzb.xlsm - Excel")
+		If WinExist(checkif_exists_kzb)
 		{
 			WinActivate  ; venster aktief zetten
 			Sleep, 200
@@ -134,7 +117,7 @@ Msgbox %Needle%
 		
 		
 		SetTitleMatchMode 2
-		If WinExist("serieverpak2020.xlsm - Excel")
+		If WinExist(checkif_exists_serieverpak)
 		{
 			WinActivate  ; venster aktief zetten
 			Sleep, 500
@@ -166,17 +149,17 @@ Msgbox %Needle%
 } 
 
 
-Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel   
-FileAppend, %Timestamp% - %scriptnaam% - %ordernummer%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+  
+;FileAppend, %Timestamp% - %scriptnaam% - %ordernummer%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
 Sleep 300,
-
+FileAppend, %Timestamp% - %scriptnaam%- %ordernummer%`n, %AhkLogbestand% ;save naar txt file concat
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff
-	MsgBox "EXIT-"%scriptnaam%
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 	ExitApp
 	return
 }

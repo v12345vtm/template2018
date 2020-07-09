@@ -1,96 +1,96 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="pdmverkenner"  
-; BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="pdmverkenner-incl"  
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
-
-;;pre-start en variabelen
-
-zoekknopx := 1300 ; 311
-zoekknopy := 110 ; 190
-
-zoekveldx := 482 ; 815
-zoekveldy:= 190 ; 250
-
- 
-
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
+SetKeyDelay, 500 ; hoe rap stuur je typcommandos  
 
-SetKeyDelay, 20 ; hoe rap stuur je typcommandos  
- 
 Loop, 1
 {
 	ToolTip,     %scriptnaam%     ; ahk variabele oproepen moet met %% 
-	Sleep, 1000
+	Sleep, 10
 }
 
-;;;START
+
+; eerst de oude pdm sessies weg doen
+	SetTitleMatchMode 2
+		If WinExist(wachtenOPprogram)
+		{
+
+			 Loop, 9
+{
+	WinClose, ahk_class CabinetWClass  ;  closes any explorer window
+	;MsgBox, Iteration number is %A_Index%.  ; A_Index will be 1, 2, then 3
+	Sleep, 100
+}
+		
+		}
+
+
+
 
 run C:\Users\VTH\Desktop\pdmfilescopy
+Sleep, 1000
 
-;wachtenOPprogram := "ahk_class SunAwtFrame" ; 
-wachtenOPprogram := "LET_VAULT" ; typ hier welk programma je wil openen en monitoren wat er mee gebeurd
+Run %pdmstartmap% ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
 
- ToolTip, var wachten tot %wachtenOPprogram%-inlog er is  %A_Index% 
-  Sleep, 1000
 
- Run C:\LET_VAULT ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
- WinWait, %wachtenOPprogram%, , 6
-if ErrorLevel
+	
+	
+	
+	Loop, 1
+	{
+		Sleep, 100
+	}
+	
+	
+	
+	
+	If WinExist(wachtenOPprogram)
 {
-   ToolTip, timed out %wachtenOPprogram%-inlog er is  %A_Index% 
-  Sleep, 2000
- ; return
-    Exitapp
-	
-	
+	WinActivate, wachtenOPprogram
+	WinWaitActive, ahk_class Chrome_WidgetWin1
+	WinMaximize, ahk_class Chrome_WidgetWin1
+	MsgBox, 48, we hebben zicht op pdmGUI , rt- `n`n This message will self-destruct in 2 seconds., 2
 }
-else
-{
-      ToolTip,ok  %wachtenOPprogram%  is er  %A_Index% 
-	  
-  	 WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-		 	ToolTip, pdm via verkenner aktiefzetten   
-		 	Sleep 1500,
-		 
-		;WinMaximize, A 
-		WinMaximize
-		ToolTip, pdm via verkenner maximaliseren 
-  
-  
- 
-
-
-Loop, 1
-{
-	;MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
-	;Sleep, 100
-	;	MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
-	
-;	Sleep, 1500
-		MsgBox, 48, rtr , rt- `n`n This message will self-destruct in 2 seconds., 2
-
-}
-  
-MouseMove, %zoekknopx%, %zoekknopy%  ; eendagTerug positieknop
-ToolTip, klik op zoekvergrootglas
-    MouseClick, left
-		Sleep, 1500
-		
-			MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
-			ToolTip, klik op zoekveld
-			 MouseClick, left
-	Sleep, 500
 	
 	
-  ;  return
-}
+	
+	
+	
+	MouseMove, %knopvergrootglasx%, %knopvergrootglasy%  ; eendagTerug positieknop
+	ToolTip, klik op knopvergrootglas-xy
+	Sleep, 150 ; check viuseel of je juist staat
+	MouseClick, left
+Sleep, 15 ; kort wachten we zetten eerst de muis op de volgende knop
+	
+	MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
+	
+		Loop, 3
+	{
+		 ToolTip, ff wachten.
+		 Sleep, 200
+		  ToolTip, ff wachten..
+		 Sleep, 200
+		  ToolTip, ff wachten....
+		 Sleep, 200
+		  ToolTip, ff wachten......
+		 Sleep, 200
+		  ToolTip, ff wachten.........
+		 Sleep, 200
+	 
+	}
+	ToolTip, klik op zoekveld
+	Sleep, 1500 ; check viusee of je juist staat
+	MouseClick, left
+	 Sleep, 1500  
+	
+
 
 Exitapp
 
@@ -100,15 +100,9 @@ Exitapp
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, MouseMoveOff
+	BlockInput, MouseMoveOff
 	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
-ExitApp
-return
+	ExitApp
+	return
 }
-ESC::Goto ExitSub
-
-
-
-
-
-
+ESC::Goto ExitSub              

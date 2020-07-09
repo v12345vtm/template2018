@@ -1,4 +1,7 @@
 ﻿#SingleInstance  Force
+
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit. bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+
 ;https://github.com/v12345vtm/template2018...test0server
 
 ; regex zoek 6opeenvolgende getallen zoals hf185612_01kol  -->   (?<!\d)\d{6}(?!\d)
@@ -49,8 +52,8 @@ resolutie:=  A_ScreenWidth "x"  A_ScreenHeight  ; dell 24inch is 1920x1080
 ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven
 
 
-xpositieTT19 := 1450 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
-yposTT19 := 1016 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
+xpositieTT19 := 1250 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
+yposTT19 := 1001 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
 
      
 }
@@ -339,7 +342,7 @@ Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;deskto
 #f::Run T:\voor vincent\sdcardbatshFileserver
 #g::Run "C:\Users\vth\Desktop\template2018\ahk\msoftprojectenmsoft.ahk" ; data opzoeken voor kb en serienrs te genereren
 #h::Run "C:\Users\vth\Desktop\template2018\ahk\fotoscrollermsoft.ahk" ; elke sec pijltje omlaag typen om in msoft prentjes te zoeken
-#i::Run C:\Users\vth\Desktop\template2018\ahk\importSDcard.bat ; fotos van Sd kaart verplaatsen
+#i::Run C:\Users\vth\Desktop\template2018\ahk\importSDcard.ahk ; fotos van Sd kaart verplaatsen
 #j::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwd5.ahk  ;(toetsenbordlabel = nieuwPV) uitleg = nieuw pv  D5 docx-object in  nrs 
 #k::Run C:\Users\vth\Desktop\template2018\macros\kzb.xlsm  
 ; #l::Run T:\voor vincent  ; werkt niet windows+L = logoff !
@@ -350,7 +353,7 @@ Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;deskto
 
 #r::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwlabel.ahk  ; uitleg = nieuw label-object  L1 in  nrs 
 #s::Run C:\Users\vth\Desktop\template2018\ahk\msoftaanpassenstuklijst.ahk
-#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2020.xlsm ; 
+#t::Run C:\Users\vth\Desktop\template2018\macros\serieverpak2021.xlsm ; 
 #u::Run C:\Users\vth\Desktop\template2018\ahk\nrsnieuwlabel.ahk  ;
 #v::Run, "C:\Users\vth\Desktop\template2018\ahk\werkurenVTexcel.ahk"
 #w::Run C:\Users\vth\Desktop\template2018\ahk\alg20.ahk  ;
@@ -382,7 +385,7 @@ Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;deskto
 #f4::Run, "C:\Users\vth\Desktop\template2018\ahk\nrsopstarten.ahk" ; werkt niet op vmn win+f4 is dan terug afsluiten
 #f5::Run, "C:\Users\vth\Desktop\template2018\ahk\tooltipmouspost.ahk"    ; debug tool soort spy voor mousepositie
 #f6::Run C:\Users\vth\Desktop\template2018\ahk\wijzigen.ahk  ;
-#f7::Run, "C:\Users\vth\Desktop\template2018\ahk\pdmverkenner.ahk"
+#f7::Run, "C:\Users\VTH\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraagGlobalinput.ahk"
 #f8::Run C:\Tools\Notepad++\notepad++.exe ;C:\Users\vth\Desktop\template2018\portableApps\Notepad++Portable\Notepad++Portable.exe ;
 #f9::Run C:\WINDOWS\system32\mspaint.exe
 #f10::Run calc.exe
@@ -409,10 +412,10 @@ return
 }
 
 
-:R*?:www::
+:R*?:bbb::
 {
 
-SendInput vith123 
+run C:\Users\VTH\Desktop\template2018\ahk\testmetincludebestand.ahk
 return
 }
 

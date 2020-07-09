@@ -1,16 +1,20 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="ClipprojectImportComplabel"  
+ 
+
+
+
+
+
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="ClipprojectImportComplabel incl  "   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
 
-;;pre-start en variabelen
-;artikelomschrijving
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
+
 
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
@@ -59,7 +63,7 @@ Loop, 1
 	Sleep 200,
 	Send t
 	Sleep 500,
-	Send {DOWN 11} ; component labels
+	Send {DOWN %label_ID_comp%} ; component labels
 	Sleep 500,
 	Send {ENTER}
 	Sleep 200,

@@ -1,12 +1,12 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="Msoftpartartikel2a"  
+ #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="Msoftpartartikel2a _incl"   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
+
 
 
 ;;pre-start en variabelen
@@ -67,6 +67,17 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	Send, +{F9}  ;shift f9
 	Sleep 400
+	
+	
+		;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
+	If WinExist("Question")
+{
+	MsgBox we moeten dringend weg eris hier geen prodfiche
+exitapp
+}
+
+
+
 	Send,   ^{PgUp}  ; control pageUP
 	Sleep 400,
 	Send +{Tab 3}
@@ -133,7 +144,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		    	ToolTip, writefile comparedottxt ;
 
 
-   file := FileOpen("C:/Users/vth/Desktop/template2018/temp/compare2.txt", "w")
+   file := FileOpen(compare_twee, "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
      file.Write(TestString)
@@ -154,7 +165,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
    ;  Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt
    	ToolTip, wiskolommen.bat aan het doen ;
 	
-	Run	C:\Users\vth\Desktop\template2018\ahk\wisKolommenVanCompare2.bat ; verwijder de rechtse kolommen uit de csv file
+	Run	%wis_kolom_v_comp_twee% ; verwijder de rechtse kolommen uit de csv file
   while !WinExist("ahk_class ConsoleWindowClass")
     {
         
@@ -195,7 +206,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 ;;;;;;;;;;;;;;;;hier moeten we excel macro GREP.xlsm kunnen runnen
 
 
-Run C:\Users\VTH\Desktop\template2018\macros\grep.xlsm
+Run %grep_xls%
 
 		Loop, 3
 		{
@@ -253,7 +264,7 @@ If WinExist("grep.xlsm - Excel")
 ;;;;;;;;;;;;;;;;;;;;;;;;;	;we gaan notepadd++ openen , maar we gaan ale tabblaten sluiten  ahk_class Notepad++
 	
 	
-Run C:/Tools/Notepad++/notepad++.exe
+Run %notepad_plusplusEXE%
 	Loop, 3
 	{
 			ToolTip, notepad++ opent nu    %A_Index%    ; A_Index will be 1, 2, then 3
@@ -273,7 +284,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	
 			
 			   Sleep 300,
-  Run C:/Users/vth/Desktop/template2018/temp/compare1-split-grep.txt ;
+  Run %compare_een_split% ;
    ;  Run C:/Users/vth/Desktop/template2018/logfiles/compare1.txt ; winaccount crach
 
 	Loop, 4
@@ -283,7 +294,7 @@ Run C:/Tools/Notepad++/notepad++.exe
 	}
 
 
-  Run C:/Users/vth/Desktop/template2018/temp/compare2-split-grep.txt ; 
+  Run %compare_twee_split% ; 
    ;   Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt ; 
 
 	Loop, 4

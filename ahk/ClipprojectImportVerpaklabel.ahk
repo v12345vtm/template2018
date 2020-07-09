@@ -1,13 +1,13 @@
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="ClipprojectImportVerpaklabel"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="ClipprojectImportVerpaklabel incl  "   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+Sleep 300,
 
 
-
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
 
 {
      CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
@@ -37,10 +37,12 @@ Send {ALT}
 Sleep 200,
 Send t
 Sleep 500,
-Send {DOWN 34} ; verpak  labels
+Send {DOWN %label_ID_verp%} ; verpak  labels via includebestand
 Sleep 500,
 Send {ENTER}
 Sleep 200,
+
+
 
 ToolTip, lutze labels ofzo `n   scherm laad voor import ,170 , 950
 Sleep 2000,
@@ -75,12 +77,13 @@ Sleep 4000,
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
-ExitApp
-return
+	BlockInput, MouseMoveOff
+	
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+	ExitApp
+	return
 }
-ESC::Goto ExitSub
+ESC::Goto ExitSub 
 
 
 

@@ -1,10 +1,25 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-scriptnaam :="ClipprojectImportDraadlabel"   
-FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+ 
+
+
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="ClipprojectImportDraadlabel incl  "   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
+
+
 SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
+
+
+
+
+
+
+
+
+
 
 
 {
@@ -28,7 +43,7 @@ SetKeyDelay, 200 ; hoe rap stuur je typcommandos
 		Sleep 200,
 		Send t
 		Sleep 500,
-		Send {DOWN 15} ; draadlabels
+		Send {DOWN %label_ID_draad%} ; draadlabels
 		Sleep 500,
 		Send {ENTER}
 		Sleep 200,

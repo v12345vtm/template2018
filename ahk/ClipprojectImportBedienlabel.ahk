@@ -1,9 +1,20 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-   Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-   scriptnaam :="ClipprojectImportBedienlabel"   
-   FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
+ 
+	   
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+
+scriptnaam :="ClipprojectImportbedienlabel incl  "   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+Sleep 300,
+
+
+SetKeyDelay, 200 ; hoe rap stuur je typcommandos  
+	   
+	   
+	   
+	   
 
 {
 	BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
@@ -32,7 +43,7 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
 	Sleep 200,
 	Send t
 	Sleep 500,
-	Send {DOWN 10} ; bedien labels
+	Send {DOWN %label_ID_bedien%} ; bedien labels
 	Sleep 500,
 	Send {ENTER}
 	Sleep 200,

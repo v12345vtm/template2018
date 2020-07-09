@@ -1,12 +1,16 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="Msoftpartartikel1a"  
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="Msoftpartartikel1a _incl"   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
+
+
+
+
+  
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+ 
 
 
 ;;pre-start en variabelen
@@ -73,6 +77,17 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	Send, +{F9}  ;shift f9
 	Sleep 400
+	
+	;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
+	If WinExist("Question")
+{
+	MsgBox we moeten dringend weg eris hier geen prodfiche
+exitapp
+}
+	
+	
+	
+	
 	Send,   ^{PgUp}  ; control pageUP
 	Sleep 400,
 	Send +{Tab 3}
@@ -139,7 +154,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		    	ToolTip, writefile comparedottxt ;
 
 
-   file := FileOpen("C:/Users/vth/Desktop/template2018/temp/compare1.txt", "w")
+   file := FileOpen(compare_een, "w")
    TestString := ".`r`n"  ; to start a new line. nieuwe regel 
    file.Write(UserInput)
      file.Write(TestString)
@@ -165,7 +180,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 
 
 
-Run	C:\Users\vth\Desktop\template2018\ahk\wisKolommenVanCompare1.bat ; verwijder de rechtse kolommen uit de csv file
+Run	%wis_kolom_v_comp_een% ; verwijder de rechtse kolommen uit de csv file
 
   while !WinExist("ahk_class ConsoleWindowClass")
     {

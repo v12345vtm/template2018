@@ -1,12 +1,10 @@
-;	elke export zetten we in ons exportbestand , dat is een vaste output filename
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-scriptnaam :="msoftnieuwemagazijnaanvraag"   
-FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="msoftnieuwemagazijnaanvraag inc"   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
-
-;;;;   http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
-
+ 
 ;;;;;    https://github.com/v12345vtm/template2018
 
 ToolTip, MSOFTnieuwemagazijnaanvraag-ahk = in Msoft magazijnaanvragen staan,170 , 950
@@ -85,20 +83,24 @@ If WinExist("AUTO - Magazijnaanvragen")
    Sleep 300,
          
    Send, {Enter}
-   Sleep 300,
+ 
    
-   
+   Loop, 3
+{
+	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
+	Sleep, 1000 ;nu is kot met 3puntjes er
+}
    
    
    ;de windows 'Artikelen (Aangevraagde artikelen'  aktief zetten door erop ergens te klikken want de cordinaten kloppen hierachter nooit
    MouseMove, 390,240
-   Sleep 500,
+   Sleep 1500,
    MouseClick, left
-   Sleep 500,
+   Sleep 1500,
    
    ;nu gaan we opde 3puntjes klikken 110op105
    ;MsgBox, nu gaan we opde 3puntjes klikken 110op105 ,kutprogramma msoft ondersteund geen tabpositie 
-   MouseMove, 110,105
+   MouseMove, 110,135
    Sleep 600,
    
    
@@ -132,13 +134,14 @@ Sleep 300,
 
 
 
-;;noodstop
-ExitApp ; dit is onze laatste stap na de herhaalloop
-ExitSub:
-{
-   BlockInput, MouseMoveOff
-   MsgBox "EXIT-"%scriptnaam%
-   ExitApp
-   return
-}
-ESC::Goto ExitSub              
+	;;noodstop
+	ExitApp ; dit is onze laatste stap na de herhaalloop
+	ExitSub:
+	{
+		BlockInput, MouseMoveOff ; muis los laten voor gebruiker
+		 
+			MsgBox, 48, you pressed escape- , you pressed esc- `n`n "EXIT-"%scriptnaam% This message will self-destruct in 1 seconds., 1
+		ExitApp
+		return
+	}
+	ESC::Goto ExitSub             

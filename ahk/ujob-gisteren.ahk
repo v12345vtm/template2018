@@ -1,24 +1,9 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="ujob-gisteren"  
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="ujob-gisteren-incl"  
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
-
-
-;;pre-start en variabelen
-
-eendagTerugx := 190 ; 311
-eendagTerugy := 55 ; 190
-
-tiknrx := 640 ; 815
-tiknry:= 120 ; 250
-
-totaalx:= 665 ; 760
-totaaly:= 420 ; 550
 
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
@@ -39,7 +24,7 @@ wachtenOPprogram := "UJob" ;
  ToolTip, var wachten tot %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
   Sleep, 1000
 
-Run, "C:\Users\vth\Desktop\ujoblet.jar - Snelkoppeling.lnk" ;"
+Run, %ujobEXE%
  WinWait, %wachtenOPprogram%, , 3
 if ErrorLevel
 {
@@ -52,11 +37,11 @@ else
       ToolTip,ok  %wachtenOPprogram%-inlog er is  %A_Index% ,170,950
   Sleep, 1000
   
-  	Send 1302.50
+  	Send %ujobLogin%
 		Sleep, 300
 Send {TAB}
 	Sleep, 300
-Send vith123
+Send %ujobPaswoord%
 	Sleep, 300
 	Send {Enter}
 	
