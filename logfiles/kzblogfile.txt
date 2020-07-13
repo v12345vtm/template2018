@@ -1149,3 +1149,132 @@ KZB20200334 23-3-2020 KB200055 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: 
 KZB  usbgeschreven:pdf op usb geschrevenKB200055
 KZB20200326 23-3-2020 KB200054 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Nulens Wheelservice Beverst Bilzen ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
 KZB  usbgeschreven:pdf op usb geschrevenKB200054
+KZB20200326 30-3-2020 KB200054 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Nulens   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
+KZB20200382 3-4-2020 KB200061 LKQ VILVOORDE 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Garage Havelange Dinant ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
+KZB20200381 6-4-2020 KB200060 AUTO5 ANDERLECHT 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Auto 5 Gembloux Gembloux ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200060
+KZB 20-4-2020   0stuks  ,opties: labeltext:PLA 1050 NR    ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb46-kzblogknop
+KZB20200425 20-4-2020 KB200062 RMITEC 5stuks EPVKS-PLA 35 NR D            ,opties: labeltext:PLA 35 NR D Rmitec   ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb46-kzblogknop
+KZB  usbgeschreven:J:\KB200062
+KZB  usbgeschreven:J:\KB200062
+KZB  usbgeschreven:J:\KB200062
+KZB  usbgeschreven:J:\KB200062
+KZB  usbgeschreven:J:\KB200062
+KZB  usbgeschreven:J:\KB200062
+KZB20200449 27-4-2020 KB200064 MIVB BRUSSEL 3stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Mivb Stib Delta Brussel ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200064
+KZB  usbgeschreven:pdf op usb geschrevenKB200064
+KZB  usbgeschreven:pdf op usb geschrevenKB200064
+KZB20200451 27-4-2020 KB200065 METALCED 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Aclagro Wondelgem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb46-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200065
+KZB20200468 4-5-2020 KB200067 VIETNET 8stuks EPVKS-PLA 35 DR BU           ,opties: labeltext:PLA 35 DR Vietnet Long Binh Tan Bien Hoa ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb46-kzblogknop
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB  usbgeschreven:J:\KB200067
+KZB20200468 4-5-2020 KB200067 VIETNET 8stuks EPVKS-PLA 35 DR BU           ,opties: labeltext:PLA 35 DR    ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb46-kzblogknop
+KZB 6-5-2020   0stuks  ,opties: labeltext:PLA 1050 NR     ,usb:nee, homotext default geen usblabel-user:ongekend usblabel-integrator:ongekend ,PDFopUSB?:ongekend,versieExcel:kzb46-kzblogknop
+KZB20200477 6-5-2020 KB200069 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 NR AL TUV        ,opties: labeltext:PLA 5 NR     ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb46-kzblogknop
+KZB20200477 6-5-2020 KB200069 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 NR AL TUV        ,opties: labeltext:PLA 5 NR    ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb46-kzblogknop
+KZB20200477 6-5-2020 KB200069 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 NR AL TUV        ,opties: labeltext:PLA 5 NR    ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb46-kzblogknop
+KZB20200477 6-5-2020 KB200069 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 NR AL TUV        ,opties: labeltext:PLA 5 NR Tuv Nord Mobilitat Gmbh Wittingen ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb47-kzblogknop
+KZB20200486 18-5-2020 KB200070 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 NR AL TUV        ,opties: labeltext:PLA 5 NR Tuv Nord Mobilitat Gmbh Hannover ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb47-kzblogknop
+KZB20200491 18-5-2020 KB200076 PW EQUIPMENT  1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Garage Dhondt Gavere ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200076
+KZB20200489 18-5-2020 KB200073 PW EQUIPMENT  1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Garage Vrancx Bever ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200073
+KZB20200495 25-5-2020 KB200078 LANGOSERVICE 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Aartun Transport As Sauda Norge ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:J:\KB200078
+KZB  usbgeschreven:J:\KB200078
+KZB20200493 25-5-2020 KB200077 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Dcr Carrosserie St Gillis Waas ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200077
+KZB20200511 25-5-2020 KB200083 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Auto Motors Huy Huy ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200083
+KZB20190783 2-6-2020 KB190120 TAE 1stuks EP-VK-PLA 35 DR BE ,opties: labeltext:PLA 35 DR Best Drive Aalst   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB20200522 2-6-2020 KB200087 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Van Osch Tienen ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200087
+KZB20200522 2-6-2020 KB200087 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR     ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB20200521 2-6-2020 KB200085 METALCED 1stuks EPVKS-PLA 5 DR BI            ,opties: labeltext:PLA 5 DR Titan Gma Vilvoorde ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb47-kzblogknop
+KZB20200520 2-6-2020 KB200084 TAE 1stuks EPVKS-PLA 5 NR AL            ,opties: labeltext:PLA 5 NR C R P Tyres Center Nv Ronse ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb47-kzblogknop
+KZB20200527 4-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 2035 Gi Industries Thailand   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:J:\KB200095
+KZB  usbgeschreven:J:\KB200095
+KZB  usbgeschreven:J:\KB200095
+KZB  usbgeschreven:J:\KB200095
+KZB  usbgeschreven:J:\KB200095
+KZB  usbgeschreven:J:\KB200095
+KZB20200526 4-6-2020 KB200093 PW EQUIPMENT  1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Leplae Torhout Torhout ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200093
+KZB20200524 4-6-2020 KB200090 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Iris Services Center Brussel ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200090
+KZB20200534 8-6-2020 KB200096 PW EQUIPMENT  1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Group Novabil Kortrijk ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb47-kzblogknop
+KZB  usbgeschreven:pdf op usb geschrevenKB200096
+KZB20200495 8-6-2020 KB200078 LANGOSERVICE 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Off 20200009 Pla35 Nr   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb47-kzblogknop
+KZB20200527 11-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 2035 Off 20200103 Sam 2035   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt
+KZB20200527 11-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 2035 Off 20200103 Sam 2035   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt
+KZB20200527 11-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 2035 Off 20200103 Sam 2035   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt
+KZB20200527 11-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 2035 Off 20200103 Sam 2035   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt
+KZB20200527 11-6-2020 KB200095 GI INDUSTRY 5stuks EPVKS-SAM 2035 THAILAND      ,opties: labeltext:SAM 1050.1 Off 20200103 Sam 2035   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt
+KZB20200540 15-6-2020 KB200099 ODETRANS 1stuks EPVKS-SAR 35 GOCA            ,opties: labeltext:SAR 35 Odetrans   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb48-temp-usb.txt num
+KZB20200540 15-6-2020 KB200099 ODETRANS 1stuks EPVKS-SAR 35 GOCA            ,opties: labeltext:SAR 35 Odetrans   ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb48-temp-usb.txt num
+KZB20200542 15-6-2020 KB200101 LKQ VILVOORDE 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Cornu St Niklaas Sint Niklaas ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb48-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200101
+KZB20200543 15-6-2020 KB200102 RMITEC 15stuks EPVKS-PLA 35 NR D            ,opties: labeltext:PLA 35 NR D     ,usb:ja, homotext BAUMUSTERFREIGABE : TPN100132497 usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb48-temp-usb.txt num
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB  usbgeschreven:J:\KB200102
+KZB20200544 15-6-2020 KB200105 SERVO 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR De Geyndt Outer Ninove ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb48-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200105
+KZB20200544 17-6-2020 KB200105 SERVO 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR De Geyndt   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb49-temp-usb.txt num
+KZB20200449 18-6-2020 KB200107 MIVB BRUSSEL 3stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Mivb Stib Delta Brussel ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200107
+KZB  usbgeschreven:pdf op usb geschrevenKB200107
+KZB  usbgeschreven:pdf op usb geschrevenKB200107
+KZB20200551 18-6-2020 KB200109 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 DR AL TUV        ,opties: labeltext:PLA 5 DR Tuv Nord Mobilitat Gmbh Hannover ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb50-temp-usb.txt num
+KZB20200544 23-6-2020 KB200105 SERVO 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR De Geyndt   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB20200556 24-6-2020 KB200113 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Buga Wijnegem Wijnegem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200113
+KZB20200552 24-6-2020 KB200111 RMITEC 1stuks EPVKS-PLA 5 NR D AL          ,opties: labeltext:PLA 5 NR D    ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb50-temp-usb.txt num
+KZB20200557 24-6-2020 KB200114 JOST 1stuks EPVKS-SAR 35 GOCA            ,opties: labeltext:SAR 35     ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb50-temp-usb.txt num
+KZB20200556 24-6-2020 KB200113 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Buga Wijnegem   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB20200570 29-6-2020 KB200118 TAE 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Banden Redant Leuven Herent ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200118
+KZB20200587 6-7-2020 KB200124 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Scancar Lier ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200124
+KZB20200591 7-7-2020 KB200129 METALCED 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Neufcourt Bassenge ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200129
+KZB20200590 7-7-2020 KB200128 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Garage Bortolin Tihange ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200128
+KZB20200586 7-7-2020 KB200123 METALCED 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Vandoninck Garage   ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200123
+KZB20200589 7-7-2020 KB200125 MIVB BRUSSEL 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Mivb Anderecht ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200125
+KZB20200601 10-7-2020 KB200134 GHISTELINCKWAREGEMFA 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Ghistelinkc Kortrijk Heule ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200134
+KZB20200608 13-7-2020 KB200137 GRAMAT 1stuks EPVKS-PLA 35 NR BE           ,opties: labeltext:PLA 35 NR Peter Cars Ouwegem ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200137
+KZB20200607 13-7-2020 KB200136 SNAPON ITALY 1stuks EPVKS-PLA 25.1 DR SNAPON     ,opties: labeltext:PLA 35 DR Snap-On Correggio ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:ja ,PDFopUSB?:virtueelserienr,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:J:\KB200136
+KZB  usbgeschreven:J:\KB200136
+KZB20200635 13-7-2020 KB200140 TUV NORD MOBILITAT GMBH 1stuks EPVKS-PLA 5 DR AL TUV        ,opties: labeltext:PLA 5 DR Tuv Nord Mobilitat Gmbh Hannover ,usb:no, homotext BAUMUSTERFREIGABE : TPN100132496 usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb50-temp-usb.txt num
+KZB20200636 13-7-2020 KB200141 METALCED 1stuks EPVKS-PLA 5 NR AL            ,opties: labeltext:PLA 5 NR Garage D.A.N. Jambes ,usb:no, homotext default geen usblabel-user:nee usblabel-integrator:nee ,PDFopUSB?:nee,versieExcel:kzb50-temp-usb.txt num
+KZB20200637 13-7-2020 KB200144 METALCED 1stuks EPVKS-PLA 35 DR BE           ,opties: labeltext:PLA 35 DR Scancar Wilrijk Wilrijk ,usb:ja, homotext default geen usblabel-user:ja usblabel-integrator:no ,PDFopUSB?:pdf,versieExcel:kzb50-temp-usb.txt num
+KZB  usbgeschreven:pdf op usb geschrevenKB200144

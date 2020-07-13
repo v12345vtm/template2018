@@ -1,0 +1,7 @@
+Art.groep	Artikelsymbool	AlternatiefNummer	Aantal	Enh	Prijs	PrsEnh	Brutowinst%	Voorzieneverkoopwaarde	Vast	Omschrijving	Positienummer	Gewicht	Interne tekst	Prijsvraagnr	Externe tekst	Auto	Potentie	Alternatievecalculatie	Aantalper eenheid	Statuut	Herberekening nodig?	Samengesteld	Bestemming
+HFKAB	201772_01ACC	0000000500517	1,00	ST	28,1170	ST	0,00	28,12	0	W-XS62-XS62.1:kabel stuurkast MCS -> conn.plaat MCS verticaal links		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	
+HFKAB	201773_01ACC	0000000500524	1,00	ST	32,0965	ST	0,00	32,10	0	W-XS63-XS63.1:kabel stuurkast MCS -> conn.plaat MCS verticaal rechts		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	
+HFKAB	201777_01ACC	0000000500531	1,00	ST	10,7750	ST	0,00	10,78	0	W-XS64-XS64.1:kabel stuurkast MCS -> conn.plaat MCS verticaal links		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	
+HFKAB	201780_01ACC	0000000500562	1,00	ST	14,7545	ST	0,00	14,75	0	W-XS65-XS65.1:kabel stuurkast MCS -> conn.plaat MCS verticaal rechts		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	
+HFKAB	201781_01ACC	0000000500586	1,00	ST	10,9171	ST	0,00	10,92	0	W-XS64.1-XS64.2:230Vac kabel conn.plaat MCS verticaal links <-> scherm		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	
+HFKAB	201774_01ACC	0000000500593	1,00	ST	37,5247	ST	0,00	37,52	0	W-XS63.1-XS63.2:kabel con.plaat -> target MCS-toestel vert. rechts		0,0000		0		0	0	0	1,0000	Ingebracht	0	1	

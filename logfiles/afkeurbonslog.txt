@@ -121,3 +121,12 @@ HF-180547A01OPT	 24	Connectorplaatmodule LVC2035	kwaliteitsprobleem  : extra wer
 -	 1		gesmolten       	Ma 20200360	 	9/03/2020
 KABAS-VGA-01,8-MV	 1	VGA-kabel 1,8 m M/V	gesmolten      	Ma 20200360	 	3/09/2020
 DRFR-100072_00KOL	 1	Glijas Alu Drylin kolom	boor afgebroken en gat tekort en shafrijnen zaten er niet op      	Ma 20200374	0	17-3-2020
+HF-180545_01KOL	 50	Regelbaar rubberwiel gelagerd PLA	50 stuks waar het gat in de excenter van de wielassy er niet inzit (kunnen de wielen niet regelen)      	Ma 20200617	50	5/12/2020
+DRFR-040239_00KOL	 1	Regelbare lagersteun PLM	construktiefout : 16mm is verkeerd zie techn tek.     1slecht op stock de rest was ok	Ma 20200686	0	26-5-2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+HFPRI-140339_00OPT	 1	Sensor board true snap (ets12P10)	dode pixel      		 	10/6/2020
+LINEA-KOG-LUNF162LS	 30	Lineaire geleiding kogelbus LUNF16/2LS	ander type met andere vijs dan dat we gewoon zijn     25slechte op stock	Ma 20200964	5	2/7/2020
