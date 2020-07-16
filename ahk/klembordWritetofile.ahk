@@ -1,5 +1,5 @@
 ;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="klembordWritetofile-ahk de geselecteerde text"  
+scriptnaam :="klembordWritetofile"  
 ;BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 ;; export to log
@@ -15,11 +15,7 @@ Sleep 300,
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates
 SetKeyDelay, 500 ; hoe rap stuur je typcommandos  
  
-Loop, 3
-{
-	ToolTip,     %scriptnaam%  overal mag je staan   ; ahk variabele oproepen moet met %% 
-	; Sleep, 200
-}
+
 
 
 
@@ -37,16 +33,43 @@ ClipWait,4
  
  
  
- 
 	; we lezen de vorige nummer uit
 	; 	ToolTip, %OutputVar%, 300, 150 , 19
 	
-	Loop, 2
-{
-	ToolTip,     %OutputVar%  oudklembordterm  + nieuw %ClipBoard% +  %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
-	Sleep, 100
-}
+ 
+;	ToolTip,     %OutputVar%  oudklembordterm  + nieuw %ClipBoard% +  %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
+ 
 
+ 
+ 
+ 
+ 
+ ;;;;;;;we gaan hier de inputbox ff overbruggen door direkt naar de file te schrijven 
+ 	;FileAppend,hallo`n, C:/Users/vth/Desktop/template2018/logfiles/virtklembord.txt ;save naar txt file
+	
+	
+	file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/virtklembord.txt", "w")
+	;  TestString := ".`r`n"  ; to start a new line. nieuwe regel 
+	;file.Write(UserInput)
+	file.Write(ClipBoard)
+	file.Close() 
+		Loop, 20
+{
+		 ToolTip,  %ClipBoard% ;
+	Sleep, 100
+} 
+;;;;;
+ 
+ 
+ 
+ ClipBoard := oCB         ; return original Clipboard contents 
+ exitapp
+ 
+ 
+ 
+;;;;;;;;;;;einde overbrugging
+ 
+ 
  
  
 ;;;;;;;;;;do something here
@@ -54,7 +77,7 @@ ClipWait,4
 	Loop, 2
 {
 	ToolTip,     inputbox mag nu   %A_Index%  /... seconden  ; ahk variabele oproepen moet met %% 
-	Sleep, 50
+	Sleep, 10
 } 
 ;InputBox, OutputVar , Title,                      Prompt,        HIDE,  Width, Height, X, Y, Locale, Timeout, Default
 InputBox, UserInput, program klembordWritetofile, Please enter a  number voor virt klembord., , 300, 170 ,70,500,,, %ClipBoard% ; breed300 hoogte170 posx70 posy500

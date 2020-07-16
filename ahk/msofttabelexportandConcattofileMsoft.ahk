@@ -1,7 +1,7 @@
 ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
 FormatTime, CurrentDateTime,, yyMMddHHmmss
 Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
-scriptnaam :="msofttabelexportandConcattofileMoft"   
+scriptnaam :="msofttabelexportandConcattofileMsoft"   
 FileAppend, %Timestamp% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
 Sleep 300,
 
@@ -21,11 +21,8 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 	
 	InputBox, UserInput, msoftTabelExportAndConcatFile in artikelen lotnrs zoeken F3 en artikelgroep *L, de huidige  tabel wat je nu ziet komt in bestand msoftdb -hoelang denk je dat msoft moet nadenken om te exprterten in sec, , 20
-	if ErrorLevel
-	; MsgBox, CANCEL was pressed.
-	ExitApp 
-	
-	else
+	 
+ 
 		; MsgBox, You entered "%UserInput%" 
 		;FileAppend, `n%UserInput%*`n, c:/aa/klembord1.txt ;save naar txt file
 		;if Detail Materiaalkosten 2x up
@@ -58,8 +55,14 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	OnClipboardChange:
 	FileAppend, %clipboard%, C:\Users\vth\Desktop\template2018\logfiles\msoftdb.txt ;save naar txt file
 	
+	
 	Sleep 100,
+	
 	;Run C:\Users\vth\Desktop\template2018\logfiles\msoftdb.txt
+	
+	
+	
+	 
 }else  {
 	Loop, 3
 	{
@@ -76,7 +79,8 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff
-	MsgBox "EXIT-"%scriptnaam%
+	
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 	ExitApp
 	return
 }
