@@ -5,13 +5,9 @@ scriptnaam :="Msoftpartartikel1a _incl"
 FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
-
-
-
   
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
  
-
 
 ;;pre-start en variabelen
 ;artikelomschrijving
@@ -28,21 +24,42 @@ Loop, 1
 ;;;START
 
 
-
- 
- 
-
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;
-
 If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 {
 	WinActivate
 	Sleep 200,
-	
+	 ; er is een slow visible text waarinstaat :Artikel
 	
 	;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+	
+	
+	;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+Loop {
+Sleep 100
+WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Artikel" ; bestaat de knop die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+   ToolTip, De knop :  %Needle%  was found.    
+wachtEenBeetje(100) ; via incl een animerende cursor die wacht  
+   }
+Else
+   { 
+   ToolTip, De knop :  %Needle%  was  not found.      
+   }
+}
+Until  InStr(ahkspy_data, Needle)
+;****einde routine
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	Loop, 4
@@ -54,29 +71,56 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
 	
-	Send, !{ENTER} 
-	Sleep 1300,
+	Send, !{ENTER}  ; alt+enter = klik op wijzigen
+	
+wachtEenBeetje(1500) ; via incl een animerende cursor die wacht
+	
+	
+	
+	WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Allergeen artikel" ; bestaat de checkbox die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+  ; MsgBox, De knop :  %Needle%  was found.
+   
+   }
+Else
+   { 
+   MsgBox, De knop :  %Needle%  was  not found.
+    exitapp  
+   }
+
+	
+	 ; er is een slow visible text waarinstaat (checkbox) : Allergeen artikel
+	 ;de omschrijving staat tussen 2sentinels infeite
+	; Artikelsymb.:
+;Afstandsbus 3 x 7 mm
+; Omschrijving:
+	 
+	 
+	 
 	
 	Send, ^{c}  ; control c ,kopier de omschrijving in klembord
 	;Sleep 5000,  ; ALS JE TE KORT WACHT ZIT KLEMBORD ER NIET HELAMAAL IN
-	Loop, 4
-	{
-		ToolTip, saving tabel to klembord...    nog  %A_Index%  //.2.. seconden    ; A_Index will be 1, 2, then 3
-		Sleep, 500
-	}
+ wachtEenBeetje(4500) ; via incl een animerende cursor die wacht
 	
 	artikelomschrijving := "file 1:" . clipboard ; stores the clipboard content into a variable
 	
 	clipboard := "***"
 	
-	Sleep, 500
+wachtEenBeetje(500) ; via incl een animerende cursor die wacht
 	
 	Send !{f4} ; Simulates the keypress alt+f4 sluit window  waar ons text artikelnaam stond
 	
 	;;;;;;;;;;;;;produktiegegevens openen 
 	
 	Send, +{F9}  ;shift f9
-	Sleep 400
+			Loop, 5
+	{
+			ToolTip, wachten ..   %A_Index%  /0.5 seconden   ; A_Index will be 1, 2, then 3
+		Sleep, 100
+	}
 	
 	;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
 	If WinExist("Question")
@@ -86,11 +130,26 @@ exitapp
 }
 	
 	
+;er is ergens een checkbox : Vervangen in deelfase tonen	
+	WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Vervangen in deelfase" ; bestaat de checkbox die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+  ; MsgBox, De knop :  %Needle%  was found.
+   
+   }
+Else
+   { 
+   MsgBox, De knop :  %Needle%  was  not found.
+    exitapp  
+   }	
 	
+	 
 	
-	Send,   ^{PgUp}  ; control pageUP
+	Send,   ^{PgUp}  ; control pageUP ,dit is naar laatste tab springen
 	Sleep 400,
-	Send +{Tab 3}
+	Send +{Tab 3} ; shift tab
 	Sleep 300
 	Send , {Enter}  ; hierdoor komt er window = "Detail Materiaalkosten"
 	Loop, 6
@@ -107,12 +166,10 @@ exitapp
 	If WinExist("Detail Materiaalkosten")
 	{
 		WinActivate
-		;Sleep, 500
-		Loop, 2
-		{
-			ToolTip, inladen Detail Materiaalkosten    %A_Index%  /minstens 1.1 seconden anders lukt niet  ; A_Index will be 1, 2, then 3
-			Sleep, 300
-		}
+		 
+ wachtEenBeetje(1500) ; via incl een animerende cursor die wacht
+ 
+ 
 		;Sleep 1300,			
 		MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
 		Sleep, 100
@@ -234,7 +291,7 @@ FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving%`n, C:/Users/vt
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-		Loop, 6
+		Loop, 2
 		{
 			ToolTip, tis weer aan de mens die voor de pc zit /   %A_Index%     ; A_Index will be 1, 2, then 3
 			Sleep, 500

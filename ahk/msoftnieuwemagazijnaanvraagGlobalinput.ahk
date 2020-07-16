@@ -8,38 +8,60 @@ Sleep 300,
 ;;;;;    https://github.com/v12345vtm/template2018
 
 
+venster := "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)"
+ if WinActive(venster)  ; "ahk_class" need not have a space after it. 
+ {
+    ToolTip, De knop :  %venster%  was found.
+ Sleep 1000  
+ 
+ ;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+Loop {
+Sleep 100 
 WinGetText, ahkspy_data, a ; check inhoud v huidig window
 ;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
-
 Needle := "Globale input" ; bestaat de knop die we zoeken?
-
 If InStr(ahkspy_data, Needle)
-
    { 
-   MsgBox, De knop :  %Needle%  was found.
-    MouseMove, 584,470 ; positie van de knop   "Globale input"  via ahk spy , in active window
-   Sleep 1500,
-  ; MouseClick, left
-   Sleep 1500,
-   
-   
+ ; ToolTip, De knop :  %Needle%  was found.
+ Sleep 10
+  WinMove, %venster% ,, 10, 200 ,826,573   ; msoft naar left1280 top570  width620  height440
    }
 Else
    { 
-   MsgBox, De knop :  %Needle%  was  not found.
-   
-   
+  ; ToolTip, De knop :  %Needle%  was  not found.      
    }
-
-
-
-
+}
+Until  InStr(ahkspy_data, Needle)
+;****einde routine 
+ }
 
  
+exitapp
 
+;zitten we in bestelaanvragen ?
+;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+Loop {
+Sleep 100 
+	;wachtEenBeetje(100) ; via incl een animerende cursor die wacht
+WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Globale input" ; bestaat de knop die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+   ToolTip, De knop :  %Needle%  was found.
+ Sleep 100 
+	
+   WinGetPos,,, Width, Height, A 
+  WinMove, A,, 10, 200 ,826,573   ; msoft naar left1280 top570  width620  height440
 
-
-
+   }
+Else
+   { 
+   ToolTip, De knop :  %Needle%  was  not found.      
+   }
+}
+Until  InStr(ahkspy_data, Needle)
+;****einde routine
 
 
 

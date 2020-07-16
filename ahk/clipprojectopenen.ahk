@@ -23,31 +23,43 @@ If WinExist("CLIP PROJECT")
 	;MsgBox, u venster is open	, en ik zal het vooraan zetten
 	ToolTip, u programma CLIP PROJECT  is open `n  	 en ik zal het vooraan zetten   `n   voila! ,900 , 500
 	WinActivate  ; venster aktief zetten die we net gezocht en gevonden hebben
-	Sleep 200,  ; 2000
-	; ExitApp ; debug
+	 
+	 
 }else  {
-	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u
-	BlockInput, MouseMoveOff
-	
-	Loop, 10
-	{
-		ToolTip, wacht   om alles in te laden    %A_Index%  /10 seconden ,170 , 950  ; A_Index will be 1, 2, then 3
-		;Sleep, 1000
-	}
-	
+	;MsgBox, u venster  zie ik niet	, maar ik ga het openen voor u 
+ 	BlockInput, MouseMoveOff
+		wachtEenBeetje(300)
 	BlockInput, MouseMove 
-	
-	ToolTip, clipproject openen-ahk  `n   starting  : programma CLIP PROJECT  ,900 , 500
-	Sleep 100,
+ToolTip, clip project gestart,900 , 500
 	Run %algemeen_mtp_bestand% ; we starten een label op , werkt perfect om zo clip project te starten ;met de pause toets labeling prog starten
-	Sleep 6000,
-	ToolTip, clip project gestart,900 , 500
-	Sleep 100, ; 2000
+
+;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+Loop {
+Sleep 100
+WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Gegevensuitwisseling" ; bestaat de knop die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+   ToolTip, De knop :  %Needle%  was found.    
+wachtEenBeetje(100) ; via incl een animerende cursor die wacht  
+   }
+Else
+   { 
+   ToolTip, De knop :  %Needle%  was  not found.      
+   }
+}
+Until  InStr(ahkspy_data, Needle)
+;****einde routine
+
+
+ 
+ 
 	
 	ExitApp
 } 
 
-Sleep 100, 
+ 
 
 
 ;;noodstop

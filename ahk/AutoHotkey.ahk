@@ -144,6 +144,38 @@ SendHotkey:
 	}
 
 
+
+;;;;;;;;;
+
+venstermagaanvr := "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)"
+ if WinActive(venstermagaanvr )  and ContinueSearch  ; enkel als programma aktief is doen we iets 
+ {
+  ;  ToolTip, De knop :  %venstermagaanvr %  was found.
+ ;Sleep 1000  
+ 
+ ;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+Loop {
+Sleep 100 
+WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Globale input" ; bestaat de knop die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+ ;ToolTip, De knop :  %Needle%  was found.
+ Sleep 10
+  WinMove, %venstermagaanvr% ,, 10, 200 ,826,573   ; msoft naar left1280 top570  width620  height440
+   }
+Else
+   { 
+  ; ToolTip, De knop :  %Needle%  was  not found.      
+   }
+}
+Until  InStr(ahkspy_data, Needle)
+ ToolTip
+;****einde routine 
+ }
+
+
 ;;;;;;	
 	;ahk_class ApplicationFrameWindow  office popup als ik print
 	
@@ -156,6 +188,18 @@ SendHotkey:
 		;WinClose, Office,,1
 	}	
 	
+
+	If WinExist("Accountadministratie") and ContinueSearch 
+	{
+		WinActivate
+		infovariabele := " printen paswoord" 
+sleep 1500
+Send, {Enter}  
+		;MsgBox, popupOfficePrint is open en we drukken ok om alleenlezen melding vanzelf weg te doen en omdat IT dit niet weet op te lossen
+		
+		;WinClose, Office,,1
+	}
+
 	
 	If WinExist("AutoCAD LT Alert") and ContinueSearch 
 	{

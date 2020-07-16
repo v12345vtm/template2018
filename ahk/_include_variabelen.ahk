@@ -98,7 +98,31 @@ importsdBAT := "C:\Users\vth\Desktop\template2018\ahk\importSDcard.bat"
 ;MsgBox "includehier"
 
 
+;openbare functies
+
+ 
+ 
+wachtEenBeetje(x) {  
+Tooltip ** ,,,18
+Sleep x/6
+Tooltip **** ,,,18
+Sleep x/6
+Tooltip ***** ,,,18
+Sleep x/6
+Tooltip ** ,,,18
+Sleep x/6
+Tooltip **** ,,,18
+Sleep x/6
+Tooltip ****** ,,,18
+Sleep x/6   ; een animerende cursor die wacht , volgens de duurtijd vd ontvangen parameter
+Tooltip ,,,18
+  return  
+}
 
 
 
 
+SerialPrintln(x){
+FileAppend, %x% `n, C:/Users/vth/Desktop/template2018/logfiles/serialprintahkDebug.txt ;save naar txt file concat
+Sleep 900,
+}

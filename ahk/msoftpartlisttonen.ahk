@@ -18,56 +18,89 @@ Loop, 1
 If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 {
 	WinActivate
-	Sleep 200,	
-	Loop, 4
-	{
-		ToolTip, ,
-		ToolTip, je bent wel in artikelen    %A_Index%  /... seconden    ; A_Index will be 1, 2, then 3
-		Sleep, 10
-	}
-		
-	;;  ;;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
-	;;  Send, !{ENTER} 
-	;;  Sleep 1300, 
-	;;   Send, ^{c}  ; control c ,kopier de omschrijving in klembord
-	;;  ; ALS JE TE KORT WACHT ZIT KLEMBORD ER NIET HELAMAAL IN
-	;;  Loop, 4
-	;;	{	 
-	;;		ToolTip, saving tabel to klembord...    nog  %A_Index%  //.2.. seconden    ; A_Index will be 1, 2, then 3
-	;;		Sleep, 500		
-	;;	} 
-	;; artikelomschrijving := clipboard ; stores the clipboard content into a variable
-	;; Send !{f4} ; Simulates the keypress alt+f4 sluit window  waar ons text artikelnaam stond
 	
-	;;;;;;;;;;;;;produktiegegevens openen 
+	; er is een slow visible text waarinstaat :Artikel
 	
+	;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+	Loop {
+		Sleep 100
+		WinGetText, ahkspy_data, a ; check inhoud v huidig window
+		;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+		Needle := "Artikel" ; bestaat de knop die we zoeken?
+		If InStr(ahkspy_data, Needle)
+		{
+			ToolTip, De knop :  %Needle%  was found.    
+			wachtEenBeetje(100) ; via incl een animerende cursor die wacht
+		}else  {
+			ToolTip, De knop :  %Needle%  was  not found.
+		}}
+	Until  InStr(ahkspy_data, Needle)
+	;****einde routine
+	
+	
+	;;;;;;;;;;;;produktiegegevens openen 	
 	Send, +{F9}  ;shift f9
-	Sleep 400
-	Send,   ^{PgUp}  ; control pageUP
+	Sleep 400	
+	
+	;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
+	If WinExist("Question")
+	{
+		BlockInput, MouseMoveOff ;laat de muis weer los
+		MsgBox we moeten dringend weg eris hier geen prodfiche
+		exitapp
+	}
+	
+	Send,   ^{PgUp}  ; control pageUP 'select laatste tab 'Prod.Totalen met needle Kosten onderliggende artikelen tonen
+	Sleep 400	
+	
+	;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+	Loop {
+		Sleep 100
+		WinGetText, ahkspy_data, a ; check inhoud v huidig window
+		;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+		Needle := "Kosten onderliggende artikelen tonen" ; bestaat de knop die we zoeken?
+		If InStr(ahkspy_data, Needle)
+		{
+			ToolTip, De knop :  %Needle%  was found.    
+			wachtEenBeetje(100) ; via incl een animerende cursor die wacht
+		}else  {
+			ToolTip, De knop :  %Needle%  was  not found.
+		}}
+	Until  InStr(ahkspy_data, Needle)
+	;****einde routine
+	
+	
 	Sleep 400,
 	Send +{Tab 3}
 	Sleep 300
 	Send , {Enter}  ; hierdoor komt er window = "Detail Materiaalkosten"
-	Loop, 3
-	{
-		ToolTip, wachten tot Detail Materiaalkosten    %A_Index%  /.3.. seconden   ; A_Index will be 1, 2, then 3
-		Sleep, 400 ; 1000
-	}
-		
+	
+	;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
+	Loop {
+		Sleep 100
+		WinGetText, ahkspy_data, a ; check inhoud v huidig window
+		;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+		Needle := "Nodig voor" ; bestaat de knop die we zoeken?
+		If InStr(ahkspy_data, Needle)
+		{
+			ToolTip, De knop :  %Needle%  was found.    
+			wachtEenBeetje(1000) ; via incl een animerende cursor die wacht
+		}else  {
+			ToolTip, De knop :  %Needle%  was  not found. _  wachten tot Detail Materiaalkosten
+		}}
+	Until  InStr(ahkspy_data, Needle)
+	;****einde routine
+	
+	
 	;nu hebben we nu zicht op de partlijst tabel van msoft
 	;nu willen we de tabel in klermbord
 	
 	;Detail Materiaalkosten , hier gaan we een 3e window binnen
 	If WinExist("Detail Materiaalkosten")
 	{
-		WinActivate
+		WinActivate		
 		;Sleep, 500
-		Loop, 1
-		{
-			ToolTip, inladen Detail Materiaalkosten    %A_Index%  /minstens 1.1 seconden anders lukt niet  ; A_Index will be 1, 2, then 3
-			Sleep, 300
-		}
-		;Sleep 1300,			
+		
 		MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
 		Sleep, 100		
 		MouseClick, right ; menuopvragen
@@ -83,7 +116,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 			ToolTip, voila stuklijst van %Msoftomschijving% in klembord    %A_Index%  /... seconden   ; A_Index will be 1, 2, then 3
 			Sleep, 50
 		}
-				
+		
 		;sluit nu venster "Detail Materiaalkosten"
 		;  Send !{f4} ; Simulates the keypress alt+f4 sluit window  waar ons text artikelnaam stond
 		Sleep, 500
@@ -111,12 +144,11 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 
 
 
-
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-	BlockInput, MouseMoveOff
+	BlockInput, MouseMoveOff ;laat de muis weer los
 	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 	ExitApp
 	return

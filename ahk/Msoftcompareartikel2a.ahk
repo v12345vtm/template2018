@@ -43,7 +43,23 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	;we gaan de omschrijving eerst inladen dor Alt+enter te doen en te kopieren wat de text is die te kopieren is
 	
 	Send, !{ENTER} 
-	Sleep 1300,
+	
+wachtEenBeetje(1500) ; via incl een animerende cursor die wacht
+	
+	
+		WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Allergeen artikel" ; bestaat de checkbox die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+  ; MsgBox, De knop :  %Needle%  was found.
+   
+   }
+Else
+   { 
+   MsgBox, De knop :  %Needle%  was  not found.
+    exitapp  
+   }
 	
 	Send, ^{c}  ; control c ,kopier de omschrijving in klembord
 	;Sleep 5000,  ; ALS JE TE KORT WACHT ZIT KLEMBORD ER NIET HELAMAAL IN
@@ -59,14 +75,14 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	clipboard := "***"
 	
-	Sleep, 500
+	wachtEenBeetje(500) ; via incl een animerende cursor die wacht
 	
 	Send !{f4} ; Simulates the keypress alt+f4 sluit window  waar ons text artikelnaam stond
 	
 	;;;;;;;;;;;;;produktiegegevens openen 
 	
 	Send, +{F9}  ;shift f9
-	Sleep 400
+wachtEenBeetje(500) ; via incl een animerende cursor die wacht
 	
 	
 		;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
@@ -76,18 +92,32 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 exitapp
 }
 
-
+	
+;er is ergens een checkbox : Vervangen in deelfase tonen	
+	WinGetText, ahkspy_data, a ; check inhoud v huidig window
+;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
+Needle := "Vervangen in deelfase" ; bestaat de checkbox die we zoeken?
+If InStr(ahkspy_data, Needle)
+   { 
+  ; MsgBox, De knop :  %Needle%  was found.
+   
+   }
+Else
+   { 
+   MsgBox, De knop :  %Needle%  was  not found.
+    exitapp  
+   }	
+	
+	 
+	
 
 	Send,   ^{PgUp}  ; control pageUP
 	Sleep 400,
 	Send +{Tab 3}
 	Sleep 300
 	Send , {Enter}  ; hierdoor komt er window = "Detail Materiaalkosten"
-	Loop, 6
-	{
-		ToolTip, wachten tot Detail Materiaalkosten    %A_Index%  /0.5 seconden   ; A_Index will be 1, 2, then 3
-		Sleep, 200
-	}
+	
+ wachtEenBeetje(1500) ; via incl een animerende cursor die wacht
 	
 	
 	;nu hebben we nu zicht op de partlijst tabel van msoft
@@ -97,12 +127,10 @@ exitapp
 	If WinExist("Detail Materiaalkosten")
 	{
 		WinActivate
-		;Sleep, 500
-		Loop, 2
-		{
-			ToolTip, inladen Detail Materiaalkosten    %A_Index%  /minstens 1.1 seconden anders lukt niet  ; A_Index will be 1, 2, then 3
-			Sleep, 300
-		}
+ wachtEenBeetje(600) ; via incl een animerende cursor die wacht
+		
+		
+		
 		;Sleep 1300,			
 		MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
 		Sleep, 100
@@ -116,11 +144,7 @@ exitapp
 		
 		
 		;voila stuklijst in klembord!!
-		Loop, 4
-		{
-			ToolTip, tabel naar klembord doen kost 2sec        %A_Index%  /2 seconden   ; A_Index will be 1, 2, then 3
-			Sleep, 600
-		}
+	 wachtEenBeetje(2400) ; via incl een animerende cursor die wacht
 		;ExitApp ; tot hier alles goed
 		
 		;sluit nu venster "Detail Materiaalkosten"
@@ -155,11 +179,7 @@ exitapp
   file.Write(clipboard)
    file.Close()  
    
- 		Loop, 3
-		{
-			ToolTip, KLAAR met wegschrijven file2    %A_Index%    ; A_Index will be 1, 2, then 3
-			Sleep, 400
-		}
+ 	 wachtEenBeetje(1200) ; via incl een animerende cursor die wacht
   
   ;;;;;;;;;nu hebben we een bestand ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
    ;  Run C:/Users/vth/Desktop/template2018/logfiles/compare2.txt
@@ -226,7 +246,7 @@ If WinExist("grep.xlsm - Excel")
 	;MsgBox, 48, grep ja- , grep is er - `n`n This message will self-destruct in 3 seconds., 3
 	  MouseMove,790 , 411 ; klik op de vba macro knop op te grep uit te voeren
   MouseClick, left
-	Sleep 2300 ; vba is bezig
+	 wachtEenBeetje(2400) ; via incl een animerende cursor die wacht ; vba is bezig
 	
 	
 ;;grep uitgevoerd we hebben nu 2 bestanden waar de dubbele items elk uit verdwenenn zijn
@@ -311,7 +331,7 @@ Run %notepad_plusplusEXE%
 		
 			Loop, 4
 	{
-		ToolTip, compare is nu aan het lopen in notpad++    %A_Index%    ; A_Index will be 1, 2, then 3
+		ToolTip, compare is nu aan het lopen in notepad++    %A_Index%    ; A_Index will be 1, 2, then 3
 		Sleep, 100
 	}
 			
@@ -354,7 +374,7 @@ FileAppend,  %timestampel% - %scriptnaam% - %artikelomschrijving% -eind `n, C:/U
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-		Loop, 6
+		Loop, 2
 		{
 			ToolTip, tis weer aan de mens die voor de pc zit /   %A_Index%     ; A_Index will be 1, 2, then 3
 			Sleep, 500
