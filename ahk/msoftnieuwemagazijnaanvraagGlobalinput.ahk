@@ -8,75 +8,138 @@ Sleep 300,
 ;;;;;    https://github.com/v12345vtm/template2018
 
 
-venster := "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)"
- if WinActive(venster)  ; "ahk_class" need not have a space after it. 
+
+;Current selection does not support all settings.
+
+{
+
+MouseMove, 195, 20 ; diskettje wegschrijven lijsten
+ MouseClick, left
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  
+ 
+MouseMove, 132, 20 ; pijl importart
+  MouseClick, left
+   Loop
  {
-    ToolTip, De knop :  %venster%  was found.
+ 
+  testbestaat := ActiveVensterAHKspy("klaar met importeren !!") ; returns false or true , 2e paramteter true is om winactivate te doen
+  
+ }
+ Until testbestaat
+    
+ 
+  Sleep 600 
+ Send {ENTER} 
+ Sleep 600 
+ ;;;;;;;;;;;;;;;;;;;;;;;
+MouseMove, 220, 20 ; oog , nieuwe proc
+  
+ MouseClick, left
+ 
+ 
+ Loop
+ {
+ 
+  testbestaat := ActiveVensterAHKspy("klaar met importeren !!") ; returns false or true , 2e paramteter true is om winactivate te doen
+  
+ }
+ Until testbestaat
+   
+ Sleep 600 
+ Send {ENTER}
+  Sleep 600 
+ ;;;;;;;;;;;;;;;;;;;;;
+ 
+ 
+MouseMove, 160, 20 ; refresh opvragen lijst
+ MouseClick, left
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+  wachtEenBeetje(1000)  
+ wachtEenBeetje(1000) 
+  wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+ wachtEenBeetje(1000)  
+
+  
+
+}
+
+
+
+
+;;;;;;;
+
+
+MouseMove, 195, 20 ; diskettje wegschrijven lijsten
+ MouseClick, left
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  wachtEenBeetje(2000)  
+ wachtEenBeetje(2000)  
+  
+ 
+
+ Exitapp
+    ;  ListVars
+     ;  Pause
+ 
+testbestaat := bestaatHetVenster("LET_VAULT" , false) ; returns false or true , 2e paramteter true is om winactivate te doen
+testinvisibledata := ActiveVensterAHKspy("Current selection does not support all settings.")  
+
+
+
+  ToolTip, vensterbestaat :  %testbestaat%   
  Sleep 1000  
  
- ;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
-Loop {
-Sleep 100 
-WinGetText, ahkspy_data, a ; check inhoud v huidig window
-;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
-Needle := "Globale input" ; bestaat de knop die we zoeken?
-If InStr(ahkspy_data, Needle)
-   { 
- ; ToolTip, De knop :  %Needle%  was found.
- Sleep 10
-  WinMove, %venster% ,, 10, 200 ,826,573   ; msoft naar left1280 top570  width620  height440
-   }
-Else
-   { 
-  ; ToolTip, De knop :  %Needle%  was  not found.      
-   }
-}
-Until  InStr(ahkspy_data, Needle)
-;****einde routine 
- }
-
  
-exitapp
+ 
+ 
+  ToolTip, invisible :  %testinvisibledata%   
+ Sleep 1000  
 
-;zitten we in bestelaanvragen ?
-;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
-Loop {
-Sleep 100 
-	;wachtEenBeetje(100) ; via incl een animerende cursor die wacht
-WinGetText, ahkspy_data, a ; check inhoud v huidig window
-;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
-Needle := "Globale input" ; bestaat de knop die we zoeken?
-If InStr(ahkspy_data, Needle)
-   { 
-   ToolTip, De knop :  %Needle%  was found.
- Sleep 100 
-	
-   WinGetPos,,, Width, Height, A 
-  WinMove, A,, 10, 200 ,826,573   ; msoft naar left1280 top570  width620  height440
 
-   }
-Else
-   { 
-   ToolTip, De knop :  %Needle%  was  not found.      
-   }
+
+
+
+
+;;noodstop
+ExitApp ; dit is onze laatste stap na de herhaalloop
+ExitSub:
+{
+	BlockInput, MouseMoveOff
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+	ExitApp
+	return
 }
-Until  InStr(ahkspy_data, Needle)
-;****einde routine
-
-
-
-
-
-
-
-	;;noodstop
-	ExitApp ; dit is onze laatste stap na de herhaalloop
-	ExitSub:
-	{
-		BlockInput, MouseMoveOff ; muis los laten voor gebruiker
-		 
-			MsgBox, 48, you pressed escape- , you pressed esc- `n`n "EXIT-"%scriptnaam% This message will self-destruct in 1 seconds., 1
-		ExitApp
-		return
-	}
-	ESC::Goto ExitSub             
+ESC::Goto ExitSub         

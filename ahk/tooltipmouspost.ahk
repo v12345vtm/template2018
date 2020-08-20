@@ -56,16 +56,14 @@ MouseMove, % xtemp, % ytemp , 0
 
 
 
-
+;;noodstop
+;ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
-BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
-ExitApp
-return
+	BlockInput, MouseMoveOff ; muis los laten voor gebruiker
+	
+	MsgBox, 48, you pressed escape- , you pressed esc- `n`n "EXIT-"%scriptnaam% This message will self-destruct in 1 seconds., 1
+	ExitApp
+	return
 }
-
-
- 
-
-ESC::Goto ExitSub
+ESC::Goto ExitSub              

@@ -6,6 +6,9 @@ FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file co
 Sleep 300,
 
 
+    ;  ListVars
+    ;  Pause
+
 ;msoft opstarten
 ;indien msoft niet draait , starten we het en loggen we in
 ;direkt erna kijken we of het effectief draait en verkleinen en herpositioneren we

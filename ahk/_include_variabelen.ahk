@@ -10,7 +10,7 @@ knopvergrootglasy := 116 ; inactive window gemaximaliseerd
 
 zoekveldx := 460 ;  inactive window gemaximaliseerd
 zoekveldy:= 193 ;  inactive window gemaximaliseerd
-
+NeedlePdmGui := "CardPreview"
  
 
 
@@ -69,7 +69,7 @@ label_ID_hfpri20x7 := 26
 label_ID_hoofdcomp := 12
 label_ID_kabel := 16
 label_ID_lutze := 18
- 
+NeedleLabelZelfAanhetEditen := "Current selection does not support all settings."
 
 
 
@@ -126,3 +126,48 @@ SerialPrintln(x){
 FileAppend, %x% `n, C:/Users/vth/Desktop/template2018/logfiles/serialprintahkDebug.txt ;save naar txt file concat
 Sleep 900,
 }
+
+
+ActiveVensterNaam(){
+;returns the active venster 
+WinGetTitle, Title, A
+return Title
+}
+
+
+
+
+ActiveVensterAHKspy(needle){
+;returns the active venster
+WinGetText, ahkspy_data, a ; check inhoud v huidig window , returne true of false
+If InStr(ahkspy_data, Needle)
+   { 
+ Tooltip **ja*** ,,,18
+   return true
+   }
+   else{
+  Tooltip ***nee** ,,,18
+  return false
+}
+}
+
+bestaatHetVenster(vensternaam , zetvooraan){
+;returns the active venster
+SetTitleMatchMode, 2
+If WinExist(vensternaam)
+   { 
+  ;  Tooltip **%zetvooraan%** ,,,18	
+If  (zetvooraan)
+   { 
+WinActivate
+   }	     
+; Tooltip **bestaat*** ,,,18
+   return true
+   }   
+   else
+   {
+ ; Tooltip ***bestaat niet** ,,,18
+  return false
+}
+}
+

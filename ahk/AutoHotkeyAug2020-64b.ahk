@@ -1,5 +1,5 @@
-﻿;_______________________________________________
-;         INFO  :versie ahk voor oude versie  ahkv2.0=oud
+;_______________________________________________
+;         INFO  :versie ahk aug2020  voor v1.1.33.02
 ;_______________________________________________
 
 
@@ -13,12 +13,10 @@
 
 
 
-;deze file staat in \\file01\users\vth\MyDocs\AutoHotkey.ahk en werkt op de poratbelapp versie 1.1.30.03
-;vroeger VOOR de corona crisis , werkt mijn defautl ahk script vanuit de lokale 'mijn dokumenten'
-;sinds de Crash net voor de Corona lockdown is ahk gelinkt aan de fileserver file01 
-;de it gelooft niet dat dit vroeger werkte , maar dat heeft niet , we hebben een walkaround gevonden via windows netwerkfolder n:\mydocs
-; deze windows netwerkkoppeling is gelinkt naar .
+;deze file staat in  C:\Users\VTH\Desktop\template2018\portableApps\AutoHotkey_1.1.33.02portable_versieAugustus2020\AutoHotkeyAug2020-64b.ahk
 
+
+ 
 ; tidy = http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
 ;1356okt2018 , control+pageup voor te scrollen in tabs en shifttab
@@ -58,6 +56,12 @@ SetScrollLockState, AlwaysOff
 
 #KeyHistory 500  ; Store up to 500 events.
 
+;msgbox % A_AhkVersion
+
+ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openstaat , terwijl we het enkel direkt willen opmerken direct als het opkomt, 
+
+FileCopy, C:\Users\VTH\Desktop\template2018\portableApps\AutoHotkey_1.1.33.02portable_versieAugustus2020\AutoHotkeyAug2020-64b.ahk , C:\Users\vth\Desktop\template2018\ahk\ ,1 ; Make a copy but keep the orig. file name.
+
 
 
 
@@ -89,12 +93,6 @@ if (resolutie = "1920x1080"){
 	xpositieTT19 := 950 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
 	yposTT19 := 16 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
 }
-
-
-ContinueSearch := true ; anders testen we 10x per seconde  een scherm die openstaat , terwijl we het enkel direkt willen opmerken direct als het opkomt, 
-
-FileCopy, \\file01\users\VTH\MyDocs\AutoHotkey.ahk , C:\Users\vth\Desktop\template2018\ahk\ ,1 ; Make a copy but keep the orig. file name.
-
 
 
 
@@ -379,7 +377,7 @@ Return
 
 #<::Run, "C:\Users\vth\Desktop\template2018\ahk\klembordWritetofile.ahk"   ; win+ < drukken is save selction to klembord
 #&::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel1a.ahk ; compare artikel in bestand1 toets1 op klavier
-;;invalid;;#é::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel2a.ahk ; compare artikel in bestand2 toets2 op klavier
+#VK32::Run, C:\Users\vth\Desktop\template2018\ahk\Msoftcompareartikel2a.ahk ;  klop é = compare artikel in bestand2 toets2 op klavier
 #"::Run, C:\Users\vth\Desktop\template2018\ahk\ClipElecWaPasPrintenEnLogRename.ahk ; "elec waterpas printen en log resetten toets3 op klavier
 #'::Run, C:\Users\vth\Desktop\template2018\macros\aanpassenToolmetAcceswijzigenEnMsoft.xlsm ; script die de gui van psp acces invult: toets4 op klavier  : 
 #(::Run, C:\Users\vth\Desktop\template2018\ahk\msoftpartlistsExporteren.ahk ; script partlist in een filezet: toets5 op klavier  : ;msoftpartlistsExporteren
@@ -581,13 +579,12 @@ Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;deskto
 
 
  
-
-:R*?:hhhh::
+#VKDE::
 {
-	Tooltip  virt kembord plakken met h h h h
- ;WinSet, AlwaysOnTop, toggle, A ; 
+	Tooltip  virt kembord plakken met ²²²²²²²²²²²²²²²²
+ WinSet, AlwaysOnTop, toggle, A ; 
 ;WinSet, Transparent, 200, Untitled - Notepad ; Make the window a little bit transparent.
- msgbox % A_AhkVersion
+ 
  Tooltip
 }  
 

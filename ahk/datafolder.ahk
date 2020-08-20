@@ -45,7 +45,12 @@ Sleep 1600
 
 Send {F3}
 Sleep 1600
-Send *%UserInput%**.doc*
+
+;FormatTime, CurrentDateTime,, dd/MM/yyyy ; yyMMddHHmmss
+;MsgBox %CurrentDateTime%
+
+
+Send *%UserInput%*D5*.doc* gewijzigdop:deze maand  ; gewijzigdop:vorige maand  of gewijzigdop:>=‎4/6/‎2020>=‎14/6/‎2020
 Sleep 600
 Send {enter}
 
