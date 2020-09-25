@@ -1,8 +1,8 @@
 #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
-
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-scriptnaam :="pdmverkenner-incl"  
-FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+scriptnaam :="pdmverkenner"  
+;FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+aantalkliksUitgespaart := 0   ; aantalkliksUitgespaart += 1  ; een klik is click of tab of enter of up of down of shiftF9 of ... 
 Sleep 300,
 
 BlockInput, MouseMove ; blockeer muis als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
@@ -38,6 +38,7 @@ run C:\Users\VTH\Desktop\pdmfilescopy
 
 wachtEenBeetje(1000) ; via incl een animerende cursor die wacht
 
+ aantalkliksUitgespaart += 1
 Run %pdmstartmap% ;pdm met gele mapjes oproepen zonder inhoud wegens geen login
 
 
@@ -72,11 +73,11 @@ wachtEenBeetje(1300) ; via incl een animerende cursor die wacht
 	Until  InStr(ahkspy_data, Needle)
 	;****einde routine
 	
-	
+	wachtEenBeetje(100) ; via incl een animerende cursor die wacht
 	;nu moeten we het venster maximlisern 
 	WinMaximize, A ; maximize the active window. (Pdm GUI)
-	
-	
+	wachtEenBeetje(100) ; via incl een animerende cursor die wacht
+		aantalkliksUitgespaart += 1
 
 		MouseMove, %knopvergrootglasx%, %knopvergrootglasy%  ; eendagTerug positieknop
 	ToolTip, klik op knopvergrootglas-xy
@@ -84,17 +85,17 @@ wachtEenBeetje(1300) ; via incl een animerende cursor die wacht
 	MouseClick, left
 wachtEenBeetje(100) ; via incl een animerende cursor die wacht
 	
-	MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop
-	
- 
+	MouseMove, %zoekveldx%, %zoekveldy%  ; tiknr positieknop 
 	ToolTip, klik op zoekveld
-	Sleep, 1500 ; check viusee of je juist staat
+	
+wachtEenBeetje(1500) ; via incl een animerende cursor die wacht
+		aantalkliksUitgespaart += 1
 	MouseClick, left
 	wachtEenBeetje(500) ; via incl een animerende cursor die wacht
 
 	
  
-	
+		FileAppend, %Timestamp% - %scriptnaam%  kliks : %aantalkliksUitgespaart%`n, %AhkLogbestand% ;save naar txt file concat
 	
 	
  
@@ -108,7 +109,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

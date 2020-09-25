@@ -1,20 +1,22 @@
-;INIT ahk 	elke export zetten we in ons exportbestand , dat is een vaste output filename.
-scriptnaam :="nrsnieuwd5"  
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
-;; export to log
-FormatTime, CurrentDateTime,, yyMMddHHmmss
-timestampel:= CurrentDateTime  ; om een ahk property op te slaan naar ahk variabele geen %% nodig
-FileAppend,  %timestampel% - %scriptnaam%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+
+Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+scriptnaam :="nrsnieuwd5 inc"   
+FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
+
+
+
+ 
 
 ;;pre-start en variabelen
 ;artikelomschrijving
 
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
-;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
+   SetKeyDelay, 300 ; hoe rap stuur je typcommandos   
 Loop, 1
 {
 	ToolTip,     %scriptnaam%  = in Msoft artikelen staan   ; ahk variabele oproepen moet met %% 
@@ -99,27 +101,26 @@ Loop, 3
 ;L:\Letdata\data\19\0593_01\D5\190593_01-D5N04_.docx zit in je klembord youpie yess!
 
 
-   FileAppend, %timestampel% - %scriptnaam% - %Clipboard%`n, C:/Users/vth/Desktop/template2018/logfiles/welkeAHKgebruikenweWelDegelijk.txt ;save naar txt file
-       Sleep 300,
-
-;;noodstop
-ExitApp ; dit is onze laatste stap na de herhaalloop
-ExitSub:
-{
-BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
-ExitApp
-return
-}
+   
 
 
 
-ESC::Goto ExitSub
-
+	;;noodstop
+	ExitApp ; dit is onze laatste stap na de herhaalloop
+	ExitSub:
+	{
+		BlockInput, MouseMoveOff ; muis los laten voor gebruiker
+		 
+	MsgBox, 48, you pressed escape- , %scriptnaam%, 1
+		ExitApp
+		return
+	}
+	ESC::Goto ExitSub             
 
 
 
 
 
-Return
+
+;Return
 }

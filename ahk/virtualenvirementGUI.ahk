@@ -1,7 +1,7 @@
 #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-scriptnaam :="virtualenvirementGUI-incl"  
+scriptnaam :="virtualenvirementGUI"  
 FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
@@ -33,7 +33,7 @@ If WinExist("Opdrachtprompt")
 }
 
 ;python minigui.pyw
-Send python minigui{NumpadDot}pyw
+Send python minigui{ASC 46}pyw
 Send {ENTER}
 
 ;;noodstop
@@ -41,7 +41,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff
-	MsgBox "EXIT-"%scriptnaam%
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

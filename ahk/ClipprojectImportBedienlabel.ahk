@@ -5,7 +5,7 @@ BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt do
 
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
 
-scriptnaam :="ClipprojectImportbedienlabel incl  "   
+scriptnaam :="ClipprojectImportbedienlabel"   
 FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
@@ -81,7 +81,7 @@ SetKeyDelay, 200 ; hoe rap stuur je typcommandos
 	ExitApp ; dit is onze laatste stap na de herhaalloop
 	ExitSub:
 	{
-	MsgBox "EXIT-"%scriptnaam%
+	MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 		ExitApp
 		return
 	}

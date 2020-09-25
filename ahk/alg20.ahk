@@ -26,7 +26,7 @@ ExitSub:
 {
 	BlockInput, MouseMoveOff
 	;MsgBox "EXIT-"%scriptnaam%
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

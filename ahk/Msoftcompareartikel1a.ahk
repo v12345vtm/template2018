@@ -87,6 +87,7 @@ If InStr(ahkspy_data, Needle)
    }
 Else
    { 
+   BlockInput, MouseMoveOff
    MsgBox, De knop :  %Needle%  was  not found.
     exitapp  
    }
@@ -125,6 +126,7 @@ wachtEenBeetje(500) ; via incl een animerende cursor die wacht
 	;als we pech hebben is er geen produktiefische en zal msoft u een Question stellen	
 	If WinExist("Question")
 {
+BlockInput, MouseMoveOff
 	MsgBox we moeten dringend weg eris hier geen prodfiche
 exitapp
 }
@@ -327,7 +329,7 @@ ExitSub:
 {
 	BlockInput, MouseMoveOff
 	;MsgBox "EXIT-"%scriptnaam%
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

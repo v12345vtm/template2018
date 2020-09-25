@@ -1,3 +1,6 @@
+#include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
+
+
 ;	elke export zetten we in ons exportbestand , dat is een vaste output filename
 FormatTime, CurrentDateTime,, yyMMddHHmmss
    Timestamp := "%CurrentDateTime%"  ; to start a new line. nieuwe regel 
@@ -12,7 +15,7 @@ FormatTime, CurrentDateTime,, yyMMddHHmmss
 ToolTip, "starting-"%scriptnaam%,170 , 950
 Run C:\Users\VTH\Desktop\VT.xlsx
 Sleep 100
-Run https://utime.cosmotime.be/login.php?action=session
+Run %jefavorietebrowser% https://utime.cosmotime.be/login.php?action=session  ;C:\Users\VTH\Desktop\template2018\portableApps\FoxitReaderPortable\
 
 
 

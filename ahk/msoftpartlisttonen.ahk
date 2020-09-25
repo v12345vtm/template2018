@@ -1,12 +1,11 @@
 #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
-
-BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
-
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-scriptnaam :="Msoftpartlisttonen incl "   
-FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+scriptnaam :="Msoftpartlisttonen"   
+;FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+aantalkliksUitgespaart := 0   ; aantalkliksUitgespaart += 1  ; een klik is click of tab of enter of up of down of shiftF9 of ... 
 Sleep 300,
 
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates:
 ;  SetKeyDelay, 500 ; hoe rap stuur je typcommandos   
 Loop, 1
@@ -39,6 +38,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	
 	;;;;;;;;;;;;produktiegegevens openen 	
+	aantalkliksUitgespaart += 1
 	Send, +{F9}  ;shift f9
 	Sleep 400	
 	
@@ -49,7 +49,7 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		MsgBox we moeten dringend weg eris hier geen prodfiche
 		exitapp
 	}
-	
+	aantalkliksUitgespaart += 1
 	Send,   ^{PgUp}  ; control pageUP 'select laatste tab 'Prod.Totalen met needle Kosten onderliggende artikelen tonen
 	Sleep 400	
 	
@@ -71,8 +71,10 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	
 	
 	Sleep 400,
+	aantalkliksUitgespaart += 1
 	Send +{Tab 3}
 	Sleep 300
+	aantalkliksUitgespaart += 1
 	Send , {Enter}  ; hierdoor komt er window = "Detail Materiaalkosten"
 	
 	;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
@@ -102,11 +104,14 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 		;Sleep, 500
 		
 		MouseMove, 100, 100 ;in de tabel ergens staan ongeveer 1e rij
-		Sleep, 100		
+		Sleep, 100	
+aantalkliksUitgespaart += 1		
 		MouseClick, right ; menuopvragen
 		Sleep, 100
+		aantalkliksUitgespaart += 1
 		Send, {Down 6} ;6keer pijltje omlaag
 		Sleep, 100
+		aantalkliksUitgespaart += 1
 		Send, {Enter} ; druk op enter
 		Sleep, 100
 		
@@ -142,14 +147,14 @@ If WinExist("AUTO - Artikelen  -  LET Automotive n.v.")
 	}}
 
 
-
+FileAppend, %Timestamp% - %scriptnaam%  kliks : %aantalkliksUitgespaart%`n, %AhkLogbestand% ;save naar txt file concat
 
 ;;noodstop
 ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff ;laat de muis weer los
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

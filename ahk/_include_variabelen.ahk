@@ -2,7 +2,7 @@
 ;; tidy Ahk online  : http://sl5.it/SL5_preg_contentFinder/examples/AutoHotKey/converts_your_autohotkey_code_into_pretty_indented_source_code.php
 
 ;PDM
-
+;//ook een needle : Adres: C:\LET_VAULT\01. Automotive\03. Proj
 wachtenOPprogram := "LET_VAULT" ; typ hier welk programma je wil openen en monitoren wat er mee gebeurd
 pdmstartmap := "C:\LET_VAULT" ; welk dom programma moet je nu zo starten ?
 knopvergrootglasx := 1845 ;  inactive window gemaximaliseerd
@@ -21,7 +21,20 @@ myvar := "hello world"
 myvar2 := 42
 
 ;//NRS
+;programmaparameters zijn : LET   ahk_class OMain  ahk_exe MSACCESS.EXE    ahk_pid 14620
 
+objectx := 94
+objecty := 188
+objectdatax := 236
+objectdatay := 190
+sluitenx := 1880
+sluiteny := 984
+inputletrefx := 133
+inputletrefy := 936
+objectoverzichtx := 34
+objectoverzichty := 90
+bovenstelijnx := 772
+bovenstelijny := 239
 
 
 ;:ujob
@@ -92,14 +105,14 @@ outlookEXE := "C:\Program Files (x86)\Microsoft Office\Office16\outlook.exe" ; m
 algemeen_mtp_bestand := "C:\Users\vth\Desktop\template2018\bibliotheek\verpakking-letline.mtp" ; veel gebruikte template 
 nrsEXE := "L:\Letdata\database\versie_H (Jorosoft)\NRS\VTH\LetP.accdb"
 importsdBAT := "C:\Users\vth\Desktop\template2018\ahk\importSDcard.bat"
-
+jefavorietebrowser := "C:\Users\VTH\Desktop\template2018\portableApps\FirefoxPortable\FirefoxPortable.exe"
 ;initiele welkom en infotexten
 
 ;MsgBox "includehier"
 
 
 ;openbare functies
-
+ 
  
  
 wachtEenBeetje(x) {  
@@ -114,7 +127,7 @@ Sleep x/6
 Tooltip **** ,,,18
 Sleep x/6
 Tooltip ****** ,,,18
-Sleep x/6   ; een animerende cursor die wacht , volgens de duurtijd vd ontvangen parameter
+Sleep x/6   ; een animerende cursor  op TooltipNR18 die wacht , volgens de duurtijd vd ontvangen parameter
 Tooltip ,,,18
   return  
 }
@@ -153,21 +166,78 @@ If InStr(ahkspy_data, Needle)
 
 bestaatHetVenster(vensternaam , zetvooraan){
 ;returns the active venster
+
+WinGet, t3, ProcessName ; steek de procesnam in variabele t3
+
 SetTitleMatchMode, 2
-If WinExist(vensternaam)
+If WinExist(vensternaam) or t3 ==vensternaam
    { 
-  ;  Tooltip **%zetvooraan%** ,,,18	
+
 If  (zetvooraan)
    { 
 WinActivate
+return true
    }	     
-; Tooltip **bestaat*** ,,,18
-   return true
+
+   
    }   
    else
    {
- ; Tooltip ***bestaat niet** ,,,18
   return false
 }
 }
+
+
+
+
+
+
+
+ProcessExist(Name){
+	Process,Exist,%Name%
+	return Errorlevel
+}
+
+
+
+
+actiefvensterklasseproces(){
+;aktieftitle=  %Active_Title%   `n classe= %Active_KLASSE%   `n procesname= %Active_Process% 
+WinGetTitle, Active_Title, A
+WinGetClass, Active_KLASSE, A
+   WinGet, Active_ID, ID, A ;temp
+    WinGet, Active_Process, ProcessName, ahk_id %Active_ID%  
+	;actiefvenstertitelklasseprocesconcat :=    Active_Title 
+	actiefvenstertitelklasseprocesconcat :=   Active_KLASSE 
+	actiefvenstertitelklasseprocesconcat .=    Active_Process
+	return actiefvenstertitelklasseprocesconcat
+	}
+
+
+
+
+FindAndClickButton() {
+;https://www.autohotkey.com/boards/viewtopic.php?f=76&t=58324&sid=982c015ba6e662508c2ac1a81e9cff05&start=20
+;If the function finds the button it tries to click it and returns True (1), otherwise False (0). You might want to try whether it does what you want.
+
+   WinTitle := "Sage 50 Accounts Professional - GRP(UK)LTD"    ; the window's title
+   BtnClass := "#SG32DTBUTTON"                                 ; the fix leading part (the class name) of the ClassNN
+   BtnText  := "EMail"                                         ; the button's caption
+   WinGet, CtrlList, ControlListHwnd, %WinTitle%
+   Loop, Parse, CtrlList, `n
+   {
+      HWND := A_LoopField
+      WinGetClass, CtlClass, ahk_id %HWND%
+      If (CtlClass = BtnClass) {
+         ControlGetText, CtlText, , ahk_id %HWND%
+         If (CtlText == BtnText) {
+            ControlClick, , ahk_id %HWND%
+            Return True
+         }
+      }
+   }
+   Return False
+}
+
+
 

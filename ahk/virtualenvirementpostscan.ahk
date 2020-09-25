@@ -44,25 +44,25 @@ If WinExist("Opdrachtprompt")
 	ToolTip, u programma (Selecteren Opdrachtprompt) is open `n  	 en ik zal het vooraan zetten   `n   voila! , 170,950
 	WinActivate  ; venster aktief  ; zetten die we net gezocht en gevonden hebben
 	Sleep 200,  
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
-	Send cd{NumpadDot}{NumpadDot}
+	Send cd{ASC 46}{ASC 46}
 	Send {ENTER}
 	Sleep 70
 		
@@ -96,7 +96,7 @@ ExitSub:
 {
 	BlockInput, MouseMoveOff
 	;MsgBox "EXIT-"%scriptnaam%
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

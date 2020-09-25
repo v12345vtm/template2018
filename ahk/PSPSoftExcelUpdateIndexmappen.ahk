@@ -1,7 +1,7 @@
 #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
 
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-scriptnaam :="msoftnieuwemagazijnaanvraag globalInput"   
+scriptnaam :="PSPSoftExcelUpdateIndexmappen"   
 FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
  
@@ -111,6 +111,8 @@ MouseMove, 195, 20 ; diskettje wegschrijven lijsten
  
 
  Exitapp
+ 
+ 
     ;  ListVars
      ;  Pause
  

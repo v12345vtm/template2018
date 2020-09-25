@@ -2,7 +2,7 @@
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-scriptnaam :="ClipprojectImportVerpaklabel incl  "   
+scriptnaam :="ClipprojectImportVerpaklabel"   
 FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
 Sleep 300,
 
@@ -79,7 +79,7 @@ ExitSub:
 {
 	BlockInput, MouseMoveOff
 	
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 	ExitApp
 	return
 }

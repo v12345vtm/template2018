@@ -1,9 +1,12 @@
 #include C:\Users\VTH\Desktop\template2018\ahk\_include_variabelen.ahk  ; dit bestand staat op je lokale pc , maar de simultane copy runt vanaf fileserver , dus altijd direct adressering gebruiken
-
 Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
 scriptnaam :="msoftnieuwemagazijnaanvraag inc"   
-FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+;FileAppend, %Timestamp% - %scriptnaam%`n, %AhkLogbestand% ;save naar txt file concat
+aantalkliksUitgespaart := 0   ; aantalkliksUitgespaart += 1  ; een klik is click of tab of enter of up of down of shiftF9 of ... 
 Sleep 300,
+
+BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
+
  
 ;;;;;    https://github.com/v12345vtm/template2018
 
@@ -26,7 +29,8 @@ tabel .= " `n HERANODISEREn enz... 	`n     hier moet je  nu niet zijn , gewoon i
 
 s := "Hello, "
 s .= "world."
-MsgBox % tabel
+;MsgBox % tabel
+ 
 
 BlockInput, MouseMove ; als we mousemove doen , zal de pc de muis die beweegt door gebruiker niet in rekening nemen
 
@@ -41,7 +45,7 @@ If WinExist("AUTO - Magazijnaanvragen")
    ;ga in magazjn aanvraag staan en dan maken we nieuw order via ahk
    
    ToolTip, nieuwe magazijnaanvraag en verplaatsen naar linkerkant,170 , 950
-   
+   aantalkliksUitgespaart += 1
    Send, {Ins}  ; 
    Sleep 1500,   
    
@@ -62,7 +66,7 @@ If WinExist("AUTO - Magazijnaanvragen")
       ; exitapp
    }  
       
-   
+   aantalkliksUitgespaart += 1
    Send,  {Tab}
    Sleep 300,
    Send,  {Tab}
@@ -75,13 +79,15 @@ If WinExist("AUTO - Magazijnaanvragen")
    Sleep 300,
    Send,  {Tab}
    Sleep 300,
+   aantalkliksUitgespaart += 1
    Send, {Right}
    Sleep 300,
+   aantalkliksUitgespaart += 1
    Send, {Tab}
    Sleep 300,
    Send,  {Tab}
    Sleep 300,
-         
+       aantalkliksUitgespaart += 1  
    Send, {Enter}
  
    
@@ -95,6 +101,7 @@ If WinExist("AUTO - Magazijnaanvragen")
    ;de windows 'Artikelen (Aangevraagde artikelen'  aktief zetten door erop ergens te klikken want de cordinaten kloppen hierachter nooit
    MouseMove, 390,240
    Sleep 1500,
+   aantalkliksUitgespaart += 1
    MouseClick, left
    Sleep 1500,
    
@@ -106,13 +113,14 @@ If WinExist("AUTO - Magazijnaanvragen")
    
    
    
-   
+   aantalkliksUitgespaart += 1
    ;tot zover gedebugged en ok , nu klikken we op effectief op de 3puntjes en doen we verder
    MouseClick, left
    ;selecteer omschrijvingkolomveld
    Sleep 600,
    Send, {Tab}
    Sleep 300,
+   aantalkliksUitgespaart += 1
    Send, {Tab}
    
    
@@ -123,7 +131,10 @@ If WinExist("AUTO - Magazijnaanvragen")
    
    ;ExitApp ; debug
 }else  {
-   MsgBox, je staat niet in programma - magazijnaanvragen
+	BlockInput, MouseMoveOff ; muis los laten voor gebruiker
+  ; MsgBox, je staat niet in programma - magazijnaanvragen
+   	MsgBox, 48, je staat niet in programma - magazijnaanvragen , %scriptnaam%, 1
+   
    ExitApp
 } 
 
@@ -132,7 +143,7 @@ If WinExist("AUTO - Magazijnaanvragen")
 Sleep 300,
 ;Run C:\Users\vth\Desktop\template2018\ahk\msoftnieuwemagazijnaanvraag.ahk
 
-
+FileAppend, %Timestamp% - %scriptnaam%  kliks : %aantalkliksUitgespaart%`n, %AhkLogbestand% ;save naar txt file concat
 
 	;;noodstop
 	ExitApp ; dit is onze laatste stap na de herhaalloop
@@ -140,7 +151,7 @@ Sleep 300,
 	{
 		BlockInput, MouseMoveOff ; muis los laten voor gebruiker
 		 
-			MsgBox, 48, you pressed escape- , you pressed esc- `n`n "EXIT-"%scriptnaam% This message will self-destruct in 1 seconds., 1
+	MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 		ExitApp
 		return
 	}
