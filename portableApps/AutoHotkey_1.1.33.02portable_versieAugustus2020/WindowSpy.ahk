@@ -1,5 +1,5 @@
 ;
-; Window Spy
+; Window Spy vith versie
 ;
 
 #NoEnv
@@ -11,28 +11,41 @@ CoordMode, Pixel, Screen
 
 txtNotFrozen := "(Hold Ctrl or Shift to suspend updates)"
 txtFrozen := "(Updates suspended)"
-txtMouseCtrl := "Control Under Mouse Position"
+txtMouseCtrl := "text van op de knop en pos en formaat"
 txtFocusCtrl := "Focused Control"
 
 Gui, New, hwndhGui AlwaysOnTop Resize MinSize
-Gui, Add, Text,, Window Title, Class and Process:
-Gui, Add, Checkbox, yp xp+200 w120 Right vCtrl_FollowMouse, Follow Mouse
-Gui, Add, Edit, xm w320 r4 ReadOnly -Wrap vCtrl_Title
-Gui, Add, Text,, Mouse Position:
-Gui, Add, Edit, w320 r4 ReadOnly vCtrl_MousePos
+;Gui, Add, Text,, Window Title, Class and Process:
+Gui, Add, Checkbox,Checked yp xp+200 w120 Right vCtrl_FollowMouse, Follow Mouse
+Gui, Add, Edit, xm w320 r5 ReadOnly -Wrap vCtrl_Title
+
+
+
+Gui, Add, Text,, Mouse Position beste is WINDOW kiezen:
+Gui, Add, Edit, w320 r3 ReadOnly vCtrl_MousePos
+
+;focussed..lijkt me niet intresant en nuttig maar dit zijn de knoppen die je kan uitlezen in een gui
 Gui, Add, Text, w320 vCtrl_CtrlLabel, % txtFocusCtrl ":"
-Gui, Add, Edit, w320 r4 ReadOnly vCtrl_Ctrl
+Gui, Add, Edit, w320 r5 ReadOnly vCtrl_Ctrl
+
+;active window pos
 Gui, Add, Text,, Active Window Position:
 Gui, Add, Edit, w320 r2 ReadOnly vCtrl_Pos
+
+
 Gui, Add, Text,, Status Bar Text:
 Gui, Add, Edit, w320 r8 ReadOnly vCtrl_SBText
-Gui, Add, Checkbox, vCtrl_IsSlow, Slow TitleMatchMode
-Gui, Add, Text,, Visible Text:
-Gui, Add, Edit, w320 r9 ReadOnly vCtrl_VisText
+Gui, Add, Checkbox, vCtrl_IsSlow, Slow TitleMatchMode=toon details in de velden
+
+;;;;;;;;;;;;;;Gui, Add, Text,, Visible Text:
+;;;;;;;;;;;Gui, Add, Edit, w320 r9 ReadOnly vCtrl_VisText
+
 Gui, Add, Text,, All Text:
-Gui, Add, Edit, w320 r10 ReadOnly vCtrl_AllText
-Gui, Add, Text, w320 r2 vCtrl_Freeze, % txtNotFrozen
-Gui, Show, NoActivate, Window Spy
+Gui, Add, Edit, w320 r33 ReadOnly vCtrl_AllText
+
+
+;Gui, Add, Text, w320 r2 vCtrl_Freeze, % txtNotFrozen
+Gui, Show, NoActivate, Window Spy vith versie
 GetClientSize(hGui, temp)
 horzMargin := temp*96//A_ScreenDPI - 320
 SetTimer, Update, 250
@@ -76,14 +89,17 @@ if (curWin = hGui || t2 = "MultitaskingViewFrame") ; Our Gui || Alt-tab
 UpdateText("Ctrl_Freeze", txtNotFrozen)
 WinGet, t3, ProcessName
 WinGet, t4, PID
-UpdateText("Ctrl_Title", t1 "`nahk_class " t2 "`nahk_exe " t3 "`nahk_pid " t4)
+;varalles:= t1
+varalles:= t2
+varalles.= t3
+UpdateText("Ctrl_Title", "alles= " varalles  "`nWinGetTitle= "t1 "`nWinGetClass= " t2 "`nWinGetProcesname= " t3 "`nWinGetpid= " t4)
 CoordMode, Mouse, Relative
 MouseGetPos, mrX, mrY
 CoordMode, Mouse, Client
 MouseGetPos, mcX, mcY
 PixelGetColor, mClr, %msX%, %msY%, RGB
 mClr := SubStr(mClr, 3)
-UpdateText("Ctrl_MousePos", "Screen:`t" msX ", " msY " (less often used)`nWindow:`t" mrX ", " mrY " (default)`nClient:`t" mcX ", " mcY " (recommended)"
+UpdateText("Ctrl_MousePos", "Screen:`t" msX ", " msY " (less often used)`nWindow:`t" mrX ", " mrY " (default)"
 	. "`nColor:`t" mClr " (Red=" SubStr(mClr, 1, 2) " Green=" SubStr(mClr, 3, 2) " Blue=" SubStr(mClr, 5) ")")
 UpdateText("Ctrl_CtrlLabel", (Ctrl_FollowMouse ? txtMouseCtrl : txtFocusCtrl) ":")
 if (curCtrl)
@@ -95,7 +111,7 @@ if (curCtrl)
     WinToClient(curWin, cX, cY)
 	ControlGet, curCtrlHwnd, Hwnd,, % curCtrl
     GetClientSize(curCtrlHwnd, cW, cH)
-    cText .= "`nClient:`tx: " cX "`ty: " cY "`tw: " cW "`th: " cH
+    cText .= "`nknop pos+formaat:`tx: " cX "`ty: " cY "`tw: " cW "`th: " cH
 }
 else
 	cText := ""
@@ -109,7 +125,7 @@ Loop
 	StatusBarGetText, ovi, %A_Index%
 	if ovi =
 		break
-	sbTxt .= "(" A_Index "):`t" textMangle(ovi) "`n"
+			sbTxt .= "(" A_Index "):`t" textMangle(ovi) "`n"
 }
 StringTrimRight, sbTxt, sbTxt, 1
 UpdateText("Ctrl_SBText", sbTxt)
@@ -148,7 +164,7 @@ WinGetTextFast(detect_hidden)
 			continue
 		if !DllCall("GetWindowText", "ptr", A_LoopField, "str", buf, "int", WINDOW_TEXT_SIZE)
 			continue
-		text .= buf "`r`n"
+		text .= buf " // "
 	}
 	return text
 }
