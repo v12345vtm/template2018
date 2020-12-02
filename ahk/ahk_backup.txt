@@ -1,5 +1,5 @@
 ;_______________________________________________
-;         INFO  :versie ahk aug2020  voor v1.1.33.02    7/9/2020
+;         INFO  :versie ahk aug2020  voor v1.1.33.02    7/9/2020 
 ;_______________________________________________
 
 
@@ -51,6 +51,8 @@ Commands such as ListVars and Pause can help you debug a script. For example, th
 
 
 run C:\Users\VTH\Desktop\template2018\portableApps\DesktopHomes\Desktop Homes\sources\DesktopHomes.ahk
+run guiWHEN.ahk
+ 
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates.
 
@@ -85,13 +87,13 @@ if (resolutie = "1920x1080"){
 	xpositie := 1050 ; xpos vd tooltip linksrechtspos
 	ypos := 1019 ; ypos vd tooltop ,hoogtepos1025 is al weer alboven	
 	
-	xpositieTT19 := 650 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
+	xpositieTT19 := 450 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
 	yposTT19 := 1019 ; ypos vd tooltip19 ,hoogtepos1020 is al weer alboven 
 }else  {
  	MsgBox,, starting vith ahk(selfdestructing msgbox) ,we zitten met ANDER scherm dan normaal -normaal hebben we 1920x1080, 2
 	;MsgBox, 48, starting vith ahk (selfdestructing msgbox) , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
 	xpositie := 500 ; corona laptop xpos vd tooltip linksrechtspos
-	ypos := 700 ; corona lapto ypos vd tooltop ,hoogtepos1025 is al weer alboven
+	ypos := 820 ; corona lapto ypos vd tooltop ,hoogtepos1025 is al weer alboven
 		
 	xpositieTT19 := 950 ; xpos vd tooltip19 linksrechtspos  tooltip19 is dienen met virt clipbord
 	yposTT19 := 16 ; ypos vd tooltip19 ,hoogtepos1025 is al weer alboven
@@ -156,16 +158,94 @@ watiserbezig := actiefvensterklasseproces()
 
 ;MsgBox, %watiserbezig%
 	infovariabele := watiserbezig
-	 	ToolTip, %infovariabele%        , %xpositie%  ,1000, 20	
+	 	ToolTip, Tooltipnr20= . %infovariabele%        , %xpositie%  ,1000, 20	
 	
  
  switch actiefvensterklasseproces()
 {
+
+
+
+ 
+
+
+
+
+
+	case "#32770MSACCESS.EXE": ; *****NRS*****
+	if (Title = "Jorosoft 1087") 
+	{
+		infovariabele := "NRS project :Weet u zeker om dit te importeren?"
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18			
+		WinActivate
+Send,{Left}  ;Left-arrow key on main keyboard  we gaan ja selectern 
+sleep 1500
+		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
+
+	}
+
+	if (Title = "Microsoft Access") 
+	{
+		infovariabele := "Fout bij invoegen Project"
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18			
+		WinActivate
+		;Send,{Left}  ;Left-arrow key on main keyboard  we gaan ja selectern 
+		;sleep 1500
+		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
+
+	}
+
+
+
+
+	if (Title = "Jorosoft 1069") 
+	{
+		infovariabele := "OK // Project werd succesvol geïmporteerd. // "
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18			
+		WinActivate
+		;Send,{Left}  ;Left-arrow key on main keyboard  we gaan ja selectern 
+		;sleep 1500
+		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
+
+	}
+
+ 
+
+	if (Title = "Jorosoft 1024") {
+		infovariabele := " Jorosoft 1024 stopbord nrs verlaten"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+		; als je nrs wil verlaten vraagt hij of je het zeker weet , ja want ik drukte op het stopbord ! hoeveel zekerder moet ik zijn?
+		WinActivate	 
+		Send, {Left}{Enter}    ;		
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
+
+	}
+		if (Title = "Jorosoft 1021") {
+		infovariabele := " nrs revisie maken is gelukt"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18
+		WinActivate	
+		BlockInput, MouseMove ;blokeer muis 
+		Send, {Enter}  
+		BlockInput, MouseMoveOff ;terug loslaten muis		 
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat		
+		 
+	}
+
+
 	case "rctrl_renwnd32outlook.exe":   
-	infovariabele := "mailbox"
+	infovariabele := "mailbox F9 to refresh"
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	
-	case "WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1ClipProjectMarking.exe":  
+	case "WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1ClipProjectMarking.exe":  
+             ;WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1ClipProjectMarking.exe
 	;infovariabele := "clipproject"
 	infovariabele := "AHK macro met wintoets=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
@@ -179,6 +259,15 @@ watiserbezig := actiefvensterklasseproces()
 	infovariabele := "ronny-C6146L laurents-misterplc13 //objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	VK6E:: send  {ASC 46} ; als we op punt numpadDot  drukken komt er een komma , en ik verander dat als ik op punt druk dat er een punt komt
+	;kunnen we een gui tonen ?
+ ; https://autohotkey.com/board/topic/101402-gui-always-on-top-of-a-specific-window/
+	 
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -209,7 +298,8 @@ watiserbezig := actiefvensterklasseproces()
 	
 	
 	
-	case "Question#32770ClipProjectMarking.exe":
+	case "#32770ClipProjectMarking.exe":
+if (Title = "Question") 
 	{
 		infovariabele := "clipproject het update oud mtp bestand maar"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
@@ -218,31 +308,89 @@ watiserbezig := actiefvensterklasseproces()
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
-	
-	
-	
-	
-	case "#32770MSACCESS.EXE":
-	if (Title = "Jorosoft 1024") {
-		infovariabele := " Jorosoft 1024 stopbord nrs verlaten"  
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+		case "Credential Dialog Xaml Host":
+if (Title = "Gebruikersaccountbeheer") 
+	{
+WinActivate
+MsgBox, firefox wil upd	
+MouseMove, 92,370 ;  selecteer textveld van u wachtwoord	
+infovariabele := "firefox wil updaten"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
-		; als je nrs wil verlaten vraagt hij of je het zeker weet , ja want ik drukte op het stopbord ! hoeveel zekerder moet ik zijn?
-		WinActivate	 
-		Send, {Left}{Enter}    ;		
-		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
+		
+ 	 
+ 
+
+		Timestamp := CurrentDateTime ; 
+		;Sleep 1500
+		;FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
+	}
+
+
+		case "#32770Explorer.EXE":
+if (Title = "SOLIDWORKS PDM Login - LET_VAULT") 
+	{
+		infovariabele := "als we verkenner pdm vault openen doet pdm dom voor zijn paswoord"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+		WinActivate
+		Send, vithvitH15{Enter}    ; 
+		Timestamp := CurrentDateTime ; 
+		Sleep 1500
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
-		if (Title = "Jorosoft 1021") {
-		infovariabele := " nrs revisie maken is gelukt"  
-		ToolTip, %infovariabele%     , 500  , %ypos%, 18
-		WinActivate	
-		BlockInput, MouseMove ;blokeer muis 
-		Send, {Enter}  
-		BlockInput, MouseMoveOff ;terug loslaten muis		 
-		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat		
-		 
+
+
+
+
+
+
+
+
+
+
+	
+		case "#32770EXCEL.EXE":
+if (Title = "SOLIDWORKS PDM Login - LET_VAULT") 
+	{
+		infovariabele := "als we exel openen doet pdm dom voor zijn paswoord"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+		WinActivate
+		Send, vithvitH15{Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
+		Timestamp := CurrentDateTime ; 
+		Sleep 1500
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
+
+
+
+	
+	
+	 
 	
 	
 	
@@ -276,36 +424,64 @@ watiserbezig := actiefvensterklasseproces()
 	case "ProMainWinprowin32.exe":
 	if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)") 
 	{
-		infovariabele := " msoft mag aanvr"  
-		;	ToolTip,       , 500  , %ypos%, 18
-			;  ToolTip, De knop :  %venstermagaanvr %  was found.
-		;Sleep 1000  
-		 
-		;******Routine die kijkt of er een knop in de spy zit die we als feedback kunnen gebruken om te zien of we in juiste venster zitten
-		Loop {
-			Sleep 100 
-			WinGetText, ahkspy_data, a ; check inhoud v huidig window
-			;msgbox, %ahkspy_data%  ; zet de inhoud van ahkspy in een variabele , daaarin kanje uitmaken of de knoppen bestaan die we willen op drukken , zijn we minder blind aan het navigeren
-			Needle := "Globale input" ; bestaat de knop die we zoeken?
-			If InStr(ahkspy_data, Needle)
-			{ 
-				;ToolTip, De knop :  %Needle%  was found  %Title%
-				Sleep 10
-			 	WinMove, %Title%,, 10, 269 , 826 , 573   ; msoft naar left1280 top570  width620  height440				
-			}else  {	 
-				; ToolTip, De knop :  %Needle%  was  not found.
-			}}
+		infovariabele := " msoft idividuele mag aanvr"  
+				ToolTip, %infovariabele%     , 500  , %ypos%, 18					
+ WinMove, %Title%,, 10, 269 , 826 , 573   ; msoft naar left1280 top570  width620  height440	
  
-		Until  InStr(ahkspy_data, Needle)
-	;	ToolTip
-		;****einde routine
-		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+
 	}
-	else 
+	
+	
+	if (Title = "AUTO - Artikelen  -  LET Automotive n.v.") 
 	{
-		infovariabele := " msoft"  
+		infovariabele := " msoft artikelen"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
+	
+	
+	
+		if (Title = "AUTO - Projecten  -  LET Automotive n.v.") 
+	{
+		infovariabele := " msoft projecten"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18
+ WinMove, %Title%,, 50, 435 , 1200 , 606   ; msoft naar left1280 top570  width620  height440		
+	}
+	
+	
+			if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v.") 
+	{
+		infovariabele := " msoft overzicht iedereen zijn Magazijnaanvragen "  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	}
+	
+	
+				if (Title = "Artikelen (Aangevraagde artikelen)") 
+	{
+		infovariabele := " msoft hoeveel en op welk tiknr Magazijnaanvragen "  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	}
+	
+
+	
+	
+	
+					if (Title = "AUTO - LET Automotive n.v. ") 
+	{
+		infovariabele := " msoft startvenster"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	}
+	
+	
+ 
+ 	
+					if (Title = "AUTO - Bestelaanvragen  -  LET Automotive n.v.") 
+	{
+		infovariabele := " msoft bestelaanvr"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	}
+	
+	
+ 
 
 	
  
@@ -356,11 +532,7 @@ case "#32770splwow64.exe":
  
 
 
-alles= MozillaWindowClassfirefox.exe
-WinGetTitle= Noord-Korea excuseert zich voor doodschieten van Zuid-Koreaanse ambtenaar - Mozilla Firefox
-WinGetClass= MozillaWindowClass
-WinGetProcesname= firefox.exe
-WinGetpid= 9532
+
 
 
 	case "MozillaWindowClassfirefox.exe":
@@ -374,10 +546,55 @@ WinGetpid= 9532
 	
 
 
+ 
+
+
+		case "#32770SLDWORKS.exe":
+	if (Title = "SOLIDWORKS") {
+		infovariabele := " default toolbar wordt gebruikt.."  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18
+Send, {Enter}  
+		sleep 600	
+		;Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+		;FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat	
+		 
+	}
+
+
+	if (Title = "SOLIDWORKS PDM") {
+		infovariabele := " deze operatie word niet terugbetaald door de ziekenkas"  
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18
+Send, {Enter}  
+		sleep 600	
+		;Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+		;FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat	
+		 
+	}
 
 
 
-	
+
+ 
+
+case "#32770UnityPDF.exe":
+	if (Title = "") {
+		infovariabele := " unitypdf heeft een opdracht afgewerkt die je vroeg!"  
+		 
+
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+		BlockInput, MouseMove ;blokeer muis 
+		Send, {Enter}  
+		sleep 600	
+	Send !{f4} ; Simulates the keypress alt+f4 sluit unitypdf	
+		BlockInput, MouseMoveOff ;terug loslaten muis		 
+		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat	
+		 
+	}
+
+
+
+
 	case "template":
 	if (Title = "detitel") {
 		infovariabele := " watis er?"  
@@ -496,7 +713,7 @@ Scrolllock::Run C:\Users\vth\Desktop\template2018\ahk\desktop.ahk ;  #d  ;deskto
 #y::Run, "C:\Users\vth\Desktop\template2018\ahk\nrs-LijnVrijgeven.ahk" ; nrs vrijgeven lijn objectdata
 #z::Run, "C:\Users\vth\Desktop\template2018\ahk\msoftpartlisttonen.ahk" ; parlist tonen
 
-^#x::Run, "C:\Users\vth\Desktop\template2018\ahk\klembordWritetofile.ahk" ;  control+WIN + X = virtueel klembord om nummers van nrs en pdm en msoft te kunnen doen
+;   ^#x::Run, "C:\Users\vth\Desktop\template2018\ahk\klembordWritetofile.ahk" ;  control+WIN + X = virtueel klembord om nummers van nrs en pdm en msoft te kunnen doen
 
 ^End::Run, C:\Users\vth\Desktop\template2018\ahk\msofttabelexportandConcattofileMsoft.ahk ; msofttabelexportandConcattofile Msoft.txt
 ^f10::Run, "C:\Users\vth\Desktop\template2018\ahk\virtualenvirementFINAL.ahk"
