@@ -69,7 +69,7 @@ if ErrorLevel
 	Sleep 200,
 	Send t
 	Sleep 500,
-	Send {DOWN 30} ; offset elec waterpas
+	Send {DOWN 40} ; offset elec waterpas qr
 	Sleep 500,
 	Send {ENTER}
 	Sleep 200,
@@ -91,7 +91,7 @@ if ErrorLevel
 	timestamp_a = %A_YYYY%-%A_MM%-%A_DD%-%A_Hour%h%A_Min%m%A_Sec%s  ; ^d::Send, %A_DD%-%A_MM%-%A_YYYY% %A_Hour%:%A_Min% ; press CTRL+d
 	;MsgBox, %timestamp%
 		
-	fileserver := %fileserver_waterpas_folder%  ; via include weten we de map vb : T:\PRODUKTIE\SOFTWARE\Transfer\Electronische Waterpas\
+	fileserver := "T:\PRODUKTIE\SOFTWARE\Transfer\Electronische Waterpas\"  ; via include weten we de map vb : T:\PRODUKTIE\SOFTWARE\Transfer\Electronische Waterpas\
 	
 	studentbestand := fileserver . "CalibratieElektronischeWaterpas.csv" ; log die van de student komt	
 	geprintdoorVith :=  fileserver . "geprintDoorVith\CalibratieElektronischeWaterpas.csv" . timestamp_a . ".txt"

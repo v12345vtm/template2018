@@ -114,7 +114,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 	BlockInput, MouseMoveOff	
-	MsgBox, 48, you pressed escape- , you pressed esc- `n`n This message will self-destruct in 1 seconds., 1
+		MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 ExitApp
 return
 }

@@ -28,7 +28,7 @@ return
 WatchCursor:
  
 
-test := actiefvenstertitelklasseproces()
+test := actiefvensterklasseproces()
 
 
 

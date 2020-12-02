@@ -82,6 +82,13 @@ SetTitleMatchMode, 2
 	
 	 ;	MsgBox, 48,  %scriptnaam% , %selectedlijn%, 1
 	 
+	 
+	 
+	 		BlockInput, MouseMove ;blokeer muis 
+	
+	 
+	 
+	 
 		WinActivate   
 		
 	;	WinWait, "LET", , 3
@@ -135,8 +142,8 @@ if Color = 0xFADCDD
 		   
 		   	ClipBoard = %selectedlijn% 
 			
-
-			
+ 	
+		BlockInput, MouseMoveOff ;terug vrijgeven muis		
 			
 
 }

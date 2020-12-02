@@ -78,7 +78,7 @@ ExitApp ; dit is onze laatste stap na de herhaalloop
 ExitSub:
 {
 BlockInput, MouseMoveOff
-MsgBox "EXIT-"%scriptnaam%
+	MsgBox, 48, you pressed escape- , %scriptnaam%, 1
 ExitApp
 return
 }

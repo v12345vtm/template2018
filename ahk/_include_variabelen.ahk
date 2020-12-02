@@ -77,6 +77,7 @@ label_ID_draad := 15
 label_ID_kleingrijs := 29
 label_ID_kzbgewoon := 6
 label_ID_kzbhomo := 5
+label_ID_kzbukca := 9
 label_ID_witusb := 7
 label_ID_hfpri20x7 := 26
 label_ID_hoofdcomp := 12
