@@ -43,6 +43,12 @@ Commands such as ListVars and Pause can help you debug a script. For example, th
 ;         INITIALISATIE  :
 ;_______________________________________________
 
+
+SplashImage, C:\Users\VTH\Desktop\template2018\ahk\Logo.jpg, b fs18, Welkom in autohotkey.
+Sleep, 1000
+SplashImage, Off
+
+
 #SingleInstance  Force
 #WinActivateForce
 ;codeindent via online tool op 21aug2020 indien miserie neem backup van 20/08/2020 van deze file
@@ -109,7 +115,7 @@ if (resolutie = "1920x1080"){
 ;toon de data in ons virt klembord bestand
 FileRead, OutputVar,  C:/Users/vth/Desktop/template2018/logfiles/virtklembord.txt 
 ToolTip, init(control)winX=%OutputVar% , %xpositieTT19% , %yposTT19%, 19  ;toon de data in ons virt klembord bestand in tooltip met id19
-
+;write naar C:/Users/vth/Desktop/template2018/logfiles/Welksubprogrammawerkjenuin.txt 
 
 
 
@@ -131,6 +137,18 @@ return
 ;_______________________________________________
 ;         FUNCTIES :
 ;_______________________________________________
+
+schrijfnaarTXTbestandvoorGuiwhen(programindex){
+		file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/Welksubprogrammawerkjenuin.txt", "w") ; write nr bestand
+ 
+file.Write(programindex)
+	;file.Write(infovariabele)
+	file.Close() 
+}
+ 
+
+
+
 
 
 Autoresetvt:	 
@@ -157,7 +175,7 @@ SendHotkey:
 watiserbezig := actiefvensterklasseproces()
 
 ;MsgBox, %watiserbezig%
-	infovariabele := watiserbezig
+global	infovariabele := watiserbezig
 	 	ToolTip, Tooltipnr20= . %infovariabele%        , %xpositie%  ,1000, 20	
 	
  
@@ -242,28 +260,34 @@ sleep 1500
 
 	case "rctrl_renwnd32outlook.exe":   
 	infovariabele := "mailbox F9 to refresh"
+		schrijfnaarTXTbestandvoorGuiwhen("mailbox") ;(infovariabele)
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	
 	case "WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1ClipProjectMarking.exe":  
-             ;WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1ClipProjectMarking.exe
+      {       ;WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1ClipProjectMarking.exe
 	;infovariabele := "clipproject"
-	infovariabele := "AHK macro met wintoets=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
-	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	infovariabele := "cliproject=  usb:numlock  verpak:-   bedien:7  lutze:8  kabel:9  comp:4   draad:5  hoofdcomp:6  kleinzilver:+"
+		schrijfnaarTXTbestandvoorGuiwhen("clipproject") ;(infovariabele)
+	ToolTip, %infovariabele%     , 500  , %ypos%, 18
+}	
 	
 	;case "ProMainWinprowin32.exe":   
 	;infovariabele := "msoft"
 	;ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	
 	case "OMainMSACCESS.EXE":    
+	{
 	;infovariabele := "NRS"
+	
 	infovariabele := "ronny-C6146L laurents-misterplc13 //objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
+		schrijfnaarTXTbestandvoorGuiwhen("nrs") ;(infovariabele)
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	VK6E:: send  {ASC 46} ; als we op punt numpadDot  drukken komt er een komma , en ik verander dat als ik op punt druk dat er een punt komt
 	;kunnen we een gui tonen ?
  ; https://autohotkey.com/board/topic/101402-gui-always-on-top-of-a-specific-window/
 	 
 	
-	
+	}
 	
 	
 	
@@ -275,10 +299,18 @@ sleep 1500
 	if (Title = "LET_VAULT") 
 	{
 		infovariabele := "LET_vault"
+			schrijfnaarTXTbestandvoorGuiwhen("LET_vault") ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
 	}else  {
 		infovariabele := "verkenner"
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
+	 	schrijfnaarTXTbestandvoorGuiwhen("verkenner") ;(infovariabele)
+		
+	;	file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/Welksubprogrammawerkjenuin.txt", "w") ; write nr bestand
+
+	;file.Write(infovariabele)
+	;file.Close() 
+		
 	}
 	
 	
@@ -424,7 +456,8 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	case "ProMainWinprowin32.exe":
 	if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)") 
 	{
-		infovariabele := " msoft idividuele mag aanvr"  
+		infovariabele := "msoft idividuele mag aanvr"  
+			schrijfnaarTXTbestandvoorGuiwhen("msoft idividuele mag aanvr" ) ;(infovariabele)
 				ToolTip, %infovariabele%     , 500  , %ypos%, 18					
  WinMove, %Title%,, 10, 269 , 826 , 573   ; msoft naar left1280 top570  width620  height440	
  
@@ -434,7 +467,8 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	
 	if (Title = "AUTO - Artikelen  -  LET Automotive n.v.") 
 	{
-		infovariabele := " msoft artikelen"  
+		infovariabele := "msoft artikelen"  
+			schrijfnaarTXTbestandvoorGuiwhen("msoft artikelen"  ) ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
 	
@@ -442,7 +476,8 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	
 		if (Title = "AUTO - Projecten  -  LET Automotive n.v.") 
 	{
-		infovariabele := " msoft projecten"  
+		infovariabele := "msoft projecten"  
+			schrijfnaarTXTbestandvoorGuiwhen("msoft projecten"  ) ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
  WinMove, %Title%,, 50, 435 , 1200 , 606   ; msoft naar left1280 top570  width620  height440		
 	}
@@ -450,14 +485,16 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	
 			if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v.") 
 	{
-		infovariabele := " msoft overzicht iedereen zijn Magazijnaanvragen "  
+		infovariabele := "msoft overzicht iedereen zijn Magazijnaanvragen"  
+			schrijfnaarTXTbestandvoorGuiwhen("overzicht iedereen zijn Magazijnaanvragen") ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
 	
 	
 				if (Title = "Artikelen (Aangevraagde artikelen)") 
 	{
-		infovariabele := " msoft hoeveel en op welk tiknr Magazijnaanvragen "  
+		infovariabele := "msoft hoeveel en op welk tiknr Magazijnaanvragen"  
+			schrijfnaarTXTbestandvoorGuiwhen("hoeveel en op welk tiknr Magazijnaanvragen") ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
 	
@@ -467,7 +504,8 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	
 					if (Title = "AUTO - LET Automotive n.v. ") 
 	{
-		infovariabele := " msoft startvenster"  
+		infovariabele := " msoft startvenster" 
+	;schrijfnaarTXTbestandvoorGuiwhen("") ;(infovariabele)		
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
 	
@@ -476,7 +514,8 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
  	
 					if (Title = "AUTO - Bestelaanvragen  -  LET Automotive n.v.") 
 	{
-		infovariabele := " msoft bestelaanvr"  
+		infovariabele := "msoft bestelaanvr"  
+			schrijfnaarTXTbestandvoorGuiwhen("bestelaanvr" ) ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
 	
@@ -610,6 +649,8 @@ case "#32770UnityPDF.exe":
 	
 	
 	default:
+	infovariabele := "watis er nix speciaals"  
+	schrijfnaarTXTbestandvoorGuiwhen("watis er nix speciaals") ;(infovariabele)
 	ToolTip,     , 500  , %ypos%, 18
 }
 
