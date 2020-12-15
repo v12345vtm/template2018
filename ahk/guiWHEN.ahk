@@ -160,7 +160,8 @@ ExitSub:
 		BlockInput, MouseMoveOff
 		;MsgBox "EXIT-"%scriptnaam%
 		;MsgBox, 48, you pressed escape- ,guiWHEN %scriptnaam%, 1
-		ExitApp
+		;ExitApp
+		Pause
 		return
 	}
 	
@@ -178,6 +179,111 @@ ExitSub:
 	
 	FileRead, Welksubprogrammawerkjenuin,  C:/Users/vth/Desktop/template2018/logfiles/Welksubprogrammawerkjenuin.txt  ; bstand naar variable doen 
 	GuiControl,,Welkprog,%Welksubprogrammawerkjenuin%
+	
+	
+	switch Welksubprogrammawerkjenuin
+	{
+	
+	case "verkenner": ; case "OMain":  
+		{
+			;8b
+			WinGetPos, XWin, YWin, , , A  ; "A" to get the active window's pos.
+			WinMove, Toolbar ahk_class AutoHotkeyGUI,, % (XWin + 30), % (YWin + 3)
+			WinSet, AlwaysOnTop, ON, Toolbar ahk_class AutoHotkeyGUI
+			
+			
+			loop %aantalknoppengenreren%
+			{
+				;9
+				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			}
+	
+		}
+		
+		
+			case "nrs": ; case "OMain":  
+		{
+			;8
+			;NRS
+			;WinGetPos, XWin, YWin,,, ahk_class  OMain ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;nog huidig venster vragen
+			WinGetPos, XWin, YWin, , , A  ; "A" to get the active window's pos.
+			WinMove, Toolbar ahk_class AutoHotkeyGUI,, % (XWin + 30), % (YWin + 3)
+			WinSet, AlwaysOnTop, ON, Toolbar ahk_class AutoHotkeyGUI
+			
+			
+			loop %aantalknoppengenreren%
+			{
+				;9
+				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			}
+	
+		}
+		
+		
+		
+		
+		case "Notepad++ nog niet gedifineerd in de txt log":   ;Notepad++
+		{
+			;10
+			WinGetPos, XWin, YWin, , , A  ; "A" to get the active window's pos.
+			WinMove, Toolbar ahk_class AutoHotkeyGUI,, % (XWin + 50), % (YWin + 3)
+			WinSet, AlwaysOnTop, ON, Toolbar ahk_class AutoHotkeyGUI
+			
+			loop %aantalknoppengenreren%
+			{
+				;11
+				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			}
+			}
+			
+			
+			
+			
+				case "mailbox":   ;Notepad++
+		{
+			;10
+			WinGetPos, XWin, YWin, , , A  ; "A" to get the active window's pos.
+			WinMove, Toolbar ahk_class AutoHotkeyGUI,, % (XWin + 50), % (YWin + 3)
+			WinSet, AlwaysOnTop, ON, Toolbar ahk_class AutoHotkeyGUI
+			
+			loop %aantalknoppengenreren%
+			{
+				;11
+				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			}
+			}
+			
+					Default:
+		{
+			;14			
+			
+			loop %aantalknoppengenreren%
+			{
+				;15
+				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			}
+			;renaming buttonlabels
+			
+			GuiControl ,, 1, nrs*  ;rename button5 to "restart"
+			GuiControl ,, 2, xxx  ;rename button5 to "restart"
+			GuiControl ,, 3, notepad*  ;rename button5 to "restart"
+			GuiControl ,, 4, voorvincent*  ;rename button5 to "restart"
+			GuiControl ,, 5, restart*  ;rename button5 to "restart"
+			; GuiControl, MoveDraw, 5, x505 y10 h15 ;move button restart
+			;GuiControl, Show, 5
+			;GuiControl, Hide, 5
+			
+	 
+			
+			
+			;WinMove, Toolbar ahk_class AutoHotkeyGUI,, -2000, -2000 ; weg met de toolbar
+			WinMove, Toolbar ahk_class AutoHotkeyGUI,, 1190, 1 ; bovenrechtsdebugposition
+		}
+	
+	
+	}
+	
+	
 	
 	WinGetClass, welkeklasseisEr, A
 	
@@ -245,15 +351,15 @@ ExitSub:
 			loop %aantalknoppengenreren%
 			{
 				;15
-				GuiControl, Show, %A_Index% ;toon elke knop in gui
+			;	GuiControl, Show, %A_Index% ;toon elke knop in gui
 			}
 			;renaming buttonlabels
 			
-			GuiControl ,, 1, nrs*  ;rename button5 to "restart"
-			GuiControl ,, 2, xxx  ;rename button5 to "restart"
-			GuiControl ,, 3, notepad*  ;rename button5 to "restart"
-			GuiControl ,, 4, voorvincent*  ;rename button5 to "restart"
-			GuiControl ,, 5, restart*  ;rename button5 to "restart"
+			;GuiControl ,, 1, nrs*  ;rename button5 to "restart"
+			;GuiControl ,, 2, xxx  ;rename button5 to "restart"
+			;GuiControl ,, 3, notepad*  ;rename button5 to "restart"
+			;GuiControl ,, 4, voorvincent*  ;rename button5 to "restart"
+			;GuiControl ,, 5, restart*  ;rename button5 to "restart"
 			; GuiControl, MoveDraw, 5, x505 y10 h15 ;move button restart
 			;GuiControl, Show, 5
 			;GuiControl, Hide, 5
@@ -262,6 +368,7 @@ ExitSub:
 			
 			
 			;WinMove, Toolbar ahk_class AutoHotkeyGUI,, -2000, -2000 ; weg met de toolbar
-			WinMove, Toolbar ahk_class AutoHotkeyGUI,, 1190, 1 ; bovenrechtsdebugposition
-		}}
+			;WinMove, Toolbar ahk_class AutoHotkeyGUI,, 1190, 1 ; bovenrechtsdebugposition
+		}
+		}
 return              
