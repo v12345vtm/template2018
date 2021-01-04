@@ -59,6 +59,8 @@ SplashImage, Off
 run C:\Users\VTH\Desktop\template2018\portableApps\DesktopHomes\Desktop Homes\sources\DesktopHomes.ahk
 run guiWHEN.ahk
  
+Pause
+
 
 CoordMode, ToolTip, Screen  ; Place ToolTips at absolute screen coordinates.
 
@@ -183,27 +185,18 @@ global	infovariabele := watiserbezig
 {
 
 
-
- 
-
-
-
-
-
 	case "#32770MSACCESS.EXE": ; *****NRS*****
 	if (Title = "Jorosoft 1087") 
 	{
 		infovariabele := "NRS project :Weet u zeker om dit te importeren?"
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18			
 		WinActivate
-Send,{Left}  ;Left-arrow key on main keyboard  we gaan ja selectern 
-sleep 1500
+	Send,{Left}  ;Left-arrow key on main keyboard  we gaan ja selectern 
+	sleep 1500
 		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
-
 	}
-
 	if (Title = "Microsoft Access") 
 	{
 		infovariabele := "Fout bij invoegen Project"
@@ -214,12 +207,7 @@ sleep 1500
 		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
-
 	}
-
-
-
-
 	if (Title = "Jorosoft 1069") 
 	{
 		infovariabele := "OK // Project werd succesvol geïmporteerd. // "
@@ -230,11 +218,7 @@ sleep 1500
 		Send, {Enter}    ;MsgBox, AutoCAD LT Alert is open en we drukken ok om alleenlezen melding vanzelf weg te doen
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
-
 	}
-
- 
-
 	if (Title = "Jorosoft 1024") {
 		infovariabele := " Jorosoft 1024 stopbord nrs verlaten"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
@@ -243,7 +227,6 @@ sleep 1500
 		Send, {Left}{Enter}    ;		
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
-
 	}
 		if (Title = "Jorosoft 1021") {
 		infovariabele := " nrs revisie maken is gelukt"  
@@ -253,15 +236,17 @@ sleep 1500
 		Send, {Enter}  
 		BlockInput, MouseMoveOff ;terug loslaten muis		 
 		Timestamp := CurrentDateTime ; to start a new line. nieuwe regel 
-		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat		
-		 
+		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat			 
 	}
 
 
 	case "rctrl_renwnd32outlook.exe":   
+	{
 	infovariabele := "mailbox F9 to refresh"
 		schrijfnaarTXTbestandvoorGuiwhen("mailbox") ;(infovariabele)
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
+	}
+	
 	
 	case "WindowsForms10.Window.8.app.0.3c4abcc_r9_ad1ClipProjectMarking.exe":  
       {       ;WindowsForms10.Window.8.app.0.3c4abcc_r11_ad1ClipProjectMarking.exe
@@ -271,27 +256,17 @@ sleep 1500
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18
 }	
 	
-	;case "ProMainWinprowin32.exe":   
-	;infovariabele := "msoft"
-	;ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	
 	case "OMainMSACCESS.EXE":    
 	{
-	;infovariabele := "NRS"
-	
+	;infovariabele := "NRS"	
 	infovariabele := "ronny-C6146L laurents-misterplc13 //objectdata-LijnVrijgeven=y // objectdata-Geturl=1  // objectdata-nieuwlabelobject=r  //  objectdata-nieuwD5=j  //objectdata nieuwlabel=r"
 		schrijfnaarTXTbestandvoorGuiwhen("nrs") ;(infovariabele)
 	ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	VK6E:: send  {ASC 46} ; als we op punt numpadDot  drukken komt er een komma , en ik verander dat als ik op punt druk dat er een punt komt
 	;kunnen we een gui tonen ?
- ; https://autohotkey.com/board/topic/101402-gui-always-on-top-of-a-specific-window/
-	 
-	
+ ; https://autohotkey.com/board/topic/101402-gui-always-on-top-of-a-specific-window/	
 	}
-	
-	
-	
-	
 	
 	
 	
@@ -304,10 +279,8 @@ sleep 1500
 	}else  {
 		infovariabele := "verkenner"
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
-	 	schrijfnaarTXTbestandvoorGuiwhen("verkenner") ;(infovariabele)
-		
+	 	schrijfnaarTXTbestandvoorGuiwhen("verkenner") ;(infovariabele)		
 	;	file := FileOpen("C:/Users/vth/Desktop/template2018/logfiles/Welksubprogrammawerkjenuin.txt", "w") ; write nr bestand
-
 	;file.Write(infovariabele)
 	;file.Close() 
 		
@@ -343,29 +316,6 @@ if (Title = "Question")
 
 
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
 		case "Credential Dialog Xaml Host":
 if (Title = "Gebruikersaccountbeheer") 
 	{
@@ -374,14 +324,11 @@ MsgBox, firefox wil upd
 MouseMove, 92,370 ;  selecteer textveld van u wachtwoord	
 infovariabele := "firefox wil updaten"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
-		
- 	 
- 
-
 		Timestamp := CurrentDateTime ; 
 		;Sleep 1500
 		;FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
+
 
 
 		case "#32770Explorer.EXE":
@@ -395,14 +342,6 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 		Sleep 1500
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
-
-
-
-
-
-
-
-
 
 
 	
@@ -419,13 +358,6 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	}
 
 
-
-	
-	
-	 
-	
-	
-	
 	
 	case "SunAwtDialogjavaw.exe":
 	if (Title = "Message") {
@@ -437,8 +369,7 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat
 	}
 	
-	
-	
+
 	
 	case  "ConsoleWindowClasscmd.exe":
 	if (Title = "Opdrachtprompt")  
@@ -451,68 +382,46 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	}
 	
 	
-	 
-
 	case "ProMainWinprowin32.exe":
 	if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v. (AUTO - Magazijnaanvragen  -  LET Automotive n.v.)") 
 	{
 		infovariabele := "msoft idividuele mag aanvr"  
 			schrijfnaarTXTbestandvoorGuiwhen("msoft idividuele mag aanvr" ) ;(infovariabele)
 				ToolTip, %infovariabele%     , 500  , %ypos%, 18					
- WinMove, %Title%,, 10, 269 , 826 , 573   ; msoft naar left1280 top570  width620  height440	
- 
-
-	}
-	
-	
+		WinMove, %Title%,, 10, 269 , 826 , 573   ; msoft naar left1280 top570  width620  height440	
+	}		
 	if (Title = "AUTO - Artikelen  -  LET Automotive n.v.") 
 	{
 		infovariabele := "msoft artikelen"  
 			schrijfnaarTXTbestandvoorGuiwhen("msoft artikelen"  ) ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
-	}
-	
-	
-	
+	}	
 		if (Title = "AUTO - Projecten  -  LET Automotive n.v.") 
 	{
 		infovariabele := "msoft projecten"  
 			schrijfnaarTXTbestandvoorGuiwhen("msoft projecten"  ) ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
- WinMove, %Title%,, 50, 435 , 1200 , 606   ; msoft naar left1280 top570  width620  height440		
+	WinMove, %Title%,, 50, 435 , 1200 , 606   ; msoft naar left1280 top570  width620  height440		
 	}
-	
-	
-			if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v.") 
+				if (Title = "AUTO - Magazijnaanvragen  -  LET Automotive n.v.") 
 	{
 		infovariabele := "msoft overzicht iedereen zijn Magazijnaanvragen"  
 			schrijfnaarTXTbestandvoorGuiwhen("overzicht iedereen zijn Magazijnaanvragen") ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
-	
-	
-				if (Title = "Artikelen (Aangevraagde artikelen)") 
+					if (Title = "Artikelen (Aangevraagde artikelen)") 
 	{
 		infovariabele := "msoft hoeveel en op welk tiknr Magazijnaanvragen"  
 			schrijfnaarTXTbestandvoorGuiwhen("hoeveel en op welk tiknr Magazijnaanvragen") ;(infovariabele)
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
-	
-
-	
-	
-	
-					if (Title = "AUTO - LET Automotive n.v. ") 
+	if (Title = "AUTO - LET Automotive n.v. ") 
 	{
 		infovariabele := " msoft startvenster" 
 	;schrijfnaarTXTbestandvoorGuiwhen("") ;(infovariabele)		
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 	}
-	
-	
- 
- 	
-					if (Title = "AUTO - Bestelaanvragen  -  LET Automotive n.v.") 
+		if (Title = "AUTO - Bestelaanvragen  -  LET Automotive n.v.") 
 	{
 		infovariabele := "msoft bestelaanvr"  
 			schrijfnaarTXTbestandvoorGuiwhen("bestelaanvr" ) ;(infovariabele)
@@ -521,13 +430,6 @@ if (Title = "SOLIDWORKS PDM Login - LET_VAULT")
 	
 	
  
-
-	
- 
-	 
-	
-	
-	
 	
 case "#32770splwow64.exe":
 	if (Title = "Accountadministratie") {
@@ -545,12 +447,6 @@ case "#32770splwow64.exe":
 		
 
 
-
-
- 
-
-
-
 	case "#32770FoxitReaderPortable.exe":
 	if (Title = "Foxit Reader Portable (PortableApps.com Launcher)") {
 		infovariabele := "pdf reader te rap heropent en er was nog een sessie bezig"  
@@ -566,27 +462,14 @@ case "#32770splwow64.exe":
 	
 	
 
- 
- 
- 
-
-
-
 
 
 	case "MozillaWindowClassfirefox.exe":
 	if (true) {
 		infovariabele := " firefox"  
-		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
- 
-		 
+		ToolTip, %infovariabele%     , 500  , %ypos%, 18			 
 	}
 	
-	
-
-
- 
-
 
 		case "#32770SLDWORKS.exe":
 	if (Title = "SOLIDWORKS") {
@@ -598,8 +481,6 @@ Send, {Enter}
 		;FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat	
 		 
 	}
-
-
 	if (Title = "SOLIDWORKS PDM") {
 		infovariabele := " deze operatie word niet terugbetaald door de ziekenkas"  
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18
@@ -611,15 +492,9 @@ Send, {Enter}
 	}
 
 
-
-
- 
-
 case "#32770UnityPDF.exe":
 	if (Title = "") {
 		infovariabele := " unitypdf heeft een opdracht afgewerkt die je vroeg!"  
-		 
-
 		ToolTip, %infovariabele%     , 500  , %ypos%, 18	
 		BlockInput, MouseMove ;blokeer muis 
 		Send, {Enter}  
@@ -632,8 +507,6 @@ case "#32770UnityPDF.exe":
 	}
 
 
-
-
 	case "template":
 	if (Title = "detitel") {
 		infovariabele := " watis er?"  
@@ -642,10 +515,6 @@ case "#32770UnityPDF.exe":
 		FileAppend, %Timestamp% - %infovariabele%`n, %AhkLogbestand% ;save naar txt file concat	
 		 
 	}
-	
-	
-	
-	
 	
 	
 	default:
