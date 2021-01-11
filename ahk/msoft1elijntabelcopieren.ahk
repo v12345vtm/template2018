@@ -58,13 +58,13 @@ regexfilter := RegExMatch(Clipboard, "\D{2}\d{6}", SubPatje)  ; Shows 1 and stor
 ordernummer := Trim(SubPatje)
 ;Msgbox ***
 ;Msgbox %ordernummer%
-	MsgBox, 48, ordernummer= ,%ordernummer% `n`n This message will self-destruct in 1 seconds., 1	
+	;MsgBox, 48, ordernummer= ,%ordernummer% `n`n This message will self-destruct in 1 seconds., 1	
 
 
 Needle := RegExMatch(ordernummer, "KB" , SubPatje)  ; Shows getal, which is the position where the match was found.
 	
 	
-	MsgBox, 48, needle= ,%Needle% `n`n This message will self-destruct in 1 seconds., 1	
+	;MsgBox, 48, needle= ,%Needle% `n`n This message will self-destruct in 1 seconds., 1	
 ;Msgbox %Needle% 
 	
 	  ;exitapp
